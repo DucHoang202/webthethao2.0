@@ -1,0 +1,21 @@
+.category-nav {
+    display: flex;
+    padding: 10px 14px;
+    align-items: flex-start;
+    align-self: stretch;
+    color: #B72424;
+    font-family: var(--font-family-Font-1, "Inter Display");
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 145%;
+    /* 26.1px */
+    letter-spacing: -0.18px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+        margin-top: 5px;
+    }
+}

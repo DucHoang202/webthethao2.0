@@ -1,65 +1,98 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import useMediaQuery from "react-responsive";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from "../pages/NotFound";
+import Header from "../pages/Header";
+import Search from "../components/Home/Search";
+import Footer from "../pages/Footer";
+import "../styles/main.scss";
+import Card from "../components/Home/Card";
+import Video from "../components/Home/Video";
+import HotTopic from "../components/Home/HotTopic";
+import Advertisement from "../components/Home/Advertisement";
+import SportGenre from "../components/Home/SportGenre";
+import Nav from "../components/Home/Nav";
+
+function getWidthExcludesScrollbar(): number {
+  return document.documentElement.clientWidth;
+}
+
+function Home() {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ maxWidth: 1023 });
+  const displayUnlock = useMediaQuery({ maxWidth: 1262 });
+  const formatHeader = useMediaQuery({ maxWidth: 1250 });
+
+  const card1 =
+  {
+    avatar: "/assets/Rectangle 1.webp",
+    name: "Kiet Phan",
+    time: "2 giờ trước",
+    image: "/assets/image.webp",
+    title: "Adidas trở lại mạnh mẽ trên thị trường Pickleball với dòng vợt AdiPower",
+    content: "Adidas đang định hình lại vị thế của mình trong làng Pickleball thông qua dòng vợt AdiPower mới - sự kết hợp giữa chất lượng cao và giá cả hợp lý.",
+    category: "Pickleball",
+    official: true
+  }
+
+  useEffect(() => {
+    const setAppWidth = () => {
+      const width = getWidthExcludesScrollbar();
+      document.documentElement.style.setProperty('--app-width', `${width}px`);
+    };
+
+    // Set initial width
+    setAppWidth();
+
+    // Update on resize
+    window.addEventListener('resize', setAppWidth);
+
+    return () => {
+      window.removeEventListener('resize', setAppWidth);
+    };
+  }, []);
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+    <div className='App'>
+      <Header />
+      <Nav />
+      <main>
+        <Search />
+        <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} />
+        <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 ngày 10/10: Dương Quốc Hoàng vs Ngô Quang Trung" content={card1.content} category={card1.category} official={card1.official} />
+        <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Tại sao Hà Lan chỉ cần thêm 2 chiến thắng nữa là có vé dự World Cup?" content={card1.content} category={card1.category} official={card1.official} />
+        <Video />
+        <HotTopic />
+        <Advertisement />
+        <SportGenre sport="Bóng đá" />
+        <SportGenre sport="Pickleball" />
+        <Advertisement />
+        <SportGenre sport="Billiards" />
+        <div className="advertisement-section" style={{ width: "100%" }}>
+          <Advertisement />
+          <Advertisement />
+          <Advertisement />
+
+          <Advertisement />
+          <div className="class" style={{ height: "300px", backgroundColor: "white" }}></div>
         </div>
       </main>
+      <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;

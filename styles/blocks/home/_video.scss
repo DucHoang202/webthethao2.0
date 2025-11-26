@@ -1,0 +1,144 @@
+.video {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #E5E7EB;
+    background: #121212;
+
+    .video__play {
+        width: 24px;
+        height: 24px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        color: #FFF;
+        font-family: var(--font-family-Font-1, "Inter Display");
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 145%;
+        /* 26.1px */
+        letter-spacing: -0.18px;
+        flex: 1 0 0;
+
+    }
+
+    .body {
+        .swiper-container {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            width: 100vw;
+            padding-bottom: 10px;
+
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .video-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--item-spacing-s, 16px);
+            align-self: stretch;
+            width: 184px;
+            background-color: #121212;
+            border: #121212;
+            margin-left: 16px;
+
+        }
+
+        .play-button {
+            position: relative;
+
+            &--inner {
+                position: absolute;
+                top: 88px;
+                left: 70px;
+                display: flex;
+                width: 48px;
+                height: 48px;
+                padding: 13px 11px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 60px;
+                background: rgba(0, 0, 0, 0.40);
+
+                .play {
+                    justify-content: center;
+                    align-items: center;
+                    width: 24px;
+                    height: 24px;
+                    flex-shrink: 0;
+
+                    svg {
+
+                        fill: #FFF;
+                        stroke-width: 1.5px;
+                        stroke: #FFF;
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+
+        }
+
+        .video__image {
+            width: 184px;
+            height: 223px;
+        }
+
+        .video-thumb {
+            position: relative;
+            width: 184px;
+            height: 223px;
+        }
+
+        .play-button {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .play-button--inner {
+            pointer-events: auto;
+            /* click được */
+        }
+
+        .content {
+            color: #FFF;
+            font-family: var(--font-family-Font-2, "Inter Display");
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 135%;
+            /* 16.2px */
+            width: 100%;
+            border: none !important;
+            white-space: normal;
+        }
+    }
+}

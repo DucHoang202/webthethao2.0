@@ -1,0 +1,28 @@
+.advertisement {
+    width: 100%;
+    display: flex;
+    padding: 12px 0 62px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-top: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #F0F0EE);
+    border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #F0F0EE);
+    background: var(--color-grey-96, #F7F7F4);
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+    color: var(--www-nytimes-com-mine-shaft, var(--color-grey-20, #323232));
+    text-align: center;
+
+    /* www.nytimes.com/Inter Display/Medium upper */
+    font-family: var(--font-family-Font-1, "Inter Display");
+    font-size: 10.141px;
+    font-style: normal;
+    font-weight: var(--font-weight-500, 500);
+    line-height: var(--line-height-11, 11px);
+    /* 108.475% */
+    letter-spacing: var(--letter-spacing-0_22, 0.22px);
+    text-transform: uppercase;
+    border-top: 1px solid #F0F0EE;
+    border-bottom: 1px solid #F0F0EE;
+}
