@@ -1,10 +1,8 @@
 const BlogContent = ({ content }: { content: string }) => {
     return (
-        <div>
-            <div className="blog-content">
-                {content}
-            </div>
-        </div>
+        <p>
+            {content}
+        </p>
     )
 }
 export default BlogContent

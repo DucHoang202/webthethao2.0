@@ -1,11 +1,16 @@
 const BlogQuote = ({ quote, name }: { quote: string, name: string }) => {
     return (
-        <div>
-            <div className="blog-quote">
-                <div className="red-line"></div>
-                {quote}
+        <blockquote>
+            <div className="red-line"></div>
+            <div className="content">
+                <div className="quote">
+                    {quote}
+                </div>
+                <div className="name">
+                    {name}
+                </div>
             </div>
-        </div>
+        </blockquote>
     )
 }
 export default BlogQuote
