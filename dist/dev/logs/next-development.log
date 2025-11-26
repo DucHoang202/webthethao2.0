@@ -1,0 +1,1224 @@
+[00:00:02.649] Server  LOG      ✓ Ready in 1886ms
+[00:00:14.800] Server  LOG      ○ Compiling / ...
+[00:00:23.291] Server  WARN     ⚠ Cross origin request detected from 172.16.1.139 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:23.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.067] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:00:24.067] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:24.068] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:01:25.227] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:53.546] Browser DEBUG   TSS: Counted history being replaced
+[00:01:53.547] Browser DEBUG   TSS: Caught history
+[00:01:53.547] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
+[00:02:05.929] Browser DEBUG   TSS: Counted history being replaced
+[00:02:05.929] Browser DEBUG   TSS: Caught history
+[00:02:05.929] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764144915413}
+[00:03:22.011] Server  LOG      ✓ Compiled in 721ms
+[00:03:39.727] Browser DEBUG   TSS: Counted history being replaced
+[00:03:39.727] Browser DEBUG   TSS: Caught history
+[00:03:39.727] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764144927796}
+[00:04:37.888] Browser DEBUG   TSS: Counted history being replaced
+[00:04:37.888] Browser DEBUG   TSS: Caught history
+[00:04:37.888] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145021595}
+[00:06:54.726] Server  LOG      ✓ Compiled in 831ms
+[00:07:13.748] Browser DEBUG   TSS: Counted history being replaced
+[00:07:13.748] Browser DEBUG   TSS: Caught history
+[00:07:13.748] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145079756}
+[00:07:32.045] Browser DEBUG   TSS: Counted history being replaced
+[00:07:32.046] Browser DEBUG   TSS: Caught history
+[00:07:32.046] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145235611}
+[00:07:48.845] Server  LOG      ✓ Compiled in 256ms
+[00:08:00.282] Server  LOG      ✓ Compiled in 184ms
+[00:08:20.485] Server  LOG      ✓ Compiled in 353ms
+[00:10:25.978] Server  LOG      ✓ Compiled in 797ms
+[00:10:47.949] Server  LOG      ✓ Compiled in 150ms
+[00:10:48.383] Browser DEBUG   TSS: Counted history being replaced
+[00:10:48.383] Browser DEBUG   TSS: Caught history
+[00:10:48.383] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145253905}
+[00:11:12.307] Browser DEBUG   TSS: Counted history being replaced
+[00:11:12.307] Browser DEBUG   TSS: Caught history
+[00:11:12.307] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145450241}
+[00:11:58.874] Server  LOG      ✓ Compiled in 236ms
+[00:12:17.585] Server  LOG      ✓ Compiled in 399ms
+[00:12:38.095] Server  LOG      ✓ Compiled in 286ms
+[00:12:50.217] Server  LOG      ✓ Compiled in 216ms
+[00:13:36.171] Server  LOG      ✓ Compiled in 812ms
+[00:13:43.644] Server  LOG      ✓ Compiled in 289ms
+[00:14:24.828] Server  LOG      ✓ Compiled in 258ms
+[00:14:51.107] Browser DEBUG   TSS: Counted history being replaced
+[00:14:51.107] Browser DEBUG   TSS: Caught history
+[00:14:51.107] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145474173}
+[00:15:07.881] Server  LOG      ✓ Compiled in 187ms
+[00:15:31.687] Server  LOG      ✓ Compiled in 395ms
+[00:15:40.605] Server  LOG      ✓ Compiled in 330ms
+[00:15:50.160] Server  LOG      ✓ Compiled in 229ms
+[00:15:56.384] Server  LOG      ✓ Compiled in 169ms
+[00:16:14.252] Server  LOG      ✓ Compiled in 352ms
+[00:16:19.207] Server  LOG      ✓ Compiled in 294ms
+[00:16:30.138] Server  LOG      ✓ Compiled in 221ms
+[00:16:36.241] Server  LOG      ✓ Compiled in 213ms
+[00:17:04.455] Server  LOG      ✓ Compiled in 410ms
+[00:17:15.277] Server  LOG      ✓ Compiled in 246ms
+[00:17:59.648] Server  LOG      ✓ Compiled in 259ms
+[00:18:48.949] Browser DEBUG   TSS: Counted history being replaced
+[00:18:48.949] Browser DEBUG   TSS: Caught history
+[00:18:48.949] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145692847}
+[00:22:57.317] Browser ERROR   ./webthethao2.0/components/Blog/BlogPage.tsx:23:38
+Parsing ecmascript source code failed
+  21 |                 </div>
+  22 |                 <div className="blog__body">
+> 23 |                     <BlogTitle title="/>
+     |                                      ^^^
+> 24 |                 </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 25 |             </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 26 |         </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 27 |     )
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 28 | }
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 29 | export default BlogPage
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+[00:23:23.563] Browser ERROR   ./webthethao2.0/components/Blog/BlogPage.tsx:24:17
+Parsing ecmascript source code failed
+  22 |                 <div className="blog__body">
+  23 |                     <BlogTitle title={ } />
+> 24 |                 </div>
+     |                 ^
+  25 |             </div>
+  26 |         </div>
+  27 |     )
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+[00:23:23.563] Browser ERROR   ./webthethao2.0/components/Blog/BlogPage.tsx:24:18
+Parsing ecmascript source code failed
+  22 |                 <div className="blog__body">
+  23 |                     <BlogTitle title={ } />
+> 24 |                 </div>
+     |                  ^^^^^
+  25 |             </div>
+  26 |         </div>
+  27 |     )
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+[00:23:35.817] Server  LOG      ✓ Compiled in 119ms
+[00:23:36.100] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:36.110] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:23:36.327] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:36.334] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:23:36.651] Browser DEBUG   TSS: Counted history being replaced
+[00:23:36.651] Browser DEBUG   TSS: Caught history
+[00:23:36.651] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764145930811}
+[00:23:36.651] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:23:58.252] Server  LOG      ✓ Compiled in 136ms
+[00:23:58.438] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:58.440] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:23:59.824] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:59.824] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:23:59.825] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:24:01.126] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:24:05.278] Browser ERROR   ./webthethao2.0/components/Blog/BlogPage.tsx:7:5
+Parsing ecmascript source code failed
+   5 |     const sapo = "Với kinh nghiệm thi đấu, khả năng kinh doanh và kỹ năng truyền thông hiếm có, Zane Navratil có thể mang đến cho các tay vợt chuyên nghiệp điều mà họ chưa từng có.";
+   6 |     const
+>  7 |     return (
+     |     ^^^^^^
+   8 |         <div>
+   9 |             <div className="blog">
+  10 |                 <div className="blog__container">
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+[00:24:20.647] Server  LOG      ✓ Compiled in 118ms
+[00:24:20.828] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:20.830] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:24:21.725] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:21.725] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:24:21.725] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:24:22.042] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:24:43.728] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:43.731] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:24:45.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:46.213] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:24:59.311] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:24:59.313] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:25:00.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:00.409] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:25:06.148] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:06.151] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:25:06.912] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:07.264] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:25:37.386] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:37.395] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:25:39.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:40.414] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:25:44.737] Server  LOG      ✓ Compiled in 210ms
+[00:25:45.070] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:45.076] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:25:46.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:46.399] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:25:46.399] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:25:46.795] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:25:50.055] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:25:50.059] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:25:51.414] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:51.738] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:26:05.130] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:26:05.133] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:26:06.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:06.546] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:27:00.542] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:00.544] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:27:01.445] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:02.169] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:27:16.043] Browser ERROR   ./webthethao2.0/components/Blog/BlogPage.tsx:14:5
+Parsing ecmascript source code failed
+  12 |         quote: "“Đã đến lúc có một tiếng nói mang tính hợp tác, định hướng giải pháp thay vì đối đầu.” ",
+  13 |         name: 
+> 14 |     }
+     |     ^
+  15 |     return (
+  16 |         <div>
+  17 |             <div className="blog">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+[00:27:23.280] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:23.283] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:27:25.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:26.384] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:27:26.384] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:27:26.838] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:27:41.156] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:41.159] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:27:42.493] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:43.164] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:28:42.732] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__74f1f593._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:42.734] Server  ERROR    ⨯ ReferenceError: BlogTitle is not defined
+[00:28:43.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:44.498] Browser ERROR   uncaughtError: ReferenceError: BlogTitle is not defined
+[00:29:02.213] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import trace:
+  Server Component:
+    ./webthethao2.0/components/Blog/BlogPage.tsx
+    ./webthethao2.0/app/blog/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.218] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import trace:
+  Server Component:
+    ./webthethao2.0/components/Blog/BlogPage.tsx
+    ./webthethao2.0/app/blog/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.223] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.227] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.233] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.234] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.236] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import trace:
+  Server Component:
+    ./webthethao2.0/components/Blog/BlogPage.tsx
+    ./webthethao2.0/app/blog/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.238] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import trace:
+  Server Component:
+    ./webthethao2.0/components/Blog/BlogPage.tsx
+    ./webthethao2.0/app/blog/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.240] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.241] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.242] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.248] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.251] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.252] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.253] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.254] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.257] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.258] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.260] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.265] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.268] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.269] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.270] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.271] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.274] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.280] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.281] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.283] Server  ERROR    ⨯ ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:02.393] Browser ERROR   ./webthethao2.0/components/Blog/BlogPage.tsx:4:1
+Module not found: Can't resolve './BlogSapo'
+  2 | import SmallInfoHorizontal from "../Home/SmallInfo-horizontal"
+  3 | import BlogTitle from "./BlogTitle"
+> 4 | import BlogSapo from "./BlogSapo"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import BlogHeading from "./BlogHeading"
+  6 | import BlogContent from "./BlogContent"
+  7 | import BlogQuote from "./BlogQuote"
+
+Import traces:
+  Client Component Browser:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component Browser]
+    ./webthethao2.0/app/blog/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Client Component Browser]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./webthethao2.0/components/Blog/BlogPage.tsx [Client Component SSR]
+    ./webthethao2.0/app/blog/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Client Component SSR]
+    ./webthethao2.0/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:29:19.988] Server  LOG      ✓ Compiled in 125ms
+[00:29:20.691] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:20.694] Server  ERROR    ⨯ Error: Objects are not valid as a React child (found: object with keys {quote, name}). If you meant to render a collection of children, use an array instead.
+[00:29:21.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:22.052] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {quote, name}). If you meant to render a collection of children, use an array instead.
+[00:29:53.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:23.163] Server  LOG      ✓ Compiled in 622ms
+[00:32:05.894] Browser DEBUG   TSS: Counted history being replaced
+[00:32:05.894] Browser DEBUG   TSS: Caught history
+[00:32:05.894] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
+[00:33:11.744] Browser DEBUG   TSS: Counted history being replaced
+[00:33:11.744] Browser DEBUG   TSS: Caught history
+[00:33:11.744] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764146727762}
+[00:35:27.221] Server  LOG      ✓ Compiled in 902ms
+[00:35:51.122] Server  LOG      ✓ Compiled in 812ms
+[00:35:58.111] Server  LOG      ✓ Compiled in 338ms
+[00:38:49.557] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__3cef73bd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:38:49.568] Server  ERROR    ⨯ ReferenceError: card1 is not defined
+[00:38:50.181] Browser DEBUG   TSS: Counted history being replaced
+[00:38:50.182] Browser DEBUG   TSS: Caught history
+[00:38:50.182] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764146793611}
+[00:38:50.182] Browser ERROR   uncaughtError: ReferenceError: card1 is not defined
+[00:39:00.107] Server  LOG      ✓ Compiled in 156ms
+[00:39:03.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:03.446] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:39:03.447] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:39:32.932] Server  LOG      ✓ Compiled in 445ms
+[00:39:33.902] Browser DEBUG   TSS: Counted history being replaced
+[00:39:33.902] Browser DEBUG   TSS: Caught history
+[00:39:33.902] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
+[00:39:58.588] Browser DEBUG   TSS: Counted history being replaced
+[00:39:58.588] Browser DEBUG   TSS: Caught history
+[00:39:58.588] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764147175759}
+[00:40:05.148] Browser DEBUG   TSS: Counted history being replaced
+[00:40:05.148] Browser DEBUG   TSS: Caught history
+[00:40:05.148] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764147200465}
+[00:40:16.000] Browser DEBUG   TSS: Counted history being replaced
+[00:40:16.000] Browser DEBUG   TSS: Caught history
+[00:40:16.000] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764147207009}
+[00:41:27.455] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__3cef73bd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:27.457] Server  ERROR    ⨯ ReferenceError: SimpleCard is not defined
+[00:41:27.638] Browser DEBUG   TSS: Counted history being replaced
+[00:41:27.638] Browser DEBUG   TSS: Caught history
+[00:41:27.638] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764147217865}
+[00:41:27.638] Browser ERROR   uncaughtError: ReferenceError: SimpleCard is not defined
+[00:41:48.170] Server  LOG      ✓ Compiled in 109ms
+[00:41:48.317] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__3cef73bd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:41:48.319] Server  ERROR    ⨯ ReferenceError: SimpleCard is not defined
+[00:41:49.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:49.356] Browser ERROR   uncaughtError: ReferenceError: SimpleCard is not defined
+[00:41:59.564] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:45.322] Browser DEBUG   TSS: Counted history being replaced
+[00:42:45.322] Browser DEBUG   TSS: Caught history
+[00:42:45.322] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
+[00:47:28.660] Server  LOG      ✓ Compiled in 611ms
+[00:47:57.014] Server  LOG      ✓ Compiled in 235ms
+[00:48:33.497] Server  LOG      ✓ Compiled in 426ms
+[00:48:52.207] Server  LOG      ✓ Compiled in 436ms
+[00:52:01.544] Server  LOG      ✓ Compiled in 88ms
+[00:52:02.170] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__6cf5770d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:52:02.177] Server  ERROR    ⨯ ReferenceError: CommentInput is not defined
+[00:52:02.540] Browser DEBUG   TSS: Counted history being replaced
+[00:52:02.540] Browser DEBUG   TSS: Caught history
+[00:52:02.540] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764147367184}
+[00:52:02.540] Browser ERROR   uncaughtError: ReferenceError: CommentInput is not defined
+[00:52:13.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:03.489] Server  LOG      ✓ Compiled in 404ms
+[00:53:29.867] Server  LOG      ✓ Compiled in 359ms
+[00:54:05.320] Server  LOG      ✓ Compiled in 393ms
+[00:55:19.022] Server  LOG      ✓ Compiled in 744ms
+[00:55:31.856] Server  LOG      ✓ Compiled in 299ms
+[00:55:58.454] Server  LOG      ✓ Compiled in 516ms
+[01:00:38.231] Server  LOG      ✓ Compiled in 818ms
+[01:00:40.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:01:10.133] Server  LOG      ✓ Compiled in 709ms
+[01:01:10.254] Browser ERROR   ./webthethao2.0/styles/main.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+233 │     .
+    │      ^
+    ╵
+  styles\blocks\blog\_blog.scss 233:6  @use
+  styles\main.scss 13:1                root stylesheet
+Caused by: Error: expected "{".
+    ╷
+233 │     .
+    │      ^
+    ╵
+  styles\blocks\blog\_blog.scss 233:6  @use
+  styles\main.scss 13:1                root stylesheet
+    [at Object.wrapException (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85182:15)]
+    [at SpanScanner._fail$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85321:12)]
+    [at SpanScanner.expectChar$2$name (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85263:12)]
+    [at SpanScanner.expectChar$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85266:19)]
+    [at ScssParser0.children$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:115897:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:123866:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:123871:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:120578:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:120568:22)]
+[01:01:21.775] Browser DEBUG   TSS: Counted history being replaced
+[01:01:21.775] Browser DEBUG   TSS: Caught history
+[01:01:21.775] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
+[01:01:52.397] Server  LOG      ✓ Compiled in 334ms
+[01:02:08.807] Server  LOG      ✓ Compiled in 456ms
+[01:02:14.594] Server  LOG      ✓ Compiled in 201ms
+[01:02:14.701] Browser ERROR   ./webthethao2.0/styles/main.scss
+Error evaluating Node.js code
+Error: expected "{".
+    ╷
+260 │             .
+    │              ^
+    ╵
+  styles\blocks\blog\_blog.scss 260:14  @use
+  styles\main.scss 13:1                 root stylesheet
+Caused by: Error: expected "{".
+    ╷
+260 │             .
+    │              ^
+    ╵
+  styles\blocks\blog\_blog.scss 260:14  @use
+  styles\main.scss 13:1                 root stylesheet
+    [at Object.wrapException (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:2316:47)]
+    [at SpanScanner.error$3$length$position (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85182:15)]
+    [at SpanScanner._fail$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85321:12)]
+    [at SpanScanner.expectChar$2$name (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85263:12)]
+    [at SpanScanner.expectChar$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85266:19)]
+    [at ScssParser0.children$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:115897:10)]
+    [at ScssParser0._stylesheet0$_withChildren$1$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:123866:39)]
+    [at ScssParser0._stylesheet0$_withChildren$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:123871:19)]
+    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:120578:20)]
+    [at ScssParser0._stylesheet0$_styleRule$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:120568:22)]
+[01:02:25.770] Server  LOG      ✓ Compiled in 1073ms
+[01:02:26.202] Browser DEBUG   TSS: Counted history being replaced
+[01:02:26.203] Browser DEBUG   TSS: Caught history
+[01:02:26.203] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148483636}
+[01:03:27.625] Browser DEBUG   TSS: Counted history being replaced
+[01:03:27.626] Browser DEBUG   TSS: Caught history
+[01:03:27.626] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148548061}
+[01:03:32.738] Browser DEBUG   TSS: Counted history being replaced
+[01:03:32.738] Browser DEBUG   TSS: Caught history
+[01:03:32.738] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148609491}
+[01:03:38.317] Server  LOG      ✓ Compiled in 1211ms
+[01:03:39.682] Browser DEBUG   TSS: Counted history being replaced
+[01:03:39.683] Browser DEBUG   TSS: Caught history
+[01:03:39.683] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148614595}
+[01:03:50.374] Server  LOG      ✓ Compiled in 2.2s
+[01:05:05.530] Server  LOG      ✓ Compiled in 806ms
+[01:06:06.353] Server  LOG      ✓ Compiled in 225ms
+[01:06:07.045] Browser DEBUG   TSS: Counted history being replaced
+[01:06:07.045] Browser DEBUG   TSS: Caught history
+[01:06:07.045] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148621546}
+[01:07:12.022] Server  LOG      ✓ Compiled in 355ms
+[01:07:24.893] Server  LOG      ✓ Compiled in 240ms
+[01:08:23.245] Browser DEBUG   TSS: Counted history being replaced
+[01:08:23.245] Browser DEBUG   TSS: Caught history
+[01:08:23.245] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148768916}
+[01:08:47.684] Server  LOG      ✓ Compiled in 551ms
+[01:09:01.201] Server  LOG      ✓ Compiled in 328ms
+[01:09:20.040] Server  LOG      ✓ Compiled in 349ms
+[01:10:01.941] Browser DEBUG   TSS: Counted history being replaced
+[01:10:01.941] Browser DEBUG   TSS: Caught history
+[01:10:01.941] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764148905110}
+[01:10:23.900] Browser DEBUG   TSS: Counted history being replaced
+[01:10:23.901] Browser DEBUG   TSS: Caught history
+[01:10:23.902] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764149003810}
+[01:10:43.366] Browser DEBUG   TSS: Counted history being replaced
+[01:10:43.366] Browser DEBUG   TSS: Caught history
+[01:10:43.366] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764149025736}
+[01:11:25.310] Browser DEBUG   TSS: Counted history being replaced
+[01:11:25.310] Browser DEBUG   TSS: Caught history
+[01:11:25.310] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764149045234}
+[01:11:34.993] Browser DEBUG   TSS: Counted history being replaced
+[01:11:34.993] Browser DEBUG   TSS: Caught history
+[01:11:34.993] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764149087178}
+[01:12:26.828] Browser DEBUG   TSS: Counted history being replaced
+[01:12:26.828] Browser DEBUG   TSS: Caught history
+[01:12:26.828] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764149096853}
+[01:14:12.150] Browser DEBUG   TSS: Counted history being replaced
+[01:14:12.150] Browser DEBUG   TSS: Caught history
+[01:14:12.150] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764149148697}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import SmallInfo from "./SmallInfo";
 interface CardProps {
     avatar: string;
     name: string;
@@ -15,22 +15,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official }) => {
     return (
         <div className="blog-card">
-            <div className="info">
-                <img src={avatar} alt="" className="avatar" />
-                <div className="col">
-                    <div className="row">
-                        <div className="name">
-                            {name}
-                        </div>
-                        {
-                            official && <img src="/assets/verify.webp" alt="" className="official" />
-                        }
-                    </div>
-                    <div className="time">
-                        {time}
-                    </div>
-                </div>
-            </div>
+            <SmallInfo avatar={avatar} name={name} time={time} official={official} />
             <img src={image} alt="" className="image" />
             <div className="body">
                 <div className="title">

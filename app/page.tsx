@@ -14,7 +14,7 @@ import HotTopic from "../components/Home/HotTopic";
 import Advertisement from "../components/Home/Advertisement";
 import SportGenre from "../components/Home/SportGenre";
 import Nav from "../components/Home/Nav";
-
+import BlogPage from "./blog/page";
 function getWidthExcludesScrollbar(): number {
   return document.documentElement.clientWidth;
 }
@@ -99,6 +99,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/blog" element={<BlogPage />} />
 
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
