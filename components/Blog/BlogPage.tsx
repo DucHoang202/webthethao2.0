@@ -48,7 +48,10 @@ const BlogPage = () => {
                     <BlogHeading heading={heading} />
                     <BlogContent content={content1} />
                     <BlogContent content={content2} />
-                    <img src="/assets/image.webp" alt="" className="blog__image--inner full-bleed" />
+                </div>
+
+                <img src="/assets/image.webp" alt="" className="blog__image--inner" />
+                <div className="blog__body">
                     <BlogHeading heading={heading2} />
                     <BlogContent content={content3} />
                     <BlogQuote quote={quote.quote} name={quote.name} />

@@ -1529,7 +1529,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 7,
+                                    lineNumber: 9,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1537,7 +1537,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 8,
+                                    lineNumber: 10,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1545,7 +1545,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 9,
+                                    lineNumber: 11,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1553,20 +1553,20 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 10,
+                                    lineNumber: 12,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                            lineNumber: 6,
+                            lineNumber: 8,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         "Nhận định"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                    lineNumber: 5,
+                    lineNumber: 7,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1584,7 +1584,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 17,
+                                    lineNumber: 19,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1592,7 +1592,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 18,
+                                    lineNumber: 20,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1600,7 +1600,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 21,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1608,20 +1608,20 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 20,
+                                    lineNumber: 22,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                            lineNumber: 16,
+                            lineNumber: 18,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         "Mới nhất"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                    lineNumber: 15,
+                    lineNumber: 17,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1638,7 +1638,7 @@ const Nav = ()=>{
                                 fill: "white"
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                lineNumber: 27,
+                                lineNumber: 29,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1646,7 +1646,7 @@ const Nav = ()=>{
                                 fill: "white"
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                lineNumber: 28,
+                                lineNumber: 30,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1654,7 +1654,7 @@ const Nav = ()=>{
                                 fill: "white"
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                lineNumber: 29,
+                                lineNumber: 31,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1662,7 +1662,7 @@ const Nav = ()=>{
                                 fill: "white"
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                lineNumber: 30,
+                                lineNumber: 32,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1670,18 +1670,18 @@ const Nav = ()=>{
                                 fill: "white"
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                lineNumber: 31,
+                                lineNumber: 33,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                        lineNumber: 26,
+                        lineNumber: 28,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                    lineNumber: 25,
+                    lineNumber: 27,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1699,7 +1699,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 38,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1707,7 +1707,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 39,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1715,7 +1715,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 40,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1723,7 +1723,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 41,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1731,24 +1731,25 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 42,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                            lineNumber: 35,
+                            lineNumber: 37,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         "Video"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "nav__nav",
+                    onClick: ()=>setOpenSportGroup(true),
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                             width: "20",
@@ -1762,7 +1763,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 49,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1770,7 +1771,7 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 50,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1778,31 +1779,31 @@ const Nav = ()=>{
                                     fill: "#666666"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 51,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                            lineNumber: 46,
+                            lineNumber: 48,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         "Bộ môn"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                    lineNumber: 45,
+                    lineNumber: 47,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-            lineNumber: 4,
+            lineNumber: 6,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-        lineNumber: 3,
+        lineNumber: 5,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -2472,28 +2473,37 @@ const BlogPage = ()=>{
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
                             lineNumber: 50,
                             columnNumber: 21
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/assets/image.webp",
-                            alt: "",
-                            className: "blog__image--inner full-bleed"
-                        }, void 0, false, {
-                            fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 51,
-                            columnNumber: 21
-                        }, ("TURBOPACK compile-time value", void 0)),
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
+                    lineNumber: 44,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: "/assets/image.webp",
+                    alt: "",
+                    className: "blog__image--inner"
+                }, void 0, false, {
+                    fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
+                    lineNumber: 53,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "blog__body",
+                    children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$BlogHeading$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             heading: heading2
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 52,
+                            lineNumber: 55,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$BlogContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             content: content3
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 53,
+                            lineNumber: 56,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$BlogQuote$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2501,14 +2511,14 @@ const BlogPage = ()=>{
                             name: quote.name
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 54,
+                            lineNumber: 57,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$BlogContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             content: content4
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 55,
+                            lineNumber: 58,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2519,7 +2529,7 @@ const BlogPage = ()=>{
                                     text: "Bình luận"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 60,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$BlogButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2527,19 +2537,19 @@ const BlogPage = ()=>{
                                     text: "Chia sẻ"
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 61,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 56,
+                            lineNumber: 59,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                    lineNumber: 44,
+                    lineNumber: 54,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2547,7 +2557,7 @@ const BlogPage = ()=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$CommentInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 62,
+                            lineNumber: 65,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$Comments$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2557,13 +2567,13 @@ const BlogPage = ()=>{
                             time: "10 phút trước"
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                            lineNumber: 63,
+                            lineNumber: 66,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Blog/BlogPage.tsx",
-                    lineNumber: 61,
+                    lineNumber: 64,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]
@@ -2624,12 +2634,12 @@ const Blog = ()=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -2639,32 +2649,18 @@ const Blog = ()=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Search$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                                lineNumber: 27,
+                                lineNumber: 28,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Blog$2f$BlogPage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                                lineNumber: 28,
+                                lineNumber: 29,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                        lineNumber: 26,
-                        columnNumber: 17
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$SimpleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        avatar: card1.avatar,
-                        name: card1.name,
-                        time: card1.time,
-                        image: card1.image,
-                        title: card1.title,
-                        content: card1.content,
-                        category: card1.category,
-                        official: card1.official
-                    }, void 0, false, {
-                        fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                        lineNumber: 30,
+                        lineNumber: 27,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$SimpleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2680,22 +2676,36 @@ const Blog = ()=>{
                         fileName: "[project]/webthethao2.0/app/blog/page.tsx",
                         lineNumber: 31,
                         columnNumber: 17
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$SimpleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        avatar: card1.avatar,
+                        name: card1.name,
+                        time: card1.time,
+                        image: card1.image,
+                        title: card1.title,
+                        content: card1.content,
+                        category: card1.category,
+                        official: card1.official
+                    }, void 0, false, {
+                        fileName: "[project]/webthethao2.0/app/blog/page.tsx",
+                        lineNumber: 32,
+                        columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-                lineNumber: 33,
+                lineNumber: 34,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/webthethao2.0/app/blog/page.tsx",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

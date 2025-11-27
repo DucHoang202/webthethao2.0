@@ -1,4 +1,10 @@
+'use client'
+import { useState } from "react";
+import SportGroup from "./SportGroup";
+
 const Nav = () => {
+    const [openSportGroup, setOpenSportGroup] = useState(false);
+
     return (
         <div className="nav">
             <div className="nav__container">
@@ -42,7 +48,7 @@ const Nav = () => {
 
                     Video
                 </div>
-                <div className="nav__nav">
+                <div className="nav__nav" onClick={() => setOpenSportGroup(true)}>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.75 3.75H2.25C1.83579 3.75 1.5 4.08579 1.5 4.5C1.5 4.91421 1.83579 5.25 2.25 5.25H17.75C18.1642 5.25 18.5 4.91421 18.5 4.5C18.5 4.08579 18.1642 3.75 17.75 3.75Z" fill="#666666" />
                         <path d="M17.75 9.25H2.25C1.83579 9.25 1.5 9.58579 1.5 10C1.5 10.4142 1.83579 10.75 2.25 10.75H17.75C18.1642 10.75 18.5 10.4142 18.5 10C18.5 9.58579 18.1642 9.25 17.75 9.25Z" fill="#666666" />
@@ -51,8 +57,12 @@ const Nav = () => {
                     Bộ môn
                 </div>
 
+
+
             </div>
+            <SportGroup open={openSportGroup} onClose={() => setOpenSportGroup(false)} />
         </div>
+
     );
 };
 
