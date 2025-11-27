@@ -1,17 +1,19 @@
 .search {
-    padding-left: 14px;
-    background: var(--color-grey-10, #1A1A1A);
+
+
+    &.black {
+        background: var(--color-grey-10, #1A1A1A);
+    }
 
     .search-container {
         display: flex;
         align-items: center;
-        gap: 14px;
-
         width: 100vw;
-        height: 37px;
+        height: auto;
 
-        padding: 10px 14px 10px 14px;
-        padding-right: 0;
+
+        padding-right: 14px;
+        padding-left: 0;
 
         /* Horizontal Scroll */
         overflow-x: auto;
@@ -27,6 +29,14 @@
             display: none;
         }
 
+        &>.item:first-child {
+            padding-left: 0;
+        }
+
+        &.padding {
+            padding: 10px 14px 10px 14px;
+        }
+
         /* Item */
         .item {
             display: flex;
@@ -35,7 +45,6 @@
 
             scroll-snap-align: start;
             width: max-content;
-            padding-right: 14px;
 
             .icon {
                 width: 16px;

@@ -1,5 +1,5 @@
 import React from "react";
-
+import SwiperRow from "../Schedule/SwiperRow";
 const Search: React.FC = () => {
     const search = [
         {
@@ -20,20 +20,9 @@ const Search: React.FC = () => {
     ];
 
     return (
-        <section>
-            <div className="search">
-                <div className="search-container">
-                    {search.map((item, index) => (
-                        <div className="item" key={index}>
-                            {item.icon && <div className="icon">{item.icon}</div>}
-                            <a className="name" href={item.nav}>
-                                {item.name}
-                            </a>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+        <div style={{ background: "#1A1A1A" }}>
+            <SwiperRow items={search} active={0} gap={14} style={{ background: "#1A1A1A", marginLeft: "14px" }} />
+        </div>
     );
 };
 
