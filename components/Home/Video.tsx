@@ -6,25 +6,25 @@ const Video: React.FC = () => {
             title: "Blog Post 1",
             excerpt: "Adidas trở lại mạnh mẽ trên thị trường Pickleball với dòng vợt AdiPower",
             thumb: "/assets/hi.png",
-            link: "https://example.com/blog-post-1"
+            link: "/reel"
         },
         {
             title: "Blog Post 2",
             excerpt: "Adidas trở lại mạnh mẽ trên thị trường Pickleball với dòng vợt AdiPower",
             thumb: "/assets/hi.png",
-            link: "https://example.com/blog-post-2"
+            link: "/reel"
         },
         {
             title: "Blog Post 3",
             excerpt: "Excerpt for Blog Post 3",
             thumb: "/assets/hi.png",
-            link: "https://example.com/blog-post-3"
+            link: "/reel"
         },
         {
             title: "Blog Post 4",
             excerpt: "Excerpt for Blog Post 4",
             thumb: "/assets/hi.png",
-            link: "https://example.com/blog-post-4"
+            link: "/reel"
         },
     ];
 
@@ -43,7 +43,12 @@ const Video: React.FC = () => {
             <div className="body">
                 <div className="swiper-container">
                     {blogPosts.map((post, index) => (
-                        <div className="video-slide" key={index}>
+                        <div
+                            className="video-slide"
+                            style={index === 0 ? { marginLeft: 16 } : index === blogPosts.length - 1 ? { marginRight: 16 } : {}}
+                            key={index}
+                            onClick={() => { window.location.href = post.link }}
+                        >
 
                             {/* FIX: bọc ảnh + nút play lại */}
                             <div className="video-thumb">

@@ -46,6 +46,8 @@
 
             -ms-overflow-style: none;
             scrollbar-width: none;
+            padding-left: 16px;
+            padding-right: 16px;
 
             &::-webkit-scrollbar {
                 display: none;
@@ -67,7 +69,7 @@
             width: 184px;
             background-color: #121212;
             border: #121212;
-
+            margin-left: 0 !important;
         }
 
         .play-button {

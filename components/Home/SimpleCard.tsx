@@ -31,7 +31,7 @@ const SimpleCard: React.FC<CardProps> = ({ avatar, name, time, image, title, con
                     </div>
                 </div>
             </div>
-            <img src={image} alt="" className="image" />
+            <img src={image} alt="" className="image" style={{ width: "100%" }} />
             <div className="body">
                 <div className="title">
                     {title}

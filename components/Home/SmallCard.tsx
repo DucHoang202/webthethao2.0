@@ -9,20 +9,21 @@ interface CardProps {
     content: string;
     category: string;
     official: boolean;
+    link: string;
 }
 
 
-const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official }) => {
+const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link }) => {
     return (
-        <div className="small-card">
+        <div className="small-card" >
             <div className="small-card__container">
 
-
-                <img src={image} alt="" className="image" />
-                <div className="body">
-                    <div className="title">
+                <a href={link}>
+                    <img src={image} alt="" className="image" /></a>
+                <div className="body" style={{ width: "100%" }}>
+                    <a href={link} className="title" >
                         {title}
-                    </div>
+                    </a>
 
                     <div className="footer">
                         <div className="small-card__info">

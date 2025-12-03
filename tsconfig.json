@@ -38,7 +38,8 @@
     "components/Home/Card.tsx",
     "components/Home/Advertisement.tsx",
     "dist/types/**/*.ts",
-    "dist/dev/types/**/*.ts"
+    "dist/dev/types/**/*.ts",
+    "app/reel/page.jsx"
   ],
   "exclude": [
     "node_modules"

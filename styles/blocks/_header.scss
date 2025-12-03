@@ -28,7 +28,7 @@
         // flex-shrink 0 overflow-x: hidden;
 
         .right {
-            padding-right: 16px;
+            padding-right: calc(16px + 7.5px);
             align-items: center;
             gap: 14px;
             display: flex;

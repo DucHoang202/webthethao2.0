@@ -1,17 +1,76 @@
 import Cat from "./Cat";
+import League from "./League";
 import Sched from "./Sched";
 const SchedulePage = () => {
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
+    const league = [{
+        animationDuration: "50s",
+        title: "Champion League",
+        location: "UEFA",
+        board: [
+            {
+
+                isActive: true,
+                time: "65'",
+                left: {
+                    name: "Club name",
+                    logo: "",
+                    score: "1"
+                },
+                right: {
+                    name: "Club name",
+                    logo: "",
+                    score: "2"
+                }
+            }
+        ]
+    }, {
+        animationDuration: "50s",
+        title: "Premier League",
+        location: "England",
+        board: [
+            {
+
+                isActive: false,
+                time: "FT",
+                left: {
+                    name: "Club name",
+                    logo: "",
+                    score: "1"
+                },
+                right: {
+                    name: "Club name",
+                    logo: "",
+                    score: "2"
+                }
+            },
+            {
+
+                isActive: true,
+                time: "65'",
+                left: {
+                    name: "Club name",
+                    logo: "",
+                    score: "1"
+                },
+                right: {
+                    name: "Club name",
+                    logo: "",
+                    score: "2"
+                }
+            }
+        ]
+    }]
     return (
         <div className="schedule-page">
             <div className="schedule-page__container">
                 <div className="schedule-page__title">
                     Lịch thi đấu
                     <div className="right">
-                        <div className="live">
+                        <div className="live-duration live">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                 <circle opacity="0.2" cx="6" cy="6" r="5.5" stroke="#B72424" />
-                                <circle cx="6" cy="6" r="3" fill="#B72424" />
+                                <circle className="pulse" cx="6" cy="6" r="3" fill="#B72424" />
                             </svg>
                             Live</div>
                         <div className="bell">
@@ -33,52 +92,73 @@ const SchedulePage = () => {
 
                 </div>
                 <Sched items={cat} />
-                <div className="current-match">
-                    <div className="title">
-                        UEFA Champion League
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 6.49712C12.6124 5.79188 13.672 5 15.2853 5C18.1076 5 20 7.6075 20 10.0356C20 15.1115 13.5804 19 12 19C10.4196 19 4 15.1115 4 10.0356C4 7.6075 5.89244 5 8.71467 5C10.328 5 11.3876 5.79188 12 6.49712Z" fill="url(#paint0_radial_2133_1072)" />
-                            <defs>
-                                <radialGradient id="paint0_radial_2133_1072" cx="0" cy="0" r="1" gradientTransform="matrix(-17.6667 -16.3333 19.2162 -15.9135 22.1667 20.8958)" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#F82476" />
-                                    <stop offset="1" stop-color="#F33B00" />
-                                </radialGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div className="body">
-                        <div className="item">
-                            <img src="" alt="" className="thumb" />
-                            <div className="text">Club name</div>
-                        </div>
-                        <div className="item">
-                            <div className="score">
-                                <div className="text">14</div>
-                                <div className="text">:</div>
-                                <div className="text">3</div>
+                <div className="current-match-container" style={{ width: '100%', alignItems: 'center', justifyContent: 'center' }}>
 
-                            </div>
-                            <div className="duration"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <circle opacity="0.2" cx="6" cy="6" r="5.5" stroke="url(#paint0_radial_2133_1110)" />
-                                <circle cx="6" cy="6" r="3" fill="url(#paint1_radial_2133_1110)" />
+
+                    <div className="current-match">
+                        <div className="title">
+                            UEFA Champion League
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 6.49712C12.6124 5.79188 13.672 5 15.2853 5C18.1076 5 20 7.6075 20 10.0356C20 15.1115 13.5804 19 12 19C10.4196 19 4 15.1115 4 10.0356C4 7.6075 5.89244 5 8.71467 5C10.328 5 11.3876 5.79188 12 6.49712Z" fill="url(#paint0_radial_2133_1072)" />
                                 <defs>
-                                    <radialGradient id="paint0_radial_2133_1110" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.3542 12.3542) rotate(-133.423) scale(16.0633 16.5362)">
-                                        <stop stop-color="#F82476" />
-                                        <stop offset="1" stop-color="#F33B00" />
-                                    </radialGradient>
-                                    <radialGradient id="paint1_radial_2133_1110" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(9.8125 9.8125) rotate(-133.423) scale(9.63798 9.92174)">
+                                    <radialGradient id="paint0_radial_2133_1072" cx="0" cy="0" r="1" gradientTransform="matrix(-17.6667 -16.3333 19.2162 -15.9135 22.1667 20.8958)" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="#F82476" />
                                         <stop offset="1" stop-color="#F33B00" />
                                     </radialGradient>
                                 </defs>
-                            </svg>68'</div>
+                            </svg>
                         </div>
-                        <div className="item">
-                            <img src="" alt="" className="thumb" />
-                            <div className="text">Club name</div>
+                        <div className="body">
+                            <div className="item">
+                                <img src="" alt="" className="thumb" />
+                                <div className="text">Club name</div>
+                            </div>
+                            <div className="item">
+                                <div className="score">
+                                    <div className="text">14</div>
+                                    <div className="text">:</div>
+                                    <div className="text">3</div>
+
+                                </div>
+                                <div className="live-duration">
+                                    <div className="live-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                            <circle opacity="0.2" cx="6" cy="6" r="5.5" stroke="url(#paint0_radial_2133_1110)" />
+                                            <circle className="pulse" cx="6" cy="6" r="3" fill="url(#paint1_radial_2133_1110)" />
+                                            <defs>
+                                                <radialGradient id="paint0_radial_2133_1110" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(12.3542 12.3542) rotate(-133.423) scale(16.0633 16.5362)">
+                                                    <stop stop-color="#F82476" />
+                                                    <stop offset="1" stop-color="#F33B00" />
+                                                </radialGradient>
+                                                <radialGradient id="paint1_radial_2133_1110" cx="0" cy="0" r="1"
+                                                    gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="translate(9.8125 9.8125) rotate(-133.423) scale(9.63798 9.92174)">
+                                                    <stop stop-color="#F82476" />
+                                                    <stop offset="1" stop-color="#F33B00" />
+                                                </radialGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+
+                                    <div className="number">68'</div></div>
+                            </div>
+                            <div className="item">
+                                <img src="" alt="" className="thumb" />
+                                <div className="text">Club name</div>
+                            </div>
                         </div>
                     </div>
+                    <div className="current-match--bottom"></div>
+                    <div className="current-match--bottom-smaller">
+
+                    </div>
                 </div>
+                {league.map((lg, leagueIndex) => (
+                    <League key={leagueIndex} title={lg.title} location={lg.location} board={lg.board} animationDuration={lg.animationDuration} />
+                ))}
+
             </div>
         </div>
     )

@@ -542,8 +542,20 @@
     display: table;
   }
 
+  .w-\[auto\], .w-auto {
+    width: auto;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
   .flex-shrink {
     flex-shrink: 1;
+  }
+
+  .flex-grow, .grow {
+    flex-grow: 1;
   }
 
   .border-collapse {
@@ -556,6 +568,26 @@
 
   .resize {
     resize: both;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .gap-\[4px\] {
+    gap: 4px;
+  }
+
+  .gap-\[24px\] {
+    gap: 24px;
   }
 
   .truncate {

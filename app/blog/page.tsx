@@ -4,7 +4,7 @@ import Footer from "../../pages/Footer";
 import "../../styles/main.scss"
 import Search from "../../components/Home/Search";
 import BlogPage from "../../components/Blog/BlogPage";
-import SimpleCard from "../../components/Home/SimpleCard";
+import Card from "../../components/Home/Card";
 
 const Blog: React.FC = () => {
     const card1 =
@@ -26,8 +26,8 @@ const Blog: React.FC = () => {
                     <Search />
                     <BlogPage />
                 </div>
-                <SimpleCard avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} />
-                <SimpleCard avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} />
+                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
             </main>
             <Nav />
 

@@ -1,5 +1,5 @@
+import Card from "./Card";
 import CategoryNav from "./CategoryNav";
-import SimpleCard from "./SimpleCard";
 import SmallCard from "./SmallCard";
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
@@ -19,10 +19,10 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     return (
         <div className="sport-genre">
             <CategoryNav genre={sport} />
-            <SimpleCard avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} />
+            <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
         </div>
     )
 }

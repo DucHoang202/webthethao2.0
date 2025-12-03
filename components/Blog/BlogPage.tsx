@@ -28,7 +28,7 @@ const BlogPage = () => {
         <div>
             <div className="blog">
                 <div className="blog__container">
-                    <img src="/assets/image.webp" alt="" className="blog__image" />
+                    <img src="/assets/image.webp" alt="" className="blog__image w-full" />
                     <div className="blog__user">
 
                         <div className="blog__user--inner">
@@ -50,7 +50,7 @@ const BlogPage = () => {
                     <BlogContent content={content2} />
                 </div>
 
-                <img src="/assets/image.webp" alt="" className="blog__image--inner" />
+                <img src="/assets/image.webp" alt="" className="blog__image--inner w-full" />
                 <div className="blog__body">
                     <BlogHeading heading={heading2} />
                     <BlogContent content={content3} />

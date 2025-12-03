@@ -290,51 +290,49 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} })=>{
                 className: "search-container",
                 style: {
                     display: "flex",
-                    gap: gap
+                    gap: gap,
+                    overflowX: "auto",
+                    whiteSpace: "nowrap",
+                    padding: "10px 14px 10px 14px"
                 },
-                children: items.map((item, index)=>{
-                    const isActive = index === activeIndex;
-                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `item ${isActive ? "active" : ""}`,
+                children: items.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `item ${activeIndex === index ? "active" : ""}`,
                         onClick: ()=>setActiveIndex(index),
                         children: [
-                            item.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "icon",
+                            item.icon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: item.icon
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                lineNumber: 36,
-                                columnNumber: 47
+                                lineNumber: 37,
+                                columnNumber: 43
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 className: "name",
-                                href: item.nav,
                                 children: item.name
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                lineNumber: 37,
-                                columnNumber: 33
+                                lineNumber: 38,
+                                columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
-                    }, item.name, true, {
+                    }, index, true, {
                         fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                        lineNumber: 30,
-                        columnNumber: 29
-                    }, ("TURBOPACK compile-time value", void 0));
-                })
+                        lineNumber: 31,
+                        columnNumber: 25
+                    }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                lineNumber: 23,
+                lineNumber: 26,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-            lineNumber: 22,
+            lineNumber: 25,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-        lineNumber: 21,
+        lineNumber: 24,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -569,7 +567,10 @@ const Card = ({ avatar, name, time, image, title, content, category, official })
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: image,
                 alt: "",
-                className: "image"
+                className: "image",
+                style: {
+                    width: "100%"
+                }
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Home/Card.tsx",
                 lineNumber: 19,
@@ -1150,7 +1151,10 @@ const SimpleCard = ({ avatar, name, time, image, title, content, category, offic
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: image,
                 alt: "",
-                className: "image"
+                className: "image",
+                style: {
+                    width: "100%"
+                }
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Home/SimpleCard.tsx",
                 lineNumber: 34,
@@ -1274,6 +1278,9 @@ const SmallCard = ({ avatar, name, time, image, title, content, category, offici
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "body",
+                    style: {
+                        width: "100%"
+                    },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "title",

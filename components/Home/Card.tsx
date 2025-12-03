@@ -9,18 +9,20 @@ interface CardProps {
     content: string;
     category: string;
     official: boolean;
+    link: string;
 }
 
 
-const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official }) => {
+const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link }) => {
     return (
-        <div className="blog-card">
+        <div className="blog-card" >
             <SmallInfo avatar={avatar} name={name} time={time} official={official} />
-            <img src={image} alt="" className="image" />
+            <a href={link}>
+                <img src={image} alt="" className="image" style={{ width: "100%" }} /></a>
             <div className="body">
-                <div className="title">
+                <a href={link} className="title">
                     {title}
-                </div>
+                </a>
                 <div className="content clamp-2">
                     {content}
                 </div>
