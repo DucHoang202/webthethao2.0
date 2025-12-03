@@ -26,9 +26,9 @@ const Header: React.FC = () => {
     return (
         <div className="header">
             <div className="header__container">
-                <div className="logo">
+                <a className="logo" href="/">
                     <img src="/assets/Link.webp" alt="" />
-                </div>
+                </a>
                 <div className="right">
                     <div className="button">
                         <div className="icon">

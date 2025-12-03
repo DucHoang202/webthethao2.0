@@ -89,7 +89,7 @@ const Prediction: React.FC = () => {
                         <Match />
                         <Match />
                     </div>
-
+                    <div className="" style={{ marginBottom: '104px' }}></div>
                 </div>
             </div>
             <Nav />

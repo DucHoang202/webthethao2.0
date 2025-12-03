@@ -1,913 +1,176 @@
-[00:00:05.425] Server  LOG      ✓ Ready in 4.5s
-[00:00:52.298] Server  LOG      ○ Compiling / ...
-[00:00:54.819] Server  WARN     ⚠ Cross origin request detected from 172.16.1.152 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:02.507] Server  LOG      ✓ Ready in 1907ms
+[00:00:16.437] Server  LOG      ○ Compiling / ...
+[00:00:19.435] Server  WARN     ⚠ Cross origin request detected from 172.16.1.152 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:54.861] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:55.079] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:00:55.079] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:00:55.079] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:01:13.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:15.957] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:15.957] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:01:15.957] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:01:16.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:01:16.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:01:16.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:02:26.669] Server  ERROR   Invalid DOM property `fill-opacity`. Did you mean `fillOpacity`?
-[00:02:26.671] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
-[00:02:26.671] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
-[00:02:26.672] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
-[00:02:26.673] Server  ERROR   Invalid DOM property `fill-rule`. Did you mean `fillRule`?
-[00:02:26.673] Server  ERROR   Invalid DOM property `clip-rule`. Did you mean `clipRule`?
-[00:02:26.674] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:02:26.674] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:02:27.444] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:27.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-opacity fillOpacity
-[00:02:27.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:02:27.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:02:27.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:02:27.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-rule fillRule
-[00:02:27.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-rule clipRule
-[00:02:27.647] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:02:27.647] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:04:36.011] Server  LOG      ✓ Compiled in 428ms
-[00:04:50.850] Server  LOG      ✓ Compiled in 345ms
-[00:05:42.028] Browser DEBUG   TSS: Counted history being replaced
-[00:05:42.028] Browser DEBUG   TSS: Caught history
-[00:05:42.028] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
-[00:12:46.859] Server  LOG      ✓ Compiled in 1166ms
-[00:12:46.977] Browser ERROR   ./webthethao2.0/styles/main.scss
-Error evaluating Node.js code
-Error: Can't find stylesheet to import.
-   ╷
-21 │ @use "./blocks/match/match";
-   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-  styles\main.scss 21:1  root stylesheet
-Caused by: Error: Can't find stylesheet to import.
-   ╷
-21 │ @use "./blocks/match/match";
-   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-  styles\main.scss 21:1  root stylesheet
-    [at Object.wrapException (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:2316:47)]
-    [at C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:88031:25]
-    [at _wrapJsFunctionForAsync_closure.$protected (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:38319:12)]
-    [at _awaitOnObject_closure.call$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:38307:32)]
-    [at Object._rootRunUnary (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:5402:18)]
-    [at StaticClosure.<anonymous> (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:125885:16)]
-    [at _CustomZone.runUnary$2$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:39750:39)]
-    [at _Future__propagateToListeners_handleValueCallback.call$0 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:38808:51)]
-    [at Object._Future__propagateToListeners (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:5194:93)]
-[00:12:58.907] Browser ERROR   ./webthethao2.0/styles/main.scss
-Error evaluating Node.js code
-Error: Can't find stylesheet to import.
-   ╷
-21 │ @use "./blocks/match/matc";
-   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-  styles\main.scss 21:1  root stylesheet
-Caused by: Error: Can't find stylesheet to import.
-   ╷
-21 │ @use "./blocks/match/matc";
-   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^
-   ╵
-  styles\main.scss 21:1  root stylesheet
-    [at Object.wrapException (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:2316:47)]
-    [at C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:88031:25]
-    [at _wrapJsFunctionForAsync_closure.$protected (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:4984:15)]
-    [at _wrapJsFunctionForAsync_closure.call$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:38319:12)]
-    [at _awaitOnObject_closure.call$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:38307:32)]
-    [at Object._rootRunUnary (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:5402:18)]
-    [at StaticClosure.<anonymous> (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:125885:16)]
-    [at _CustomZone.runUnary$2$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:39750:39)]
-    [at _Future__propagateToListeners_handleValueCallback.call$0 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:38808:51)]
-    [at Object._Future__propagateToListeners (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:5194:93)]
-[00:13:07.056] Server  LOG      ✓ Compiled in 1522ms
-[00:13:07.490] Browser DEBUG   TSS: Counted history being replaced
-[00:13:07.491] Browser DEBUG   TSS: Caught history
-[00:13:07.491] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764746583670}
-[00:13:24.573] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:13:24.576] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:13:25.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:25.367] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-opacity fillOpacity
-[00:13:25.367] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:13:25.367] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:13:25.367] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:13:25.367] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-rule fillRule
-[00:13:25.367] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-rule clipRule
-[00:13:25.367] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:13:25.367] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:13:38.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:38.545] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:13:38.545] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:13:38.830] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:13:38.830] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:13:38.830] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:13:39.889] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:40.119] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:13:40.119] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:13:40.119] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:13:44.362] Server  ERROR   Invalid DOM property `stroke-miterlimit`. Did you mean `strokeMiterlimit`?
-[00:13:44.979] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:45.180] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:13:45.180] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:13:45.180] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:13:45.180] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:13:50.682] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:50.683] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:13:50.683] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:13:50.909] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:13:50.909] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:13:50.909] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:14:01.046] Server  LOG      ✓ Compiled in 594ms
-[00:14:58.625] Server  LOG      ✓ Compiled in 804ms
-[00:15:23.756] Server  LOG      ✓ Compiled in 223ms
-[00:15:57.068] Server  LOG      ✓ Compiled in 396ms
-[00:16:05.087] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:05.335] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:16:05.335] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:16:05.335] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:16:12.827] Server  LOG      ✓ Compiled in 413ms
-[00:20:03.352] Server  LOG      ✓ Compiled in 611ms
-[00:20:32.138] Server  ERROR    ⨯ ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-
-
-[00:20:32.260] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:20:33.020] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:20:33.020] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:20:33.680] Browser ERROR   uncaughtError: Error: ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-
-
-[00:20:33.816] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:20:33.932] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:327:35
-Parsing ecmascript source code failed
-  325 |                             <div class="avatar">
-  326 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 327 |                             </div>
-      |                                   ^
-> 328 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  329 |                             <div class="verified">✓</div>
-  330 |                             <button class="follow">Follow</button>
-  331 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:21:35.958] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:329:35
-Parsing ecmascript source code failed
-  327 |                             <div class="avatar">
-  328 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 329 |                             </div>
-      |                                   ^
-> 330 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  331 |                             <div class="verified">✓</div>
-  332 |                             <button class="follow">Follow</button>
-  333 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:21:45.882] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:329:35
-Parsing ecmascript source code failed
-  327 |                             <div class="avatar">
-  328 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 329 |                             </div>
-      |                                   ^
-> 330 |                             <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  331 |                             <div class="verified">✓</div>
-  332 |                             <button class="follow">Follow</button>
-  333 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-[00:26:14.943] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:530:25
-Parsing ecmascript source code failed
-  528 |                 </div>
-  529 |                 <div className="nav-item active">
-> 530 |                     <svg
-      |                         ^
-
-Expected '</', got '<eof>'
-[00:27:03.418] Browser ERROR   ./webthethao2.0/app/reel/page.js:530:25
-Parsing ecmascript source code failed
-  528 |                 </div>
-  529 |                 <div className="nav-item active">
-> 530 |                     <svg
-      |                         ^
-
-Expected '</', got '<eof>'
-[00:27:11.906] Server  ERROR    ⨯ ./webthethao2.0/app/reel/page.js:1:10
-Ecmascript file had an error
-> 1 | import { useEffect } from "react";
-    |          ^^^^^^^^^
-  2 | import "../../styles/main.scss";
-  3 |
-  4 | const Reel = () => {
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-
-[00:27:12.327] Browser ERROR   uncaughtError: Error: ./webthethao2.0/app/reel/page.js:1:10
-Ecmascript file had an error
-> 1 | import { useEffect } from "react";
-    |          ^^^^^^^^^
-  2 | import "../../styles/main.scss";
-  3 |
-  4 | const Reel = () => {
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-
-[00:27:12.556] Browser ERROR   ./webthethao2.0/app/reel/page.js:1:10
-Ecmascript file had an error
-> 1 | import { useEffect } from "react";
-    |          ^^^^^^^^^
-  2 | import "../../styles/main.scss";
-  3 |
-  4 | const Reel = () => {
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:27:12.556] Browser ERROR   ./webthethao2.0/app/reel/page.js:1:10
-Ecmascript file had an error
-> 1 | import { useEffect } from "react";
-    |          ^^^^^^^^^
-  2 | import "../../styles/main.scss";
-  3 |
-  4 | const Reel = () => {
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:27:29.741] Server  LOG      ✓ Compiled in 154ms
-[00:27:30.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:49.609] Server  LOG      ✓ Compiled in 488ms
-[00:28:59.194] Server  LOG      ✓ Compiled in 495ms
-[00:29:06.701] Server  LOG      ✓ Compiled in 326ms
-[00:30:13.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:13.863] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:30:13.863] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:30:13.864] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:30:17.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:31:53.136] Server  LOG      ✓ Compiled in 159ms
-[00:32:22.740] Server  LOG      ✓ Compiled in 93ms
-[00:32:22.853] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[00:32:52.167] Server  ERROR   Invalid DOM property `class`. Did you mean `className`?
-[00:32:52.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:32:52.976] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[01:02:46.330] Server  LOG      ✓ Compiled in 297ms
-[01:02:46.458] Browser ERROR   ./webthethao2.0/app/reel/page.js:5:7
-Parsing ecmascript source code failed
-  3 | import "../../styles/main.scss";
-  4 |
-> 5 | const Reel: React.FC = () => {
-    |       ^^^^
-  6 |     useEffect(() => {
-  7 |         // Lay cac nut giao dien va danh sach reel: app container, danh sach slide, nut am thanh + icon, thanh tien do
-  8 |         const app = document.getElementById('app');
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.js [Client Component Browser]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.js [Client Component SSR]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-[01:02:46.458] Browser ERROR   ./webthethao2.0/app/reel/page.js:30:25
-Parsing ecmascript source code failed
-  28 |         let onTimeUpdate: (() => void) | null = null;
-  29 |         let onLoadedMeta: (() => void) | null = null;
-> 30 |         let overlayTimer: NodeJS.Timeout | null = null;
-     |                         ^
-  31 |
-  32 |         function layoutAround(center: number): void {
-  33 |             // Dat vi tri truoc/sau theo active de chuyen huong dung len/xuong
-
-Expected a semicolon
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.js [Client Component Browser]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.js [Client Component SSR]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-[01:03:09.671] Browser ERROR   ./webthethao2.0/app/reel/page.js:5:7
-Parsing ecmascript source code failed
-  3 | import "../../styles/main.scss";
-  4 |
-> 5 | const Reel: React.FC = () => {
-    |       ^^^^
-  6 |     useEffect(() => {
-  7 |         // Lay cac nut giao dien va danh sach reel: app container, danh sach slide, nut am thanh + icon, thanh tien do
-  8 |         const app = document.getElementById('app');
-
-'const' declarations must be initialized
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.js [Client Component Browser]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.js [Client Component SSR]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-[01:03:09.671] Browser ERROR   ./webthethao2.0/app/reel/page.js:30:25
-Parsing ecmascript source code failed
-  28 |         let onTimeUpdate: (() => void) | null = null;
-  29 |         let onLoadedMeta: (() => void) | null = null;
-> 30 |         let overlayTimer: NodeJS.Timeout | null = null;
-     |                         ^
-  31 |
-  32 |         function layoutAround(center: number): void {
-  33 |             // Dat vi tri truoc/sau theo active de chuyen huong dung len/xuong
-
-Expected a semicolon
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.js [Client Component Browser]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.js [Client Component SSR]
-    ./webthethao2.0/app/reel/page.js [Server Component]
-[01:03:31.337] Server  LOG      ✓ Compiled in 459ms
-[01:03:32.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:05:19.140] Server  LOG      ✓ Compiled in 160ms
-[01:10:36.985] Server  LOG      ✓ Compiled in 142ms
-[01:10:37.090] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:68:35
-Parsing ecmascript source code failed
-  66 |                             <div class="avatar">
-  67 |                                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60" alt="Avatar">
-> 68 |                             </div>
-     |                                   ^
-> 69 |                             <div class="author-name">Kiet Phan</div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  70 |                             <div class="verified">✓</div>
-  71 |                             <button class="follow">Follow</button>
-  72 |                         </div>
-
-Expected '</', got 'jsx text (
-                            )'
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.tsx [Client Component Browser]
-    ./webthethao2.0/app/reel/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.tsx [Client Component SSR]
-    ./webthethao2.0/app/reel/page.tsx [Server Component]
-[01:12:37.053] Server  LOG      ✓ Compiled in 127ms
-[01:12:37.156] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:452:19
-Parsing ecmascript source code failed
-  450 |             <div className="progress-wrap">
-  451 |                 <input type="range" id="progress" className="progress-bar" min="0" max="1000" value="0" step="1" aria-label="Tien do video">
-> 452 |             </div>
-      |                   ^
-> 453 |             <div className="overlay" id="overlay">
-      | ^^^^^^^^^^^^^
-  454 |                 <div className="overlay-controls">
-  455 |                     <button className="overlay-btn btn-back10" id="overlay-back" aria-label="Lui 10 giay">
-  456 |                         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-
-Expected '</', got 'jsx text (
-            )'
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.tsx [Client Component Browser]
-    ./webthethao2.0/app/reel/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.tsx [Client Component SSR]
-    ./webthethao2.0/app/reel/page.tsx [Server Component]
-[01:12:53.730] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[01:12:54.238] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:54.488] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[01:12:54.488] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[01:12:54.488] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[01:12:54.488] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[01:13:56.180] Browser DEBUG   TSS: Counted history being replaced
-[01:13:56.180] Browser DEBUG   TSS: Caught history
-[01:13:56.180] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
-[01:19:00.153] Server  LOG      ✓ Compiled in 120ms
-[01:19:00.518] Browser DEBUG   TSS: Counted history being replaced
-[01:19:00.518] Browser DEBUG   TSS: Caught history
-[01:19:00.518] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764750677824}
-[01:21:51.714] Server  LOG      ✓ Compiled in 797ms
-[01:27:51.772] Server  LOG      ✓ Compiled in 553ms
-[01:28:26.580] Server  LOG      ✓ Compiled in 350ms
-[01:41:58.453] Server  LOG      ✓ Compiled in 1325ms
-[01:41:59.723] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:41:59.733] Server  ERROR    ⨯ ReferenceError: document is not defined
-[01:42:00.163] Browser DEBUG   TSS: Counted history being replaced
-[01:42:00.163] Browser DEBUG   TSS: Caught history
-[01:42:00.163] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764750982141}
-[01:42:00.163] Browser ERROR   uncaughtError: ReferenceError: document is not defined
-[01:42:32.580] Server  LOG      ✓ Compiled in 590ms
-[01:42:32.802] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_480e6fcb._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.803] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.805] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.888] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.890] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.910] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.915] Server  ERROR    ⨯ Error: Could not parse module '[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/html-context.js', file not found
-[01:42:32.926] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_480e6fcb._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.927] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.928] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.929] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.930] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\trace\tracer.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.931] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:32.932] Server  ERROR    ⨯ Error: Could not parse module '[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/html-context.js', file not found
-[01:42:33.453] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/html-context.js', file not found
-[01:42:49.518] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:42:49.521] Server  ERROR    ⨯ ReferenceError: document is not defined
-[01:42:50.155] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:42:50.155] Browser ERROR   uncaughtError: ReferenceError: document is not defined
-[01:43:49.172] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:43:49.173] Server  ERROR    ⨯ ReferenceError: document is not defined
-[01:43:49.711] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:49.711] Browser ERROR   uncaughtError: ReferenceError: document is not defined
-[01:44:41.031] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:44:41.034] Server  ERROR    ⨯ ReferenceError: useEffect is not defined
-[01:44:41.378] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:44:41.378] Browser ERROR   uncaughtError: ReferenceError: useEffect is not defined
-[01:45:08.007] Server  LOG      ✓ Compiled in 142ms
-[01:45:08.229] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__9a795cea._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:45:08.233] Server  ERROR    ⨯ ReferenceError: app is not defined
-[01:45:08.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:45:08.556] Browser ERROR   uncaughtError: ReferenceError: app is not defined
-[01:45:08.556] Browser DEBUG   injection-tss TSS: hosted page injected
-[01:45:08.556] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[01:46:47.464] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:46:47.653] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__9a795cea._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:46:47.657] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'addEventListener')
-[01:46:47.673] Server  LOG      ✓ Compiled in 112ms
-[01:46:47.943] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:48.089] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'addEventListener')
-[01:46:54.798] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:46:54.990] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__9a795cea._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:46:54.990] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'addEventListener')
-[01:46:55.006] Server  LOG      ✓ Compiled in 119ms
-[01:46:55.177] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:55.307] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'addEventListener')
-[01:47:47.828] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:47:47.839] Server  LOG      ✓ Compiled in 182ms
-[01:47:48.064] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__9a795cea._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:47:48.065] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'addEventListener')
-[01:47:48.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:48.398] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'addEventListener')
-[01:48:56.271] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:48:56.296] Server  LOG      ✓ Compiled in 152ms
-[01:48:56.900] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[01:48:57.188] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:48:57.364] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[01:48:57.364] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[01:48:57.364] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[01:48:57.364] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[01:48:57.364] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'addEventListener')
-[01:52:41.771] Server  LOG      ✓ Compiled in 369ms
-[01:52:42.467] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:74:13
-Parsing ecmascript source code failed
-  72 |         function updatePlayIcon(video: HTMLVideoElement | null) {
-  73 |             const isPaused = !video || video.paused;
-> 74 |             overlayPlay.current?.innerHTML = isPaused
-     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  75 |                 ? `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`
-  76 |                 : `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>`;
-  77 |         }
-
-The left-hand side of an assignment expression must be a variable or a property access.
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.tsx [Client Component Browser]
-    ./webthethao2.0/app/reel/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.tsx [Client Component SSR]
-    ./webthethao2.0/app/reel/page.tsx [Server Component]
-[01:58:02.053] Server  LOG      ✓ Compiled in 735ms
-[01:58:02.158] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:58:03.858] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:59:57.647] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__ac58cc44._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:59:57.652] Server  ERROR    ⨯ ReferenceError: document is not defined
-[01:59:58.134] Browser DEBUG   TSS: Counted history being replaced
-[01:59:58.134] Browser DEBUG   TSS: Caught history
-[01:59:58.134] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
-[01:59:58.134] Browser ERROR   uncaughtError: ReferenceError: document is not defined
-[01:59:58.134] Browser ERROR   uncaughtError: TypeError: Cannot set properties of null (setting 'value')
-[02:00:09.214] Server  LOG      ✓ Compiled in 134ms
-[02:00:09.727] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:00:10.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:00:10.529] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:00:10.529] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:00:10.529] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:00:10.529] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:00:10.799] Browser DEBUG   injection-tss TSS: hosted page injected
-[02:00:10.799] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[02:01:59.994] Server  LOG      ✓ Compiled in 386ms
-[02:02:00.534] Browser DEBUG   TSS: Counted history being replaced
-[02:02:00.534] Browser DEBUG   TSS: Caught history
-[02:02:00.534] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
-[02:06:38.263] Server  LOG      ✓ Compiled in 1376ms
-[02:07:52.602] Server  LOG      ✓ Compiled in 475ms
-[02:08:28.607] Server  LOG      ✓ Compiled in 372ms
-[02:08:56.165] Server  LOG      ✓ Compiled in 366ms
-[02:08:57.046] Browser DEBUG   TSS: Counted history being replaced
-[02:08:57.046] Browser DEBUG   TSS: Caught history
-[02:08:57.046] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764753562178}
-[02:13:45.320] Server  LOG      ✓ Compiled in 1260ms
-[02:14:35.677] Server  LOG      ✓ Compiled in 622ms
-[02:15:18.260] Server  ERROR    ⨯ ./webthethao2.0/app/reel/page.tsx:1:1
-Module not found: Can't resolve '../../styles/blocks/reel/reel.scss'
-> 1 | import "../../styles/blocks/reel/reel.scss";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | const Reel = () => {
-  3 |
-  4 |     {/* // Lay cac nut giao dien va danh sach reel: app container, danh sach slide, nut am thanh + icon, thanh tien do
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[02:15:18.363] Server  LOG      ✓ Compiled in 532ms
-[02:15:18.473] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:1:1
-Module not found: Can't resolve '../../styles/blocks/reel/reel.scss'
-> 1 | import "../../styles/blocks/reel/reel.scss";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | const Reel = () => {
-  3 |
-  4 |     {/* // Lay cac nut giao dien va danh sach reel: app container, danh sach slide, nut am thanh + icon, thanh tien do
-
-https://nextjs.org/docs/messages/module-not-found
-[02:15:38.756] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:1:1
-Module not found: Can't resolve '../../styles/blocks/reel/reel.scss'
-> 1 | import "../../styles/blocks/reel/reel.scss";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | const Reel = () => {
-  3 |
-  4 |     {/* // Lay cac nut giao dien va danh sach reel: app container, danh sach slide, nut am thanh + icon, thanh tien do
-
-https://nextjs.org/docs/messages/module-not-found
-[02:15:49.448] Server  LOG      ✓ Compiled in 303ms
-[02:15:52.643] Server  LOG      ✓ Compiled in 47ms
-[02:15:53.153] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:15:53.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:15:53.950] Browser DEBUG   injection-tss TSS: hosted page injected
-[02:15:53.951] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[02:15:54.198] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:15:54.198] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:15:54.198] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:15:54.198] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:17:42.638] Server  LOG      ✓ Compiled in 341ms
-[02:18:48.880] Server  LOG      ✓ Compiled in 110ms
-[02:19:00.849] Browser ERROR   ./webthethao2.0/app/reel/page.tsx:281:18
-Parsing ecmascript source code failed
-  279 |                 </button>
-  280 |             </div>
-> 281 |             <div className="reels">
-      |                  ^^^^^^^^^
-  282 |                 <div className="reel portrait" data-index="0">
-  283 |                     <div className="media">
-  284 |                         <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" autoPlay muted loop playsInline></video>
-
-Expected ',', got 'className'
-[02:19:14.863] Browser DEBUG   TSS: Counted history being replaced
-[02:19:14.863] Browser DEBUG   TSS: Caught history
-[02:19:14.863] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
-[02:20:51.526] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.549] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_3bd084cd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.550] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.553] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.555] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.556] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.558] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.559] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.561] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:20:51.564] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.565] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_3bd084cd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.565] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.566] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.566] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.567] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.567] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.567] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.569] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:20:51.576] Server  LOG      ✓ Compiled in 123ms
-[02:20:51.967] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.969] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_3bd084cd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.970] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.971] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.972] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.973] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.973] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.974] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.974] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:20:51.981] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.982] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_3bd084cd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.983] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.983] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.983] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.984] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.984] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.985] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:51.985] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:20:52.024] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.025] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_3bd084cd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.025] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.025] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.026] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.026] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.026] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.026] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.027] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:20:52.033] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.034] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_3bd084cd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.034] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.035] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.035] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.036] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.036] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.036] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:20:52.037] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:20:52.463] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/reel/page"
-[02:20:52.614] Browser DEBUG   injection-tss TSS: hosted page injected
-[02:20:52.614] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[02:23:49.927] Server  LOG      ✓ Compiled in 580ms
-[02:23:50.246] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.246] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_da6c0016._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.247] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.248] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.248] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.249] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.249] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.250] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.250] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:23:50.259] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.260] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\f181b_next_dist_da6c0016._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.260] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.261] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.261] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.262] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.262] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.263] Server  ERROR   C:\Users\Windows\webthethao2.0\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[02:23:50.263] Server  ERROR    ⨯ Error: The default export is not a React Component in "/reel/page"
-[02:23:50.648] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/reel/page"
-[02:23:50.648] Browser DEBUG   injection-tss TSS: hosted page injected
-[02:23:50.648] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[02:23:58.235] Server  LOG      ✓ Compiled in 571ms
-[02:23:59.126] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:23:59.322] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'querySelector')
-[02:24:44.016] Server  LOG      ✓ Compiled in 216ms
-[02:24:44.480] Browser ERROR   ./webthethao2.0/app/reel/page.jsx:315:21
-Parsing ecmascript source code failed
-  313 |                 <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=200&q=60"
-  314 |                   alt="Avatar">
-> 315 |               </div>
-      |                     ^
-> 316 |               <div class="author-name">Kiet Phan</div>
-      | ^^^^^^^^^^^^^^^
-  317 |               <div class="verified">✓</div>
-  318 |               <button class="follow">Follow</button>
-  319 |             </div>
-
-Expected '</', got 'jsx text (
-              )'
-
-Import traces:
-  Client Component Browser:
-    ./webthethao2.0/app/reel/page.jsx [Client Component Browser]
-    ./webthethao2.0/app/reel/page.jsx [Server Component]
-
-  Client Component SSR:
-    ./webthethao2.0/app/reel/page.jsx [Client Component SSR]
-    ./webthethao2.0/app/reel/page.jsx [Server Component]
-[02:26:55.537] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:26:55.764] Server  ERROR   Invalid DOM property `autoplay`. Did you mean `autoPlay`?
-[02:26:55.765] Server  ERROR   Invalid DOM property `playsinline`. Did you mean `playsInline`?
-[02:26:55.767] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:26:57.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:57.474] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:26:57.475] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:26:57.475] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:26:57.475] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[02:26:57.475] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autoplay autoPlay
-[02:26:57.475] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? playsinline playsInline
-[02:26:57.475] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:27:07.957] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:27:08.423] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:27:08.617] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:27:08.617] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:27:08.617] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:27:08.617] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[02:27:08.617] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autoplay autoPlay
-[02:27:08.618] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? playsinline playsInline
-[02:27:08.618] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:27:50.612] Server  LOG      ✓ Compiled in 380ms
-[02:28:16.689] Server  LOG      ✓ Compiled in 378ms
-[02:28:16.803] Browser ERROR   ./webthethao2.0/styles/blocks/reel/_reel.scss
-Error evaluating Node.js code
-Error: expected "{".
-    ╷
-428 │   </style>
-    │           ^
-    ╵
-  styles\blocks\reel\_reel.scss 428:11  root stylesheet
-Caused by: Error: expected "{".
-    ╷
-428 │   </style>
-    │           ^
-    ╵
-  styles\blocks\reel\_reel.scss 428:11  root stylesheet
-    [at Object.wrapException (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:2316:47)]
-    [at SpanScanner.error$3$length$position (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85182:15)]
-    [at SpanScanner._fail$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85321:12)]
-    [at SpanScanner.expectChar$2$name (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85263:12)]
-    [at SpanScanner.expectChar$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:85266:19)]
-    [at ScssParser0.children$1 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:115897:10)]
-    [at ScssParser0._stylesheet0$_withChildren$1$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:123866:39)]
-    [at ScssParser0._stylesheet0$_withChildren$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:123871:19)]
-    [at ScssParser0._stylesheet0$_withStyleRuleChildren$1$3 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:120578:20)]
-    [at ScssParser0._stylesheet0$_styleRule$2 (C:\Users\Windows\webthethao2.0\node_modules\sass\sass.dart.js:120568:22)]
-[02:28:41.512] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:28:41.529] Server  LOG      ✓ Compiled in 1460ms
-[02:28:42.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:28:42.390] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:28:42.390] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:28:42.390] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:28:42.390] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[02:28:42.390] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autoplay autoPlay
-[02:28:42.390] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? playsinline playsInline
-[02:28:42.390] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:29:50.423] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:29:50.697] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[02:29:50.697] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:29:50.697] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:30:00.088] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:30:00.446] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:30:00.668] Browser DEBUG   injection-tss TSS: hosted page injected
-[02:30:00.668] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[02:30:00.668] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:30:00.668] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:30:00.668] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:30:00.668] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[02:30:00.668] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autoplay autoPlay
-[02:30:00.668] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? playsinline playsInline
-[02:30:00.668] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:31:42.064] Server  LOG      ✓ Compiled in 177ms
-[02:32:44.364] Server  LOG      ✓ Compiled in 115ms
-[02:32:48.819] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:32:49.094] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[02:32:49.094] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:32:49.094] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:32:55.250] Server  ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:32:55.700] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:32:55.893] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:32:55.893] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:32:55.893] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:32:55.893] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[02:32:55.893] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autoplay autoPlay
-[02:32:55.893] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? playsinline playsInline
-[02:32:55.893] Browser ERROR   You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.
-[02:33:02.662] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:33:02.922] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[02:33:02.922] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:33:02.923] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:33:30.475] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
-[02:33:30.534] Server  ERROR   Invalid DOM property `stop-color`. Did you mean `stopColor`?
-[02:33:30.536] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.537] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.556] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.556] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.563] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.564] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.564] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.565] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.567] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.569] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.571] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:30.571] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[02:33:31.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:33:31.361] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[02:33:31.361] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:33:31.361] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[02:33:31.361] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
-[02:33:31.361] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
-[02:33:31.361] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[02:33:31.361] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
-[02:33:31.361] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
-[02:33:31.361] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
-[02:33:42.488] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:33:42.711] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[02:33:42.711] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[02:33:42.711] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:19.470] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.719] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:00:19.719] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:19.719] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:23.929] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+[00:00:23.931] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+[00:00:23.931] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+[00:00:23.937] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:00:23.965] Server  ERROR   Invalid DOM property `stop-color`. Did you mean `stopColor`?
+[00:00:23.967] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:23.968] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:23.990] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:23.991] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.000] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.001] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.003] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.004] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.005] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.006] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.007] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.007] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:24.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.391] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:00:24.391] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:24.391] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:24.391] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:24.391] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:24.391] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:24.391] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:24.391] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:24.391] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:26.821] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
+[00:00:26.824] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:00:27.027] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:27.027] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:00:27.027] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:27.027] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:27.027] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:00:27.197] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:27.197] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:27.197] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:27.197] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:00:27.197] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:03:46.420] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:03:46.420] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:03:46.420] Browser DEBUG   TSS: Counted history being replaced
+[00:03:46.420] Browser DEBUG   TSS: Caught history
+[00:03:46.420] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
+[00:03:55.318] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:03:55.318] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:03:55.318] Browser DEBUG   TSS: Counted history being replaced
+[00:03:55.318] Browser DEBUG   TSS: Caught history
+[00:03:55.318] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764756171939}
+[00:04:03.365] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:03.365] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:03.365] Browser DEBUG   TSS: Counted history being replaced
+[00:04:03.365] Browser DEBUG   TSS: Caught history
+[00:04:03.365] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764756180841}
+[00:04:14.712] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:14.712] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:15.433] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:15.433] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:17.009] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:04:17.019] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.021] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.025] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.026] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.036] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.037] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.038] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.039] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.043] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.044] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.045] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.045] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:17.537] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:17.537] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:04:17.538] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:04:17.929] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:04:17.929] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:04:17.929] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:04:17.929] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:17.929] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:17.929] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:17.929] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:17.929] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:17.929] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:20.694] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:04:21.202] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:21.202] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:04:21.202] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:04:21.443] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:04:21.443] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:04:21.443] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:04:21.443] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:04:21.443] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:21.443] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:21.443] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:21.443] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:21.443] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:24.401] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:04:24.408] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.409] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.412] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.413] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.423] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.424] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.425] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.426] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.427] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.427] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.428] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.428] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:04:24.871] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:25.177] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:04:25.177] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:04:25.177] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:04:25.177] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:25.177] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:25.177] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:25.177] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:25.177] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:25.177] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:25.941] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:04:26.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:26.427] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:04:26.427] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:04:26.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:04:26.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:04:26.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:04:26.647] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:04:26.647] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:26.647] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:26.647] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:26.647] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
+[00:04:26.647] Browser LOG     [{"date":"02","day":"T3"},{"date":"03","day":"Hôm nay"},{"date":"04","day":"T5"},{"date":"05","day":"T6"},{"date":"06","day":"T7"},{"date":"07","day":"CN"},{"date":"08","day":"T2"},{"date":"09","day":"T3"},{"date":"10","day":"T4"}]
