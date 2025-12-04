@@ -1650,6 +1650,10 @@ blockquote .content .name {
   display: flex;
 }
 
+.schedule-page__search .item.active {
+  background: gray;
+}
+
 .schedule-page__title {
   height: 28px;
   color: var(--Neutral-Dark, #141414);

@@ -9,6 +9,7 @@ import Match from "@/components/Prediction/Match";
 import { useState } from "react";
 
 const Prediction: React.FC = () => {
+    const [nearDate, setNearDate] = useState<boolean>(false);
     const [selectedDate, setSelectedDate] = useState<string | null>(null);
     const [selectedCat, setSelectedCat] = useState<string | null>(null);
     const handleDateChange = (date: string) => {
@@ -20,6 +21,92 @@ const Prediction: React.FC = () => {
         console.log("loai dc chon", cat)
     }
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
+    const data = [
+        {
+            title: "UEFA champions league",
+            location: "UEFA",
+            category: "Bóng đá",
+            board: [{
+                date: "2025-12-05",
+                time: "23/10 20:00",
+                leftTeam: {
+                    name: "Man City",
+                    logo: "MC",
+                    score: "2",
+                    handicap: {
+                        point: "1.5",
+                        calc: "-0.5",
+                    },
+                    taixiu: {
+                        point: "1",
+                        calc: "1",
+                    },
+                    oneTwo: {
+                        point: "1",
+                        calc: "1",
+                    },
+
+                    forecastPercent: 65,
+                },
+                rightTeam: {
+                    name: "Liverpool",
+                    logo: "L",
+                    score: "2",
+                    handicap: {
+                        point: "1.5",
+                        calc: "-0.5",
+                    },
+                    taixiu: {
+                        point: "1",
+                        calc: "1",
+                    },
+                    oneTwo: {
+                        point: "1",
+                        calc: "1",
+                    },
+
+                    forecastPercent: 30,
+                },
+            }]
+
+
+
+
+
+        }
+    ]
+    const isWithinNext3Days = (dateString: string) => {
+        const today = new Date();
+        const target = new Date(dateString);
+
+        const diffTime = target.getTime() - today.getTime();
+        const diffDays = diffTime / (1000 * 60 * 60 * 24);
+
+        return diffDays >= 0 && diffDays <= 3;
+    };
+    let result = [];
+    if (nearDate) {
+        result = data
+            .filter(item => item.category === selectedCat)
+            .map(item => ({
+                ...item,
+                board: item.board.filter(boardItem =>
+                    isWithinNext3Days(boardItem.date)
+                )
+            }))
+            .filter(item => item.board.length > 0);
+
+    } else {
+        result = data
+            .filter(item => item.category === selectedCat)
+            .map(item => ({
+                ...item,
+                board: item.board.filter(boardItem => boardItem.date === selectedDate)
+            }))
+            .filter(item => item.board.length > 0);
+    }
+
+
 
     return (
         <div className="App">
@@ -77,14 +164,11 @@ const Prediction: React.FC = () => {
                             </div>
                             <div className="item">Hot</div>
                             <div className="item">Live</div>
-                            <div className="item">Sắp diễn ra</div>
+                            <div className={`item ${nearDate ? 'active' : ''}`} onClick={() => setNearDate(!nearDate)}>Sắp diễn ra</div>
                         </div>
-                        <a href="/match">
-                            <Match /></a>
-                        <a href="/match">
-                            <Match /></a>
-                        <a href="/match">
-                            <Match /></a>
+                        {result.map((item, index) => (
+                            <Match key={index} title={item.title} location={item.location} category={item.category} board={item.board} />
+                        ))}
 
                     </div>
                     <div className="" style={{ marginBottom: '104px' }}></div>

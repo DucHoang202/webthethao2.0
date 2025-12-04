@@ -54,7 +54,7 @@ function Home() {
     };
   }, []);
   return (
-    (<div className='App'>
+    <div className='App'>
       <Header />
       <Nav />
       <main>
@@ -78,9 +78,12 @@ function Home() {
           <div className="class" style={{ height: "300px", backgroundColor: "white" }}></div>
         </div>
       </main>
-      <Footer />
+      {/* <main>
+        <Search />
+
+      </main> */}
     </div>
-    ))
+  )
 }
 
 function App() {

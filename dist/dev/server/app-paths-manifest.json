@@ -1,6 +1,5 @@
 {
   "/match/page": "app/match/page.js",
   "/page": "app/page.js",
-  "/prediction-full/page": "app/prediction-full/page.js",
-  "/schedule/page": "app/schedule/page.js"
+  "/prediction-full/page": "app/prediction-full/page.js"
 }
