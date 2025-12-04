@@ -6,7 +6,7 @@ const Match2: React.FC = () => {
         <div className="App">
             <Header />
             <Nav />
-            <main style={{ background: "#fff" }}>
+            <main style={{ background: "#fff", paddingTop: '65px' }}>
                 <div className="match2">
                     <div className="match2__background">
                         <div className="match2__title">

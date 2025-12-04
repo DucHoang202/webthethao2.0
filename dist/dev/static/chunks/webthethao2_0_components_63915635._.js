@@ -686,6 +686,7 @@ const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange })=>{
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Cat.useEffect": ()=>{
             setActiveIndex(active);
+            handleSelect(items[active]);
         }
     }["Cat.useEffect"], [
         active
@@ -710,27 +711,27 @@ const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange })=>{
                             children: item
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 29
                         }, ("TURBOPACK compile-time value", void 0))
                     }, index, false, {
                         fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-                        lineNumber: 34,
+                        lineNumber: 35,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -756,7 +757,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_mod
 var _s = __turbopack_context__.k.signature();
 'use client';
 ;
-const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
+const Sched = ({ items, active = 1, gap = 12, style = {}, onChangeDate })=>{
     _s();
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(active);
     const [dateRange, setDateRange] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(getDateRange());
@@ -770,6 +771,7 @@ const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Sched.useEffect": ()=>{
             setDateRange(getDateRange());
+            handleSelect(dateRange[active].fullDate);
         }
     }["Sched.useEffect"], []);
     const handleSelect = (date)=>{
@@ -778,9 +780,6 @@ const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
     function getDateRange() {
         const days = [];
         const today = new Date();
-        const tommorrow = new Date(today);
-        tommorrow.setDate(today.getDate() + 1);
-        // Map thứ: 0=CN → "CN", 1=T2 → "T2", ...
         const weekdayMap = [
             "CN",
             "T2",
@@ -790,13 +789,18 @@ const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
             "T6",
             "T7"
         ];
-        // tạo helper để format từng ngày
-        const createItem = (date, isToday = false, isTomorrow = false)=>{
+        // helper format
+        const createItem = (date, isToday = false)=>{
             const day = String(date.getDate()).padStart(2, "0");
+            const month = String(date.getMonth() + 1).padStart(2, "0");
+            const year = date.getFullYear();
             const weekday = weekdayMap[date.getDay()];
             return {
                 date: day,
-                day: isToday ? "Hôm nay" : isTomorrow ? "Ngày mai" : weekday
+                month,
+                year,
+                dayName: isToday ? "Hôm nay" : weekday,
+                fullDate: `${year}-${month}-${day}` // format ISO
             };
         };
         // hôm qua
@@ -827,7 +831,7 @@ const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
                         className: ` ${activeIndex === index ? "sched active" : "sched"}`,
                         onClick: ()=>{
                             setActiveIndex(index);
-                            handleSelect(item.date);
+                            handleSelect(item.fullDate);
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -835,7 +839,7 @@ const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
                                 children: item.date
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                                lineNumber: 82,
+                                lineNumber: 88,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -847,36 +851,36 @@ const Sched = ({ items, active = 0, gap = 12, style = {}, onChangeDate })=>{
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                                lineNumber: 83,
+                                lineNumber: 89,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "day",
-                                children: item.day
+                                children: item.dayName
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                                lineNumber: 84,
+                                lineNumber: 90,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, index, true, {
                         fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                        lineNumber: 77,
+                        lineNumber: 83,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                lineNumber: 73,
+                lineNumber: 79,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-            lineNumber: 72,
+            lineNumber: 78,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-        lineNumber: 71,
+        lineNumber: 77,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

@@ -1,3 +1,4 @@
+'use client'
 import Header from "../../pages/Header";
 import Nav from "../../components/Home/Nav";
 import Search from "../../components/Home/Search";
@@ -5,8 +6,19 @@ import Cat from "../../components/Schedule/Cat";
 import Sched from "../../components/Schedule/Sched";
 import "../../styles/main.scss";
 import Match from "@/components/Prediction/Match";
+import { useState } from "react";
 
 const Prediction: React.FC = () => {
+    const [selectedDate, setSelectedDate] = useState<string | null>(null);
+    const [selectedCat, setSelectedCat] = useState<string | null>(null);
+    const handleDateChange = (date: string) => {
+        setSelectedDate(date);
+        console.log("ngay dc chon", date)
+    }
+    const handleCatChange = (cat: string) => {
+        setSelectedCat(cat);
+        console.log("loai dc chon", cat)
+    }
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
     // const Prediction = [
     //     league: "UEFA Champions league"
@@ -27,6 +39,31 @@ const Prediction: React.FC = () => {
     //     {
 
     // }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <div className="App">
 
@@ -62,10 +99,10 @@ const Prediction: React.FC = () => {
                         </div>
                     </div>
                     <div className="schedule-page__sort">
-                        <Cat items={cat} />
+                        <Cat items={cat} onCatChange={handleCatChange} />
 
                     </div>
-                    <Sched items={cat} />
+                    <Sched items={cat} onChangeDate={handleDateChange} />
                     <div className="gap-[24px] flex-col flex w-full">
                         <div className="schedule-page__search">
                             <div className="item">
@@ -85,9 +122,11 @@ const Prediction: React.FC = () => {
                             <div className="item">Live</div>
                             <div className="item">Sắp diễn ra</div>
                         </div>
-                        <Match />
-                        <Match />
-                        <Match />
+                        <a href="/match">
+                            <Match />
+                            <Match />
+                            <Match />
+                        </a>
                     </div>
                     <div className="" style={{ marginBottom: '104px' }}></div>
                 </div>
