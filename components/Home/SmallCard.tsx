@@ -18,9 +18,9 @@ const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, cont
         <div className="small-card" >
             <div className="small-card__container">
 
-                <a href={link}>
+                <a href={link} className="image">
                     <img src={image} alt="" className="image" /></a>
-                <div className="body" style={{ width: "100%" }}>
+                <div className="body" >
                     <a href={link} className="title" >
                         {title}
                     </a>

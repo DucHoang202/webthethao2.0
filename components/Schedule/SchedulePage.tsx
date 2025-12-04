@@ -80,9 +80,14 @@ const SchedulePage = () => {
             }
         ]
     }]
-    const filteredCat = league.filter((item) => item.cat === selectedCat)
-    // const filteredDate =
-    //     filteredCat[0]?.board?.filter((item) => item.date === selectedDate) || [];
+    const result = league
+        .filter(item => item.cat === selectedCat)
+        .map(item => ({
+            ...item,
+            board: item.board.filter(boardItem => boardItem.date === selectedDate)
+        }))
+        .filter(item => item.board.length > 0);
+
 
     return (
         <div className="schedule-page">
@@ -178,7 +183,7 @@ const SchedulePage = () => {
 
                     </div>
                 </div>
-                {league.map((lg, leagueIndex) => (
+                {result.map((lg, leagueIndex) => (
                     <League key={leagueIndex} title={lg.title} location={lg.location} board={lg.board} animationDuration={lg.animationDuration} />
                 ))}
 

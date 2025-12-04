@@ -20,49 +20,6 @@ const Prediction: React.FC = () => {
         console.log("loai dc chon", cat)
     }
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
-    // const Prediction = [
-    //     league: "UEFA Champions league"
-    //     location: "UEFA"
-    //     match: [{
-    //         time: "12:00"
-    //         left: {
-    //             logo: ""
-    //             name: "Real Madrid"
-    //             score: "7"
-    //         }
-    //         right: {
-    //             logo: ""
-    //             name: "Barcelona"
-    //             score: "2"
-    //         }
-    //     }]
-    //     {
-
-    // }]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     return (
         <div className="App">
@@ -123,10 +80,12 @@ const Prediction: React.FC = () => {
                             <div className="item">Sắp diễn ra</div>
                         </div>
                         <a href="/match">
-                            <Match />
-                            <Match />
-                            <Match />
-                        </a>
+                            <Match /></a>
+                        <a href="/match">
+                            <Match /></a>
+                        <a href="/match">
+                            <Match /></a>
+
                     </div>
                     <div className="" style={{ marginBottom: '104px' }}></div>
                 </div>

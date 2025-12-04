@@ -1,196 +1,132 @@
-[00:00:01.992] Server  LOG      ✓ Ready in 1426ms
-[00:00:05.045] Server  LOG      ○ Compiling /schedule ...
-[00:00:08.320] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
-[00:00:08.326] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
-[00:00:08.327] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
-[00:00:08.332] Server  ERROR   Invalid DOM property `stop-color`. Did you mean `stopColor`?
-[00:00:08.332] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.333] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.336] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.337] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.339] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.341] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.342] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.343] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.344] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.345] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.345] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:08.346] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:09.098] Server  WARN     ⚠ Cross origin request detected from 172.16.1.154 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:02.130] Server  LOG      ✓ Ready in 1594ms
+[00:00:10.313] Server  LOG      ○ Compiling / ...
+[00:00:16.715] Server  WARN     ⚠ Cross origin request detected from 172.16.1.154 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:09.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:09.334] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:00:09.334] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:00:09.930] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:00:09.930] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:00:09.930] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:00:09.930] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:09.930] Browser LOG     loai dc chon Bóng đá
-[00:00:09.930] Browser LOG     ngay dc chon 2025-12-04
-[00:00:11.663] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.665] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.666] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.667] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.671] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.672] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.672] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.674] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.676] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.714] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.715] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.716] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:12.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.615] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:00:12.615] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:00:13.033] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:00:13.033] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:00:13.033] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:00:13.033] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:13.033] Browser LOG     loai dc chon Bóng đá
-[00:00:13.033] Browser LOG     ngay dc chon 2025-12-04
-[00:00:15.606] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
-[00:00:16.303] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.727] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:00:16.727] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:00:16.727] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:00:16.727] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:00:16.727] Browser ERROR   uncaughtError: TypeError: onCatChange is not a function
-[00:33:06.386] Server  LOG      ✓ Compiled in 204ms
-[00:33:07.096] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__1f926da3._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:33:07.102] Server  ERROR    ⨯ ReferenceError: useState is not defined
-[00:33:07.781] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:07.781] Browser ERROR   uncaughtError: ReferenceError: useState is not defined
-[00:33:18.886] Server  LOG      ✓ Compiled in 188ms
-[00:33:19.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:20.226] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:33:20.226] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:33:20.226] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:33:20.226] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:33:20.226] Browser LOG     loai dc chon Bóng đá
-[00:34:45.954] Server  LOG      ✓ Compiled in 138ms
-[00:34:53.034] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:34:53.340] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:34:53.340] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:34:53.340] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:34:53.340] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:34:53.340] Browser LOG     loai dc chon Bóng đá
-[00:34:53.340] Browser LOG     ngay dc chon 2025-12-04
-[00:34:54.116] Browser LOG     ngay dc chon 2025-12-03
-[00:34:56.859] Browser LOG     ngay dc chon 2025-12-05
-[00:34:58.086] Browser LOG     ngay dc chon 2025-12-04
-[00:35:25.386] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:25.386] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:35:25.386] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:35:25.776] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:35:25.776] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:35:25.776] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:35:25.776] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:35:25.776] Browser ERROR   uncaughtError: TypeError: onCatChange is not a function
-[00:35:48.990] Server  ERROR   C:\Users\Windows\webthethao2.0\dist\dev\server\chunks\ssr\[root-of-the-server]__94652d19._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:35:49.008] Server  ERROR    ⨯ ReferenceError: useState is not defined
-[00:35:49.730] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:49.730] Browser ERROR   uncaughtError: ReferenceError: useState is not defined
-[00:35:49.912] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:35:49.912] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:36:37.668] Server  LOG      ✓ Compiled in 159ms
-[00:36:38.885] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:39.080] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:36:39.080] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:36:39.230] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:36:39.230] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:36:39.230] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:36:39.230] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:36:39.230] Browser LOG     loai dc chon Bóng đá
-[00:36:39.230] Browser LOG     ngay dc chon 2025-12-04
-[00:37:09.333] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:09.606] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:37:09.606] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:37:09.606] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:37:09.606] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:37:09.606] Browser LOG     loai dc chon Bóng đá
-[00:37:09.606] Browser LOG     ngay dc chon 2025-12-04
-[00:37:27.702] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.703] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.705] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.706] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.710] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.711] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.712] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.712] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.713] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.713] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.714] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:27.714] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:37:28.350] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:28.350] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:37:28.350] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:37:28.686] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:37:28.686] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:37:28.686] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:37:28.686] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:37:28.686] Browser LOG     loai dc chon Bóng đá
-[00:37:28.686] Browser LOG     ngay dc chon 2025-12-04
-[00:37:30.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:30.540] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:37:30.540] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:37:30.540] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:37:30.540] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:37:30.540] Browser LOG     loai dc chon Bóng đá
-[00:37:30.540] Browser LOG     ngay dc chon 2025-12-04
-[00:38:38.932] Server  LOG      ✓ Compiled in 254ms
-[00:38:42.298] Server  ERROR   Invalid DOM property `fill-opacity`. Did you mean `fillOpacity`?
-[00:38:42.299] Server  ERROR   Invalid DOM property `fill-rule`. Did you mean `fillRule`?
-[00:38:42.300] Server  ERROR   Invalid DOM property `clip-rule`. Did you mean `clipRule`?
-[00:38:42.301] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:38:42.301] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:38:43.052] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:38:43.332] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-opacity fillOpacity
-[00:38:43.332] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:38:43.332] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:38:43.332] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:38:43.332] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-rule fillRule
-[00:38:43.332] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-rule clipRule
-[00:38:43.332] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:38:43.332] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:39:25.052] Browser DEBUG   TSS: Counted history being replaced
-[00:39:25.052] Browser DEBUG   TSS: Caught history
-[00:39:25.052] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {}
-[00:39:41.329] Browser DEBUG   TSS: Counted history being replaced
-[00:39:41.329] Browser DEBUG   TSS: Caught history
-[00:39:41.329] Browser DEBUG   TSS: Checking if repeated 500 times for interval 1000 against data:  {"lastCount":1,"lastTime":1764834045974}
+[00:00:16.777] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.140] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:00:17.140] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:17.140] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:37.427] Server  LOG     filteredBoard []
+[00:00:37.433] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+[00:00:37.434] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+[00:00:37.434] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+[00:00:37.440] Server  ERROR   Invalid DOM property `stop-color`. Did you mean `stopColor`?
+[00:00:37.441] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.442] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.444] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.445] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.448] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.448] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.449] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.450] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.450] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.451] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.451] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:37.452] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:38.173] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.536] Browser LOG     filteredBoard []
+[00:00:38.536] Browser LOG     filteredBoard []
+[00:00:38.536] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:00:38.536] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:38.536] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:38.536] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.536] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:38.537] Browser LOG     loai dc chon Bóng đá
+[00:00:38.537] Browser LOG     ngay dc chon 2025-12-04
+[00:00:38.537] Browser LOG     filteredBoard []
+[00:00:38.537] Browser LOG     filteredBoard []
+[00:00:52.516] Browser LOG     ngay dc chon 2025-12-05
+[00:00:52.517] Browser LOG     filteredBoard [{"date":"2025-12-05","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}]
+[00:00:52.517] Browser LOG     filteredBoard [{"date":"2025-12-05","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}]
+[00:02:05.282] Server  LOG      ✓ Compiled in 266ms
+[00:02:06.236] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng đá","location":"UEFA","title":"Champion League"}]
+[00:02:06.236] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng đá","location":"UEFA","title":"Champion League"}]
+[00:04:59.954] Server  LOG      ✓ Compiled in 206ms
+[00:05:00.010] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng đá","location":"UEFA","title":"Champion League"}]
+[00:05:00.010] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng đá","location":"UEFA","title":"Champion League"}]
+[00:05:02.509] Browser LOG     ngay dc chon 2025-12-04
+[00:05:02.510] Browser LOG     filteredBoard []
+[00:05:02.510] Browser LOG     filteredBoard []
+[00:05:04.575] Browser LOG     ngay dc chon 2025-12-03
+[00:05:04.575] Browser LOG     filteredBoard []
+[00:05:04.575] Browser LOG     filteredBoard []
+[00:05:05.459] Browser LOG     ngay dc chon 2025-12-04
+[00:05:05.459] Browser LOG     filteredBoard []
+[00:05:05.459] Browser LOG     filteredBoard []
+[00:05:06.403] Browser LOG     loai dc chon Bóng chuyền
+[00:05:06.403] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:06.403] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:06.403] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:05:06.403] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:05:09.108] Browser LOG     ngay dc chon 2025-12-05
+[00:05:09.108] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":false,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"FT"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:09.108] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":false,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"FT"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:10.292] Browser LOG     ngay dc chon 2025-12-04
+[00:05:10.292] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:10.292] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:10.782] Browser LOG     ngay dc chon 2025-12-05
+[00:05:10.782] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":false,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"FT"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:10.782] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":false,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"FT"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:11.341] Browser LOG     ngay dc chon 2025-12-04
+[00:05:11.341] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:11.341] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:11.732] Browser LOG     ngay dc chon 2025-12-05
+[00:05:11.732] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":false,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"FT"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:11.732] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-05","isActive":false,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"FT"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:12.215] Browser LOG     ngay dc chon 2025-12-04
+[00:05:12.215] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:12.215] Browser LOG     filteredBoard [{"animationDuration":"50s","board":[{"date":"2025-12-04","isActive":true,"left":{"logo":"","name":"Club name","score":"1"},"right":{"logo":"","name":"Club name","score":"2"},"time":"65'"}],"cat":"Bóng chuyền","location":"England","title":"Giải bóng chuyền U18"}]
+[00:05:57.165] Server  LOG      ✓ Compiled in 195ms
+[00:06:05.539] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
+[00:06:06.428] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:06.791] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:06:06.791] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:06:06.791] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:06:06.791] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:06:06.791] Browser LOG     loai dc chon Bóng đá
+[00:06:06.791] Browser LOG     ngay dc chon 2025-12-04
+[00:06:50.610] Server  LOG      ✓ Compiled in 192ms
+[00:07:00.084] Server  ERROR   Invalid DOM property `fill-opacity`. Did you mean `fillOpacity`?
+[00:07:00.086] Server  ERROR   Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+[00:07:00.086] Server  ERROR   Invalid DOM property `clip-rule`. Did you mean `clipRule`?
+[00:07:00.087] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:07:00.088] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:07:00.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:01.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-opacity fillOpacity
+[00:07:01.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:07:01.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:07:01.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:07:01.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? fill-rule fillRule
+[00:07:01.207] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-rule clipRule
+[00:07:01.207] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:07:01.207] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:07:01.207] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:07:01.207] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:07:11.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:07:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:07:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:07:11.288] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:07:11.288] Browser LOG     loai dc chon Bóng đá
+[00:07:11.288] Browser LOG     ngay dc chon 2025-12-04
+[00:08:15.418] Browser LOG     ngay dc chon 2025-12-05
+[00:08:15.873] Browser LOG     ngay dc chon 2025-12-04
+[00:08:16.776] Browser LOG     ngay dc chon 2025-12-05
+[00:08:17.177] Browser LOG     ngay dc chon 2025-12-04
+[00:08:19.450] Browser LOG     loai dc chon Bóng chuyền
+[00:08:19.933] Browser LOG     loai dc chon Bóng đá
+[00:12:06.430] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:06.797] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:12:06.797] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:12:06.797] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin

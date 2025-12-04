@@ -830,6 +830,7 @@ a {
   object-fit: cover;
   width: 88px;
   height: 88px;
+  display: block;
 }
 
 .small-card__container .body {
@@ -838,6 +839,8 @@ a {
   align-self: stretch;
   align-items: flex-start;
   gap: 8px;
+  width: 100%;
+  min-width: 250px;
   display: flex;
 }
 

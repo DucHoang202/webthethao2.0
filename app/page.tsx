@@ -54,7 +54,7 @@ function Home() {
     };
   }, []);
   return (
-    <div className='App'>
+    (<div className='App'>
       <Header />
       <Nav />
       <main>
@@ -80,7 +80,7 @@ function Home() {
       </main>
       <Footer />
     </div>
-  )
+    ))
 }
 
 function App() {
