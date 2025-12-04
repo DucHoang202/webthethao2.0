@@ -1,11 +1,37 @@
-import React from "react";
+'use client'
+import React, { useEffect, useRef } from "react";
 import SwiperRow from "../Schedule/SwiperRow";
+
 const Search: React.FC = () => {
+
+    const lastScrollTop = useRef(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.getElementById("search-bar-hidden") as HTMLElement;
+            if (!header) return;
+
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop.current) {
+                // Kéo xuống → ẩn
+                header.classList.add("hide");
+            } else {
+                // Kéo lên → hiện
+                header.classList.remove("hide");
+            }
+
+            lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop;
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const search = [
         {
-            name: "TRENDING NOW",
-            nav: "",
-            icon: (
+            name: "TRENDING NOW", nav: "", icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path d="M2 11.7888L5.72414 7.59914L8.2069 10.3922L14 3.875" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M9.8623 3.875H14.0002V8.53017" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
@@ -20,8 +46,17 @@ const Search: React.FC = () => {
     ];
 
     return (
-        <div style={{ background: "#1A1A1A" }}>
-            <SwiperRow items={search} active={0} gap={14} style={{ background: "#1A1A1A", marginLeft: "14px" }} />
+        <div
+            id="search-bar-hidden"
+            className="search-bar-hidden hide"
+            style={{ background: "#1A1A1A" }}
+        >
+            <SwiperRow
+                items={search}
+                active={0}
+                gap={14}
+                style={{ background: "#1A1A1A", marginLeft: "14px" }}
+            />
         </div>
     );
 };

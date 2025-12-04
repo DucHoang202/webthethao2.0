@@ -1,6 +1,5 @@
 import Header from "../../pages/Header";
 import Nav from "../../components/Home/Nav";
-import Footer from "../../pages/Footer";
 import "../../styles/main.scss"
 import Search from "../../components/Home/Search";
 import BlogPage from "../../components/Blog/BlogPage";
@@ -31,7 +30,6 @@ const Blog: React.FC = () => {
             </main>
             <Nav />
 
-            <Footer />
         </div>
 
     )

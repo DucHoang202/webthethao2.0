@@ -224,6 +224,23 @@ a {
   transition: all .5s;
 }
 
+.search-bar-hidden {
+  z-index: 98;
+  width: 100%;
+  transition: transform .3s;
+  position: fixed;
+  left: 0;
+}
+
+.search-bar-hidden.hide {
+  transform: translateY(-100%);
+}
+
+.search {
+  position: sticky;
+  top: 64px;
+}
+
 .search.black {
   background: var(--color-grey-10, #1a1a1a);
 }
@@ -2958,8 +2975,7 @@ html {
 }
 
 html, body, #root {
-  height: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 a {
