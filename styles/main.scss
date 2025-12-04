@@ -207,15 +207,13 @@ img {
 }
 
 .App main {
-    padding-top: 65px;
-    flex: 1 1 auto;
+    padding-top: calc(65px + 36px);
     width: var(--app-width);
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
+
+    // gap: 10px;
     padding-bottom: 88px;
     background: #F3F3F3;
 }

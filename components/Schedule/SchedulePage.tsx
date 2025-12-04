@@ -1,15 +1,33 @@
+'use client'
 import Cat from "./Cat";
 import League from "./League";
 import Sched from "./Sched";
+import { useEffect, useState } from "react";
+
 const SchedulePage = () => {
+    const [selectedDate, setSelectedDate] = useState<string | null>(null);
+    const [selectedCat, setSelectedCat] = useState<string | null>(null);
+    const handleDateChange = (date: string) => {
+        setSelectedDate(date);
+        console.log("ngay dc chon", date)
+    }
+    const handleCatChange = (cat: string) => {
+        setSelectedCat(cat);
+        console.log("loai dc chon", cat)
+    }
+    // useEffect(() => {
+    //     handleDateChange("04/04/2025");
+    //     handleCatChange("Bóng đá");
+    // }, [])
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
     const league = [{
         animationDuration: "50s",
         title: "Champion League",
+        cat: "Bóng đá",
         location: "UEFA",
         board: [
             {
-
+                date: "2025-12-05",
                 isActive: true,
                 time: "65'",
                 left: {
@@ -26,11 +44,12 @@ const SchedulePage = () => {
         ]
     }, {
         animationDuration: "50s",
-        title: "Premier League",
+        title: "Giải bóng chuyền U18",
+        cat: "Bóng chuyền",
         location: "England",
         board: [
             {
-
+                date: "2025-12-05",
                 isActive: false,
                 time: "FT",
                 left: {
@@ -45,7 +64,7 @@ const SchedulePage = () => {
                 }
             },
             {
-
+                date: "2025-12-04",
                 isActive: true,
                 time: "65'",
                 left: {
@@ -61,6 +80,10 @@ const SchedulePage = () => {
             }
         ]
     }]
+    const filteredCat = league.filter((item) => item.cat === selectedCat)
+    // const filteredDate =
+    //     filteredCat[0]?.board?.filter((item) => item.date === selectedDate) || [];
+
     return (
         <div className="schedule-page">
             <div className="schedule-page__container">
@@ -88,10 +111,10 @@ const SchedulePage = () => {
                     </div>
                 </div>
                 <div className="schedule-page__sort">
-                    <Cat items={cat} />
+                    <Cat items={cat} onCatChange={handleCatChange} />
 
                 </div>
-                <Sched items={cat} />
+                <Sched items={cat} onChangeDate={handleDateChange} />
                 <div className="current-match-container" style={{ width: '100%', alignItems: 'center', justifyContent: 'center' }}>
 
 

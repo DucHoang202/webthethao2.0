@@ -5,7 +5,7 @@
   "static/chunks/f181b_motion-dom_dist_es_180f8942._.js",
   "static/chunks/f181b_framer-motion_dist_es_93b488d0._.js",
   "static/chunks/f181b_181f7452._.js",
-  "static/chunks/webthethao2_0_702ae026._.js",
+  "static/chunks/webthethao2_0_a741f77a._.js",
   "static/chunks/webthethao2_0_styles_main_scss_d651e145.css"
 ],
     source: "dynamic"

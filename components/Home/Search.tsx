@@ -9,6 +9,7 @@ const Search: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
             const header = document.getElementById("search-bar-hidden") as HTMLElement;
+
             if (!header) return;
 
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -48,7 +49,7 @@ const Search: React.FC = () => {
     return (
         <div
             id="search-bar-hidden"
-            className="search-bar-hidden hide"
+            className="search-bar-hidden"
             style={{ background: "#1A1A1A" }}
         >
             <SwiperRow

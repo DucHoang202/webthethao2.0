@@ -8,12 +8,21 @@ interface SwiperRowProps {
     gap?: number;
     style?: React.CSSProperties;
 }
+interface CatProps {
+    onCatChange: (cat: string) => void;
+    items: any[]
 
-const Cat = ({ items, active = 0, gap = 12, style = {} }: SwiperRowProps) => {
+}
+const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange }: SwiperRowProps & CatProps) => {
     const [activeIndex, setActiveIndex] = useState(active);
 
+    const handleSelect = (cat: string) => {
+        onCatChange(cat);
+
+    }
     useEffect(() => {
         setActiveIndex(active);
+        handleSelect(items[active]);
     }, [active]);
 
     return (
@@ -26,7 +35,7 @@ const Cat = ({ items, active = 0, gap = 12, style = {} }: SwiperRowProps) => {
                         <div
                             key={index}
                             className={` ${activeIndex === index ? "cat-btn active" : "cat-btn"}`}
-                            onClick={() => setActiveIndex(index)}
+                            onClick={() => { handleSelect(item); setActiveIndex(index) }}
                         >
                             <a className="name">{item}</a>
                         </div>

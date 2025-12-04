@@ -4,7 +4,7 @@ const Advertisement = () => {
     ];
 
     return (
-        <div className="advertisement">
+        <div className="adv">
             {advertisement.map((item, index) =>
                 item.image ? (
                     <img key={index} src={item.image} alt="" />

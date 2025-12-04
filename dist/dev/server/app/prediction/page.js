@@ -1,6 +1,6 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/prediction/page.js")
 R.c("server/chunks/ssr/f181b_next_dist_bd54d9a5._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__a3b9a8ee._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__94652d19._.js")
 R.c("server/chunks/ssr/f181b_a1e66107._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__e8a2741f._.js")
 R.c("server/chunks/ssr/webthethao2_0_app_12bc1fd7._.js")

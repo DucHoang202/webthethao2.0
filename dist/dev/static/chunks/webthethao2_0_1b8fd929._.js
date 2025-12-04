@@ -417,7 +417,7 @@ const Search = ()=>{
                         strokeLinejoin: "round"
                     }, void 0, false, {
                         fileName: "[project]/webthethao2.0/components/Home/Search.tsx",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -427,13 +427,13 @@ const Search = ()=>{
                         strokeLinejoin: "round"
                     }, void 0, false, {
                         fileName: "[project]/webthethao2.0/components/Home/Search.tsx",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/webthethao2.0/components/Home/Search.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -465,7 +465,7 @@ const Search = ()=>{
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         id: "search-bar-hidden",
-        className: "search-bar-hidden hide",
+        className: "search-bar-hidden",
         style: {
             background: "#1A1A1A"
         },
@@ -479,12 +479,12 @@ const Search = ()=>{
             }
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Home/Search.tsx",
-            lineNumber: 54,
+            lineNumber: 55,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Home/Search.tsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1111,7 +1111,7 @@ const Advertisement = ()=>{
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "advertisement",
+        className: "adv",
         children: advertisement.map((item, index)=>item.image ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: item.image,
                 alt: ""
