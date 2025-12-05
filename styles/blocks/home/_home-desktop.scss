@@ -1,0 +1,131 @@
+.home-desktop {
+    display: flex;
+    padding: 23px 14px;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
+    background: #f3f3f3;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1250px) {
+        // justify-content: center;
+        padding-left: 0;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        width: 301px;
+        flex-shrink: 0;
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        max-width: 550px;
+        flex-shrink: 1 1 auto;
+
+        @media (max-width: 1250px) {
+            max-width: 564px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        width: 350px;
+        flex-shrink: 0;
+
+        @media (max-width: 1024px) {
+            width: 380px;
+        }
+    }
+
+    &__radius {
+        @media (min-width: 768px) {
+            border-radius: 14px;
+            background: #FFF;
+            box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+    }
+
+    &__share {
+        display: flex;
+        padding: 10px 14px;
+        align-items: center;
+        gap: 14px;
+        align-self: stretch;
+
+        .avatar {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 24px;
+            background: #F3F2F2;
+        }
+
+        .text {
+            width: 100%;
+            color: #52524F;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 145%;
+            /* 20.3px */
+            letter-spacing: -0.14px;
+        }
+    }
+
+    &__schedule {
+        display: flex;
+        padding: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--item-spacing-s, 16px);
+        align-self: stretch;
+        width: 100%;
+        border-radius: 0 0 14px 14px;
+        background: #FFF;
+
+        .item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+
+            .text {
+                margin-top: 2px;
+                font-family: var(--font-family-Font-1, "Inter Display");
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 145%;
+                /* 20.3px */
+                letter-spacing: -0.14px;
+            }
+
+            &.active {
+                color: #0056FF;
+
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+            }
+        }
+    }
+}

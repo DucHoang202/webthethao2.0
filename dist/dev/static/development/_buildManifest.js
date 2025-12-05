@@ -7,6 +7,11 @@ self.__BUILD_MANIFEST = {
   "sortedPages": [
     "/Footer",
     "/Header",
+    "/HeaderDesktop",
+    "/HomeDesktop",
+    "/HomeMobile",
+    "/HomeTablet",
+    "/NavDesktop",
     "/NotFound",
     "/_app",
     "/_error"

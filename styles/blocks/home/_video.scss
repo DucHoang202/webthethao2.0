@@ -1,12 +1,20 @@
 .video {
+
     display: flex;
     width: 100%;
     padding: 16px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
     border-bottom: 1px solid #E5E7EB;
     background: #121212;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        border-radius: 14px;
+        border-bottom: 1px solid #E5E7EB;
+
+    }
 
     .video__play {
         width: 24px;
@@ -24,36 +32,37 @@
         font-style: normal;
         font-weight: 600;
         line-height: 145%;
-        /* 26.1px */
         letter-spacing: -0.18px;
-        flex: 1 0 0;
-
     }
 
+    /* -------------------------
+       BODY + SWIPER FIX
+    --------------------------*/
     .body {
-        .swiper-container {
-            display: flex;
-            align-items: center;
-            gap: 14px;
 
-            width: 100vw;
-            padding-bottom: 10px;
+        /* Swiper container */
+        .swiper {
+            width: 100%;
 
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-            scroll-snap-type: x mandatory;
-
+            /* tắt scrollbar */
             -ms-overflow-style: none;
             scrollbar-width: none;
-            padding-left: 16px;
-            padding-right: 16px;
 
             &::-webkit-scrollbar {
                 display: none;
             }
         }
 
+        /* các slide trong Swiper */
+        .swiper-slide {
+            width: auto !important;
+            /* để dùng width trong .video-slide */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* giữ nguyên phần video-slide */
         .video-slide {
             &.big-tt {
                 .content {
@@ -65,60 +74,23 @@
             flex-direction: column;
             align-items: flex-start;
             gap: var(--item-spacing-s, 16px);
-            align-self: stretch;
             width: 184px;
             background-color: #121212;
-            border: #121212;
-            margin-left: 0 !important;
         }
 
-        .play-button {
+        /* -------------------------
+           PLAY BUTTON (giữ nguyên)
+        --------------------------*/
+        .video-thumb {
             position: relative;
-
-            &--inner {
-                position: absolute;
-                top: 88px;
-                left: 70px;
-                display: flex;
-                width: 48px;
-                height: 48px;
-                padding: 13px 11px;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                aspect-ratio: 1/1;
-                border-radius: 60px;
-                background: rgba(0, 0, 0, 0.40);
-
-                .play {
-                    justify-content: center;
-                    align-items: center;
-                    width: 24px;
-                    height: 24px;
-                    flex-shrink: 0;
-
-                    svg {
-
-                        fill: #FFF;
-                        stroke-width: 1.5px;
-                        stroke: #FFF;
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-            }
-
+            width: 184px;
+            height: 223px;
         }
 
         .video__image {
             width: 184px;
             height: 223px;
-        }
-
-        .video-thumb {
-            position: relative;
-            width: 184px;
-            height: 223px;
+            object-fit: cover;
         }
 
         .play-button {
@@ -132,20 +104,68 @@
 
         .play-button--inner {
             pointer-events: auto;
-            /* click được */
         }
 
+        .play-button--inner {
+            position: absolute;
+            top: 88px;
+            left: 70px;
+            display: flex;
+            width: 48px;
+            height: 48px;
+            padding: 13px 11px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 60px;
+            background: rgba(0, 0, 0, 0.40);
+
+            .play {
+                width: 24px;
+                height: 24px;
+
+                svg {
+                    fill: #FFF;
+                    stroke-width: 1.5px;
+                    stroke: #FFF;
+                }
+            }
+        }
+
+        /* -------------------------
+           CONTENT TITLE
+        --------------------------*/
         .content {
             color: #FFF;
             font-family: var(--font-family-Font-2, "Inter Display");
             font-size: 12px;
-            font-style: normal;
             font-weight: 600;
             line-height: 135%;
-            /* 16.2px */
-            width: 100%;
-            border: none !important;
+            width: 184px;
             white-space: normal;
+        }
+
+
+    }
+
+    &__extension {
+        display: flex;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.20);
+        color: #FFF;
+        font-family: var(--font-family-Font-1, "Inter Display");
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--line-height-15, 15px);
+
+        /* 125% */
+        @media(max-width: 767px) {
+            display: none;
         }
     }
 }

@@ -191,6 +191,7 @@
     --color-gray-700: #364153;
     --color-gray-800: #1e2939;
     --color-gray-900: #101828;
+    --color-white: #fff;
     --spacing: .25rem;
     --shadow-sm: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
     --shadow-md: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
@@ -697,6 +698,10 @@
     border-width: 1px;
   }
 
+  .bg-white {
+    background-color: var(--color-white);
+  }
+
   .pl-16 {
     padding-left: calc(var(--spacing) * 16);
   }
@@ -786,6 +791,10 @@
   .ease-out {
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
   }
 }
 

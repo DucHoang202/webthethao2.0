@@ -1,14 +1,13 @@
 .adv {
-    width: 100%;
+    width: auto;
     display: flex;
-    padding: 12px 0 62px 0;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     align-self: stretch;
     border-top: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #F0F0EE);
     border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #F0F0EE);
     background: var(--color-grey-96, #F7F7F4);
-    height: 85px;
+    height: auto;
     align-items: center;
     justify-content: center;
     color: var(--www-nytimes-com-mine-shaft, var(--color-grey-20, #323232));
@@ -25,4 +24,12 @@
     text-transform: uppercase;
     border-top: 1px solid #F0F0EE;
     border-bottom: 1px solid #F0F0EE;
+
+    img {
+        width: 100%;
+    }
+
+    &__text {
+        padding: 12px 0;
+    }
 }

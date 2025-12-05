@@ -10,13 +10,15 @@ interface CardProps {
     category: string;
     official: boolean;
     link: string;
+    style?: React.CSSProperties;
+    border?: React.CSSProperties;
 }
 
 
-const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link }) => {
+const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link, style }) => {
     return (
         <div className="small-card" >
-            <div className="small-card__container">
+            <div className={`small-card__container `} style={style}>
 
                 <a href={link} className="image">
                     <img src={image} alt="" className="image" /></a>

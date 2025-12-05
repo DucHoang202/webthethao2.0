@@ -19,6 +19,9 @@
 @use "./blocks/prediction/prediction";
 @use "./blocks/match/match2";
 // @use "./blocks/reel/reel";
+@use "./blocks/home/card-title";
+@use "./blocks/home/home-desktop";
+@use "./blocks/home/header-desktop";
 
 // Inter Display
 @font-face {

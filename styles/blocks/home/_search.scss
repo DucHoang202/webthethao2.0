@@ -5,6 +5,10 @@
     width: 100%;
     transition: transform 0.3s ease;
     z-index: 98;
+
+    @media (min-width: 768px) {
+        top: 60px;
+    }
 }
 
 .search-bar-hidden.hide {
@@ -13,9 +17,16 @@
 
 
 .search {
+    display: flex;
     position: sticky;
     top: 64px;
+    gap: 14px;
 
+    padding: 0 24px;
+
+    @media (min-width: 768px) {
+        top: 60px;
+    }
 
     &.black {
         background: var(--color-grey-10, #1A1A1A);
@@ -53,36 +64,75 @@
             padding: 10px 14px 10px 14px;
         }
 
-        /* Item */
-        .item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
 
-            scroll-snap-align: start;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        scroll-snap-align: start;
+        width: max-content;
+
+        .icon {
+            width: 16px;
+            height: 16px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 2px;
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+            width: 208px;
+            flex: 1 1 auto;
+        }
+
+        .name {
+            color: var(--color-white-solid, #FFF);
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+
+            white-space: nowrap;
+            display: flex;
+            gap: 10px;
             width: max-content;
 
-            .icon {
-                width: 16px;
-                height: 16px;
+            /* Không xuống dòng */
+            @media (min-width: 768px) {
+                display: flex;
+                padding: 3px 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 24px;
+                border: 1px solid rgba(255, 255, 255, 0.40);
+                color: var(--www-nytimes-com-white, var(--color-white-solid, #FFF));
+                text-align: center;
+                font-family: var(--font-family-Font-1, "Inter Display");
+                font-size: 12px;
+                font-style: normal;
+                font-weight: var(--font-weight-500, 500);
+                line-height: 20px;
 
-                svg {
-                    width: 100%;
-                    height: 100%;
-                    margin-bottom: 2px;
+                /* 166.667% */
+                &.bg-gray {
+                    background: rgba(255, 255, 255, 0.15);
+
                 }
             }
 
-            .name {
-                color: var(--color-white-solid, #FFF);
-                font-family: var(--font-family-Font-1, "Inter Display");
-                font-size: 12px;
-                font-weight: 500;
-                line-height: normal;
 
-                white-space: nowrap;
-                /* Không xuống dòng */
-            }
         }
+
+
     }
 }

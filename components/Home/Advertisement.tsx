@@ -1,16 +1,12 @@
-const Advertisement = () => {
-    const advertisement = [
-        { image: "" }
-    ];
+const Advertisement = ({ image }: { image: string }) => {
+
 
     return (
         <div className="adv">
-            {advertisement.map((item, index) =>
-                item.image ? (
-                    <img key={index} src={item.image} alt="" />
-                ) : (
-                    <span key={index}>ADVERTISEMENT</span>
-                )
+            {image ? (
+                <img src={image} alt="" />
+            ) : (
+                <span className="adv__text">ADVERTISEMENT</span>
             )}
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HotTopic: React.FC = () => {
+const HotTopic: React.FC<{ isTitled?: boolean }> = ({ isTitled }) => {
     const hotTopic = [
         {
             link: "",
@@ -21,9 +21,9 @@ const HotTopic: React.FC = () => {
     ]
     return (
         <div className='hot-topic'>
-            <div className="title">
+            {isTitled && <div className="title">
                 Chủ đề nóng
-            </div>
+            </div>}
             <div className="hot-topic__body">
 
                 {

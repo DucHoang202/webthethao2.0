@@ -11,6 +11,8 @@
         height: 65px;
         background: url('/assets/bg.webp') -74.958px -18.18px / 130.076% 148.904% no-repeat, var(--color-red-43, #B72424);
 
+
+
         .logo {
             margin-left: 16px;
 
@@ -22,6 +24,12 @@
                 justify-content: center;
                 align-items: flex-start;
                 flex-shrink: 0;
+
+                &.desktop {
+                    width: 153px;
+                    height: 40.519px;
+                    aspect-ratio: 153.00/40.52;
+                }
             }
         }
 

@@ -15,16 +15,17 @@ import Advertisement from "../components/Home/Advertisement";
 import SportGenre from "../components/Home/SportGenre";
 import Nav from "../components/Home/Nav";
 import BlogPage from "./blog/page";
-function getWidthExcludesScrollbar(): number {
-  return document.documentElement.clientWidth;
-}
-
+import HomeMobile from "@/pages/HomeMobile";
+import { useIsMobile } from "../hooks/useIsMobile";
+import { useIsTablet } from "../hooks/useIsTablet";
+import HomeDesktop from "@/pages/HomeDesktop";
+import { useIsCustomView } from "../hooks/useIsCustomView";
+import HomeTablet from "@/pages/HomeTablet";
+import HeaderDesktop from "@/pages/HeaderDesktop";
 function Home() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const isTablet = useMediaQuery({ maxWidth: 1023 });
-  const displayUnlock = useMediaQuery({ maxWidth: 1262 });
-  const formatHeader = useMediaQuery({ maxWidth: 1250 });
-
+  const isMobile = useIsCustomView(990);
+  const isTablet = useIsCustomView(1250);
+  const changeHeader = useIsCustomView(767);
   const card1 =
   {
     avatar: "/assets/Rectangle 1.webp",
@@ -37,51 +38,12 @@ function Home() {
     official: true
   }
 
-  useEffect(() => {
-    const setAppWidth = () => {
-      const width = getWidthExcludesScrollbar();
-      document.documentElement.style.setProperty('--app-width', `${width}px`);
-    };
-
-    // Set initial width
-    setAppWidth();
-
-    // Update on resize
-    window.addEventListener('resize', setAppWidth);
-
-    return () => {
-      window.removeEventListener('resize', setAppWidth);
-    };
-  }, []);
   return (
     <div className='App'>
-      <Header />
-      <Nav />
-      <main>
-        <Search />
-        <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-        <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 ngày 10/10: Dương Quốc Hoàng vs Ngô Quang Trung" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-        <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Tại sao Hà Lan chỉ cần thêm 2 chiến thắng nữa là có vé dự World Cup?" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-        <Video />
-        <HotTopic />
-        <Advertisement />
-        <SportGenre sport="Bóng đá" />
-        <SportGenre sport="Pickleball" />
-        <Advertisement />
-        <SportGenre sport="Billiards" />
-        <div className="advertisement-section" style={{ width: "100%" }}>
-          <Advertisement />
-          <Advertisement />
-          <Advertisement />
-
-          <Advertisement />
-          <div className="class" style={{ height: "300px", backgroundColor: "white" }}></div>
-        </div>
-      </main>
-      {/* <main>
-        <Search />
-
-      </main> */}
+      {changeHeader ? <Header /> : <HeaderDesktop />}
+      {isMobile ? <Nav /> : ""}
+      <Search />
+      {isMobile ? <HomeMobile /> : isTablet ? <HomeTablet /> : <HomeDesktop />}
     </div>
   )
 }
@@ -98,16 +60,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/blog" element={<BlogPage />} />
-
-        <Route path="/404" element={<NotFound />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Home />
   );
 }
 
