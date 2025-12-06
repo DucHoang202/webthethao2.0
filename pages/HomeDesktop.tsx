@@ -62,7 +62,7 @@ export default function HomeDesktop() {
 
                         </div>
                     </div>
-                    <Advertisement image="/assets/image 22.webp" />
+                    <Advertisement image="/assets/image 22.webp" isCollapsed={true} />
 
                 </div>
                 <div className="home-desktop__middle">
@@ -102,7 +102,7 @@ export default function HomeDesktop() {
                         </div>
                     </div>
                     <div className="empty-container">
-                        <Advertisement image="" />
+                        <Advertisement image="" isCollapsed={true} />
                         <Advertisement image="/assets/image 19.webp" />
                     </div>
                     <div className="home-desktop__radius">

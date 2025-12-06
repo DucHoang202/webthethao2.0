@@ -60,7 +60,6 @@ const Prediction: React.FC = () => {
 
                         </div>
                         <Sched items={cat} onChangeDate={handleDateChange} />
-                        <Match />
 
                     </div>
                 </div>

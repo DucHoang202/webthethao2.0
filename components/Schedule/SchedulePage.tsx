@@ -20,66 +20,166 @@ const SchedulePage = () => {
     //     handleCatChange("Bóng đá");
     // }, [])
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
-    const league = [{
-        animationDuration: "50s",
-        title: "Champion League",
-        cat: "Bóng đá",
-        location: "UEFA",
-        board: [
-            {
-                date: "2025-12-05",
-                isActive: true,
-                time: "65'",
-                left: {
-                    name: "Club name",
-                    logo: "",
-                    score: "1"
+    const league = [
+        {
+            animationDuration: "50s",
+            title: "Champion League",
+            cat: "Bóng đá",
+            location: "UEFA",
+            board: [
+                {
+                    date: "2025-12-06",
+                    isActive: true,
+                    time: "55'",
+                    left: { name: "Man City", logo: "", score: "2" },
+                    right: { name: "Liverpool", logo: "", score: "1" }
                 },
-                right: {
-                    name: "Club name",
-                    logo: "",
-                    score: "2"
-                }
-            }
-        ]
-    }, {
-        animationDuration: "50s",
-        title: "Giải bóng chuyền U18",
-        cat: "Bóng chuyền",
-        location: "England",
-        board: [
-            {
-                date: "2025-12-05",
-                isActive: false,
-                time: "FT",
-                left: {
-                    name: "Club name",
-                    logo: "",
-                    score: "1"
+                {
+                    date: "2025-12-07",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Real Madrid", logo: "", score: "3" },
+                    right: { name: "Barcelona", logo: "", score: "2" }
                 },
-                right: {
-                    name: "Club name",
-                    logo: "",
-                    score: "2"
-                }
-            },
-            {
-                date: "2025-12-04",
-                isActive: true,
-                time: "65'",
-                left: {
-                    name: "Club name",
-                    logo: "",
-                    score: "1"
+                {
+                    date: "2025-12-08",
+                    isActive: true,
+                    time: "72'",
+                    left: { name: "Bayern", logo: "", score: "1" },
+                    right: { name: "PSG", logo: "", score: "1" }
                 },
-                right: {
-                    name: "Club name",
-                    logo: "",
-                    score: "2"
+                {
+                    date: "2025-12-09",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Arsenal", logo: "", score: "0" },
+                    right: { name: "Chelsea", logo: "", score: "2" }
+                },
+                {
+                    date: "2025-12-10",
+                    isActive: true,
+                    time: "68'",
+                    left: { name: "Inter Milan", logo: "", score: "2" },
+                    right: { name: "AC Milan", logo: "", score: "2" }
+                },
+                {
+                    date: "2025-12-11",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Juventus", logo: "", score: "1" },
+                    right: { name: "Roma", logo: "", score: "1" }
+                },
+                {
+                    date: "2025-12-12",
+                    isActive: true,
+                    time: "74'",
+                    left: { name: "Atletico", logo: "", score: "0" },
+                    right: { name: "Valencia", logo: "", score: "1" }
+                },
+                {
+                    date: "2025-12-13",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Tottenham", logo: "", score: "2" },
+                    right: { name: "Newcastle", logo: "", score: "2" }
+                },
+                {
+                    date: "2025-12-14",
+                    isActive: true,
+                    time: "59'",
+                    left: { name: "Benfica", logo: "", score: "1" },
+                    right: { name: "Porto", logo: "", score: "0" }
+                },
+                {
+                    date: "2025-12-15",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Ajax", logo: "", score: "0" },
+                    right: { name: "PSV", logo: "", score: "3" }
                 }
-            }
-        ]
-    }]
+            ]
+        },
+
+        {
+            animationDuration: "50s",
+            title: "Giải bóng chuyền U18",
+            cat: "Bóng chuyền",
+            location: "England",
+            board: [
+                {
+                    date: "2025-12-06",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Japan U18", logo: "", score: "1" },
+                    right: { name: "Brazil U18", logo: "", score: "3" }
+                },
+                {
+                    date: "2025-12-07",
+                    isActive: true,
+                    time: "68'",
+                    left: { name: "USA U18", logo: "", score: "2" },
+                    right: { name: "Italy U18", logo: "", score: "2" }
+                },
+                {
+                    date: "2025-12-08",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Poland U18", logo: "", score: "3" },
+                    right: { name: "France U18", logo: "", score: "1" }
+                },
+                {
+                    date: "2025-12-09",
+                    isActive: true,
+                    time: "71'",
+                    left: { name: "Japan U18", logo: "", score: "1" },
+                    right: { name: "USA U18", logo: "", score: "1" }
+                },
+                {
+                    date: "2025-12-10",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Brazil U18", logo: "", score: "2" },
+                    right: { name: "Poland U18", logo: "", score: "3" }
+                },
+                {
+                    date: "2025-12-11",
+                    isActive: true,
+                    time: "54'",
+                    left: { name: "France U18", logo: "", score: "0" },
+                    right: { name: "Italy U18", logo: "", score: "1" }
+                },
+                {
+                    date: "2025-12-12",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Japan U18", logo: "", score: "3" },
+                    right: { name: "France U18", logo: "", score: "2" }
+                },
+                {
+                    date: "2025-12-13",
+                    isActive: true,
+                    time: "66'",
+                    left: { name: "USA U18", logo: "", score: "1" },
+                    right: { name: "Brazil U18", logo: "", score: "1" }
+                },
+                {
+                    date: "2025-12-14",
+                    isActive: false,
+                    time: "FT",
+                    left: { name: "Italy U18", logo: "", score: "3" },
+                    right: { name: "Poland U18", logo: "", score: "2" }
+                },
+                {
+                    date: "2025-12-15",
+                    isActive: true,
+                    time: "62'",
+                    left: { name: "France U18", logo: "", score: "0" },
+                    right: { name: "USA U18", logo: "", score: "2" }
+                }
+            ]
+        }
+    ];
+
     const result = league
         .filter(item => item.cat === selectedCat)
         .map(item => ({
@@ -183,9 +283,16 @@ const SchedulePage = () => {
 
                     </div>
                 </div>
-                {result.map((lg, leagueIndex) => (
-                    <League key={leagueIndex} title={lg.title} location={lg.location} board={lg.board} animationDuration={lg.animationDuration} />
-                ))}
+                {result.length === 0 ? (
+                    <div className="no-data">
+                        <img src="/assets/image 9.webp" alt="" />
+                        <p>Không có dữ liệu</p>
+                    </div>
+                ) : (
+                    result.map((lg, leagueIndex) => (
+                        <League key={leagueIndex} title={lg.title} location={lg.location} board={lg.board} animationDuration={lg.animationDuration} />
+                    ))
+                )}
 
             </div>
         </div>

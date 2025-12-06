@@ -22,59 +22,77 @@ const Prediction: React.FC = () => {
     }
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
     const data = [
-        {
-            title: "UEFA champions league",
-            location: "UEFA",
-            category: "Bóng đá",
-            board: [{
-                date: "2025-12-05",
-                time: "23/10 20:00",
-                leftTeam: {
-                    name: "Man City",
-                    logo: "MC",
-                    score: "2",
-                    handicap: {
-                        point: "1.5",
-                        calc: "-0.5",
-                    },
-                    taixiu: {
-                        point: "1",
-                        calc: "1",
-                    },
-                    oneTwo: {
-                        point: "1",
-                        calc: "1",
-                    },
+        ...generateLeague("Bóng đá", "UEFA", [
+            ["Man City", "MC"],
+            ["Liverpool", "L"],
+            ["Real Madrid", "RM"],
+            ["Barcelona", "FCB"],
+            ["Bayern", "FCB"],
+            ["PSG", "PSG"],
+        ]),
+        ...generateLeague("Bóng chuyền", "FIVB", [
+            ["Japan", "JP"],
+            ["Brazil", "BR"],
+            ["USA", "US"],
+            ["Italy", "IT"],
+            ["France", "FR"],
+            ["Poland", "PL"],
+        ]),
+    ];
 
-                    forecastPercent: 65,
-                },
-                rightTeam: {
-                    name: "Liverpool",
-                    logo: "L",
-                    score: "2",
-                    handicap: {
-                        point: "1.5",
-                        calc: "-0.5",
-                    },
-                    taixiu: {
-                        point: "1",
-                        calc: "1",
-                    },
-                    oneTwo: {
-                        point: "1",
-                        calc: "1",
-                    },
+    // --- Generator --- //
+    function generateLeague(category: any, location: any, teams: any) {
+        const result = [];
+        const start = new Date("2025-12-06");
+        const end = new Date("2025-12-15");
 
-                    forecastPercent: 30,
-                },
-            }]
+        for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+            const day = d.toISOString().slice(0, 10);
 
+            // tạo 2 trận/ngày
+            for (let i = 0; i < 2; i++) {
+                const [leftName, leftLogo] = teams[(i * 2) % teams.length];
+                const [rightName, rightLogo] = teams[(i * 2 + 1) % teams.length];
 
-
-
-
+                result.push({
+                    title: `${category} League`,
+                    location,
+                    category,
+                    board: [
+                        {
+                            date: day,
+                            time: "20:00",
+                            leftTeam: {
+                                name: leftName,
+                                logo: leftLogo,
+                                score: `${Math.floor(Math.random() * 5)}`,
+                                handicap: { point: "1.5", calc: "-0.5" },
+                                taixiu: { point: "1", calc: "1" },
+                                oneTwo: { point: "1", calc: "1" },
+                                forecastPercent: randomPercent(),
+                            },
+                            rightTeam: {
+                                name: rightName,
+                                logo: rightLogo,
+                                score: `${Math.floor(Math.random() * 5)}`,
+                                handicap: { point: "1.5", calc: "-0.5" },
+                                taixiu: { point: "1", calc: "1" },
+                                oneTwo: { point: "1", calc: "1" },
+                                forecastPercent: randomPercent(),
+                            },
+                        },
+                    ],
+                });
+            }
         }
-    ]
+
+        return result;
+    }
+
+    function randomPercent() {
+        return Math.floor(Math.random() * 50) + 25; // 25–75%
+    }
+
     const isWithinNext3Days = (dateString: string) => {
         const today = new Date();
         const target = new Date(dateString);
@@ -166,9 +184,16 @@ const Prediction: React.FC = () => {
                             <div className="item">Live</div>
                             <div className={`item ${nearDate ? 'active' : ''}`} onClick={() => setNearDate(!nearDate)}>Sắp diễn ra</div>
                         </div>
-                        {result.map((item, index) => (
-                            <Match key={index} title={item.title} location={item.location} category={item.category} board={item.board} />
-                        ))}
+                        {result.length === 0 ? (
+                            <div className="no-data">
+                                <img src="/assets/image 9.webp" alt="" />
+                                <p>Không có dữ liệu</p>
+                            </div>
+                        ) : (
+                            result.map((item, index) => (
+                                <Match key={index} title={item.title} location={item.location} category={item.category} board={item.board} />
+                            ))
+                        )}
 
                     </div>
                     <div className="" style={{ marginBottom: '104px' }}></div>

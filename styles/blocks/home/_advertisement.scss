@@ -22,14 +22,28 @@
     /* 108.475% */
     letter-spacing: var(--letter-spacing-0_22, 0.22px);
     text-transform: uppercase;
-    border-top: 1px solid #F0F0EE;
-    border-bottom: 1px solid #F0F0EE;
+    // border-top: 1px solid #F0F0EE;
+    // border-bottom: 1px solid #F0F0EE;
+    padding-top: 12px;
+    padding-bottom: 0;
+
+    &.padding-0 {
+        padding-top: 12px;
+        padding-bottom: 0;
+    }
+
+    &.padding-62 {
+        padding-bottom: 62px;
+        padding-top: 12px;
+
+    }
 
     img {
         width: 100%;
     }
 
-    &__text {
-        padding: 12px 0;
-    }
+    // &__text {
+    //     padding-top: 12px;
+    //     padding-bottom: 62px;
+    // }
 }
