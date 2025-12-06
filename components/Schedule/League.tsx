@@ -42,7 +42,7 @@ const League = ({ title, location, animationDuration, board }: LeagueProps) => {
                                     <div className="item">
                                         <div className="name">
                                             <img src={bd.left.logo} alt="" className="logo" />
-                                            <div className="text">{bd.left.name}</div>
+                                            {bd.left.name}
                                         </div>
                                         <div className={`score ${bd.isActive ? "active" : ""}`}>{bd.left.score}</div>
                                     </div>
@@ -57,7 +57,7 @@ const League = ({ title, location, animationDuration, board }: LeagueProps) => {
                                     <div className="item">
                                         <div className="name">
                                             <img src={bd.right.logo} alt="" className="logo" />
-                                            <div className="text">{bd.right.name}</div>
+                                            {bd.right.name}
                                         </div>
                                         <div className={`score ${bd.isActive ? "active" : ""}`}>{bd.right.score}</div>
                                     </div>
