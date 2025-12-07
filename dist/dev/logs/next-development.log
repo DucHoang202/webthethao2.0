@@ -1,73 +1,16 @@
-[00:00:03.655] Server  LOG      ✓ Ready in 2.7s
-[00:01:10.160] Server  LOG      ○ Compiling / ...
-[00:01:15.246] Server  WARN     ⚠ Cross origin request detected from 192.168.1.10 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:02.481] Server  LOG      ✓ Ready in 1897ms
+[00:00:16.929] Server  LOG      ○ Compiling / ...
+[00:00:19.146] Server  WARN     ⚠ Cross origin request detected from 192.168.1.10 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:01:15.304] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:15.653] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:01:15.653] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:01:15.653] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:01:15.653] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:19.184] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.492] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:19.492] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:19.492] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:00:19.492] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `HomeDesktop`. 
-[00:01:15.653] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:19.492] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `div`.  It was passed a child from HomeDesktop.
-[00:01:32.085] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
-[00:01:32.087] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
-[00:01:32.093] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
-[00:01:32.097] Server  ERROR   Invalid DOM property `stop-color`. Did you mean `stopColor`?
-[00:01:32.098] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:01:32.100] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:01:32.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:33.248] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:01:33.249] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:01:33.249] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:01:33.249] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stop-color stopColor
-[00:01:33.249] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:01:33.249] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:01:33.249] Browser LOG     loai dc chon Bóng đá
-[00:01:33.249] Browser LOG     ngay dc chon 2025-12-06
-[00:01:33.249] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:01:33.249] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:01:37.697] Browser LOG     ngay dc chon 2025-12-07
-[00:01:38.616] Browser LOG     ngay dc chon 2025-12-08
-[00:01:39.400] Browser LOG     ngay dc chon 2025-12-09
-[00:01:40.202] Browser LOG     loai dc chon Bóng chuyền
-[00:01:40.697] Browser LOG     loai dc chon Bóng rổ
-[00:01:41.666] Browser LOG     loai dc chon Bóng đá
-[00:01:41.666] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:01:41.666] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:01:42.833] Browser LOG     loai dc chon Bóng chuyền
-[00:01:43.794] Browser LOG     ngay dc chon 2025-12-06
-[00:01:44.351] Browser LOG     ngay dc chon 2025-12-07
-[00:01:44.867] Browser LOG     ngay dc chon 2025-12-07
-[00:01:45.446] Browser LOG     ngay dc chon 2025-12-08
-[00:01:45.928] Browser LOG     ngay dc chon 2025-12-09
-[00:01:46.550] Browser LOG     ngay dc chon 2025-12-10
-[00:01:48.094] Browser LOG     ngay dc chon 2025-12-11
-[00:01:48.611] Browser LOG     ngay dc chon 2025-12-12
-[00:01:49.127] Browser LOG     ngay dc chon 2025-12-13
-[00:01:52.382] Browser LOG     loai dc chon Bóng đá
-[00:01:53.266] Browser LOG     loai dc chon Bóng chuyền
-[00:01:54.466] Browser LOG     loai dc chon Bóng đá
-[00:01:55.209] Browser LOG     loai dc chon Bóng chuyền
-[00:01:55.753] Browser LOG     loai dc chon Bóng đá
-[00:01:56.255] Browser LOG     loai dc chon Bóng chuyền
-[00:01:57.266] Browser LOG     ngay dc chon 2025-12-07
-[00:01:57.765] Browser LOG     ngay dc chon 2025-12-08
-[00:01:58.232] Browser LOG     ngay dc chon 2025-12-09
-[00:01:59.030] Browser LOG     loai dc chon Bóng rổ
-[00:02:01.508] Browser LOG     loai dc chon Bóng volley
-[00:02:04.851] Browser LOG     loai dc chon Bóng bầu dục
-[00:02:08.547] Browser LOG     loai dc chon Bóng volley
-[00:02:09.497] Browser LOG     loai dc chon Bóng rổ
-[00:02:10.242] Browser LOG     loai dc chon Bóng chuyền
-[00:02:10.242] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:02:10.242] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:02:11.957] Browser LOG     loai dc chon Bóng đá
-[00:02:14.311] Browser LOG     loai dc chon Bóng chuyền
-[00:02:15.119] Browser LOG     loai dc chon Bóng rổ
-[00:02:16.047] Browser LOG     loai dc chon Bóng chuyền
-[00:02:16.047] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:02:16.047] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:02:16.629] Browser LOG     loai dc chon Bóng đá
+[00:00:55.773] Server  LOG      ✓ Compiled in 512ms
+[00:02:50.770] Server  LOG      ✓ Compiled in 142ms

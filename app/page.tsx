@@ -25,7 +25,8 @@ import HeaderDesktop from "@/pages/HeaderDesktop";
 function Home() {
   const isMobile = useIsCustomView(990);
   const isTablet = useIsCustomView(1250);
-  const changeHeader = useIsCustomView(767);
+  const changeHeader = useIsCustomView(768);
+  const changeNav = useIsCustomView(1024);
   const card1 =
   {
     avatar: "/assets/Rectangle 1.webp",
@@ -40,8 +41,8 @@ function Home() {
 
   return (
     <div className='App'>
-      {changeHeader ? <Header /> : <HeaderDesktop />}
-      {isMobile ? <Nav /> : ""}
+      {changeNav ? <Header /> : <HeaderDesktop />}
+      {changeHeader ? <Nav /> : ""}
       <Search />
       {isMobile ? <HomeMobile /> : isTablet ? <HomeTablet /> : <HomeDesktop />}
     </div>
