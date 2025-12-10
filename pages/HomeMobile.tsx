@@ -1,8 +1,8 @@
 
 import Search from "../components/Home/Search";
-import Card from "../components/Home/Card";
+import Card from "../components/ui/card/NewsCard";
 import Video from "../components/Home/Video";
-import HotTopic from "../components/Home/HotTopic";
+import HotTopic from "../components/ui/card/HotTopicCard";
 import Advertisement from "../components/Home/Advertisement";
 import SportGenre from "../components/Home/SportGenre";
 

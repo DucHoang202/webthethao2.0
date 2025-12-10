@@ -2,26 +2,21 @@
 @use "./blocks/header";
 @use "./blocks/footer";
 @use "./blocks/home/search";
-@use "./blocks/home/card";
 @use "./blocks/home/video";
-@use "./blocks/home/hot-topic";
 @use "./blocks/home/advertisement";
-@use "./blocks/home/simple-card";
-@use "./blocks/home/small-card";
 @use "./blocks/home/category-nav";
 @use "./blocks/home/nav";
 @use "./blocks/blog/blog";
 @use "./blocks/home/small-info";
-@use "./blocks/home/small-info-horizontal";
 @use "./blocks/home/sport-group";
 @use "./blocks/schedule/schedule-page";
 @use "./blocks/schedule/league";
 @use "./blocks/prediction/prediction";
 @use "./blocks/match/match2";
-// @use "./blocks/reel/reel";
-@use "./blocks/home/card-title";
+@use "./ui/card/card";
 @use "./blocks/home/home-desktop";
 @use "./blocks/home/header-desktop";
+@use "./ui/button/view-more";
 
 // Inter Display
 @font-face {

@@ -355,7 +355,7 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hideInMobile {
     display: none;
   }
@@ -873,9 +873,9 @@ a {
 }
 
 .small-card__info .small-card__name {
-  color: #121212;
+  color: #666;
   font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: var(--line-height-15, 15px);
@@ -897,7 +897,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: var(--line-height-15, 15px);
-  margin-top: 5px;
 }
 
 .small-card__container {
@@ -1029,13 +1028,13 @@ a {
 }
 
 .nav__nav {
-  color: #552929;
+  color: #666;
+  font-family: var(--Inter);
   cursor: pointer;
   flex-direction: column;
   align-items: center;
   gap: 7px;
   width: 61.4px;
-  font-family: Inter Display;
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
@@ -2043,10 +2042,10 @@ blockquote .content .name {
 .league__title {
   align-items: left;
   color: var(--Neutral-Dark, #141414);
+  font-family: var(--Inter);
   text-transform: uppercase;
   align-self: stretch;
   gap: 4px;
-  font-family: Teko;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -2293,11 +2292,17 @@ blockquote .content .name {
 }
 
 .prediction__score .category .category__title {
+  color: #1f2022;
+  text-align: center;
   border-radius: 16777200px;
   flex: 1 0 0;
   justify-content: center;
   align-items: center;
   padding: 8px 21.003px 7.141px 21px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.143px;
   display: flex;
 }
 
@@ -3026,7 +3031,7 @@ blockquote .content .name {
   border-radius: 14px 14px 0 0;
   justify-content: space-between;
   align-items: center;
-  padding-right: 14px;
+  padding: 10px 14px;
   display: flex;
 }
 
@@ -3037,7 +3042,6 @@ blockquote .content .name {
 .card-title__title {
   align-self: stretch;
   align-items: flex-start;
-  padding: 10px 14px;
   display: flex;
 }
 

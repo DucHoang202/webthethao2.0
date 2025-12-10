@@ -593,7 +593,7 @@ const SportGroup = ({ open, onClose })=>{
         children: open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    onClick: onClose,
+                    onClick: ()=>onClose(),
                     initial: {
                         opacity: 0
                     },
@@ -669,54 +669,37 @@ const SportGroup = ({ open, onClose })=>{
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "sport-group__icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        width: "32",
-                                                        height: "32",
-                                                        viewBox: "0 0 32 32",
-                                                        fill: "none",
-                                                        xmlns: "http://www.w3.org/2000/svg",
-                                                        children: [
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
-                                                                width: "32",
-                                                                height: "32",
-                                                                rx: "16",
-                                                                fill: "#F6F6F6"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                lineNumber: 72,
-                                                                columnNumber: 333
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                d: "M19.7123 20.773L11.227 12.2877C10.9371 11.9978 10.9371 11.5169 11.227 11.227C11.5169 10.9371 11.9977 10.9371 12.2877 11.227L20.7729 19.7123C21.0628 20.0022 21.0628 20.483 20.7729 20.773C20.483 21.0629 20.0022 21.0629 19.7123 20.773Z",
-                                                                fill: "#121212"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                lineNumber: 72,
-                                                                columnNumber: 388
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                d: "M11.2271 20.773C10.9372 20.483 10.9372 20.0022 11.2271 19.7123L19.7123 11.227C20.0023 10.9371 20.4831 10.9371 20.773 11.227C21.0629 11.5169 21.0629 11.9978 20.773 12.2877L12.2877 20.773C11.9978 21.0629 11.517 21.0629 11.2271 20.773Z",
-                                                                fill: "#121212"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                lineNumber: 72,
-                                                                columnNumber: 649
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            " "
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                        lineNumber: 72,
-                                                        columnNumber: 237
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    " "
-                                                ]
-                                            }, void 0, true, {
+                                                onClick: onClose,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    width: "24",
+                                                    height: "24",
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            d: "M15.7123 16.773L7.22699 8.28768C6.93708 7.99776 6.93708 7.51693 7.22699 7.22702C7.51691 6.9371 7.99774 6.9371 8.28765 7.22702L16.7729 15.7123C17.0628 16.0022 17.0628 16.483 16.7729 16.773C16.483 17.0629 16.0022 17.0629 15.7123 16.773Z",
+                                                            fill: "#121212"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
+                                                            lineNumber: 74,
+                                                            columnNumber: 33
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            d: "M7.22706 16.773C6.93715 16.483 6.93715 16.0022 7.22706 15.7123L15.7123 7.22702C16.0023 6.9371 16.4831 6.9371 16.773 7.22702C17.0629 7.51693 17.0629 7.99776 16.773 8.28768L8.28772 16.773C7.99781 17.0629 7.51698 17.0629 7.22706 16.773Z",
+                                                            fill: "#121212"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
+                                                            lineNumber: 75,
+                                                            columnNumber: 33
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 29
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
                                                 lineNumber: 72,
                                                 columnNumber: 201
@@ -747,8 +730,8 @@ const SportGroup = ({ open, onClose })=>{
                                                                     className: "image"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                    lineNumber: 72,
-                                                                    columnNumber: 1104
+                                                                    lineNumber: 78,
+                                                                    columnNumber: 212
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 " ",
                                                                 item[0].name,
@@ -756,8 +739,8 @@ const SportGroup = ({ open, onClose })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 1068
+                                                            lineNumber: 78,
+                                                            columnNumber: 176
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         " ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -770,8 +753,8 @@ const SportGroup = ({ open, onClose })=>{
                                                                     className: "image"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                    lineNumber: 72,
-                                                                    columnNumber: 1215
+                                                                    lineNumber: 78,
+                                                                    columnNumber: 323
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 " ",
                                                                 item[1].name,
@@ -779,22 +762,22 @@ const SportGroup = ({ open, onClose })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 1179
+                                                            lineNumber: 78,
+                                                            columnNumber: 287
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         " "
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                    lineNumber: 72,
-                                                    columnNumber: 1033
+                                                    lineNumber: 78,
+                                                    columnNumber: 141
                                                 }, ("TURBOPACK compile-time value", void 0))),
                                             " "
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 931
+                                        lineNumber: 78,
+                                        columnNumber: 39
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     " "
                                 ]
@@ -1533,16 +1516,14 @@ const Video = ()=>{
                     freeMode: true,
                     slidesPerView: "auto",
                     spaceBetween: 12,
-                    pagination: {
-                        clickable: true
-                    },
-                    navigation: true,
-                    className: "swiper-container",
+                    // pagination={{ clickable: true }}
+                    // navigation
+                    className: "swiper",
                     children: blogPosts.map((post, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
                             style: {
                                 width: "184px"
                             },
-                            className: "video-slide",
+                            className: `video-slide ${index === blogPosts.length - 1 ? 'last' : ''}`,
                             onClick: ()=>window.location.href = post.link,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1779,20 +1760,44 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 ;
 const Advertisement = ({ image, isCollapsed })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `adv ${isCollapsed ? "padding-0" : "padding-62"}`,
-        children: image ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+        className: `adv`,
+        children: image ? isCollapsed ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-full",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: `adv__text padding-12`,
+                    children: "ADVERTISEMENT"
+                }, void 0, false, {
+                    fileName: "[project]/webthethao2.0/components/Home/Advertisement.tsx",
+                    lineNumber: 5,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: image,
+                    alt: ""
+                }, void 0, false, {
+                    fileName: "[project]/webthethao2.0/components/Home/Advertisement.tsx",
+                    lineNumber: 8,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/webthethao2.0/components/Home/Advertisement.tsx",
+            lineNumber: 4,
+            columnNumber: 13
+        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
             src: image,
             alt: ""
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Home/Advertisement.tsx",
-            lineNumber: 4,
+            lineNumber: 11,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: `adv__text `,
+            className: `adv__text`,
             children: "ADVERTISEMENT"
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Home/Advertisement.tsx",
-            lineNumber: 6,
+            lineNumber: 13,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
@@ -1862,32 +1867,20 @@ const CardTitle = ({ title, logo, style, deco, arrow })=>{
         style: style,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "card-title__title",
+                className: "card-title__title ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `deco ${isMobile ? 'hidden' : deco ? 'block' : 'hidden'}`,
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                            width: "4",
-                            height: "24",
-                            viewBox: "0 0 4 24",
-                            fill: "none",
-                            xmlns: "http://www.w3.org/2000/svg",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                d: "M0 0C2.20914 0 4 1.79086 4 4V20C4 22.2091 2.20914 24 0 24V0Z",
-                                fill: "#B72424"
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                                lineNumber: 11,
-                                columnNumber: 25
-                            }, ("TURBOPACK compile-time value", void 0))
+                        className: "deco-container",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `deco ${isMobile ? 'hidden' : deco ? 'block' : 'hidden'}`
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                            lineNumber: 10,
+                            lineNumber: 9,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                        lineNumber: 9,
+                        lineNumber: 8,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1902,7 +1895,7 @@ const CardTitle = ({ title, logo, style, deco, arrow })=>{
                                 className: "logo"
                             }, void 0, false, {
                                 fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                                lineNumber: 16,
+                                lineNumber: 17,
                                 columnNumber: 30
                             }, ("TURBOPACK compile-time value", void 0)),
                             " ",
@@ -1910,7 +1903,7 @@ const CardTitle = ({ title, logo, style, deco, arrow })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                        lineNumber: 15,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
@@ -1938,17 +1931,17 @@ const CardTitle = ({ title, logo, style, deco, arrow })=>{
                         "stroke-linejoin": "round"
                     }, void 0, false, {
                         fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                    lineNumber: 22,
+                    lineNumber: 23,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Home/CardTitle.tsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -2619,7 +2612,7 @@ function HomeDesktop() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Advertisement$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             image: "/assets/image 22.webp",
-                            isCollapsed: true
+                            isCollapsed: false
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
                             lineNumber: 65,
@@ -2820,28 +2813,26 @@ function HomeDesktop() {
                             lineNumber: 97,
                             columnNumber: 21
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "empty-container",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Advertisement$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    image: "",
-                                    isCollapsed: true
-                                }, void 0, false, {
-                                    fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 105,
-                                    columnNumber: 25
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Advertisement$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    image: "/assets/image 19.webp"
-                                }, void 0, false, {
-                                    fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 106,
-                                    columnNumber: 25
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Advertisement$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            image: "/assets/image 19.webp",
+                            isCollapsed: true
+                        }, void 0, false, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
                             lineNumber: 104,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "home-desktop__radius",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$SportGenre$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                sport: "Bóng đá"
+                            }, void 0, false, {
+                                fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
+                                lineNumber: 106,
+                                columnNumber: 25
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
+                            lineNumber: 105,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2856,20 +2847,6 @@ function HomeDesktop() {
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
                             lineNumber: 108,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "home-desktop__radius",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$SportGenre$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                sport: "Bóng đá"
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                lineNumber: 112,
-                                columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                            lineNumber: 111,
                             columnNumber: 21
                         }, this)
                     ]
@@ -2895,7 +2872,7 @@ function HomeDesktop() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 114,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2917,7 +2894,7 @@ function HomeDesktop() {
                                                 }
                                             }, index, false, {
                                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 117,
                                                 columnNumber: 33
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2927,24 +2904,24 @@ function HomeDesktop() {
                                                 children: "Xem thêm"
                                             }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 120,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 119,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 115,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                            lineNumber: 116,
+                            lineNumber: 113,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2955,7 +2932,7 @@ function HomeDesktop() {
                                     deco: true
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 125,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2977,7 +2954,7 @@ function HomeDesktop() {
                                                 }
                                             }, index, false, {
                                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 128,
                                                 columnNumber: 33
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2987,31 +2964,31 @@ function HomeDesktop() {
                                                 children: "Xem thêm"
                                             }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 131,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 130,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 126,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                            lineNumber: 127,
+                            lineNumber: 124,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Advertisement$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             image: "/assets/adv.webp"
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                            lineNumber: 138,
+                            lineNumber: 135,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3022,7 +2999,7 @@ function HomeDesktop() {
                                     deco: true
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 137,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3044,7 +3021,7 @@ function HomeDesktop() {
                                                 }
                                             }, index, false, {
                                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 140,
                                                 columnNumber: 33
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3054,30 +3031,30 @@ function HomeDesktop() {
                                                 children: "Xem thêm"
                                             }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 143,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 142,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 138,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                            lineNumber: 139,
+                            lineNumber: 136,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                    lineNumber: 115,
+                    lineNumber: 112,
                     columnNumber: 17
                 }, this)
             ]

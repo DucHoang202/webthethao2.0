@@ -37,7 +37,7 @@ const SportGroup = ({ open, onClose }: any) => {
                 <>
                     {/* Overlay */}
                     <motion.div
-                        onClick={onClose}
+                        onClick={() => onClose()}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -69,7 +69,13 @@ const SportGroup = ({ open, onClose }: any) => {
                             zIndex: 102
                         }}
                     >
-                        <div className="sport-group"> <div className="sport-group__container"> <div className="sport-group__title-container"> <div className="sport-group__title"> Nhóm thể thao </div> <div className="sport-group__icon"> <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="32" height="32" rx="16" fill="#F6F6F6" /> <path d="M19.7123 20.773L11.227 12.2877C10.9371 11.9978 10.9371 11.5169 11.227 11.227C11.5169 10.9371 11.9977 10.9371 12.2877 11.227L20.7729 19.7123C21.0628 20.0022 21.0628 20.483 20.7729 20.773C20.483 21.0629 20.0022 21.0629 19.7123 20.773Z" fill="#121212" /> <path d="M11.2271 20.773C10.9372 20.483 10.9372 20.0022 11.2271 19.7123L19.7123 11.227C20.0023 10.9371 20.4831 10.9371 20.773 11.227C21.0629 11.5169 21.0629 11.9978 20.773 12.2877L12.2877 20.773C11.9978 21.0629 11.517 21.0629 11.2271 20.773Z" fill="#121212" /> </svg> </div> </div> <div className="sport-group__body"> {divideSportGroup(sportGroups).map((item: any, index: number) => (<div className="sport-group__row"> <div className="sport-group__item"> <img src={item[0].image} alt="" className="image" /> {item[0].name} </div> <div className="sport-group__item"> <img src={item[1].image} alt="" className="image" /> {item[1].name} </div> </div>))} </div> </div> </div>
+                        <div className="sport-group"> <div className="sport-group__container"> <div className="sport-group__title-container"> <div className="sport-group__title"> Nhóm thể thao </div> <div className="sport-group__icon" onClick={onClose}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.7123 16.773L7.22699 8.28768C6.93708 7.99776 6.93708 7.51693 7.22699 7.22702C7.51691 6.9371 7.99774 6.9371 8.28765 7.22702L16.7729 15.7123C17.0628 16.0022 17.0628 16.483 16.7729 16.773C16.483 17.0629 16.0022 17.0629 15.7123 16.773Z" fill="#121212" />
+                                <path d="M7.22706 16.773C6.93715 16.483 6.93715 16.0022 7.22706 15.7123L15.7123 7.22702C16.0023 6.9371 16.4831 6.9371 16.773 7.22702C17.0629 7.51693 17.0629 7.99776 16.773 8.28768L8.28772 16.773C7.99781 17.0629 7.51698 17.0629 7.22706 16.773Z" fill="#121212" />
+                            </svg>
+
+                        </div> </div> <div className="sport-group__body"> {divideSportGroup(sportGroups).map((item: any, index: number) => (<div className="sport-group__row"> <div className="sport-group__item"> <img src={item[0].image} alt="" className="image" /> {item[0].name} </div> <div className="sport-group__item"> <img src={item[1].image} alt="" className="image" /> {item[1].name} </div> </div>))} </div> </div> </div>
                     </motion.div>
                 </>
             )}

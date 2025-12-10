@@ -52,9 +52,9 @@ const Video: React.FC = () => {
                     freeMode={true}
                     slidesPerView={"auto"}
                     spaceBetween={12}
-                    pagination={{ clickable: true }}
-                    navigation
-                    className="swiper-container"
+                    // pagination={{ clickable: true }}
+                    // navigation
+                    className="swiper"
                 >
                     {blogPosts.map((post, index) => (
                         <SwiperSlide
@@ -63,7 +63,7 @@ const Video: React.FC = () => {
                                 width: "184px"
 
                             }}
-                            className="video-slide"
+                            className={`video-slide ${index === blogPosts.length - 1 ? 'last' : ''}`}
                             onClick={() => window.location.href = post.link}
                         >
                             <div className="video-thumb">
@@ -94,7 +94,7 @@ const Video: React.FC = () => {
                     ))}
                 </Swiper>
             </div>
-            <div className="video__extension">
+            <div className="view-more--btn black">
                 <a href="#">Xem thêm</a>
             </div>
         </div>

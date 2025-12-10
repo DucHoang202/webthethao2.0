@@ -15,10 +15,7 @@ const SchedulePage = () => {
         setSelectedCat(cat);
         console.log("loai dc chon", cat)
     }
-    // useEffect(() => {
-    //     handleDateChange("04/04/2025");
-    //     handleCatChange("Bóng đá");
-    // }, [])
+
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
     const league = [
         {

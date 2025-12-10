@@ -35,7 +35,7 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "components/Home/Card.tsx",
+    "components/ui/card/NewsCard.tsx",
     "components/Home/Advertisement.tsx",
     "dist/types/**/*.ts",
     "dist/dev/types/**/*.ts",

@@ -1,3 +1,6 @@
+'use client'
+import ModalDropdown from "@/components/ui/modal/DropdownModal";
+import { useState } from "react";
 const HeaderDesktop = () => {
     const menu = [
         { title: "Pickleball", href: "#" },
@@ -8,6 +11,7 @@ const HeaderDesktop = () => {
 
 
     ]
+    const [openModal, setOpenModal] = useState(false);
     return (
         <div className="header-desktop">
             <a className="header-desktop__logo" href="/">
@@ -19,7 +23,7 @@ const HeaderDesktop = () => {
                         <div className="text hashtag">#</div>
                         {item.title}</a>
                 ))}
-                <div className="text">Khác <div className="extend">• • •</div> </div>
+                <div className="text" onClick={() => setOpenModal(true)}>Khác <div className="extend">• • •</div> </div>
             </div>
             <div className="header-desktop__right">
                 <div className="item bg-white"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +38,7 @@ const HeaderDesktop = () => {
                 </svg>
                     Đăng nhập</div>
             </div>
-
+            {/* <ModalDropdown open={openModal} setOpen={setOpenModal} /> */}
         </div>
     )
 }

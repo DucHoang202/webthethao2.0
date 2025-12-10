@@ -101,7 +101,14 @@
                 align-items: center;
                 flex: 1 0 0;
                 border-radius: 16777200px;
+                color: #1F2022;
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 17.143px;
 
+                /* 142.858% */
                 &.active {
                     background: radial-gradient(103.66% 379.54% at 100% 100%, #F82476 0%, #F63B3B 50%, #F33B00 100%);
                     color: #FFF !important;

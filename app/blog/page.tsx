@@ -3,7 +3,7 @@ import Nav from "../../components/Home/Nav";
 import "../../styles/main.scss"
 import Search from "../../components/Home/Search";
 import BlogPage from "../../components/Blog/BlogPage";
-import Card from "../../components/Home/Card";
+import Card from "../../components/ui/card/NewsCard";
 
 const Blog: React.FC = () => {
     const card1 =

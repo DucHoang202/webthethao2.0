@@ -1,0 +1,27 @@
+.view-more--btn {
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #F6F6F6;
+    color: #121212;
+    font-family: var(--font-family-Font-1, "Inter Display");
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--line-height-15, 15px);
+    /* 125% */
+    margin: 0 14px;
+    margin-top: 10px;
+
+    &.black {
+        color: #FFF;
+        background: rgba(255, 255, 255, 0.20);
+        margin-top: 24px;
+    }
+}

@@ -1,10 +1,10 @@
 'use client'
 import Advertisement from "@/components/Home/Advertisement";
-import CardTitle from "@/components/Home/CardTitle";
-import HotTopic from "@/components/Home/HotTopic";
+import CardTitle from "@/components/ui/card/CardHeader";
+import HotTopic from "@/components/ui/card/HotTopicCard";
 import Search from "@/components/Home/Search";
-import SmallCard from "@/components/Home/SmallCard";
-import Card from "@/components/Home/Card";
+import SmallCard from "@/components/ui/card/ArticleCard";
+import Card from "@/components/ui/card/NewsCard";
 import Video from "@/components/Home/Video";
 import SportGenre from "@/components/Home/SportGenre";
 import { useState } from "react";
@@ -70,7 +70,7 @@ export default function HomeTablet() {
 
                     <div className="card-container">
                         <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             <HotTopic isTitled={false} />
 
                         </div>
@@ -89,22 +89,22 @@ export default function HomeTablet() {
                 <div className="home-desktop__right">
                     <div className="card-container">
                         <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: '14px' }} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="card-title__link">
+                            <div className="view-more--btn">
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>
                     </div>
                     <div className="card-container">
                         <CardTitle title="Nhận định" />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="card-title__link">
+                            <div className="view-more--btn">
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ export default function HomeTablet() {
 
                     <div className="card-container">
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card2.map((item, index) => (
                                 <div className="home-desktop__schedule">
                                     <div className={`item ${active === index ? 'active' : ''}`} onClick={() => setActive(index)}>
@@ -128,11 +128,11 @@ export default function HomeTablet() {
                     </div>
                     <div className="card-container">
                         <CardTitle title="Đọc nhiều" />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="card-title__link">
+                            <div className="view-more--btn">
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>
@@ -140,7 +140,7 @@ export default function HomeTablet() {
                     <Advertisement image="/assets/adv.webp" />
                     <div className="card-container">
                         <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             <HotTopic isTitled={false} />
 
                         </div>

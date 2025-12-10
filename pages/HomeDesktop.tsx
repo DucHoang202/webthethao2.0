@@ -1,10 +1,10 @@
 'use client'
 import Advertisement from "@/components/Home/Advertisement";
-import CardTitle from "@/components/Home/CardTitle";
-import HotTopic from "@/components/Home/HotTopic";
+import CardTitle from "@/components/ui/card/CardHeader";
+import HotTopic from "@/components/ui/card/HotTopicCard";
 import Search from "@/components/Home/Search";
-import SmallCard from "@/components/Home/SmallCard";
-import Card from "@/components/Home/Card";
+import SmallCard from "@/components/ui/card/ArticleCard";
+import Card from "@/components/ui/card/NewsCard";
 import Video from "@/components/Home/Video";
 import SportGenre from "@/components/Home/SportGenre";
 import { useState } from "react";
@@ -39,9 +39,9 @@ export default function HomeDesktop() {
         <main>
             <div className="home-desktop">
                 <div className="home-desktop__left">
-                    <div className="card-container">
+                    <div className="empty-container">
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card2.map((item, index) => (
                                 <div className="home-desktop__schedule">
                                     <div className={`item ${active === index ? 'active' : ''}`} onClick={() => setActive(index)}>
@@ -57,12 +57,12 @@ export default function HomeDesktop() {
                     <Advertisement image="/assets/adv.webp" />
                     <div className="card-container">
                         <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             <HotTopic isTitled={false} />
 
                         </div>
                     </div>
-                    <Advertisement image="/assets/image 22.webp" isCollapsed={true} />
+                    <Advertisement image="/assets/image 22.webp" isCollapsed={false} />
 
                 </div>
                 <div className="home-desktop__middle">
@@ -96,15 +96,12 @@ export default function HomeDesktop() {
 
                     <div className="card-container">
                         <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             <HotTopic isTitled={false} />
 
                         </div>
                     </div>
-                    <div className="empty-container">
-                        <Advertisement image="" isCollapsed={true} />
-                        <Advertisement image="/assets/image 19.webp" />
-                    </div>
+                    <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
                     <div className="home-desktop__radius">
                         <SportGenre sport="Bóng đá" />
                     </div>
@@ -115,22 +112,22 @@ export default function HomeDesktop() {
                 <div className="home-desktop__right">
                     <div className="card-container">
                         <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="card-title__link">
+                            <div className="view-more--btn">
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>
                     </div>
                     <div className="card-container">
                         <CardTitle title="Nhận định" deco={true} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="card-title__link">
+                            <div className="view-more--btn">
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>
@@ -138,11 +135,11 @@ export default function HomeDesktop() {
                     <Advertisement image="/assets/adv.webp" />
                     <div className="card-container">
                         <CardTitle title="Đọc nhiều" deco={true} />
-                        <div className="card-title__content">
+                        <div className="card--header__content">
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="card-title__link">
+                            <div className="view-more--btn">
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>

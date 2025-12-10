@@ -25,6 +25,7 @@
         gap: 24px;
 
         .text {
+            cursor: pointer;
             align-items: center;
             justify-content: center;
             color: #FFF;
@@ -33,14 +34,14 @@
             font-family: var(--font-family-Font-1, "Inter Display");
             font-style: normal;
             font-weight: var(--font-weight-500, 500);
-            font-size: 11.063px;
+            font-size: 13px;
 
             line-height: var(--line-height-12, 12px);
             /* 104.918% */
             letter-spacing: var(--letter-spacing-0_12, 0.12px);
 
             &.hashtag {
-                font-size: 11.438px;
+
                 color: rgba(255, 255, 255, 0.50);
 
 
@@ -81,6 +82,7 @@
             line-height: 120%;
             /* 16.8px */
             letter-spacing: -0.14px;
+            cursor: pointer;
 
             &.bg-white {
                 background: #FFF;

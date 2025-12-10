@@ -1,3 +1,4 @@
+/* Thanh search ẩn/hiện khi scroll */
 .search-bar-hidden {
     position: fixed;
     top: 65px;
@@ -9,20 +10,31 @@
     @media (min-width: 768px) {
         top: 60px;
     }
+
+    &.hide {
+        transform: translateY(-100%);
+    }
 }
 
-.search-bar-hidden.hide {
-    transform: translateY(-100%);
+/* --- Swiper styles tinh gọn --- */
+.swiper-slide {
+    display: flex !important;
+    align-items: center !important;
 }
 
+.swiper-wrapper .swiper-slide .search__item {
+    justify-content: center;
+}
 
+/* --- Search bar --- */
 .search {
     display: flex;
+    align-items: center; // GIỮ: căn giữa dọc
     position: sticky;
     top: 64px;
     gap: 14px;
-
     padding: 0 24px;
+    z-index: 20;
 
     @media (min-width: 768px) {
         top: 60px;
@@ -32,48 +44,25 @@
         background: var(--color-grey-10, #1A1A1A);
     }
 
+    /* Phần chứa Swiper */
     .search-container {
-        display: flex;
-        align-items: center;
-        width: 100vw;
-        height: auto;
+        width: 100%;
+        height: 40px;
+        display: flex; // Swiper override → vẫn giữ flex
+        align-items: center; // Căn giữa dọc
 
-
-        padding-right: 14px;
-        padding-left: 0;
-
-        /* Horizontal Scroll */
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        white-space: nowrap;
-
-        /* Hide scrollbar (cross-browser) */
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-
-        &::-webkit-scrollbar {
-            display: none;
+        @media (max-width: 768px) {
+            height: 37px;
         }
-
-        &>.item:first-child {
-            padding-left: 0;
-        }
-
-        &.padding {
-            padding: 10px 14px 10px 14px;
-        }
-
-
     }
 
+    /* Item */
     &__item {
         display: flex;
         align-items: center;
         gap: 6px;
-
-        scroll-snap-align: start;
         width: max-content;
+        cursor: pointer;
 
         .icon {
             width: 16px;
@@ -86,54 +75,36 @@
             }
         }
 
+        /* Input search */
         .search {
             display: flex;
-            align-items: flex-start;
             padding: 0;
             width: 208px;
             flex: 1 1 auto;
         }
 
+        /* Text */
         .name {
-            color: var(--color-white-solid, #FFF);
-            font-family: var(--font-family-Font-1, "Inter Display");
+            color: #FFF;
+            font-family: "Inter Display";
             font-size: 12px;
             font-weight: 500;
-            line-height: normal;
-
             white-space: nowrap;
             display: flex;
+            align-items: center; // căn giữa
             gap: 10px;
-            width: max-content;
 
-            /* Không xuống dòng */
             @media (min-width: 768px) {
-                display: flex;
                 padding: 3px 10px;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
                 border-radius: 24px;
                 border: 1px solid rgba(255, 255, 255, 0.40);
-                color: var(--www-nytimes-com-white, var(--color-white-solid, #FFF));
-                text-align: center;
-                font-family: var(--font-family-Font-1, "Inter Display");
-                font-size: 12px;
-                font-style: normal;
-                font-weight: var(--font-weight-500, 500);
                 line-height: 20px;
 
-                /* 166.667% */
                 &.bg-gray {
                     background: rgba(255, 255, 255, 0.15);
-
                 }
             }
-
-
         }
-
-
     }
 }
 

@@ -1,6 +1,6 @@
-import Card from "./Card";
-import CardTitle from "../Home/CardTitle";
-import SmallCard from "./SmallCard";
+import Card from "../ui/card/NewsCard";
+import CardTitle from "../ui/card/CardHeader";
+import SmallCard from "../ui/card/ArticleCard";
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
 
