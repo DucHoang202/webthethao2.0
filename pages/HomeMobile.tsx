@@ -20,23 +20,25 @@ export default function HomeMobile() {
     }
     return (
         <main>
-            <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 ngày 10/10: Dương Quốc Hoàng vs Ngô Quang Trung" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Tại sao Hà Lan chỉ cần thêm 2 chiến thắng nữa là có vé dự World Cup?" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <Video />
-            <HotTopic />
-            <Advertisement image="" />
-            <SportGenre sport="Bóng đá" />
-            <SportGenre sport="Pickleball" />
-            <Advertisement image="" />
-            <SportGenre sport="Billiards" />
-            <div className="advertisement-section" style={{ width: "100%" }}>
+            <div className="home--mobile">
+                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 ngày 10/10: Dương Quốc Hoàng vs Ngô Quang Trung" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title="Tại sao Hà Lan chỉ cần thêm 2 chiến thắng nữa là có vé dự World Cup?" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+                <Video />
+                <HotTopic />
                 <Advertisement image="" />
+                <SportGenre sport="Bóng đá" />
+                <SportGenre sport="Pickleball" />
                 <Advertisement image="" />
-                <Advertisement image="" />
+                <SportGenre sport="Billiards" />
+                <div className="advertisement-section" style={{ width: "100%" }}>
+                    <Advertisement image="" />
+                    <Advertisement image="" />
+                    <Advertisement image="" />
 
-                <Advertisement image="" />
-                <div className="class" style={{ height: "300px", backgroundColor: "white" }}></div>
+                    <Advertisement image="" />
+                    <div className="class" style={{ height: "300px", backgroundColor: "white" }}></div>
+                </div>
             </div>
         </main>
     )

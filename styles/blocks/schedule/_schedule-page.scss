@@ -7,8 +7,9 @@
         width: 100%;
         padding: 24px 16px;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 24px;
+        justify-content: flex-start;
 
         &.l-16 {
             padding: 12px 16px;
@@ -70,7 +71,8 @@
             line-height: 17.143px;
 
             &.active {
-                background: gray;
+                background: var(--Colors-Gradient, radial-gradient(165.36% 160.63% at 113.54% 113.54%, #f82476 0%, #f33b00 100%));
+                color: white;
             }
         }
     }
@@ -198,6 +200,8 @@
         line-height: 18px;
         /* 150% */
         letter-spacing: -0.5px;
+        white-space: nowrap;
+
     }
 
     &.active {
@@ -210,6 +214,13 @@
         .day {
             color: var(--Neutral-Card, #1F2022);
             font-size: 11px;
+            white-space: nowrap;
+        }
+
+        .line {
+            background: var(--Neutral-Light-Gray, #DCDFE7);
+            height: 1px;
+            width: 100%;
         }
     }
 

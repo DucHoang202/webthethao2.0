@@ -245,7 +245,7 @@ const SportGroup = ({ open, onClose })=>{
         children: open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                    onClick: onClose,
+                    onClick: ()=>onClose(),
                     initial: {
                         opacity: 0
                     },
@@ -321,54 +321,37 @@ const SportGroup = ({ open, onClose })=>{
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "sport-group__icon",
-                                                children: [
-                                                    " ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        width: "32",
-                                                        height: "32",
-                                                        viewBox: "0 0 32 32",
-                                                        fill: "none",
-                                                        xmlns: "http://www.w3.org/2000/svg",
-                                                        children: [
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
-                                                                width: "32",
-                                                                height: "32",
-                                                                rx: "16",
-                                                                fill: "#F6F6F6"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                lineNumber: 72,
-                                                                columnNumber: 333
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                d: "M19.7123 20.773L11.227 12.2877C10.9371 11.9978 10.9371 11.5169 11.227 11.227C11.5169 10.9371 11.9977 10.9371 12.2877 11.227L20.7729 19.7123C21.0628 20.0022 21.0628 20.483 20.7729 20.773C20.483 21.0629 20.0022 21.0629 19.7123 20.773Z",
-                                                                fill: "#121212"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                lineNumber: 72,
-                                                                columnNumber: 388
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            " ",
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                                d: "M11.2271 20.773C10.9372 20.483 10.9372 20.0022 11.2271 19.7123L19.7123 11.227C20.0023 10.9371 20.4831 10.9371 20.773 11.227C21.0629 11.5169 21.0629 11.9978 20.773 12.2877L12.2877 20.773C11.9978 21.0629 11.517 21.0629 11.2271 20.773Z",
-                                                                fill: "#121212"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                lineNumber: 72,
-                                                                columnNumber: 649
-                                                            }, ("TURBOPACK compile-time value", void 0)),
-                                                            " "
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                        lineNumber: 72,
-                                                        columnNumber: 237
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    " "
-                                                ]
-                                            }, void 0, true, {
+                                                onClick: onClose,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    width: "24",
+                                                    height: "24",
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            d: "M15.7123 16.773L7.22699 8.28768C6.93708 7.99776 6.93708 7.51693 7.22699 7.22702C7.51691 6.9371 7.99774 6.9371 8.28765 7.22702L16.7729 15.7123C17.0628 16.0022 17.0628 16.483 16.7729 16.773C16.483 17.0629 16.0022 17.0629 15.7123 16.773Z",
+                                                            fill: "#121212"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
+                                                            lineNumber: 74,
+                                                            columnNumber: 33
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                            d: "M7.22706 16.773C6.93715 16.483 6.93715 16.0022 7.22706 15.7123L15.7123 7.22702C16.0023 6.9371 16.4831 6.9371 16.773 7.22702C17.0629 7.51693 17.0629 7.99776 16.773 8.28768L8.28772 16.773C7.99781 17.0629 7.51698 17.0629 7.22706 16.773Z",
+                                                            fill: "#121212"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
+                                                            lineNumber: 75,
+                                                            columnNumber: 33
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 29
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
                                                 lineNumber: 72,
                                                 columnNumber: 201
@@ -399,8 +382,8 @@ const SportGroup = ({ open, onClose })=>{
                                                                     className: "image"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                    lineNumber: 72,
-                                                                    columnNumber: 1104
+                                                                    lineNumber: 78,
+                                                                    columnNumber: 212
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 " ",
                                                                 item[0].name,
@@ -408,8 +391,8 @@ const SportGroup = ({ open, onClose })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 1068
+                                                            lineNumber: 78,
+                                                            columnNumber: 176
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         " ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -422,8 +405,8 @@ const SportGroup = ({ open, onClose })=>{
                                                                     className: "image"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                                    lineNumber: 72,
-                                                                    columnNumber: 1215
+                                                                    lineNumber: 78,
+                                                                    columnNumber: 323
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 " ",
                                                                 item[1].name,
@@ -431,22 +414,22 @@ const SportGroup = ({ open, onClose })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                            lineNumber: 72,
-                                                            columnNumber: 1179
+                                                            lineNumber: 78,
+                                                            columnNumber: 287
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         " "
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                                    lineNumber: 72,
-                                                    columnNumber: 1033
+                                                    lineNumber: 78,
+                                                    columnNumber: 141
                                                 }, ("TURBOPACK compile-time value", void 0))),
                                             " "
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/webthethao2.0/components/Home/SportGroup.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 931
+                                        lineNumber: 78,
+                                        columnNumber: 39
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     " "
                                 ]
@@ -794,7 +777,7 @@ const Nav = ()=>{
                 onClose: ()=>setOpenSportGroup(false)
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Home/Nav.tsx",
-                lineNumber: 63,
+                lineNumber: 60,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -814,6 +797,7 @@ __turbopack_context__.s([
     ()=>useIsCustomView
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+'use client';
 ;
 function useIsCustomView(max) {
     const [isCustomView, setIsCustomView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -838,7 +822,12 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$hooks$2f$useIsCustomView$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/hooks/useIsCustomView.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/swiper-react.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/modules/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$free$2d$mode$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FreeMode$3e$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/modules/free-mode.mjs [app-ssr] (ecmascript) <export default as FreeMode>");
 'use client';
+;
+;
 ;
 ;
 ;
@@ -850,60 +839,62 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} })=>{
     }, [
         active
     ]);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "search",
-            style: style,
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "search__item",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "16",
-                        height: "16",
-                        fill: "none",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                d: "M2 11.7888L5.72414 7.59914L8.2069 10.3922L14 3.875",
-                                stroke: "white",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                lineNumber: 30,
-                                columnNumber: 25
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                d: "M9.8623 3.875H14.0002V8.53017",
-                                stroke: "white",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                lineNumber: 31,
-                                columnNumber: 25
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                        lineNumber: 29,
-                        columnNumber: 21
-                    }, ("TURBOPACK compile-time value", void 0))
-                }, void 0, false, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "search header",
+        style: style,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "search__item",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "16",
+                    height: "16",
+                    fill: "none",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M2 11.7888L5.72414 7.59914L8.2069 10.3922L14 3.875",
+                            stroke: "white",
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round"
+                        }, void 0, false, {
+                            fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                            lineNumber: 25,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M9.8623 3.875H14.0002V8.53017",
+                            stroke: "white",
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round"
+                        }, void 0, false, {
+                            fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                            lineNumber: 26,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                    lineNumber: 28,
+                    lineNumber: 24,
                     columnNumber: 17
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "search-container",
-                    style: {
-                        display: "flex",
-                        gap: gap,
-                        overflowX: "auto",
-                        whiteSpace: "nowrap",
-                        padding: "10px 14px 10px 14px"
-                    },
-                    children: items.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                lineNumber: 23,
+                columnNumber: 13
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Swiper"], {
+                slidesPerView: "auto",
+                freeMode: true,
+                modules: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$free$2d$mode$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FreeMode$3e$__["FreeMode"]
+                ],
+                spaceBetween: gap,
+                className: "search-container",
+                children: items.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SwiperSlide"], {
+                        style: {
+                            width: "auto"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: `search__item ${activeIndex === index ? "active" : ""}`,
                             onClick: ()=>setActiveIndex(index),
                             children: [
@@ -911,10 +902,10 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} })=>{
                                     children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 43,
                                     columnNumber: 43
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "name",
                                     children: [
                                         isMobile ? "" : "#",
@@ -922,87 +913,87 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 44,
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
-                        }, index, true, {
+                        }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
                             lineNumber: 39,
                             columnNumber: 25
-                        }, ("TURBOPACK compile-time value", void 0)))
-                }, void 0, false, {
-                    fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                    lineNumber: 34,
-                    columnNumber: 17
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "search__item hideInMobile ",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "name bg-gray",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "16",
-                                height: "16",
-                                viewBox: "0 0 16 16",
-                                fill: "none",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                        d: "M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z",
-                                        stroke: "white",
-                                        "stroke-linecap": "round",
-                                        "stroke-linejoin": "round"
-                                    }, void 0, false, {
-                                        fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                        lineNumber: 54,
-                                        columnNumber: 29
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                        d: "M13.9996 14L11.0996 11.1",
-                                        stroke: "white",
-                                        "stroke-linecap": "round",
-                                        "stroke-linejoin": "round"
-                                    }, void 0, false, {
-                                        fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                        lineNumber: 55,
-                                        columnNumber: 29
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                lineNumber: 53,
-                                columnNumber: 25
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "text",
-                                className: "search",
-                                placeholder: "Tìm kiếm theo chủ đề hoặc bộ môn..."
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                                lineNumber: 57,
-                                columnNumber: 25
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, index, false, {
                         fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                        lineNumber: 52,
+                        lineNumber: 38,
                         columnNumber: 21
-                    }, ("TURBOPACK compile-time value", void 0))
-                }, void 0, false, {
+                    }, ("TURBOPACK compile-time value", void 0)))
+            }, void 0, false, {
+                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                lineNumber: 30,
+                columnNumber: 13
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "search__item hideInMobile ",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "name bg-gray",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: "16",
+                            height: "16",
+                            viewBox: "0 0 16 16",
+                            fill: "none",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                    d: "M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z",
+                                    stroke: "white",
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round"
+                                }, void 0, false, {
+                                    fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                                    lineNumber: 52,
+                                    columnNumber: 25
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                    d: "M13.9996 14L11.0996 11.1",
+                                    stroke: "white",
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round"
+                                }, void 0, false, {
+                                    fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                                    lineNumber: 53,
+                                    columnNumber: 25
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                            lineNumber: 51,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                            type: "text",
+                            className: "search",
+                            placeholder: "Tìm kiếm theo chủ đề hoặc bộ môn..."
+                        }, void 0, false, {
+                            fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                            lineNumber: 55,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-                    lineNumber: 51,
+                    lineNumber: 50,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true, {
-            fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-            lineNumber: 27,
-            columnNumber: 13
-        }, ("TURBOPACK compile-time value", void 0))
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
+                lineNumber: 49,
+                columnNumber: 13
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
         fileName: "[project]/webthethao2.0/components/Schedule/SwiperRow.tsx",
-        lineNumber: 26,
+        lineNumber: 22,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1110,61 +1101,79 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/swiper-react.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/modules/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$free$2d$mode$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FreeMode$3e$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/modules/free-mode.mjs [app-ssr] (ecmascript) <export default as FreeMode>");
 'use client';
 ;
 ;
-const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange })=>{
+;
+;
+;
+;
+const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange, className })=>{
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(active);
-    const handleSelect = (cat)=>{
-        onCatChange(cat);
+    const handleSelect = (item, index)=>{
+        setActiveIndex(index);
+        onCatChange(item);
     };
+    // Sync khi prop active thay đổi
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         setActiveIndex(active);
-        handleSelect(items[active]);
+        onCatChange(items[active]);
     }, [
         active
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "search",
+            className: `search overflow`,
             style: style,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "search-container",
-                style: {
-                    marginLeft: "30px"
-                },
-                children: items.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: ` ${activeIndex === index ? "cat-btn active" : "cat-btn"}`,
-                        onClick: ()=>{
-                            handleSelect(item);
-                            setActiveIndex(index);
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Swiper"], {
+                freeMode: true,
+                modules: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$free$2d$mode$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FreeMode$3e$__["FreeMode"]
+                ],
+                slidesPerView: "auto",
+                spaceBetween: gap,
+                className: "search-container h-auto",
+                children: items.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SwiperSlide"], {
+                        style: {
+                            width: "auto"
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            className: "name",
-                            children: item
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `cat-btn ${activeIndex === index ? "active" : ""}`,
+                            onClick: ()=>handleSelect(item, index),
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                className: "name",
+                                children: item
+                            }, void 0, false, {
+                                fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
+                                lineNumber: 55,
+                                columnNumber: 33
+                            }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-                            lineNumber: 40,
+                            lineNumber: 51,
                             columnNumber: 29
                         }, ("TURBOPACK compile-time value", void 0))
                     }, index, false, {
                         fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-                        lineNumber: 35,
+                        lineNumber: 47,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-                lineNumber: 31,
+                lineNumber: 39,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-            lineNumber: 30,
+            lineNumber: 38,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Schedule/Cat.tsx",
-        lineNumber: 29,
+        lineNumber: 37,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1365,10 +1374,17 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/swiper-react.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/modules/index.mjs [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$free$2d$mode$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FreeMode$3e$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/swiper/modules/free-mode.mjs [app-ssr] (ecmascript) <export default as FreeMode>");
 'use client';
 ;
 ;
-const Sched = ({ items, active = 1, gap = 12, style = {}, onChangeDate })=>{
+;
+;
+;
+;
+const Sched = ({ items, active = 1, gap = 12, style = {}, className, onChangeDate })=>{
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(active);
     const [dateRange, setDateRange] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(getDateRange());
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -1377,10 +1393,12 @@ const Sched = ({ items, active = 1, gap = 12, style = {}, onChangeDate })=>{
         active
     ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        setDateRange(getDateRange());
-        handleSelect(dateRange[active].fullDate);
+        const list = getDateRange();
+        setDateRange(list);
+        onChangeDate?.(list[active].fullDate);
     }, []);
-    const handleSelect = (date)=>{
+    const handleSelect = (date, index)=>{
+        setActiveIndex(index);
         onChangeDate?.(date);
     };
     function getDateRange() {
@@ -1395,27 +1413,22 @@ const Sched = ({ items, active = 1, gap = 12, style = {}, onChangeDate })=>{
             "T6",
             "T7"
         ];
-        // helper format
         const createItem = (date, isToday = false)=>{
-            const day = String(date.getDate()).padStart(2, "0");
-            const month = String(date.getMonth() + 1).padStart(2, "0");
-            const year = date.getFullYear();
-            const weekday = weekdayMap[date.getDay()];
+            const d = String(date.getDate()).padStart(2, "0");
+            const m = String(date.getMonth() + 1).padStart(2, "0");
+            const y = date.getFullYear();
             return {
-                date: day,
-                month,
-                year,
-                dayName: isToday ? "Hôm nay" : weekday,
-                fullDate: `${year}-${month}-${day}` // format ISO
+                date: d,
+                month: m,
+                year: y,
+                dayName: isToday ? "Hôm nay" : weekdayMap[date.getDay()],
+                fullDate: `${y}-${m}-${d}`
             };
         };
-        // hôm qua
         const yesterday = new Date(today);
         yesterday.setDate(today.getDate() - 1);
         days.push(createItem(yesterday));
-        // hôm nay
         days.push(createItem(today, true));
-        // 7 ngày tới
         for(let i = 1; i <= 7; i++){
             const next = new Date(today);
             next.setDate(today.getDate() + i);
@@ -1425,68 +1438,71 @@ const Sched = ({ items, active = 1, gap = 12, style = {}, onChangeDate })=>{
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "search",
+            className: `search overflow`,
             style: style,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "search-container",
-                style: {
-                    marginLeft: "30px",
-                    gap: "8px"
-                },
-                children: dateRange.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: ` ${activeIndex === index ? "sched active" : "sched"}`,
-                        onClick: ()=>{
-                            setActiveIndex(index);
-                            handleSelect(item.fullDate);
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Swiper"], {
+                freeMode: true,
+                modules: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$modules$2f$free$2d$mode$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FreeMode$3e$__["FreeMode"]
+                ],
+                slidesPerView: "auto",
+                spaceBetween: gap,
+                className: "search-container h-auto",
+                children: dateRange.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SwiperSlide"], {
+                        style: {
+                            width: "auto"
                         },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "date",
-                                children: item.date
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                                lineNumber: 88,
-                                columnNumber: 29
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "line",
-                                style: {
-                                    background: "var(--Neutral-Light-Gray, #DCDFE7)",
-                                    height: "1px",
-                                    width: "100%"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                                lineNumber: 89,
-                                columnNumber: 29
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "day",
-                                children: item.dayName
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                                lineNumber: 90,
-                                columnNumber: 29
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, index, true, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: activeIndex === index ? "sched active" : "sched",
+                            onClick: ()=>handleSelect(item.fullDate, index),
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "date",
+                                    children: item.date
+                                }, void 0, false, {
+                                    fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
+                                    lineNumber: 90,
+                                    columnNumber: 33
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "line"
+                                }, void 0, false, {
+                                    fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
+                                    lineNumber: 91,
+                                    columnNumber: 33
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "day",
+                                    children: item.dayName
+                                }, void 0, false, {
+                                    fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
+                                    lineNumber: 92,
+                                    columnNumber: 33
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
+                            lineNumber: 86,
+                            columnNumber: 29
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, index, false, {
                         fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                        lineNumber: 83,
+                        lineNumber: 85,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-                lineNumber: 79,
+                lineNumber: 77,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-            lineNumber: 78,
+            lineNumber: 76,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Schedule/Sched.tsx",
-        lineNumber: 77,
+        lineNumber: 75,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1515,16 +1531,10 @@ const SchedulePage = ()=>{
     const [selectedCat, setSelectedCat] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const handleDateChange = (date)=>{
         setSelectedDate(date);
-        console.log("ngay dc chon", date);
     };
     const handleCatChange = (cat)=>{
         setSelectedCat(cat);
-        console.log("loai dc chon", cat);
     };
-    // useEffect(() => {
-    //     handleDateChange("04/04/2025");
-    //     handleCatChange("Bóng đá");
-    // }, [])
     const cat = [
         "Bóng đá",
         "Bóng chuyền",
@@ -1884,7 +1894,7 @@ const SchedulePage = ()=>{
                                                     stroke: "#B72424"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 200,
+                                                    lineNumber: 195,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1895,20 +1905,20 @@ const SchedulePage = ()=>{
                                                     fill: "#B72424"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 201,
+                                                    lineNumber: 196,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                            lineNumber: 199,
+                                            lineNumber: 194,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         "Live"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 193,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1928,7 +1938,7 @@ const SchedulePage = ()=>{
                                                 "stroke-linejoin": "round"
                                             }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 201,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1939,7 +1949,7 @@ const SchedulePage = ()=>{
                                                 "stroke-linejoin": "round"
                                             }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                lineNumber: 207,
+                                                lineNumber: 202,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1950,18 +1960,18 @@ const SchedulePage = ()=>{
                                                 "stroke-linejoin": "round"
                                             }, void 0, false, {
                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 203,
                                                 columnNumber: 33
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                        lineNumber: 205,
+                                        lineNumber: 200,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                    lineNumber: 204,
+                                    lineNumber: 199,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1977,52 +1987,58 @@ const SchedulePage = ()=>{
                                             fill: "#1F2022"
                                         }, void 0, false, {
                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                            lineNumber: 213,
+                                            lineNumber: 208,
                                             columnNumber: 33
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 207,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                    lineNumber: 211,
+                                    lineNumber: 206,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                            lineNumber: 197,
+                            lineNumber: 192,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                    lineNumber: 195,
+                    lineNumber: 190,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "schedule-page__sort",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Schedule$2f$Cat$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         items: cat,
-                        onCatChange: handleCatChange
+                        onCatChange: handleCatChange,
+                        style: {
+                            paddingLeft: '0px'
+                        }
                     }, void 0, false, {
                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                        lineNumber: 219,
+                        lineNumber: 214,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                    lineNumber: 218,
+                    lineNumber: 213,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Schedule$2f$Sched$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     items: cat,
-                    onChangeDate: handleDateChange
+                    onChangeDate: handleDateChange,
+                    style: {
+                        paddingLeft: '0px'
+                    }
                 }, void 0, false, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                    lineNumber: 222,
+                    lineNumber: 217,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2052,7 +2068,7 @@ const SchedulePage = ()=>{
                                                     fill: "url(#paint0_radial_2133_1072)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 225,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -2068,7 +2084,7 @@ const SchedulePage = ()=>{
                                                                 "stop-color": "#F82476"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                lineNumber: 233,
+                                                                lineNumber: 228,
                                                                 columnNumber: 41
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -2076,30 +2092,30 @@ const SchedulePage = ()=>{
                                                                 "stop-color": "#F33B00"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                lineNumber: 234,
+                                                                lineNumber: 229,
                                                                 columnNumber: 41
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 227,
                                                         columnNumber: 37
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 226,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                            lineNumber: 229,
+                                            lineNumber: 224,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                    lineNumber: 227,
+                                    lineNumber: 222,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2114,7 +2130,7 @@ const SchedulePage = ()=>{
                                                     className: "thumb"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 241,
+                                                    lineNumber: 236,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2122,13 +2138,13 @@ const SchedulePage = ()=>{
                                                     children: "Club name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 242,
+                                                    lineNumber: 237,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                            lineNumber: 240,
+                                            lineNumber: 235,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2142,7 +2158,7 @@ const SchedulePage = ()=>{
                                                             children: "14"
                                                         }, void 0, false, {
                                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                            lineNumber: 246,
+                                                            lineNumber: 241,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2150,7 +2166,7 @@ const SchedulePage = ()=>{
                                                             children: ":"
                                                         }, void 0, false, {
                                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                            lineNumber: 247,
+                                                            lineNumber: 242,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2158,13 +2174,13 @@ const SchedulePage = ()=>{
                                                             children: "3"
                                                         }, void 0, false, {
                                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                            lineNumber: 248,
+                                                            lineNumber: 243,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 245,
+                                                    lineNumber: 240,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2187,7 +2203,7 @@ const SchedulePage = ()=>{
                                                                         stroke: "url(#paint0_radial_2133_1110)"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                        lineNumber: 254,
+                                                                        lineNumber: 249,
                                                                         columnNumber: 45
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -2198,7 +2214,7 @@ const SchedulePage = ()=>{
                                                                         fill: "url(#paint1_radial_2133_1110)"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                        lineNumber: 255,
+                                                                        lineNumber: 250,
                                                                         columnNumber: 45
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -2215,7 +2231,7 @@ const SchedulePage = ()=>{
                                                                                         "stop-color": "#F82476"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                                        lineNumber: 260,
+                                                                                        lineNumber: 255,
                                                                                         columnNumber: 53
                                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -2223,13 +2239,13 @@ const SchedulePage = ()=>{
                                                                                         "stop-color": "#F33B00"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                                        lineNumber: 261,
+                                                                                        lineNumber: 256,
                                                                                         columnNumber: 53
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                                lineNumber: 257,
+                                                                                lineNumber: 252,
                                                                                 columnNumber: 49
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
@@ -2244,7 +2260,7 @@ const SchedulePage = ()=>{
                                                                                         "stop-color": "#F82476"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                                        lineNumber: 266,
+                                                                                        lineNumber: 261,
                                                                                         columnNumber: 53
                                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -2252,30 +2268,30 @@ const SchedulePage = ()=>{
                                                                                         "stop-color": "#F33B00"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                                        lineNumber: 267,
+                                                                                        lineNumber: 262,
                                                                                         columnNumber: 53
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                                lineNumber: 263,
+                                                                                lineNumber: 258,
                                                                                 columnNumber: 49
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                        lineNumber: 256,
+                                                                        lineNumber: 251,
                                                                         columnNumber: 45
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                                lineNumber: 253,
+                                                                lineNumber: 248,
                                                                 columnNumber: 41
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                            lineNumber: 252,
+                                                            lineNumber: 247,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2283,19 +2299,19 @@ const SchedulePage = ()=>{
                                                             children: "68'"
                                                         }, void 0, false, {
                                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                            lineNumber: 273,
+                                                            lineNumber: 268,
                                                             columnNumber: 37
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 251,
+                                                    lineNumber: 246,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 239,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2307,7 +2323,7 @@ const SchedulePage = ()=>{
                                                     className: "thumb"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 276,
+                                                    lineNumber: 271,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2315,45 +2331,45 @@ const SchedulePage = ()=>{
                                                     children: "Club name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                                    lineNumber: 277,
+                                                    lineNumber: 272,
                                                     columnNumber: 33
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                            lineNumber: 275,
+                                            lineNumber: 270,
                                             columnNumber: 29
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                                    lineNumber: 239,
+                                    lineNumber: 234,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                            lineNumber: 226,
+                            lineNumber: 221,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "current-match--bottom"
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                            lineNumber: 281,
+                            lineNumber: 276,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "current-match--bottom-smaller"
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                            lineNumber: 282,
+                            lineNumber: 277,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                    lineNumber: 223,
+                    lineNumber: 218,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 result.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2364,20 +2380,20 @@ const SchedulePage = ()=>{
                             alt: ""
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                            lineNumber: 288,
+                            lineNumber: 283,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "Không có dữ liệu"
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                            lineNumber: 289,
+                            lineNumber: 284,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                    lineNumber: 287,
+                    lineNumber: 282,
                     columnNumber: 21
                 }, ("TURBOPACK compile-time value", void 0)) : result.map((lg, leagueIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Schedule$2f$League$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         title: lg.title,
@@ -2386,18 +2402,18 @@ const SchedulePage = ()=>{
                         animationDuration: lg.animationDuration
                     }, leagueIndex, false, {
                         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-                        lineNumber: 293,
+                        lineNumber: 288,
                         columnNumber: 25
                     }, ("TURBOPACK compile-time value", void 0)))
             ]
         }, void 0, true, {
             fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-            lineNumber: 194,
+            lineNumber: 189,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/webthethao2.0/components/Schedule/SchedulePage.tsx",
-        lineNumber: 193,
+        lineNumber: 188,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

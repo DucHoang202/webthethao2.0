@@ -23,7 +23,42 @@ const HeaderDesktop = () => {
                         <div className="text hashtag">#</div>
                         {item.title}</a>
                 ))}
-                <div className="text" onClick={() => setOpenModal(true)}>Khác <div className="extend">• • •</div> </div>
+                <div
+                    className="relative"
+                    onMouseEnter={() => setOpenModal(true)}
+                    onMouseLeave={() => setOpenModal(false)}
+                    onClick={() => setOpenModal(!openModal)}
+                >
+                    <div className="text cursor-pointer flex items-center gap-1">
+                        Khác
+
+                        {/* ICON TRANSITION */}
+                        <div className="relative bottom-4">
+                            {/* X */}
+                            <div
+                                className={`extend absolute inset-0 flex items-center justify-center transition-all duration-200 ${openModal
+                                    ? "opacity-100 scale-100"
+                                    : "opacity-0 scale-75 pointer-events-none"
+                                    }`}
+                            >
+                                ✕
+                            </div>
+
+                            {/* DOTS */}
+                            <div
+                                className={`extend absolute inset-0 flex items-center justify-center transition-all duration-200 ${openModal
+                                    ? "opacity-0 scale-75 pointer-events-none"
+                                    : "opacity-100 scale-100"
+                                    }`}
+                            >
+                                • • •
+                            </div>
+                        </div>
+                    </div>
+
+                    <ModalDropdown open={openModal} onClose={() => setOpenModal(false)} />
+                </div>
+
             </div>
             <div className="header-desktop__right">
                 <div className="item bg-white"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +73,7 @@ const HeaderDesktop = () => {
                 </svg>
                     Đăng nhập</div>
             </div>
-            {/* <ModalDropdown open={openModal} setOpen={setOpenModal} /> */}
+
         </div>
     )
 }

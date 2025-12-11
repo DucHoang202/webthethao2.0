@@ -5,5 +5,106 @@
     width: 100%;
     z-index: 99;
     background: #FFF;
-    height: 500px;
+    height: auto;
+    font-family: var(--Inter);
+
+    &__container {
+        border-bottom: 1px solid #E5E7EB;
+        padding: 20px 0;
+        margin-left: 200px;
+        margin-right: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+
+        &.no-border {
+            border: none;
+        }
+    }
+
+    &__content {
+
+        display: flex;
+        align-items: flex-start;
+        gap: 110px;
+        align-self: stretch;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &__title {
+                display: flex;
+                font-size: 16px;
+                font-weight: 500;
+                gap: 4px;
+
+                .deco {
+                    height: 20px;
+                    width: 4px;
+                    background-color: #B72424;
+                    margin-top: 2px;
+                }
+            }
+
+            &__sub {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                &__item {
+                    font-size: 14px;
+                    color: #6B7280;
+
+                    &:hover {
+                        color: #1A2AD1;
+                    }
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+            }
+        }
+    }
+
+    &__event {
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--header {
+            display: flex;
+            gap: 14px;
+
+            .show-all--btn {
+                padding: 1px 10px;
+                background-color: #e1e1f3;
+                font-size: 13px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+
+        &.bold {
+            font-weight: 700;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        gap: 30px;
+
+        .group {
+            display: flex;
+
+            gap: 12px;
+        }
+    }
 }

@@ -56,9 +56,6 @@ const Nav = () => {
                     </svg>
                     Bộ môn
                 </div>
-
-
-
             </div>
             <SportGroup open={openSportGroup} onClose={() => setOpenSportGroup(false)} />
         </div>

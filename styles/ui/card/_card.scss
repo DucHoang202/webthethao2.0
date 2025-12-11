@@ -373,7 +373,7 @@
         }
 
         .card--article__time {
-            margin-top: 1px;
+            margin-top: 2px;
             color: #52524F;
             font-family: var(--font-family-Font-1, "Inter Display");
             font-size: 11px;
@@ -390,7 +390,7 @@
         display: flex;
         gap: 10px;
         border-top: 1px solid #F0F0EE;
-        border-bottom: 1px solid #F0F0EE;
+        // border-bottom: 1px solid #F0F0EE;
         align-self: stretch;
 
         &.padding {

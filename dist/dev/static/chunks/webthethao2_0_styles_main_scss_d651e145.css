@@ -87,6 +87,12 @@ a {
   top: 0;
 }
 
+@media (min-width: 768px) {
+  .header__container {
+    height: 60px;
+  }
+}
+
 .header__container .logo {
   margin-left: 16px;
 }
@@ -249,8 +255,25 @@ a {
   transform: translateY(-100%);
 }
 
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  align-items: center !important;
+  display: flex !important;
+}
+
+.swiper-wrapper .swiper-slide .search__item {
+  justify-content: center;
+}
+
 .search {
+  z-index: 20;
+  justify-content: flex-start;
+  align-items: center;
   gap: 14px;
+  width: 100%;
   padding: 0 24px;
   display: flex;
   position: sticky;
@@ -268,33 +291,20 @@ a {
 }
 
 .search .search-container {
-  scroll-snap-type: x mandatory;
-  white-space: nowrap;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   align-items: center;
-  width: 100vw;
-  height: auto;
-  padding-left: 0;
-  padding-right: 14px;
+  width: 100%;
+  height: 40px;
   display: flex;
-  overflow: auto hidden;
 }
 
-.search .search-container::-webkit-scrollbar {
-  display: none;
-}
-
-.search .search-container > .item:first-child {
-  padding-left: 0;
-}
-
-.search .search-container.padding {
-  padding: 10px 14px;
+@media (max-width: 768px) {
+  .search .search-container {
+    height: 37px;
+  }
 }
 
 .search__item {
-  scroll-snap-align: start;
+  cursor: pointer;
   align-items: center;
   gap: 6px;
   width: max-content;
@@ -314,40 +324,29 @@ a {
 
 .search__item .search {
   flex: auto;
-  align-items: flex-start;
   width: 208px;
   padding: 0;
   display: flex;
 }
 
 .search__item .name {
-  color: var(--color-white-solid, #fff);
-  font-family: var(--font-family-Font-1, "Inter Display");
+  color: #fff;
   white-space: nowrap;
+  white-space: nowrap;
+  align-items: center;
   gap: 10px;
-  width: max-content;
+  font-family: Inter Display;
   font-size: 12px;
   font-weight: 500;
-  line-height: normal;
   display: flex;
 }
 
 @media (min-width: 768px) {
   .search__item .name {
-    color: var(--www-nytimes-com-white, var(--color-white-solid, #fff));
-    text-align: center;
-    font-family: var(--font-family-Font-1, "Inter Display");
-    font-size: 12px;
-    font-style: normal;
-    font-weight: var(--font-weight-500, 500);
     border: 1px solid #fff6;
     border-radius: 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     padding: 3px 10px;
     line-height: 20px;
-    display: flex;
   }
 
   .search__item .name.bg-gray {
@@ -361,99 +360,13 @@ a {
   }
 }
 
-.blog-card {
-  background: #fff;
-}
-
-.blog-card .body {
-  flex-direction: column;
-  align-self: stretch;
-  align-items: flex-start;
-  padding: 14px;
-  display: flex;
-}
-
-.blog-card .body .title {
-  color: #121212;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  letter-spacing: -.18px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 145%;
-}
-
-.blog-card .body .content {
-  color: var(--www-nytimes-com-fuscous-gray, var(--color-grey-32, #52524f));
-  font-family: Inter Display;
-  font-size: var(--font-size-14, 14px);
-  -webkit-line-clamp: 2;
-  margin-top: 8px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 145%;
-  display: block;
-  padding: 0 !important;
-}
-
-.blog-card .footer {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-top: 14px;
-  display: flex;
-}
-
-.blog-card .footer .category {
-  color: #b72424;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: var(--line-height-15, 15px);
-}
-
-.blog-card .footer .right {
-  align-items: center;
-  gap: 14px;
-  margin-left: auto;
-  display: flex;
-}
-
-.blog-card .footer .right .item {
-  align-items: center;
-  gap: 7px;
-  display: flex;
-}
-
-.blog-card .footer .right .item .icon {
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  width: 14px;
-  height: 14px;
-  display: flex;
-}
-
-.blog-card .footer .right .item .text {
-  color: #52524f;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: var(--line-height-12, 12px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--line-height-15, 15px);
-  width: auto;
-}
-
 .video {
   background: #121212;
   border-bottom: 1px solid #e5e7eb;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
   width: 100%;
-  padding: 16px;
-  display: flex;
+  padding: 16px 0;
   overflow: hidden;
 }
 
@@ -476,6 +389,8 @@ a {
   align-self: stretch;
   align-items: center;
   gap: 10px;
+  margin-bottom: 24px;
+  padding: 0 16px;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -483,21 +398,22 @@ a {
   display: flex;
 }
 
-.video .body .swiper {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.video .body .swiper-wrapper {
   width: 100%;
 }
 
-.video .body .swiper::-webkit-scrollbar {
-  display: none;
+.video .body .swiper .last {
+  margin-right: 16px !important;
 }
 
 .video .body .swiper-slide {
   flex-direction: column;
   align-items: flex-start;
   display: flex;
-  width: auto !important;
+}
+
+.video .body .swiper-slide.video-slide:first-child {
+  margin-left: 16px;
 }
 
 .video .body .video-slide.big-tt .content {
@@ -583,6 +499,7 @@ a {
   align-self: stretch;
   align-items: center;
   gap: 10px;
+  margin: 24px 16px 0;
   padding: 10px 0;
   display: flex;
 }
@@ -593,69 +510,11 @@ a {
   }
 }
 
-.hot-topic {
-  align-items: flex-start;
-  gap: var(--item-spacing-s, 16px);
-  border-top: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #f0f0ee);
-  background: #fff;
-  flex-direction: column;
-  align-self: stretch;
-  padding: 14px;
-  display: flex;
-}
-
-.hot-topic .title {
-  color: var(--www-nytimes-com-cod-gray, var(--color-grey-7, #121212));
-  font-family: var(--font-family-Font-1, "Inter Display");
-  letter-spacing: -.18px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 145%;
-}
-
-.hot-topic__body {
-  flex-direction: column;
-  gap: 18px;
-  display: flex;
-}
-
-.hot-topic__body .sentence {
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 10px;
-  margin-left: 10px;
-  padding-bottom: 4px;
-  display: flex;
-}
-
-.hot-topic__body .sentence .dot {
-  width: 4px;
-  height: 4px;
-  fill: var(--color-black-solid, #000);
-  opacity: var(--opacity-100, 1);
-  padding-top: 7px;
-}
-
-.hot-topic__body .sentence .text {
-  color: var(--www-nytimes-com-cod-gray, var(--color-grey-7, #121212));
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
-  font-style: normal;
-  font-weight: var(--font-weight-500, 500);
-  flex-direction: column;
-  flex: 1 0 0;
-  justify-content: center;
-  align-self: stretch;
-  line-height: 145%;
-  display: flex;
-}
-
 .adv {
   border-top: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #f0f0ee);
   border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #f0f0ee);
   background: var(--color-grey-96, #f7f7f4);
-  width: auto;
+  width: 100%;
   height: auto;
   color: var(--www-nytimes-com-mine-shaft, var(--color-grey-20, #323232));
   text-align: center;
@@ -670,325 +529,21 @@ a {
   justify-content: center;
   align-self: stretch;
   align-items: center;
-  padding-top: 12px;
-  padding-bottom: 0;
   display: flex;
-}
-
-.adv.padding-0 {
-  padding-top: 12px;
-  padding-bottom: 0;
-}
-
-.adv.padding-62 {
-  padding-top: 12px;
-  padding-bottom: 62px;
 }
 
 .adv img {
   width: 100%;
 }
 
-.simple-card {
-  background: #fff;
+.adv__text {
+  padding-top: 12px;
+  padding-bottom: 62px;
 }
 
-.simple-card .info {
-  align-self: stretch;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 10px 14px;
-  display: flex;
-}
-
-.simple-card .info .avatar {
-  aspect-ratio: 1;
-  background: #d3d3d3;
-  border: 1px solid #0000001a;
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-}
-
-.simple-card .info .col {
-  flex-direction: column;
-  justify-content: center;
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 3px;
-  display: flex;
-}
-
-.simple-card .info .row {
-  align-items: center;
-  gap: 3px;
-  width: auto;
-  display: flex;
-}
-
-.simple-card .info .row .name {
-  color: #121212;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: var(--line-height-15, 15px);
-}
-
-.simple-card .info .row .official {
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  width: 12px;
-  height: 12px;
-  display: flex;
-}
-
-.simple-card .info .time {
-  color: #52524f;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--line-height-15, 15px);
-}
-
-.simple-card .body {
-  flex-direction: column;
-  align-self: stretch;
-  align-items: flex-start;
-  padding: 14px;
-  display: flex;
-}
-
-.simple-card .body .title {
-  color: #121212;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  letter-spacing: -.18px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 145%;
-}
-
-.simple-card .body .content {
-  color: var(--www-nytimes-com-fuscous-gray, var(--color-grey-32, #52524f));
-  font-family: Inter Display;
-  font-size: var(--font-size-14, 14px);
-  -webkit-line-clamp: 2;
-  margin-top: 8px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 145%;
-  display: block;
-  padding: 0 !important;
-}
-
-.simple-card .footer {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-top: 14px;
-  display: flex;
-}
-
-.simple-card .footer .category {
-  color: #b72424;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: var(--line-height-15, 15px);
-}
-
-.simple-card .footer .right {
-  align-items: center;
-  gap: 14px;
-  margin-left: auto;
-  display: flex;
-}
-
-.simple-card .footer .right .item {
-  align-items: center;
-  gap: 7px;
-  display: flex;
-}
-
-.simple-card .footer .right .item .icon {
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  width: 14px;
-  height: 14px;
-  display: flex;
-}
-
-.simple-card .footer .right .item .text {
-  color: #52524f;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: var(--line-height-12, 12px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--line-height-15, 15px);
-  width: auto;
-}
-
-.small-card {
-  background-color: #fff;
-  width: 100%;
-  padding: 0 14px;
-}
-
-.small-card__info {
-  align-items: center;
-  gap: 7px;
-  width: 100%;
-  display: flex;
-}
-
-.small-card__info .avatar {
-  aspect-ratio: 1;
-  background: #d3d3d3;
-  border: 1px solid #0000001a;
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-}
-
-.small-card__info .col {
-  flex-direction: column;
-  justify-content: center;
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 3px;
-  display: flex;
-}
-
-.small-card__info .row {
-  align-items: center;
-  gap: 3px;
-  width: 100%;
-  display: flex;
-}
-
-.small-card__info .small-card__name {
-  color: #666;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: var(--line-height-15, 15px);
-}
-
-.small-card__info .official {
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  width: 12px;
-  height: 12px;
-  display: flex;
-}
-
-.small-card__info .small-card__time {
-  color: #52524f;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--line-height-15, 15px);
-}
-
-.small-card__container {
-  background: #fff;
-  border-top: 1px solid #f0f0ee;
-  border-bottom: 1px solid #f0f0ee;
-  align-self: stretch;
-  gap: 10px;
-  padding: 14px 0;
-  display: flex;
-}
-
-.small-card__container.padding {
-  padding: 10px 0;
-}
-
-.small-card__container .image {
-  aspect-ratio: 1;
-  object-fit: cover;
-  width: 88px;
-  height: 88px;
-  display: block;
-}
-
-.small-card__container .body {
-  flex-direction: column;
-  justify-content: space-between;
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 8px;
-  width: 100%;
-  display: flex;
-}
-
-.small-card__container .body .title {
-  color: var(--www-nytimes-com-cod-gray, var(--color-grey-7, #121212));
-  font-family: var(--font-family-Font-1, "Inter Display");
-  letter-spacing: -.14px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 145%;
-}
-
-.small-card__container .footer {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  display: flex;
-}
-
-.small-card__container .footer .category {
-  color: #b72424;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: var(--line-height-15, 15px);
-}
-
-.small-card__container .footer .right {
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  width: auto;
-  display: flex;
-}
-
-.small-card__container .footer .right .item {
-  align-items: center;
-  gap: 7px;
-  width: max-content;
-  display: flex;
-}
-
-.small-card__container .footer .right .item .icon {
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  height: 14px;
-  display: flex;
-  width: 14px !important;
-}
-
-.small-card__container .footer .right .item .text {
-  color: #52524f;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: var(--line-height-12, 12px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--line-height-15, 15px);
-  width: auto;
+.adv__text.padding-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .category-nav {
@@ -1394,6 +949,66 @@ blockquote .content .name {
   display: block;
 }
 
+.info-horizontal {
+  align-self: stretch;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.info-horizontal .avatar {
+  aspect-ratio: 1;
+  background: #d3d3d3;
+  border: 1px solid #0000001a;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+}
+
+.info-horizontal .col {
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 3px;
+  display: flex;
+}
+
+.info-horizontal .row {
+  align-items: center;
+  gap: 3px;
+  width: auto;
+  display: flex;
+}
+
+.info-horizontal .row .name {
+  color: #121212;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--line-height-15, 15px);
+}
+
+.info-horizontal .row .official {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.info-horizontal .time {
+  color: #52524f;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-15, 15px);
+  margin-top: 2px;
+}
+
 .info {
   align-self: stretch;
   align-items: center;
@@ -1453,66 +1068,6 @@ blockquote .content .name {
   font-style: normal;
   font-weight: 400;
   line-height: var(--line-height-15, 15px);
-}
-
-.info-horizontal {
-  align-self: stretch;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  display: flex;
-}
-
-.info-horizontal .avatar {
-  aspect-ratio: 1;
-  background: #d3d3d3;
-  border: 1px solid #0000001a;
-  border-radius: 50px;
-  width: 24px;
-  height: 24px;
-}
-
-.info-horizontal .col {
-  justify-content: center;
-  align-self: stretch;
-  align-items: center;
-  gap: 3px;
-  display: flex;
-}
-
-.info-horizontal .row {
-  align-items: center;
-  gap: 3px;
-  width: auto;
-  display: flex;
-}
-
-.info-horizontal .row .name {
-  color: #121212;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: var(--line-height-15, 15px);
-}
-
-.info-horizontal .row .official {
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  width: 12px;
-  height: 12px;
-  display: flex;
-}
-
-.info-horizontal .time {
-  color: #52524f;
-  font-family: var(--font-family-Font-1, "Inter Display");
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: var(--line-height-15, 15px);
-  margin-top: 2px;
 }
 
 .sport-group .sport-group__container {
@@ -3025,7 +2580,102 @@ blockquote .content .name {
   line-height: 13.333px;
 }
 
-.card-title {
+.card-container {
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    border-radius: 16px;
+  }
+}
+
+.card--news {
+  background: #fff;
+}
+
+.card--news .body {
+  flex-direction: column;
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 14px;
+  display: flex;
+}
+
+.card--news .body .title {
+  color: #121212;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  letter-spacing: -.18px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+.card--news .body .content {
+  color: var(--www-nytimes-com-fuscous-gray, var(--color-grey-32, #52524f));
+  font-family: Inter Display;
+  font-size: var(--font-size-14, 14px);
+  -webkit-line-clamp: 2;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  display: block;
+  padding: 0 !important;
+}
+
+.card--news .footer {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+}
+
+.card--news .footer .category {
+  color: #b72424;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--line-height-15, 15px);
+}
+
+.card--news .footer .right {
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+  display: flex;
+}
+
+.card--news .footer .right .item {
+  cursor: pointer;
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+
+.card--news .footer .right .item .icon {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  display: flex;
+}
+
+.card--news .footer .right .item .text {
+  color: #52524f;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: var(--line-height-12, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-15, 15px);
+  width: auto;
+}
+
+.card--header {
   background: #fff;
   border-bottom: 1px solid #f0f0ee;
   border-radius: 14px 14px 0 0;
@@ -3035,22 +2685,30 @@ blockquote .content .name {
   display: flex;
 }
 
-.card-title.blue {
+.card--header.blue {
   background: #0056ff;
 }
 
-.card-title__title {
+.card--header__title {
   align-self: stretch;
   align-items: flex-start;
   display: flex;
 }
 
-.card-title__title .deco {
+.card--header__title .deco-container {
   position: relative;
+}
+
+.card--header__title .deco-container .deco {
+  background: #b72424;
+  border-radius: 0 6px 6px 0;
+  width: 4px;
+  height: 24px;
+  position: absolute;
   left: -14px;
 }
 
-.card-title__title .text {
+.card--header__title .text {
   color: #b72424;
   font-family: var(--font-family-Font-1, "Inter Display");
   letter-spacing: -.27px;
@@ -3062,11 +2720,11 @@ blockquote .content .name {
   display: flex;
 }
 
-.card-title__title .logo {
+.card--header__title .logo {
   height: 30.46px;
 }
 
-.card-title__content {
+.card--header__content {
   background: #fff;
   border-radius: 0 0 14px 14px;
   flex-direction: column;
@@ -3076,21 +2734,365 @@ blockquote .content .name {
   display: flex;
 }
 
-.card-title__link {
+.card--no-text {
+  background: #fff;
+}
+
+.card--no-text .info {
+  align-self: stretch;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  display: flex;
+}
+
+.card--no-text .info .avatar {
+  aspect-ratio: 1;
+  background: #d3d3d3;
+  border: 1px solid #0000001a;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.card--no-text .info .col {
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 3px;
+  display: flex;
+}
+
+.card--no-text .info .row {
+  align-items: center;
+  gap: 3px;
+  width: auto;
+  display: flex;
+}
+
+.card--no-text .info .row .name {
   color: #121212;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--line-height-15, 15px);
+}
+
+.card--no-text .info .row .official {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.card--no-text .info .time {
+  color: #52524f;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-15, 15px);
+}
+
+.card--no-text .body {
+  flex-direction: column;
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 14px;
+  display: flex;
+}
+
+.card--no-text .body .title {
+  color: #121212;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  letter-spacing: -.18px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+.card--no-text .body .content {
+  color: var(--www-nytimes-com-fuscous-gray, var(--color-grey-32, #52524f));
+  font-family: Inter Display;
+  font-size: var(--font-size-14, 14px);
+  -webkit-line-clamp: 2;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  display: block;
+  padding: 0 !important;
+}
+
+.card--no-text .footer {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+}
+
+.card--no-text .footer .category {
+  color: #b72424;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--line-height-15, 15px);
+}
+
+.card--no-text .footer .right {
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+  display: flex;
+}
+
+.card--no-text .footer .right .item {
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+
+.card--no-text .footer .right .item .icon {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  display: flex;
+}
+
+.card--no-text .footer .right .item .text {
+  color: #52524f;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: var(--line-height-12, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-15, 15px);
+  width: auto;
+}
+
+.card--article {
+  background-color: #fff;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.card--article__info {
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  display: flex;
+}
+
+.card--article__info .avatar {
+  aspect-ratio: 1;
+  background: #d3d3d3;
+  border: 1px solid #0000001a;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.card--article__info .col {
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 3px;
+  display: flex;
+}
+
+.card--article__info .row {
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  display: flex;
+}
+
+.card--article__info .card--article__name {
+  color: #666;
   font-family: var(--font-family-Font-1, "Inter Display");
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: var(--line-height-15, 15px);
-  background: #f6f6f6;
-  border-radius: 10px;
+}
+
+.card--article__info .official {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.card--article__info .card--article__time {
+  color: #52524f;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-15, 15px);
+  margin-top: 1px;
+}
+
+.card--article__container {
+  background: #fff;
+  border-top: 1px solid #f0f0ee;
+  border-bottom: 1px solid #f0f0ee;
+  align-self: stretch;
+  gap: 10px;
+  padding: 14px 0;
+  display: flex;
+}
+
+.card--article__container.padding {
+  padding: 10px 0;
+}
+
+.card--article__container .image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 88px;
+  height: 88px;
+  display: block;
+}
+
+.card--article__container .body {
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  display: flex;
+}
+
+.card--article__container .body .title {
+  color: var(--www-nytimes-com-cod-gray, var(--color-grey-7, #121212));
+  font-family: var(--font-family-Font-1, "Inter Display");
+  letter-spacing: -.14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+.card--article__container .footer {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.card--article__container .footer .category {
+  color: #b72424;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--line-height-15, 15px);
+}
+
+.card--article__container .footer .right {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  width: auto;
+  display: flex;
+}
+
+.card--article__container .footer .right .item {
+  cursor: pointer;
+  align-items: center;
+  gap: 7px;
+  width: max-content;
+  display: flex;
+}
+
+.card--article__container .footer .right .item .icon {
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  height: 14px;
+  display: flex;
+  width: 14px !important;
+}
+
+.card--article__container .footer .right .item .text {
+  color: #52524f;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: var(--line-height-12, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height-15, 15px);
+  width: auto;
+}
+
+.card--trending {
+  align-items: flex-start;
+  gap: var(--item-spacing-s, 16px);
+  border-top: var(--stroke-weight-1, 1px) solid var(--color-grey-94, #f0f0ee);
+  background: #fff;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 14px;
+  display: flex;
+}
+
+.card--trending .title {
+  color: var(--www-nytimes-com-cod-gray, var(--color-grey-7, #121212));
+  font-family: var(--font-family-Font-1, "Inter Display");
+  letter-spacing: -.18px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+.card--trending__body {
+  flex-direction: column;
+  gap: 18px;
+  display: flex;
+}
+
+.card--trending__body .sentence {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 10px;
+  padding-bottom: 4px;
+  display: flex;
+}
+
+.card--trending__body .sentence .dot {
+  width: 4px;
+  height: 4px;
+  fill: var(--color-black-solid, #000);
+  opacity: var(--opacity-100, 1);
+  padding-top: 7px;
+}
+
+.card--trending__body .sentence .text {
+  color: var(--www-nytimes-com-cod-gray, var(--color-grey-7, #121212));
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-500, 500);
+  flex-direction: column;
+  flex: 1 0 0;
   justify-content: center;
   align-self: stretch;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 14px 0;
-  padding: 10px 0;
+  line-height: 145%;
   display: flex;
 }
 
@@ -3143,7 +3145,7 @@ blockquote .content .name {
   display: flex;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1250px) {
   .home-desktop__right {
     width: 380px;
   }
@@ -3257,11 +3259,12 @@ blockquote .content .name {
 }
 
 .header-desktop__menu .text {
+  cursor: pointer;
   color: #fff;
   font-family: var(--font-family-Font-1, "Inter Display");
   font-style: normal;
   font-weight: var(--font-weight-500, 500);
-  font-size: 11.063px;
+  font-size: 13px;
   line-height: var(--line-height-12, 12px);
   letter-spacing: var(--letter-spacing-0_12, .12px);
   justify-content: center;
@@ -3271,7 +3274,6 @@ blockquote .content .name {
 
 .header-desktop__menu .text.hashtag {
   color: #ffffff80;
-  font-size: 11.438px;
 }
 
 .header-desktop__menu .text .extend {
@@ -3296,6 +3298,7 @@ blockquote .content .name {
   color: #fff;
   text-align: center;
   letter-spacing: -.14px;
+  cursor: pointer;
   border-radius: 24px;
   align-items: center;
   gap: 7px;
@@ -3311,6 +3314,142 @@ blockquote .content .name {
 .header-desktop__right .item.bg-white {
   color: #b5191d;
   background: #fff;
+}
+
+.view-more--btn {
+  cursor: pointer;
+  color: #121212;
+  font-family: var(--font-family-Font-1, "Inter Display");
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--line-height-15, 15px);
+  background: #f6f6f6;
+  border-radius: 10px;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 14px 0;
+  padding: 10px 0;
+  display: flex;
+}
+
+.view-more--btn.black {
+  color: #fff;
+  background: #fff3;
+  margin-top: 24px;
+}
+
+.modal--dropdown {
+  z-index: 99;
+  width: 100%;
+  height: auto;
+  font-family: var(--Inter);
+  background: #fff;
+  position: fixed;
+  top: 60px;
+  left: 0;
+}
+
+.modal--dropdown__container {
+  border-bottom: 1px solid #e5e7eb;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px 0;
+  display: flex;
+}
+
+.modal--dropdown__container.no-border {
+  border: none;
+}
+
+.modal--dropdown__content {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 110px;
+  display: flex;
+}
+
+.modal--dropdown__content__item {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.modal--dropdown__content__item__title {
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+}
+
+.modal--dropdown__content__item__title .deco {
+  background-color: #b72424;
+  width: 4px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.modal--dropdown__content__item__sub {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.modal--dropdown__content__item__sub__item {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.modal--dropdown__content__item__sub__item:hover {
+  color: #1a2ad1;
+}
+
+.modal--dropdown__content__item__sub__item {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.modal--dropdown__event {
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.modal--dropdown__event--header {
+  gap: 14px;
+  display: flex;
+}
+
+.modal--dropdown__event--header .show-all--btn {
+  background-color: #e1e1f3;
+  border-radius: 10px;
+  padding: 1px 10px;
+  font-size: 13px;
+}
+
+.modal--dropdown__title {
+  font-size: 14px;
+}
+
+.modal--dropdown__title.bold {
+  font-weight: 700;
+}
+
+.modal--dropdown__contact {
+  gap: 30px;
+  display: flex;
+}
+
+.modal--dropdown__contact .group {
+  gap: 12px;
+  display: flex;
 }
 
 @font-face {

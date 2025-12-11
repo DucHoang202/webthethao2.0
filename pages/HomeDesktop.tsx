@@ -34,17 +34,17 @@ export default function HomeDesktop() {
             official: true,
             link: "/blog"
         }]
-    const card2 = [{ img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }, { img: "/assets/image 20-10.webp", name: "SEA Games 33" }]
+    const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
     return (
         <main>
-            <div className="home-desktop">
-                <div className="home-desktop__left">
+            <div className="home--desktop">
+                <div className="home--desktop__left">
                     <div className="empty-container">
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
                         <div className="card--header__content">
                             {card2.map((item, index) => (
-                                <div className="home-desktop__schedule">
-                                    <div className={`item ${active === index ? 'active' : ''}`} onClick={() => setActive(index)}>
+                                <div className="home--desktop__schedule">
+                                    <div className={`item ${index === 0 ? 'active' : ''}`} onClick={() => setActive(index)}>
                                         <img src={item.img} alt="" className="logo" />
                                         <span className="text ">{item.name}</span>
                                     </div>
@@ -65,9 +65,9 @@ export default function HomeDesktop() {
                     <Advertisement image="/assets/image 22.webp" isCollapsed={false} />
 
                 </div>
-                <div className="home-desktop__middle">
-                    <div className="home-desktop__radius">
-                        <div className="home-desktop__share">
+                <div className="home--desktop__middle">
+                    <div className="home--desktop__radius">
+                        <div className="home--desktop__share">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="32" height="32" rx="16" fill="#F3F2F2" />
                                 <path d="M16.0003 16C17.8413 16 19.3337 14.5076 19.3337 12.6667C19.3337 10.8257 17.8413 9.33334 16.0003 9.33334C14.1594 9.33334 12.667 10.8257 12.667 12.6667C12.667 14.5076 14.1594 16 16.0003 16Z" fill="white" />
@@ -84,11 +84,11 @@ export default function HomeDesktop() {
 
                         </div>
                     </div>
-                    <div className="home-desktop__radius">
+                    <div className="home--desktop__radius">
                         <img src="/assets/image-16.webp" alt="" />
                     </div>
                     {card1.map((item, index) => (
-                        <div className="home-desktop__radius">
+                        <div className="home--desktop__radius">
                             < Card key={index} avatar={item.avatar} name={item.name} time={item.time} image={item.image} title={item.title} content={item.content} category={item.category} official={item.official} link="/blog" />
                         </div>
                     ))}
@@ -102,14 +102,14 @@ export default function HomeDesktop() {
                         </div>
                     </div>
                     <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
-                    <div className="home-desktop__radius">
+                    <div className="home--desktop__radius">
                         <SportGenre sport="Bóng đá" />
                     </div>
-                    <div className="home-desktop__radius">
+                    <div className="home--desktop__radius">
                         <SportGenre sport="Bóng đá" />
                     </div>
                 </div>
-                <div className="home-desktop__right">
+                <div className="home--desktop__right">
                     <div className="card-container">
                         <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
                         <div className="card--header__content">

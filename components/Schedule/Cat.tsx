@@ -1,48 +1,65 @@
-
 'use client'
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/free-mode";
 
 interface SwiperRowProps {
     items: any[];
     active?: number;
     gap?: number;
     style?: React.CSSProperties;
+    className?: string
 }
+
 interface CatProps {
     onCatChange: (cat: string) => void;
     items: any[]
-
 }
-const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange }: SwiperRowProps & CatProps) => {
+
+const Cat = ({ items, active = 0, gap = 12, style = {}, onCatChange, className }: SwiperRowProps & CatProps) => {
     const [activeIndex, setActiveIndex] = useState(active);
 
-    const handleSelect = (cat: string) => {
-        onCatChange(cat);
+    const handleSelect = (item: string, index: number) => {
+        setActiveIndex(index);
+        onCatChange(item);
+    };
 
-    }
+    // Sync khi prop active thay đổi
     useEffect(() => {
         setActiveIndex(active);
-        handleSelect(items[active]);
+        onCatChange(items[active]);
     }, [active]);
 
     return (
         <section>
-            <div className="search" style={style}>
-                <div
-                    className="search-container" style={{ marginLeft: "30px" }}
+            <div className={`search overflow`} style={style}>
+                <Swiper
+                    freeMode={true}
+                    modules={[FreeMode]}
+                    slidesPerView="auto"
+                    spaceBetween={gap}
+                    className="search-container h-auto"
                 >
                     {items.map((item, index) => (
-                        <div
+                        <SwiperSlide
                             key={index}
-                            className={` ${activeIndex === index ? "cat-btn active" : "cat-btn"}`}
-                            onClick={() => { handleSelect(item); setActiveIndex(index) }}
+                            style={{ width: "auto" }} // quan trọng để nút co theo text
                         >
-                            <a className="name">{item}</a>
-                        </div>
+                            <div
+                                className={`cat-btn ${activeIndex === index ? "active" : ""}`}
+                                onClick={() => handleSelect(item, index)}
+                            >
+                                <a className="name">{item}</a>
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </section>
     );
 };
-export default Cat
+
+export default Cat;

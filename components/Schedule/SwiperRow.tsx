@@ -19,7 +19,7 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} }: SwiperRowProps) 
     }, [active]);
 
     return (
-        <div className="search" style={style}>
+        <div className="search header" style={style}>
             <div className="search__item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path d="M2 11.7888L5.72414 7.59914L8.2069 10.3922L14 3.875" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
@@ -37,7 +37,7 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} }: SwiperRowProps) 
                 {items.map((item, index) => (
                     <SwiperSlide key={index} style={{ width: "auto" }}>
                         <div
-                            className={`search__item ${activeIndex === index ? "active" : ""}`}
+                            className={`search__item ${activeIndex === index ? "active" : ""} ${index === items.length - 1 ? "last" : ""}`}
                             onClick={() => setActiveIndex(index)}
                         >
                             {item.icon && <span>{item.icon}</span>}
@@ -46,6 +46,7 @@ const SwiperRow = ({ items, active = 0, gap = 12, style = {} }: SwiperRowProps) 
                     </SwiperSlide>
                 ))}
             </Swiper>
+
             <div className="search__item hideInMobile ">
                 <div className="name bg-gray">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">

@@ -9,11 +9,9 @@ const SchedulePage = () => {
     const [selectedCat, setSelectedCat] = useState<string | null>(null);
     const handleDateChange = (date: string) => {
         setSelectedDate(date);
-        console.log("ngay dc chon", date)
     }
     const handleCatChange = (cat: string) => {
         setSelectedCat(cat);
-        console.log("loai dc chon", cat)
     }
 
     const cat = ["Bóng đá", "Bóng chuyền", "Bóng rổ", "Bóng volley", "Bóng bầu dục"]
@@ -213,10 +211,10 @@ const SchedulePage = () => {
                     </div>
                 </div>
                 <div className="schedule-page__sort">
-                    <Cat items={cat} onCatChange={handleCatChange} />
+                    <Cat items={cat} onCatChange={handleCatChange} style={{ paddingLeft: '0px' }} />
 
                 </div>
-                <Sched items={cat} onChangeDate={handleDateChange} />
+                <Sched items={cat} onChangeDate={handleDateChange} style={{ paddingLeft: '0px' }} />
                 <div className="current-match-container" style={{ width: '100%', alignItems: 'center', justifyContent: 'center' }}>
 
 

@@ -1,4 +1,4 @@
-.home-desktop {
+.home--desktop {
     display: flex;
     padding: 23px 14px;
     max-width: 1440px;
@@ -128,4 +128,10 @@
             }
         }
     }
+}
+
+.home--mobile {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
