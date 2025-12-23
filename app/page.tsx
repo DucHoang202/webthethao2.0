@@ -23,7 +23,7 @@ import { useIsCustomView } from "../hooks/useIsCustomView";
 import HomeTablet from "@/pages/HomeTablet";
 import HeaderDesktop from "@/pages/HeaderDesktop";
 function Home() {
-  const isMobile = useIsCustomView(990);
+  const isMobile = useIsCustomView(768);
   const isTablet = useIsCustomView(1250);
   const changeHeader = useIsCustomView(768);
   const changeNav = useIsCustomView(1024);

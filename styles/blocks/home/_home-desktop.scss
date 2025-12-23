@@ -25,11 +25,14 @@
         display: flex;
         flex-direction: column;
         gap: 14px;
+        width: calc(100% - 651px - 28px - 28px);
         max-width: 550px;
         flex-shrink: 1 1 auto;
 
         @media (max-width: 1250px) {
             max-width: 564px;
+            width: calc(100% - 380px);
+
             margin-left: auto;
             margin-right: auto;
         }
