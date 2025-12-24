@@ -8,17 +8,11 @@ import Card from "../../components/ui/card/NewsCard";
 import { useIsCustomView } from "../../hooks/useIsCustomView";
 import HeaderDesktop from "../../pages/HeaderDesktop";
 import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 const Blog: React.FC = () => {
-    const [isMobile, setIsMobile] = useState(false);
-    const [isTablet, setIsTablet] = useState(false);
-    const [changeHeader, setChangeHeader] = useState(false);
-    const [changeNav, setChangeNav] = useState(false);
-    useEffect(() => {
-        setIsMobile(useIsCustomView(990));
-        setIsTablet(useIsCustomView(1250));
-        setChangeHeader(useIsCustomView(768));
-        setChangeNav(useIsCustomView(1024));
-    }, []);
+
+    const changeHeader = useMediaQuery({ query: "(max-width: 1024px)" })
+    const changeNav = useMediaQuery({ query: "(max-width: 768px)" })
     const card1 =
     {
         avatar: "/assets/Rectangle 1.webp",
@@ -32,7 +26,7 @@ const Blog: React.FC = () => {
     }
     return (
         <div className='App'>
-            {changeNav ? <Header /> : <HeaderDesktop />}
+            {changeHeader ? <Header /> : <HeaderDesktop />}
             <main>
                 <div className="no-gap">
                     <Search />
@@ -41,7 +35,7 @@ const Blog: React.FC = () => {
                 <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
                 <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
             </main>
-            {changeHeader ? <Nav /> : ""}
+            {changeNav ? <Nav /> : ""}
 
         </div>
 

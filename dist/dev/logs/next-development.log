@@ -1,0 +1,76 @@
+[00:00:06.173] Server  LOG      ✓ Ready in 4.4s
+[00:00:22.459] Server  LOG      ○ Compiling / ...
+[00:00:29.519] Server  WARN     ⚠ Cross origin request detected from 172.16.1.137 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:29.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:30.018] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:30.018] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:30.018] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:00:30.018] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `HomeDesktop`. 
+[00:00:30.018] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `div`.  It was passed a child from HomeDesktop.
+[00:00:30.987] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:00:30.987] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:01:32.567] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+[00:01:32.569] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+[00:01:32.574] Server  ERROR   Invalid DOM property `stroke-miterlimit`. Did you mean `strokeMiterlimit`?
+[00:01:32.575] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+[00:01:32.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:01:33.318] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:04:40.927] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:40.941] Server  LOG      ✓ Compiled in 1127ms
+[00:04:43.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:04:46.217] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:05:07.202] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:07.735] Browser DEBUG   injection-tss TSS: hosted page injected
+[00:05:07.735] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
+[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:05:07.735] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:08:16.174] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:16.854] Server  LOG      ✓ Compiled in 603ms
+[00:08:16.871] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:18.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:08:20.353] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[00:08:56.545] Server  LOG      ✓ Compiled in 686ms
+[00:08:58.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:09:58.454] Server  LOG      ✓ Compiled in 104ms
+[00:10:32.632] Server  LOG      ✓ Compiled in 142ms
+[00:11:34.777] Server  LOG      ✓ Compiled in 108ms
