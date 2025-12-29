@@ -1,9 +1,9 @@
 import { useIsMobile } from "@/hooks/useIsMobile"
 
-const CardTitle: React.FC<{ title: string, logo?: any, style?: React.CSSProperties, deco?: boolean, arrow?: boolean }> = ({ title, logo, style, deco, arrow }) => {
+const CardTitle: React.FC<{ title: string, logo?: any, style?: React.CSSProperties, deco?: boolean, arrow?: boolean, className?: string }> = ({ title, logo, style, deco, arrow, className }) => {
     const isMobile = useIsMobile()
     return (
-        <div className="card--header" style={style}>
+        <div className={`card--header ${className}`} style={style}>
             <div className="card--header__title ">
                 <div className="deco-container">
                     <div className={`deco ${isMobile ? 'hidden' : deco ? 'block' : 'hidden'}`}>

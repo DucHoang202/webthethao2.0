@@ -1,4 +1,10 @@
 .blog {
+    &.detail {
+        max-width: 749px;
+        width: 100%;
+
+    }
+
     .blog__container {
         background: #ffffff;
         width: 100%;
@@ -33,6 +39,14 @@
     }
 
     .blog__user--inner {
+
+        &.boder {
+            border-radius: 14px;
+            border: 1px solid #D9D9D9;
+            background: #FFF;
+            padding: 10px 14px;
+        }
+
         border-bottom: 1px solid #D9D9D9;
         display: flex;
         align-items: center;
@@ -104,8 +118,12 @@
 }
 
 
+
+
 .blog-title {
-    width: 100%;
+
+
+
     color: #121212;
     font-family: var(--font-family-Font-1, "Inter Display");
     font-size: 18px;
@@ -114,6 +132,12 @@
     line-height: 145%;
     /* 26.1px */
     letter-spacing: -0.18px;
+
+    @media (min-width: 768px) {
+
+        font-size: 26px;
+
+    }
 }
 
 .blog-sapo {

@@ -10,14 +10,29 @@ interface CardProps {
     category: string;
     official: boolean;
     link: string;
+    className?: string;
 }
 
 
-const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link }) => {
+const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link, className }) => {
     return (
-        <div className="card--news" >
-            <SmallInfo avatar={avatar} name={name} time={time} official={official} />
-            <a href={link}>
+        <div className={`card--news ${className}`} >
+            <div className={`info ${className}`}>
+                <img src={avatar} alt="" className="avatar" />
+                <div className="col">
+                    <div className="row">
+                        <div className="name">
+                            {name}
+                        </div>
+                        {
+                            official && <img src="/assets/verify.webp" alt="" className="official" />
+                        }
+                    </div>
+                    <div className="time">
+                        {time}
+                    </div>
+                </div>
+            </div>            <a href={link}>
                 <img src={image} alt="" className="image" style={{ width: "100%" }} /></a>
             <div className="body">
                 <a href={link} className="title">

@@ -10,6 +10,35 @@
 .card--news {
     background: white;
 
+    &.smaller {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #F0F0EE;
+        background: #FFF;
+        box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.05);
+
+        a .image {
+
+            align-self: stretch;
+            aspect-ratio: 241.33/149.95;
+            object-fit: cover;
+        }
+
+        .body .content {
+            display: none;
+        }
+
+        .body .title {
+            color: #121212;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 145%;
+            /* 20.3px */
+            letter-spacing: -0.14px;
+        }
+    }
 
 
     .body {
@@ -105,8 +134,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 14px;
+    border: 1px solid #F0F0EE;
     padding: 10px 14px;
+
+    &.smaller {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-left: 10px;
+        border: none;
+        padding-bottom: 16px;
+        padding-top: 16px;
+
+
+
+
+
+        .card--header__title {
+            .text {
+                color: #000;
+            }
+
+            .deco-container {
+
+
+                .deco {
+                    margin-top: 6px;
+                    height: 16px;
+                    border-radius: 6px;
+                    left: -10px;
+                }
+            }
+
+        }
+    }
+
 
     &.blue {
         background: #0056FF;
@@ -121,6 +183,7 @@
 
         .deco-container {
             position: relative;
+            width: 0;
 
             .deco {
                 position: absolute;
@@ -155,13 +218,120 @@
         padding-bottom: 14px;
 
         flex-direction: column;
-        align-items: flex-start;
+        border-right: 1px solid #F0F0EE;
+
+        border-bottom: 1px solid #F0F0EE;
+
+        border-left: 1px solid #F0F0EE;
+
+        background: #FFF;
 
         align-self: stretch;
         border-radius: 0 0 14px 14px;
-        background: #FFF;
+
     }
 
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    &.smaller {
+
+
+        .avatar {
+            width: 24px;
+            height: 24px;
+            aspect-ratio: 1/1;
+        }
+
+        .col {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .row .name {
+            color: #121212;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--line-height-15, 15px);
+            /* 136.364% */
+        }
+
+        .time {
+            color: #52524F;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--line-height-15, 15px);
+            /* 150% */
+            /* 136.364% */
+        }
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        background: lightgray;
+        aspect-ratio: 1/1;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        width: auto;
+
+        .name {
+            color: #121212;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--line-height-15, 15px);
+            /* 107.143% */
+        }
+
+        .official {
+            display: flex;
+            width: 12px;
+            height: 12px;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    .time {
+        color: #52524F;
+        font-family: var(--font-family-Font-1, "Inter Display");
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--line-height-15, 15px);
+        /* 136.364% */
+    }
 }
 
 .card--no-text {

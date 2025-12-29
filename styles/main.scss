@@ -18,6 +18,7 @@
 @use "./blocks/home/header-desktop";
 @use "./ui/button/view-more";
 @use "./ui/modal/modal-dropdown";
+@use "./blocks/detail/detail";
 
 // Inter Display
 @font-face {
@@ -223,7 +224,6 @@ img {
 
 .App {
     max-width: var(--app-width);
-    overflow-x: hidden;
 }
 
 // Alternative: if you want to constrain the entire body

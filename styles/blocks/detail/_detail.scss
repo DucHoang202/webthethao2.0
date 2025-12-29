@@ -1,0 +1,55 @@
+.detail-section {
+    margin-top: 100px;
+}
+
+.detail-layout {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    border-right: 1px solid #D9D9D9;
+    max-width: 964px;
+    padding-right: 24px;
+    align-self: flex-start;
+
+
+
+    .link--detail {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-self: flex-start;
+        flex-shrink: 0;
+
+        // Optional: If the sidebar content is tall, allow internal scrolling
+
+
+
+        .link {
+            border-radius: 20px;
+            background: var(--color-grey-95, #F3F3F3);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.detail__card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+
+.detail__footer {
+    flex-direction: column;
+    padding: 0 16px;
+
+    .adv img {
+        padding: 0 179.5px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
