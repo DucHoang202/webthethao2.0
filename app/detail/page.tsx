@@ -69,6 +69,7 @@ const Detail: React.FC = () => {
     const content4 = "Bên cạnh thành tích thi đấu, nền tảng chuyên môn về kế toán của Zane cũng giúp anh có lợi thế trong các cuộc trao đổi với lãnh đạo giải đấu và nhà tài trợ."
     const [active, setActive] = useState(0)
     const sidebarRef = useRef<HTMLDivElement>(null);
+    const commentRef = useRef<HTMLDivElement>(null);
     const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
@@ -84,6 +85,7 @@ const Detail: React.FC = () => {
                 }
             }
         };
+
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -101,7 +103,7 @@ const Detail: React.FC = () => {
                             ref={sidebarRef}
                             style={{
                                 position: isSticky ? 'fixed' : 'relative',
-                                top: isSticky ? 'calc(var(--header-h, 65px) + 20px)' : 'auto',
+                                top: isSticky ? 'calc(var(--header-h, 60px) + 40px)' : 'auto',
                             }}
                         >
                             <div className="link">
@@ -132,7 +134,14 @@ const Detail: React.FC = () => {
                         </div>
 
 
-                        <div className="blog detail">
+                        <div className="blog detail"
+
+
+                            style={{
+                                marginLeft: isSticky ? '64px' : '0',
+
+                            }}>
+
                             <div className="blog__container">
 
                                 <div className="blog__user">
@@ -166,7 +175,7 @@ const Detail: React.FC = () => {
                                     <BlogButton number={10} text="Chia sẻ" />
                                 </div>
                             </div>
-                            <div className="blog__comment">
+                            <div className="blog__comment" ref={commentRef}>
                                 <CommentInput />
                                 <Comments avatar="/assets/Image (3).webp" name="Huong Nguyen" content="Anna hướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time="10 phút trước" />
                             </div>
@@ -270,7 +279,7 @@ const Detail: React.FC = () => {
                 </div>
             </div >
             {changeNav ? <Nav /> : ""}
-        </div >
+        </div>
     )
 }
 export default Detail;
