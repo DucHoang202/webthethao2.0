@@ -1,9 +1,75 @@
 import Card from "../ui/card/NewsCard";
 import CardTitle from "../ui/card/CardHeader";
 import SmallCard from "../ui/card/ArticleCard";
+import { useEffect, useState } from "react";
+
+interface Data {
+    author: string,
+    body: string,
+    created_at: string,
+    head: HeadData,
+    id: number,
+    path: string,
+    published_text: string,
+    source_url: string,
+    title: string,
+    updated_at: string,
+
+}
+export interface SeoData {
+    title: string;
+    description: string;
+    keywords: string;
+    canonical: string;
+    robots: string;
+    language: string;
+}
+
+export interface HeadData {
+    seo: SeoData;
+}
+
+interface PageProps {
+    params: Promise<{ id: string }>;
+}
+interface List {
+    id: number;
+    title: string;
+    summary: string;
+    thumbnail: string;
+    article_url: string;
+    category: string;
+    official: boolean;
+    time: string;
+    name: string;
+    avatar: string;
+}
+function extractArticlePath(url: string): string {
+    const pathname = new URL(url).pathname;
+
+    return pathname
+        .replace(/^\/api\/article/, "") // bỏ /api/article
+        .replace(/\.htm$/, "");         // bỏ .htm
+}
+
+
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
-
-
+    const [data, setData] = useState<List[]>([]);
+    const [first, setFirst] = useState<Data | null>(null);
+    const getData = async () => {
+        try {
+            const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
+            const data = await res.json();
+            console.log(data.items);
+            setData(data.items);
+            setFirst(data.items[0]);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    useEffect(() => {
+        getData();
+    }, []);
     const card1 =
     {
         avatar: "/assets/Rectangle 1.webp",
@@ -15,14 +81,55 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
         category: "Pickleball",
         official: true
     }
+    async function getItemData(data: List) {
+        try {
+            const res = await fetch(`${data.article_url}`
+            );
+            const raw = await res.json();
+            window.location.href = "/blog/" + extractArticlePath(data.article_url);
 
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
     return (
         <div className="sport-genre">
-            <CardTitle title={sport} arrow={true} />
-            <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+            <CardTitle title={sport} arrow={true} deco={true} />
+            {/* <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={data[0].thumbnail} title={data[0].title} content={data[0].summary} category={data[0].category} official={data[0].official} link={data[0].article_url} /> */}
+            {data.map((item: any) => (
+                <div className="card--article" >
+                    <div className={`card--article__container `}>
+
+                        <button onClick={() => getItemData(item)} className="image">
+                            <img src={item.thumbnail} alt="" className="image" /></button>
+                        <div className="body" >
+                            <button onClick={() => getItemData(item)} className="title" >
+                                {item.title}
+                            </button>
+
+                            <div className="footer">
+                                <div className="card--article__info">
+                                    <div className="card--article__name">{item.author}</div>
+                                    <div className="card--article__time">{item.time_text}</div>
+
+                                </div>
+                                <div className="right">
+                                    <div className="item">
+                                        <img src="/assets/message.webp" alt="" className="icon" />
+
+                                    </div>
+
+                                    <div className="item">
+                                        <img src="/assets/export.webp" alt="" className="icon" />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
         </div>
     )
 }

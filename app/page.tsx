@@ -14,7 +14,6 @@ import HotTopic from "../components/ui/card/HotTopicCard";
 import Advertisement from "../components/Home/Advertisement";
 import SportGenre from "../components/Home/SportGenre";
 import Nav from "../components/Home/Nav";
-import BlogPage from "./blog/page";
 import HomeMobile from "@/pages/HomeMobile";
 import { useIsMobile } from "../hooks/useIsMobile";
 import { useIsTablet } from "../hooks/useIsTablet";
@@ -38,6 +37,9 @@ function Home() {
     category: "Pickleball",
     official: true
   }
+
+
+
 
   return (
     <div className='App'>

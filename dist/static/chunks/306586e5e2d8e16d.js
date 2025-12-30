@@ -1,0 +1,7 @@
+__turbopack_load_page_chunks__("/HomeTablet", [
+  "static/chunks/abef51d5b92b7760.js",
+  "static/chunks/ece657233d54b221.js",
+  "static/chunks/a3f131bafa57f63e.js",
+  "static/chunks/2363a1843979bcc1.css",
+  "static/chunks/turbopack-b8c1db2d021e2bf1.js"
+])

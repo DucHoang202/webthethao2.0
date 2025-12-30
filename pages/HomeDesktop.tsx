@@ -8,7 +8,7 @@ import Card from "@/components/ui/card/NewsCard";
 import Video from "@/components/Home/Video";
 import SportGenre from "@/components/Home/SportGenre";
 import { useState } from "react";
-export default function HomeDesktop() {
+export default function HomeDesktop(data: any) {
     const [active, setActive] = useState(0);
 
     const card1 =
@@ -21,7 +21,7 @@ export default function HomeDesktop() {
             content: "Adidas đang định hình lại vị thế của mình trong làng Pickleball thông qua dòng vợt AdiPower mới - sự kết hợp giữa chất lượng cao và giá cả hợp lý.",
             category: "Pickleball",
             official: true,
-            linl: "/blog"
+            link: "/blog"
         },
         {
             avatar: "/assets/Rectangle 1.webp",
@@ -43,7 +43,7 @@ export default function HomeDesktop() {
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
                         <div className="card--header__content">
                             {card2.map((item, index) => (
-                                <div className="home--desktop__schedule">
+                                <div className="home--desktop__schedule" key={index}>
                                     <div className={`item ${index === 0 ? 'active' : ''}`} onClick={() => setActive(index)}>
                                         <img src={item.img} alt="" className="logo" />
                                         <span className="text ">{item.name}</span>
@@ -88,7 +88,7 @@ export default function HomeDesktop() {
                         <img src="/assets/image-16.webp" alt="" />
                     </div>
                     {card1.map((item, index) => (
-                        <div className="home--desktop__radius">
+                        <div className="home--desktop__radius" key={index}>
                             < Card key={index} avatar={item.avatar} name={item.name} time={item.time} image={item.image} title={item.title} content={item.content} category={item.category} official={item.official} link="/blog" />
                         </div>
                     ))}
@@ -105,9 +105,9 @@ export default function HomeDesktop() {
                     <div className="home--desktop__radius">
                         <SportGenre sport="Bóng đá" />
                     </div>
-                    <div className="home--desktop__radius">
+                    {/* <div className="home--desktop__radius">
                         <SportGenre sport="Bóng đá" />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="home--desktop__right">
                     <div className="card-container">

@@ -1,4 +1,4 @@
-const BlogTitle = ({ title }: { title: string }) => {
+const BlogTitle = ({ title }: { title?: string }) => {
     return (
         <div>
             <div className="blog-title">

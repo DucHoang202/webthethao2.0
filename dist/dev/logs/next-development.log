@@ -1,76 +1,14 @@
-[00:00:06.173] Server  LOG      ✓ Ready in 4.4s
-[00:00:22.459] Server  LOG      ○ Compiling / ...
-[00:00:29.519] Server  WARN     ⚠ Cross origin request detected from 172.16.1.137 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:01.697] Server  LOG      ✓ Ready in 1297ms
+[00:00:05.343] Server  LOG      ○ Compiling /blog/[id]/[article] ...
+[00:00:09.639] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+[00:00:09.641] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+[00:00:09.644] Server  ERROR   Invalid DOM property `stroke-miterlimit`. Did you mean `strokeMiterlimit`?
+[00:00:09.644] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+[00:00:10.362] Server  WARN     ⚠ Cross origin request detected from 172.16.1.155 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:29.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:30.018] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:00:30.018] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:00:30.018] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:00:30.018] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `HomeDesktop`. 
-[00:00:30.018] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `div`.  It was passed a child from HomeDesktop.
-[00:00:30.987] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:00:30.987] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:01:32.567] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
-[00:01:32.569] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
-[00:01:32.574] Server  ERROR   Invalid DOM property `stroke-miterlimit`. Did you mean `strokeMiterlimit`?
-[00:01:32.575] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
-[00:01:32.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:01:33.318] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:01:33.318] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:04:40.927] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:40.941] Server  LOG      ✓ Compiled in 1127ms
-[00:04:43.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:04:46.217] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:04:46.217] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:05:07.202] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:07.735] Browser DEBUG   injection-tss TSS: hosted page injected
-[00:05:07.735] Browser DEBUG   injection-tss MBTSS: Nonce:  nonce
-[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:05:07.735] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:05:07.735] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:08:16.174] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:08:16.854] Server  LOG      ✓ Compiled in 603ms
-[00:08:16.871] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:08:18.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:08:20.353] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:08:20.353] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:08:56.545] Server  LOG      ✓ Compiled in 686ms
-[00:08:58.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
-[00:09:00.211] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:09:58.454] Server  LOG      ✓ Compiled in 104ms
-[00:10:32.632] Server  LOG      ✓ Compiled in 142ms
-[00:11:34.777] Server  LOG      ✓ Compiled in 108ms
+[00:00:10.649] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.920] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:10.920] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:10.920] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-miterlimit strokeMiterlimit
+[00:00:10.920] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
+[00:00:13.337] Browser LOG     data {"author":"Huy Kha","body":"\n            <p style=\"text-align: justify;\">Mới đây, fanpage chính thức của Liên đoàn Bóng đá châu Á (AFC) đã đăng tải đoạn clip ghi lại buổi tập của U23 Việt Nam, đồng thời đưa ra dòng bình luận bằng tiếng Việt đầy ấn tượng: “U23 Việt Nam và Vòng chung kết Giải U23 châu Á 2026: không đùa được đâu!”.</p>\n<figure class=\"image\" style=\"text-align: center;\"><img src=\"https://webthethao.wepro.io.vn/storage/articles/9a5f562d1f9e973f7ddba52b4409fae1.jpg\">\n<figcaption><em><strong>U23 Việt Nam vừa giành tấm HCV thuyết phục ở SEA Games 33.</strong></em></figcaption>\n</figure>\n<p style=\"text-align: justify;\">Động thái hiếm thấy này nhanh chóng thu hút sự chú ý của người hâm mộ và giới chuyên môn trong khu vực.</p>\n<p style=\"text-align: justify;\">Việc AFC dành sự tôn trọng lớn cho U23 Việt Nam là điều dễ hiểu. Trong quá khứ, đội bóng áo đỏ từng tạo nên cột mốc lịch sử khi giành ngôi Á quân tại VCK U23 châu Á 2018 trên đất Thường Châu (Trung Quốc). Ở kỳ giải gần nhất, U23 Việt Nam tiếp tục khẳng định vị thế khi tiến vào tới vòng tứ kết.</p>\n<p style=\"text-align: justify;\">Đáng chú ý hơn, trong một bài viết phân tích, AFC còn nhận định U23 Việt Nam “có khả năng vô địch”, xếp đội bóng của HLV Kim Sang Sik vào nhóm ứng viên hàng đầu cùng Nhật Bản, Hàn Quốc và Saudi Arabia.</p>\n<p style=\"text-align: justify;\">Để minh chứng cho nhận định này, AFC đã đăng lại trận chung kết đáng nhớ giữa Việt Nam và Uzbekistan năm 2018, đồng thời dành nhiều lời khen cho hành trình lịch sử của thầy trò HLV Park Hang Seo.</p>\n<p style=\"text-align: justify;\">Về phía đội tuyển, tiền vệ Khuất Văn Khang bày tỏ sự tự tin: “U23 Việt Nam đặt mục tiêu cao nhất và sẽ nỗ lực để tiến sâu hơn so với giải đấu hai năm trước”. Trong khi đó, HLV Kim Sang Sik nhấn mạnh toàn đội cần cải thiện những hạn chế để sẵn sàng đối đầu các đối thủ mạnh tại Saudi Arabia.</p>\n<p style=\"text-align: justify;\">Hiện U23 Việt Nam đang tập huấn tại Qatar, sẽ đá giao hữu với U23 Syria trước khi sang Saudi Arabia ngày 1/1/2026. Ở vòng bảng, đội lần lượt chạm trán U23 Jordan (6/1), U23 Kyrgyzstan (9/1) và chủ nhà U23 Saudi Arabia (12/1).</p>\n\n        ","created_at":"2025-12-29 06:35:29","head":{"amp":{"url":"https://webthethao.vn/bong-da-viet-nam/afc-gui-thong-diep-u23-viet-nam-khong-phai-doi-thu-de-choi-tai-chau-a-Et73kskRR-amp.htm"},"og":{"description":"Fanpage của AFC bất ngờ đăng clip buổi tập của U23 Việt Nam kèm bình luận bằng tiếng Việt, cho thấy sự đánh giá cao dành cho thầy trò HLV Kim Sang Sik trước thềm VCK U23 châu Á 2026.","image":"https://cdnmedia.webthethao.vn/thumb/720-405/uploads/2025-12-29/u23-viet-nam-afc.jpg","title":"AFC gửi thông điệp: U23 Việt Nam không phải đối thủ dễ chơi tại châu Á","type":"article","url":"https://webthethao.vn/bong-da-viet-nam/afc-gui-thong-diep-u23-viet-nam-khong-phai-doi-thu-de-choi-tai-chau-a-Et73kskRR.htm"},"schema":{"breadcrumb":{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":["[Object]","[Object]"]},"item_list":[{"@context":"http://schema.org","@type":"ItemList","itemListElement":"[Array]"}],"news_article":{"@context":"http://schema.org","@type":"NewsArticle","author":{"@type":"Person","name":"Huy Kha"},"dateModified":"29-12-2025 13:11:15+07:00","datePublished":"29-12-2025 12:35:42+07:00","description":"Fanpage của AFC bất ngờ đăng clip buổi tập của U23 Việt Nam kèm bình luận bằng tiếng Việt, cho thấy sự đánh giá cao dành cho thầy trò HLV Kim Sang Sik trước thềm VCK U23 châu Á 2026.","headline":"AFC gửi thông điệp: U23 Việt Nam không phải đối thủ dễ chơi tại châu Á","image":{"@type":"ImageObject","height":405,"url":"https://cdnmedia.webthethao.vn/thumb/720-405/uploads/2025-12-29/u23-viet-nam-afc.jpg","width":720},"mainEntityOfPage":{"@id":"https://webthethao.vn/bong-da-viet-nam/afc-gui-thong-diep-u23-viet-nam-khong-phai-doi-thu-de-choi-tai-chau-a-Et73kskRR.htm","@type":"WebPage"},"publisher":{"@type":"Organization","logo":"[Object]","name":"Webthethao"}},"organization":{"@context":"http://schema.org","@type":"Organization","contactPoint":["[Object]"],"logo":"https://webthethao.vn/assets/images/logo-webthethao.png","url":"https://webthethao.vn/"},"person":{"@context":"http://schema.org","@type":"Person","name":"Webthethao","sameAs":["https://www.facebook.com/Webthethao/","https://www.youtube.com/channel/UC2a936AmApEcBeUWnMdIoJQ","http://video.mocha.com.vn/webthethao-cn40239","https://lotus.vn/w/profile/14863935986803185.htm","http://video.mocha.com.vn/webthethao-cn40239","https://twitter.com/WebTheThaovn"],"url":"https://webthethao.vn/"}},"seo":{"canonical":"https://webthethao.vn/bong-da-viet-nam/afc-gui-thong-diep-u23-viet-nam-khong-phai-doi-thu-de-choi-tai-chau-a-Et73kskRR.htm","description":"Fanpage của AFC bất ngờ đăng clip buổi tập của U23 Việt Nam kèm bình luận bằng tiếng Việt, cho thấy sự đánh giá cao dành cho thầy trò HLV Kim Sang Sik trước thềm VCK U23 châu Á 2026.","keywords":"bóng đá, U23 Việt Nam, u.23 châu Á, AFC, u23 châu á 2026","language":"vi","robots":"index, follow","title":"AFC gửi thông điệp: U23 Việt Nam không phải đối thủ dễ chơi tại châu Á"},"twitter":{"description":"Fanpage của AFC bất ngờ đăng clip buổi tập của U23 Việt Nam kèm bình luận bằng tiếng Việt, cho thấy sự đánh giá cao dành cho thầy trò HLV Kim Sang Sik trước thềm VCK U23 châu Á 2026.","image":"https://cdnmedia.webthethao.vn/thumb/720-405/uploads/2025-12-29/u23-viet-nam-afc.jpg","title":"AFC gửi thông điệp: U23 Việt Nam không phải đối thủ dễ chơi tại châu Á"}},"id":2,"path":"/bong-da-viet-nam/afc-gui-thong-diep-u23-viet-nam-khong-phai-doi-thu-de-choi-tai-chau-a-Et73kskRR.htm","published_text":"thứ hai 29-12-2025 12:35:42 +07:00","source_url":"https://webthethao.vn/bong-da-viet-nam/afc-gui-thong-diep-u23-viet-nam-khong-phai-doi-thu-de-choi-tai-chau-a-Et73kskRR.htm","title":"AFC gửi thông điệp: U23 Việt Nam không phải đối thủ dễ chơi tại châu Á","updated_at":"2025-12-29 06:35:29"}

@@ -1,0 +1,7 @@
+__turbopack_load_page_chunks__("/HomeMobile", [
+  "static/chunks/39ac6f4e55085db5.js",
+  "static/chunks/ece657233d54b221.js",
+  "static/chunks/5ce5521b4a59e4ae.js",
+  "static/chunks/2363a1843979bcc1.css",
+  "static/chunks/turbopack-ec5961ed820c092b.js"
+])

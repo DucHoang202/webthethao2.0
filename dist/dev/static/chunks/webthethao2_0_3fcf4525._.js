@@ -2126,14 +2126,34 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$NewsCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/components/ui/card/NewsCard.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$CardHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/components/ui/card/CardHeader.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$ArticleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/components/ui/card/ArticleCard.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/webthethao2.0/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
+var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
 const SportGenre = ({ sport })=>{
+    _s();
+    const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [first, setFirst] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const getData = async ()=>{
+        try {
+            const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
+            const data = await res.json();
+            console.log(data.items);
+            setData(data.items);
+            setFirst(data.items[0]);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SportGenre.useEffect": ()=>{
+            getData();
+        }
+    }["SportGenre.useEffect"], []);
     const card1 = {
         avatar: "/assets/Rectangle 1.webp",
         name: "Kiet Phan",
@@ -2149,79 +2169,36 @@ const SportGenre = ({ sport })=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$CardHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 title: sport,
-                arrow: true
+                arrow: true,
+                deco: true
             }, void 0, false, {
                 fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
-                lineNumber: 21,
+                lineNumber: 49,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$NewsCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                avatar: card1.avatar,
-                name: card1.name,
-                time: card1.time,
-                image: card1.image,
-                title: card1.title,
-                content: card1.content,
-                category: card1.category,
-                official: card1.official,
-                link: "/blog"
-            }, void 0, false, {
-                fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
-                lineNumber: 22,
-                columnNumber: 13
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$ArticleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                avatar: card1.avatar,
-                name: card1.name,
-                time: card1.time,
-                image: "/assets/hal.webp",
-                title: "Trực tiếp vòng Last 64 Hanoi Open Pool 2025",
-                content: card1.content,
-                category: card1.category,
-                official: card1.official,
-                link: "/blog"
-            }, void 0, false, {
-                fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
-                lineNumber: 23,
-                columnNumber: 13
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$ArticleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                avatar: card1.avatar,
-                name: card1.name,
-                time: card1.time,
-                image: "/assets/hal.webp",
-                title: "Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025",
-                content: card1.content,
-                category: card1.category,
-                official: card1.official,
-                link: "/blog"
-            }, void 0, false, {
-                fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
-                lineNumber: 24,
-                columnNumber: 13
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$ArticleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                avatar: card1.avatar,
-                name: card1.name,
-                time: card1.time,
-                image: "/assets/hal.webp",
-                title: "Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025",
-                content: card1.content,
-                category: card1.category,
-                official: card1.official,
-                link: "/blog"
-            }, void 0, false, {
-                fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
-                lineNumber: 25,
-                columnNumber: 13
-            }, ("TURBOPACK compile-time value", void 0))
+            data.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$ui$2f$card$2f$ArticleCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    avatar: card1.avatar,
+                    name: card1.name,
+                    time: item.time_text,
+                    image: item.thumbnail,
+                    title: item.title,
+                    content: item.summary,
+                    category: item.category,
+                    official: item.official,
+                    link: `/blog/${item.id}`
+                }, item.id, false, {
+                    fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
+                    lineNumber: 52,
+                    columnNumber: 17
+                }, ("TURBOPACK compile-time value", void 0)))
         ]
     }, void 0, true, {
         fileName: "[project]/webthethao2.0/components/Home/SportGenre.tsx",
-        lineNumber: 20,
+        lineNumber: 48,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
+_s(SportGenre, "+Gvo44XuT45l+mprLP2d8NxTnP0=");
 _c = SportGenre;
 const __TURBOPACK__default__export__ = SportGenre;
 var _c;
@@ -2451,7 +2428,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-function HomeDesktop() {
+function HomeDesktop(data) {
     _s();
     const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const card1 = [
@@ -2464,7 +2441,7 @@ function HomeDesktop() {
             content: "Adidas đang định hình lại vị thế của mình trong làng Pickleball thông qua dòng vợt AdiPower mới - sự kết hợp giữa chất lượng cao và giá cả hợp lý.",
             category: "Pickleball",
             official: true,
-            linl: "/blog"
+            link: "/blog"
         },
         {
             avatar: "/assets/Rectangle 1.webp",
@@ -2568,7 +2545,7 @@ function HomeDesktop() {
                                                 lineNumber: 47,
                                                 columnNumber: 37
                                             }, this)
-                                        }, void 0, false, {
+                                        }, index, false, {
                                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
                                             lineNumber: 46,
                                             columnNumber: 33
@@ -2784,7 +2761,7 @@ function HomeDesktop() {
                                     lineNumber: 92,
                                     columnNumber: 29
                                 }, this)
-                            }, void 0, false, {
+                            }, index, false, {
                                 fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
                                 lineNumber: 91,
                                 columnNumber: 25
@@ -2848,20 +2825,6 @@ function HomeDesktop() {
                         }, void 0, false, {
                             fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
                             lineNumber: 105,
-                            columnNumber: 21
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "home--desktop__radius",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$SportGenre$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                sport: "Bóng đá"
-                            }, void 0, false, {
-                                fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                                lineNumber: 109,
-                                columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/webthethao2.0/pages/HomeDesktop.tsx",
-                            lineNumber: 108,
                             columnNumber: 21
                         }, this)
                     ]
@@ -4429,40 +4392,40 @@ function Home() {
         children: [
             changeNav ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$Header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 44,
+                lineNumber: 46,
                 columnNumber: 20
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$HeaderDesktop$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 44,
+                lineNumber: 46,
                 columnNumber: 33
             }, this),
             changeHeader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 23
             }, this) : "",
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$components$2f$Home$2f$Search$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             isMobile ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$HomeMobile$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 19
             }, this) : isTablet ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$HomeTablet$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 47
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$pages$2f$HomeDesktop$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/webthethao2.0/app/page.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 64
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/webthethao2.0/app/page.tsx",
-        lineNumber: 43,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }
@@ -4488,7 +4451,7 @@ function App() {
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$webthethao2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Home, {}, void 0, false, {
         fileName: "[project]/webthethao2.0/app/page.tsx",
-        lineNumber: 64,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }
