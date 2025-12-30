@@ -1,3 +1,0 @@
-module.exports=[7898,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(97803);a.n(d("[project]/webthethao2.0/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},50825,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(97803);a.n(d("[project]/webthethao2.0/node_modules/next/dist/client/components/builtin/global-error.js"))},50815,a=>{"use strict";a.i(7898);var b=a.i(50825);a.n(b)}];
-
-//# sourceMappingURL=f181b_next_dist_client_components_builtin_global-error_339bae18.js.map
