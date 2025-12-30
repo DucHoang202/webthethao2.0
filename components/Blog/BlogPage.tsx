@@ -118,11 +118,7 @@ const BlogPage = ({ params }: PageProps) => {
                             <div dangerouslySetInnerHTML={{ __html: data?.body || "" }}></div>
                             {/* <blockquote><p>Mua các sản phẩm mới nhất tại <a href="">webthethao.vn</a></p><cite>-Webthethao</cite></blockquote> */}
 
-                            {/* <img src="/assets/image.webp" alt="" className="blog__image--inner w-full" />
-                <div className="blog__body">
-                    <BlogHeading heading={heading2} />
-                    <BlogQuote quote={quote.quote} name={quote.name} />
-                    <BlogContent content={content4} /> */}
+
                             <div className="blog__btn-container">
                                 <BlogButton number={2} text="Bình luận" />
                                 <BlogButton number={10} text="Chia sẻ" />
