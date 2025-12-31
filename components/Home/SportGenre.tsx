@@ -90,41 +90,44 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     return (
         <div className="sport-genre">
             <CardTitle title={sport} arrow={true} deco={true} />
-            {/* <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={data[0].thumbnail} title={data[0].title} content={data[0].summary} category={data[0].category} official={data[0].official} link={data[0].article_url} /> */}
-            {data.map((item: any) => (
-                <div className="card--article" >
-                    <div className={`card--article__container `}>
 
-                        <button onClick={() => getItemData(item)} className="image">
-                            <img src={item.thumbnail} alt="" className="image" /></button>
-                        <div className="body" >
-                            <button onClick={() => getItemData(item)} className="title" >
-                                {item.title}
+            {data.map((item: any, index: number) =>
+                index === 0 ? (
+                    <Card key={item.id} avatar={card1.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={card1.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                ) : (
+                    <div key={item.id} className="card--article">
+                        <div className="card--article__container">
+                            <button onClick={() => getItemData(item)} className="image cursor-pointer">
+                                <img src={item.thumbnail} alt="" className="image" />
                             </button>
 
-                            <div className="footer">
-                                <div className="card--article__info">
-                                    <div className="card--article__name">{item.author}</div>
-                                    <div className="card--article__time">{item.time_text}</div>
+                            <div className="body">
+                                <button onClick={() => getItemData(item)} className="title cursor-pointer">
+                                    {item.title}
+                                </button>
 
-                                </div>
-                                <div className="right">
-                                    <div className="item">
-                                        <img src="/assets/message.webp" alt="" className="icon" />
-
+                                <div className="footer">
+                                    <div className="card--article__info">
+                                        <div className="card--article__name">{item.author}</div>
+                                        <div className="card--article__time">{item.time_text}</div>
                                     </div>
 
-                                    <div className="item">
-                                        <img src="/assets/export.webp" alt="" className="icon" />
-
+                                    <div className="right">
+                                        <div className="item">
+                                            <img src="/assets/message.webp" alt="" className="icon" />
+                                        </div>
+                                        <div className="item">
+                                            <img src="/assets/export.webp" alt="" className="icon" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            ))}
-        </div>
+                )
+            )}
+
+        </div >
     )
 }
 

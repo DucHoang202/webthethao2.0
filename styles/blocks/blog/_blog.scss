@@ -108,6 +108,70 @@
     }
 }
 
+.menu__dots {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    margin-left: 10px;
+
+    &--left {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+
+    &--middle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        left: 10px;
+    }
+
+    &--right {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        left: 20px;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+
+    &.active {
+
+        .menu__dots--left {
+            transform: rotate(45deg);
+            width: 20px;
+            border-radius: 0;
+            left: 2px;
+            height: 2px;
+
+        }
+
+        .menu__dots--middle {
+            display: none;
+        }
+
+        .menu__dots--right {
+            transform: rotate(-45deg);
+            width: 20px;
+            border-radius: 0;
+            left: 2px;
+            height: 2px;
+
+        }
+    }
+
+}
+
+
 figure {
     position: relative;
     margin-left: -16px;

@@ -24,7 +24,7 @@ const HeaderDesktop = () => {
                         {item.title}</a>
                 ))}
                 <div
-                    className="relative"
+                    className="h-full"
                     onMouseEnter={() => setOpenModal(true)}
                     onMouseLeave={() => setOpenModal(false)}
                     onClick={() => setOpenModal(!openModal)}
@@ -33,26 +33,20 @@ const HeaderDesktop = () => {
                         Khác
 
                         {/* ICON TRANSITION */}
-                        <div className="relative bottom-4">
-                            {/* X */}
-                            <div
-                                className={`extend absolute inset-0 flex items-center justify-center transition-all duration-200 ${openModal
-                                    ? "opacity-100 scale-100"
-                                    : "opacity-0 scale-75 pointer-events-none"
-                                    }`}
-                            >
-                                ✕
+
+                        <div
+                            className={`menu__dots ${openModal ? "active" : ""}`}
+
+                        >
+                            <div className="menu__dots--left"></div>
+
+                            <div className="menu__dots--middle">
+
+                            </div>
+                            <div className="menu__dots--right">
+
                             </div>
 
-                            {/* DOTS */}
-                            <div
-                                className={`extend absolute inset-0 flex items-center justify-center transition-all duration-200 ${openModal
-                                    ? "opacity-0 scale-75 pointer-events-none"
-                                    : "opacity-100 scale-100"
-                                    }`}
-                            >
-                                • • •
-                            </div>
                         </div>
                     </div>
 
