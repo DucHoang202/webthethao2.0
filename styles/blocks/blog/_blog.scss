@@ -187,7 +187,12 @@ i {
     /* 23.25px */
 }
 
-h1,
+figcaption {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0 16px;
+}
+
 h2,
 h3,
 h4,

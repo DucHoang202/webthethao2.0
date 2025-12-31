@@ -107,7 +107,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={data?.created_at} official={true} />
 
                                     <div className="blog__cat">
-                                        Pickleball
+                                        {id}
                                     </div>
                                 </div>
 

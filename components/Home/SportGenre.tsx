@@ -81,16 +81,10 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
         category: "Pickleball",
         official: true
     }
-    async function getItemData(data: List) {
-        try {
-            const res = await fetch(`${data.article_url}`
-            );
-            const raw = await res.json();
-            window.location.href = "/blog/" + extractArticlePath(data.article_url);
+    function getItemData(data: List) {
 
-        } catch (error) {
-            console.log(error);
-        }
+        window.location.href = "/blog/" + extractArticlePath(data.article_url);
+
 
     }
     return (
