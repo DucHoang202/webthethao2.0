@@ -139,6 +139,7 @@ body,
 #root {
     // height: 100%;
     min-height: 100dvh;
+    min-height: 100vh;
 }
 
 a {
@@ -231,6 +232,18 @@ body {
     max-width: var(--app-width);
     overflow-x: hidden;
     margin: 0 auto;
+}
+
+.layout {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 768px) {
+        gap: 14px;
+    }
+
 }
 
 /* NotFound page renders Header (fixed) + main + Footer inside its own wrapper

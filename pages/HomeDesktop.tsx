@@ -7,10 +7,10 @@ import SmallCard from "@/components/ui/card/ArticleCard";
 import Card from "@/components/ui/card/NewsCard";
 import Video from "@/components/Home/Video";
 import SportGenre from "@/components/Home/SportGenre";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function HomeDesktop(data: any) {
     const [active, setActive] = useState(0);
-
+    console.log(data);
     const card1 =
         [{
             avatar: "/assets/Rectangle 1.webp",
@@ -42,11 +42,11 @@ export default function HomeDesktop(data: any) {
                     <div className="empty-container">
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
                         <div className="card--header__content">
-                            {card2.map((item, index) => (
+                            {data.map((item: any, index: number) => (
                                 <div className="home--desktop__schedule" key={index}>
                                     <div className={`item ${index === 0 ? 'active' : ''}`} onClick={() => setActive(index)}>
-                                        <img src={item.img} alt="" className="logo" />
-                                        <span className="text ">{item.name}</span>
+                                        <img src={item.thumbnail} alt="" className="logo" />
+                                        <span className="text ">{item.title}</span>
                                     </div>
                                 </div>
                             ))}

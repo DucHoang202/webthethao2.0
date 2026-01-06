@@ -1,8 +1,6 @@
 .view-more--btn {
-    margin-top: 10px;
     cursor: pointer;
     display: flex;
-    padding: 10px 0;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -16,12 +14,24 @@
     font-weight: 600;
     line-height: var(--line-height-15, 15px);
     /* 125% */
-    margin: 0 14px;
-    margin-top: 10px;
+    color: black;
+
+    background: rgba(255, 255, 255, 0.20);
+    padding: 10px 0;
+    text-align: center;
+    width: calc(100% - 32px);
+    margin: 14px;
+    background: #F6F6F6;
 
     &.black {
         color: #FFF;
         background: rgba(255, 255, 255, 0.20);
+        padding: 10px 0;
+        text-align: center;
+        width: calc(100% - 32px);
+        margin: 16px;
         margin-top: 24px;
+        margin-bottom: 0;
+
     }
 }

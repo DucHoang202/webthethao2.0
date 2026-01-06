@@ -2,7 +2,7 @@ import Card from "../ui/card/NewsCard";
 import CardTitle from "../ui/card/CardHeader";
 import SmallCard from "../ui/card/ArticleCard";
 import { useEffect, useState } from "react";
-
+import extractArticlePath from "../../utils/extractArticlePath";
 interface Data {
     author: string,
     body: string,
@@ -43,26 +43,20 @@ interface List {
     time: string;
     name: string;
     avatar: string;
-}
-function extractArticlePath(url: string): string {
-    const pathname = new URL(url).pathname;
-
-    return pathname
-        .replace(/^\/api\/article/, "") // bỏ /api/article
-        .replace(/\.htm$/, "");         // bỏ .htm
+    author: string;
 }
 
 
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     const [data, setData] = useState<List[]>([]);
-    const [first, setFirst] = useState<Data | null>(null);
+    const [filteredData, setFilteredData] = useState<List[]>([]);
     const getData = async () => {
         try {
             const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
             const data = await res.json();
             console.log(data.items);
             setData(data.items);
-            setFirst(data.items[0]);
+            setFilteredData(data.items.slice(0, 4));
         } catch (error) {
             console.log(error);
         }
@@ -87,11 +81,14 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
 
     }
+    function viewMoredata() {
+        setFilteredData(data.slice(0, filteredData.length + 4));
+    }
     return (
         <div className="sport-genre">
             <CardTitle title={sport} arrow={true} deco={true} />
 
-            {data.map((item: any, index: number) =>
+            {filteredData.map((item: any, index: number) =>
                 index === 0 ? (
                     <Card key={item.id} avatar={card1.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={card1.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                 ) : (
@@ -123,10 +120,14 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
                 )
             )}
-
+            <button className="view-more--btn" onClick={() => { viewMoredata() }}>
+                Xem thêm
+            </button>
         </div >
     )
 }

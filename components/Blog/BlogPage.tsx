@@ -61,7 +61,7 @@ const BlogPage = ({ params }: PageProps) => {
     const [list, setList] = useState<List[]>([]);
     const [data, setData] = useState<Data>();
     const { id, article } = use(params);
-
+    const [mounted, setMounted] = useState(false);
     const getData = async () => {
         try {
             const res = await fetch(
@@ -76,7 +76,9 @@ const BlogPage = ({ params }: PageProps) => {
         }
     }
     useEffect(() => {
+        setMounted(true);
         getData();
+
     }, []);
     const changeHeader = useMediaQuery({ query: "(max-width: 1024px)" })
     const changeNav = useMediaQuery({ query: "(max-width: 768px)" })
@@ -91,48 +93,51 @@ const BlogPage = ({ params }: PageProps) => {
         category: "Pickleball",
         official: true
     }
+    if (!mounted) return null;
+
     return (
         <div className='App'>
             {changeHeader ? <Header /> : <HeaderDesktop />}
-            <main>
-                <div className="no-gap">
-                    <Search />
-                    <div className="blog">
-                        <div className="blog__container">
-                            <div className="blog__seo">{data?.head.seo.title}</div>
-                            {/* <img src="/assets/image.webp" alt="" className="blog__image w-full" /> */}
-                            <div className="blog__user">
+            <main >
+                <div className="layout">
+                    <div className="no-gap">
+                        <Search />
+                        <div className="blog">
+                            <div className="blog__container">
+                                <div className="blog__seo">{data?.head.seo.title}</div>
+                                {/* <img src="/assets/image.webp" alt="" className="blog__image w-full" /> */}
+                                <div className="blog__user">
 
-                                <div className="blog__user--inner">
-                                    <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={data?.created_at} official={true} />
+                                    <div className="blog__user--inner">
+                                        <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={data?.created_at} official={true} />
 
-                                    <div className="blog__cat">
-                                        {id}
+                                        <div className="blog__cat">
+                                            {id}
+                                        </div>
                                     </div>
+
                                 </div>
-
                             </div>
-                        </div>
-                        <div className="blog__body">
-                            <h1><b>{data?.title}</b></h1>
-                            <div dangerouslySetInnerHTML={{ __html: data?.body || "" }}></div>
-                            {/* <blockquote><p>Mua các sản phẩm mới nhất tại <a href="">webthethao.vn</a></p><cite>-Webthethao</cite></blockquote> */}
+                            <div className="blog__body">
+                                <h1><b>{data?.title}</b></h1>
+                                <div dangerouslySetInnerHTML={{ __html: data?.body || "" }}></div>
+                                {/* <blockquote><p>Mua các sản phẩm mới nhất tại <a href="">webthethao.vn</a></p><cite>-Webthethao</cite></blockquote> */}
 
 
-                            <div className="blog__btn-container">
-                                <BlogButton number={2} text="Bình luận" />
-                                <BlogButton number={10} text="Chia sẻ" />
+                                <div className="blog__btn-container">
+                                    <BlogButton number={2} text="Bình luận" />
+                                    <BlogButton number={10} text="Chia sẻ" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="blog__comment">
-                            <CommentInput />
-                            <Comments avatar="/assets/Image (3).webp" name="Huong Nguyen" content="Anna hướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time="10 phút trước" />
+                            <div className="blog__comment">
+                                <CommentInput />
+                                <Comments avatar="/assets/Image (3).webp" name="Huong Nguyen" content="Anna hướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time="10 phút trước" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-                <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            </main>
+                    <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+                    <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
+                </div></main>
             {changeNav ? <Nav /> : ""}
         </div>
 
