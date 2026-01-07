@@ -10,7 +10,7 @@ import SportGenre from "@/components/Home/SportGenre";
 import { useEffect, useState } from "react";
 export default function HomeDesktop(data: any) {
     const [active, setActive] = useState(0);
-    console.log(data);
+
     const card1 =
         [{
             avatar: "/assets/Rectangle 1.webp",
@@ -42,7 +42,7 @@ export default function HomeDesktop(data: any) {
                     <div className="empty-container">
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
                         <div className="card--header__content">
-                            {data.map((item: any, index: number) => (
+                            {card1.map((item: any, index: number) => (
                                 <div className="home--desktop__schedule" key={index}>
                                     <div className={`item ${index === 0 ? 'active' : ''}`} onClick={() => setActive(index)}>
                                         <img src={item.thumbnail} alt="" className="logo" />
