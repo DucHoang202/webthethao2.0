@@ -50,6 +50,10 @@ interface List {
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     const [data, setData] = useState<List[]>([]);
     const [filteredData, setFilteredData] = useState<List[]>([]);
+    const [filteredData1, setFilteredData1] = useState<List[]>([]);
+    const [filteredData2, setFilteredData2] = useState<List[]>([]);
+    const [filteredData3, setFilteredData3] = useState<List[]>([]);
+
     const getData = async () => {
         try {
             const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
@@ -81,9 +85,7 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
 
     }
-    function viewMoredata() {
-        setFilteredData(data.slice(0, filteredData.length + 4));
-    }
+
     return (
         <div className="sport-genre">
             <CardTitle title={sport} arrow={true} deco={true} />
@@ -125,7 +127,7 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
                 )
             )}
-            <button className="view-more--btn" onClick={() => { viewMoredata() }}>
+            <button className="view-more--btn" onClick={() => { setFilteredData(data.slice(0, filteredData.length + 4)); }}>
                 Xem thêm
             </button>
         </div >

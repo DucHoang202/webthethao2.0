@@ -23,33 +23,27 @@ import CardTitle from "@/components/ui/card/CardHeader";
 import SmallCard from "@/components/ui/card/ArticleCard";
 import { article } from "framer-motion/client";
 import extractArticlePath from "@/utils/extractArticlePath";
-
-interface List {
-  id: number;
-  title: string;
-  summary: string;
-  thumbnail: string;
-  article_url: string;
-  category: string;
-  official: boolean;
-  time_text: string;
-  avatar: string;
-  author: string;
-}
+import { List } from "@/types/Types"
 function Home() {
   const isMobile = useIsCustomView(768);
   const isTablet = useIsCustomView(1250);
   const changeHeader = useIsCustomView(768);
   const changeNav = useIsCustomView(1024);
-
+  const [filteredData, setFilteredData] = useState<List[]>([]);
+  const [filteredData1, setFilteredData1] = useState<List[]>([]);
+  const [filteredData2, setFilteredData2] = useState<List[]>([]);
+  const [filteredData3, setFilteredData3] = useState<List[]>([]);
+  const [filteredData4, setFilteredData4] = useState<List[]>([]);
+  const [filteredData5, setFilteredData5] = useState<List[]>([]);
   const [data, setData] = useState<List[]>([]);
+  const [hotTopic, setHotTopic] = useState<List[]>([]);
   const getData = async () => {
     try {
       const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
       const data = await res.json();
       console.log("home", data.items);
       const updatedItems = data.items.map((item: any, index: number) => {
-        if (index < 3) {
+        if (index < data.items.length) {
           return {
             ...item,
             author: "Phan Kiet",
@@ -60,8 +54,16 @@ function Home() {
         }
         return item;
       });
+      setFilteredData(data.items.slice(0, 3));
 
-      setData(updatedItems.slice(0, 3));
+      setData(updatedItems);
+      console.log("updatedItems", updatedItems);
+      setFilteredData1(updatedItems.slice(0, 3));
+      setFilteredData2(updatedItems.slice(0, 3));
+      setFilteredData3(updatedItems.slice(0, 3));
+      setFilteredData4(updatedItems.slice(0, 3));
+      setHotTopic(data.items.slice(0, 3));
+
 
     } catch (error) {
       console.log(error);
@@ -71,11 +73,13 @@ function Home() {
     getData();
 
   }, []);
-
+  console.log("hotTopic", hotTopic)
   const [active, setActive] = useState(0);
-  console.log(data);
 
-
+  function expandData3() {
+    setFilteredData3(data.slice(0, filteredData3.length + 4));
+    console.log("exxpand", filteredData3)
+  }
   const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
 
   return (
@@ -90,7 +94,7 @@ function Home() {
               <Card key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
             ))}
             <Video />
-            <HotTopic />
+            <HotTopic isTitled={false} hotTopic={hotTopic} />
             <Advertisement image="" />
             <SportGenre sport="Bóng đá" />
             <SportGenre sport="Pickleball" />
@@ -130,7 +134,7 @@ function Home() {
             <div className="home--desktop__radius">
               <img src="/assets/image-16.webp" alt="" />
             </div>
-            {data.map((item, index) => (
+            {filteredData4.map((item, index) => (
               <div className="home--desktop__radius">
                 < Card key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
               </div>
@@ -140,7 +144,7 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
               <div className="card--header__content">
-                <HotTopic isTitled={false} />
+                <HotTopic isTitled={false} hotTopic={hotTopic} />
 
               </div>
             </div>
@@ -156,10 +160,10 @@ function Home() {
             <div className="card-container">
               <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
               <div className="card--header__content">
-                {data.map((item, index) => (
+                {filteredData.map((item, index) => (
                   <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                 ))}
-                <div className="view-more--btn">
+                <div className="view-more--btn" onClick={() => { setFilteredData(data.slice(0, filteredData.length + 4)); }}>
                   <a href="#">Xem thêm</a>
                 </div>
               </div>
@@ -167,10 +171,10 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Nhận định" deco={true} />
               <div className="card--header__content">
-                {data.map((item, index) => (
+                {filteredData1.map((item, index) => (
                   <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                 ))}
-                <div className="view-more--btn">
+                <div className="view-more--btn" onClick={() => { setFilteredData1(data.slice(0, filteredData1.length + 4)); }}>
                   <a href="#">Xem thêm</a>
                 </div>
               </div>
@@ -179,10 +183,10 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Đọc nhiều" deco={true} />
               <div className="card--header__content">
-                {data.map((item, index) => (
+                {filteredData2.map((item, index) => (
                   <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                 ))}
-                <div className="view-more--btn">
+                <div className="view-more--btn" onClick={() => { setFilteredData2(data.slice(0, filteredData2.length + 4)); }}>
                   <a href="#">Xem thêm</a>
                 </div>
               </div>
@@ -206,7 +210,7 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
               <div className="card--header__content">
-                <HotTopic isTitled={false} />
+                <HotTopic isTitled={false} hotTopic={hotTopic} />
 
               </div>
             </div>
@@ -237,7 +241,7 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
               <div className="card--header__content">
-                <HotTopic isTitled={false} />
+                <HotTopic isTitled={false} hotTopic={hotTopic} />
 
               </div>
             </div>
@@ -266,7 +270,7 @@ function Home() {
             <div className="home--desktop__radius">
               <img src="/assets/image-16.webp" alt="" />
             </div>
-            {data.map((item, index) => (
+            {filteredData4.map((item, index) => (
               <div className="home--desktop__radius" key={index}>
                 < Card key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
               </div>
@@ -276,7 +280,7 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
               <div className="card--header__content">
-                <HotTopic isTitled={false} />
+                <HotTopic isTitled={false} hotTopic={hotTopic} />
 
               </div>
             </div>
@@ -292,10 +296,10 @@ function Home() {
             <div className="card-container">
               <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
               <div className="card--header__content">
-                {data.map((item, index) => (
+                {filteredData.map((item, index) => (
                   <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                 ))}
-                <div className="view-more--btn">
+                <div className="view-more--btn" onClick={() => { setFilteredData(data.slice(0, filteredData.length + 4)); }}>
                   <a href="#">Xem thêm</a>
                 </div>
               </div>
@@ -303,10 +307,10 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Nhận định" deco={true} />
               <div className="card--header__content">
-                {data.map((item, index) => (
+                {filteredData1.map((item, index) => (
                   <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                 ))}
-                <div className="view-more--btn">
+                <div className="view-more--btn" onClick={() => { setFilteredData1(data.slice(0, filteredData1.length + 4)); }}>
                   <a href="#">Xem thêm</a>
                 </div>
               </div>
@@ -315,10 +319,10 @@ function Home() {
             <div className="card-container">
               <CardTitle title="Đọc nhiều" deco={true} />
               <div className="card--header__content">
-                {data.map((item, index) => (
+                {filteredData2.map((item, index) => (
                   <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                 ))}
-                <div className="view-more--btn">
+                <div className="view-more--btn" onClick={() => { setFilteredData2(data.slice(0, filteredData2.length + 4)); }}>
                   <a href="#">Xem thêm</a>
                 </div>
               </div>

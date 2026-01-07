@@ -8,8 +8,22 @@ import Card from "@/components/ui/card/NewsCard";
 import Video from "@/components/Home/Video";
 import SportGenre from "@/components/Home/SportGenre";
 import { useEffect, useState } from "react";
+export interface List {
+    id: number;
+    title: string;
+    summary: string;
+    thumbnail: string;
+    article_url: string;
+    category: string;
+    official: boolean;
+    time: string;
+    name: string;
+    avatar: string;
+    author: string;
+}
 export default function HomeDesktop(data: any) {
     const [active, setActive] = useState(0);
+    const [filteredData, setFilteredData] = useState<List[]>([]);
 
     const card1 =
         [{
@@ -35,6 +49,9 @@ export default function HomeDesktop(data: any) {
             link: "/blog"
         }]
     const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
+    function viewMoredata() {
+        setFilteredData(data.slice(0, filteredData.length + 4));
+    }
     return (
         <main>
             <div className="home--desktop">
@@ -116,7 +133,7 @@ export default function HomeDesktop(data: any) {
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="view-more--btn">
+                            <div className="view-more--btn" onClick={viewMoredata}>
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>

@@ -41,6 +41,13 @@
         align-items: center;
         gap: 14px;
         padding: 10px 0;
+
+        .boder {
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            border-radius: 14px;
+            padding: 10px 14px;
+        }
     }
 
     .blog__name {
@@ -180,6 +187,15 @@ figure {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @media(min-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
 
     img {
         width: 100vw;
