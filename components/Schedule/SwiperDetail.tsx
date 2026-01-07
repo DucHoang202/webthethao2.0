@@ -15,51 +15,51 @@ const Explore: React.FC = () => {
             name: 'Crafting a Lifestyle That Aligns with Your Core Values',
             actor: 'admin_krypto',
             number: 3,
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Exploring Effective Ways to Reduce and Manage Stress',
             actor: 'admin_krypto',
             number: 3,
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Tips for Building a Wardrobe That Transcends Seasons',
             actor: 'admin_krypto',
             number: 3,
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Reimagining Your Lifestyle with Eco-Friendly Innovations',
             actor: 'admin_krypto',
             number: 3,
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Crafting a Lifestyle That Aligns with Your Core Values',
             actor: 'admin_krypto',
             number: 3,
 
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Exploring Effective Ways to Reduce and Manage Stress',
             actor: 'admin_krypto',
             number: 3,
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Tips for Building a Wardrobe That Transcends Seasons',
             actor: 'admin_krypto',
             number: 3,
 
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
         {
             name: 'Reimagining Your Lifestyle with Eco-Friendly Innovations',
             actor: 'admin_krypto',
             number: 3,
-            image: '../assets/Container.png'
+            image: '/assets/Container.png'
         },
     ];
     const [hovered, setHovered] = useState(
@@ -171,7 +171,7 @@ const Explore: React.FC = () => {
 
                                                 <div className="title">Trends</div>
                                                 <div className="left">
-                                                    <div className="info">by <span>{coach.actor}</span></div>
+                                                    <div className="info">by <span className="actor">{coach.actor}</span></div>
                                                     <a href="#" className="comment">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                             <path d="M4.78908 13.7908L1.30859 14.5762L2.09401 11.0957C1.83734 10.6337 1.64227 10.1409 1.5088 9.61725C1.37533 9.09363 1.30859 8.55462 1.30859 8.00021C1.30859 7.09672 1.48313 6.24456 1.83221 5.44374C2.17102 4.64292 2.63816 3.94477 3.23364 3.34929C3.82912 2.75381 4.52728 2.28666 5.3281 1.94785C6.12892 1.59878 6.98107 1.42424 7.88456 1.42424C8.78805 1.42424 9.64021 1.59878 10.441 1.94785C11.2418 2.28666 11.94 2.75381 12.5355 3.34929C13.131 3.94477 13.5981 4.64292 13.9369 5.44374C14.286 6.24456 14.4605 7.09672 14.4605 8.00021C14.4605 8.90369 14.286 9.75585 13.9369 10.5567C13.5981 11.3575 13.131 12.0556 12.5355 12.6511C11.94 13.2466 11.2418 13.7138 10.441 14.0526C9.64021 14.4016 8.78805 14.5762 7.88456 14.5762C7.33015 14.5762 6.79113 14.5094 6.26752 14.376C5.74391 14.2425 5.25109 14.0474 4.78908 13.7908ZM4.97389 12.4047L5.4051 12.6357C5.78497 12.8411 6.18282 12.9951 6.59863 13.0977C7.01444 13.2004 7.44308 13.2517 7.88456 13.2517C8.61351 13.2517 9.29626 13.1183 9.93281 12.8513C10.5694 12.5741 11.1263 12.1968 11.6038 11.7194C12.0812 11.242 12.4585 10.685 12.7357 10.0485C13.0026 9.41191 13.1361 8.72916 13.1361 8.00021C13.1361 7.27125 13.0026 6.5885 12.7357 5.95195C12.4585 5.3154 12.0812 4.75842 11.6038 4.28101C11.1263 3.8036 10.5694 3.42629 9.93281 3.14908C9.29626 2.88214 8.61351 2.74867 7.88456 2.74867C7.15561 2.74867 6.47286 2.88214 5.83631 3.14908C5.19976 3.42629 4.64278 3.8036 4.16537 4.28101C3.68795 4.75842 3.31064 5.3154 3.03344 5.95195C2.7665 6.5885 2.63303 7.27125 2.63303 8.00021C2.63303 8.44168 2.68436 8.87033 2.78703 9.28614C2.8897 9.70195 3.0437 10.0998 3.24904 10.4797L3.48005 10.9109L3.04884 12.8359L4.97389 12.4047Z" fill="white" />
