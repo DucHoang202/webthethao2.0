@@ -1,4 +1,4 @@
-function extractArticlePath(url: string): string {
+export function extractArticlePath(url: string): string {
     const pathname = new URL(url).pathname;
 
     return pathname
@@ -6,4 +6,7 @@ function extractArticlePath(url: string): string {
         .replace(/\.htm$/, "");         // bỏ .htm
 }
 
-export default extractArticlePath;
+
+export function changeThumbSize(url: string, size: string): string {
+    return url.replace(/\/thumb\/\d+-\d+\//, `/thumb/${size}/`);
+}

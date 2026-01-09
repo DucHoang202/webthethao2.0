@@ -16,6 +16,7 @@
         border: 1px solid #F0F0EE;
         background: #FFF;
         box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.05);
+        align-self: stretch;
 
         a .image {
 
@@ -47,6 +48,8 @@
         flex-direction: column;
         align-items: flex-start;
         align-self: stretch;
+        justify-content: space-between;
+        flex: 1 0 0;
 
         .title {
             color: #121212;
@@ -78,7 +81,7 @@
         margin-top: 14px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
 
         .category {

@@ -2,7 +2,7 @@ import Card from "../ui/card/NewsCard";
 import CardTitle from "../ui/card/CardHeader";
 import SmallCard from "../ui/card/ArticleCard";
 import { useEffect, useState } from "react";
-import extractArticlePath from "../../utils/extractArticlePath";
+import { extractArticlePath, changeThumbSize } from "../../utils/extractArticlePath";
 interface Data {
     author: string,
     body: string,
@@ -58,9 +58,22 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
         try {
             const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
             const data = await res.json();
-            console.log(data.items);
-            setData(data.items);
-            setFilteredData(data.items.slice(0, 4));
+            const updatedItems = data.items.map((item: any, index: number) => {
+                if (index < data.items.length) {
+                    return {
+                        ...item,
+                        author: "Phan Kiet",
+                        official: true,
+                        avatar: "/assets/Rectangle 1.webp",
+                        category: "Bóng đá",
+                        thumbnail: changeThumbSize(item.thumbnail, "564-376"),
+
+                    };
+                }
+                return item;
+            });
+            setData(updatedItems);
+            setFilteredData(updatedItems.slice(0, 4));
         } catch (error) {
             console.log(error);
         }

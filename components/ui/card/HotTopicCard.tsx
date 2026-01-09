@@ -1,6 +1,6 @@
 import React from 'react';
 import { List } from '@/types/Types';
-import extractArticlePath from '@/utils/extractArticlePath';
+import { extractArticlePath } from '@/utils/extractArticlePath';
 const HotTopic: React.FC<{ isTitled?: boolean, hotTopic?: List[] }> = ({ isTitled, hotTopic = [] }) => {
     return (
         <div className='card--trending'>
