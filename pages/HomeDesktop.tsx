@@ -7,9 +7,23 @@ import SmallCard from "@/components/ui/card/ArticleCard";
 import Card from "@/components/ui/card/NewsCard";
 import Video from "@/components/Home/Video";
 import SportGenre from "@/components/Home/SportGenre";
-import { useState } from "react";
-export default function HomeDesktop() {
+import { useEffect, useState } from "react";
+export interface List {
+    id: number;
+    title: string;
+    summary: string;
+    thumbnail: string;
+    article_url: string;
+    category: string;
+    official: boolean;
+    time: string;
+    name: string;
+    avatar: string;
+    author: string;
+}
+export default function HomeDesktop(data: any) {
     const [active, setActive] = useState(0);
+    const [filteredData, setFilteredData] = useState<List[]>([]);
 
     const card1 =
         [{
@@ -21,7 +35,7 @@ export default function HomeDesktop() {
             content: "Adidas đang định hình lại vị thế của mình trong làng Pickleball thông qua dòng vợt AdiPower mới - sự kết hợp giữa chất lượng cao và giá cả hợp lý.",
             category: "Pickleball",
             official: true,
-            linl: "/blog"
+            link: "/blog"
         },
         {
             avatar: "/assets/Rectangle 1.webp",
@@ -35,6 +49,9 @@ export default function HomeDesktop() {
             link: "/blog"
         }]
     const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
+    function viewMoredata() {
+        setFilteredData(data.slice(0, filteredData.length + 4));
+    }
     return (
         <main>
             <div className="home--desktop">
@@ -42,11 +59,11 @@ export default function HomeDesktop() {
                     <div className="empty-container">
                         <CardTitle title="Lịch thi đấu bóng đá" style={{ borderBottom: 'none' }} deco={true} />
                         <div className="card--header__content">
-                            {card2.map((item, index) => (
-                                <div className="home--desktop__schedule">
+                            {card1.map((item: any, index: number) => (
+                                <div className="home--desktop__schedule" key={index}>
                                     <div className={`item ${index === 0 ? 'active' : ''}`} onClick={() => setActive(index)}>
-                                        <img src={item.img} alt="" className="logo" />
-                                        <span className="text ">{item.name}</span>
+                                        <img src={item.thumbnail} alt="" className="logo" />
+                                        <span className="text ">{item.title}</span>
                                     </div>
                                 </div>
                             ))}
@@ -88,7 +105,7 @@ export default function HomeDesktop() {
                         <img src="/assets/image-16.webp" alt="" />
                     </div>
                     {card1.map((item, index) => (
-                        <div className="home--desktop__radius">
+                        <div className="home--desktop__radius" key={index}>
                             < Card key={index} avatar={item.avatar} name={item.name} time={item.time} image={item.image} title={item.title} content={item.content} category={item.category} official={item.official} link="/blog" />
                         </div>
                     ))}
@@ -105,9 +122,9 @@ export default function HomeDesktop() {
                     <div className="home--desktop__radius">
                         <SportGenre sport="Bóng đá" />
                     </div>
-                    <div className="home--desktop__radius">
+                    {/* <div className="home--desktop__radius">
                         <SportGenre sport="Bóng đá" />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="home--desktop__right">
                     <div className="card-container">
@@ -116,7 +133,7 @@ export default function HomeDesktop() {
                             {card1.map((item, index) => (
                                 <SmallCard key={index} avatar={item.avatar} name={item.name} time={item.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={item.content} category={item.category} official={item.official} link="/blog" style={{ padding: '10px 0', borderTop: 'none' }} />
                             ))}
-                            <div className="view-more--btn">
+                            <div className="view-more--btn" onClick={viewMoredata}>
                                 <a href="#">Xem thêm</a>
                             </div>
                         </div>

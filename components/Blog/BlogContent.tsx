@@ -1,4 +1,4 @@
-const BlogContent = ({ content }: { content: string }) => {
+const BlogContent = ({ content }: { content?: string }) => {
     return (
         <p>
             {content}

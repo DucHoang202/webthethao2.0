@@ -4,7 +4,11 @@
     max-width: 1440px;
     width: 100%;
     justify-content: space-between;
+<<<<<<< HEAD
     // background: #f3f3f3;
+=======
+    background: #fff;
+>>>>>>> main
     margin-left: auto;
     margin-right: auto;
     background: #FFF;
@@ -20,6 +24,10 @@
         gap: 19px;
         width: 301px;
         flex-shrink: 0;
+
+        @media (max-width: 1250px) {
+            display: none;
+        }
     }
 
     &__middle {
@@ -37,6 +45,8 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        @media(max-width: 768px) {}
     }
 
     &__right {
@@ -48,6 +58,10 @@
 
         @media (min-width: 1024px) and (max-width: 1250px) {
             width: 380px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
         }
     }
 

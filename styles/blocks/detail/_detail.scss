@@ -12,8 +12,35 @@
     align-self: flex-start;
 
 
+<<<<<<< HEAD
 
 
+=======
+    .link--detail {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        position: sticky;
+        top: calc(var(--header-h, 65px) + 20px);
+        z-index: 10;
+        align-self: flex-start;
+        flex-shrink: 0;
+
+        // Optional: If the sidebar content is tall, allow internal scrolling
+
+
+
+        .link {
+            border-radius: 20px;
+            background: var(--color-grey-95, #F3F3F3);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+>>>>>>> main
 }
 
 .detail__card {
@@ -32,6 +59,7 @@
         padding-top: 24px;
         padding-bottom: 24px;
     }
+<<<<<<< HEAD
 }
 
 .link--detail {
@@ -59,4 +87,6 @@
         justify-content: center;
         align-items: center;
     }
+=======
+>>>>>>> main
 }

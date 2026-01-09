@@ -16,6 +16,10 @@
         border: 1px solid #F0F0EE;
         background: #FFF;
         box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.05);
+<<<<<<< HEAD
+=======
+        align-self: stretch;
+>>>>>>> main
 
         a .image {
 
@@ -47,6 +51,8 @@
         flex-direction: column;
         align-items: flex-start;
         align-self: stretch;
+        justify-content: space-between;
+        flex: 1 0 0;
 
         .title {
             color: #121212;
@@ -78,7 +84,7 @@
         margin-top: 14px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
 
         .category {
@@ -137,6 +143,13 @@
     border: 1px solid #F0F0EE;
     padding: 10px 14px;
 
+<<<<<<< HEAD
+=======
+    // @media (max-width: 768px) {
+    //     border-radius: 0;
+    // }
+
+>>>>>>> main
     &.smaller {
         display: flex;
         align-items: center;
@@ -145,6 +158,10 @@
         border: none;
         padding-bottom: 16px;
         padding-top: 16px;
+<<<<<<< HEAD
+=======
+        background-color: transparent;
+>>>>>>> main
 
 
 
@@ -215,7 +232,6 @@
 
     &__content {
         display: flex;
-        padding-bottom: 14px;
 
         flex-direction: column;
         border-right: 1px solid #F0F0EE;
@@ -594,6 +610,7 @@
                 line-height: 145%;
                 /* 20.3px */
                 letter-spacing: -0.14px;
+                text-align: left;
             }
 
 

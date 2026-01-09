@@ -1,9 +1,86 @@
 import Card from "../ui/card/NewsCard";
 import CardTitle from "../ui/card/CardHeader";
 import SmallCard from "../ui/card/ArticleCard";
+import { useEffect, useState } from "react";
+import { extractArticlePath, changeThumbSize } from "../../utils/extractArticlePath";
+interface Data {
+    author: string,
+    body: string,
+    created_at: string,
+    head: HeadData,
+    id: number,
+    path: string,
+    published_text: string,
+    source_url: string,
+    title: string,
+    updated_at: string,
+
+}
+export interface SeoData {
+    title: string;
+    description: string;
+    keywords: string;
+    canonical: string;
+    robots: string;
+    language: string;
+}
+
+export interface HeadData {
+    seo: SeoData;
+}
+
+interface PageProps {
+    params: Promise<{ id: string }>;
+}
+interface List {
+    id: number;
+    title: string;
+    summary: string;
+    thumbnail: string;
+    article_url: string;
+    category: string;
+    official: boolean;
+    time: string;
+    name: string;
+    avatar: string;
+    author: string;
+}
+
+
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
+    const [data, setData] = useState<List[]>([]);
+    const [filteredData, setFilteredData] = useState<List[]>([]);
+    const [filteredData1, setFilteredData1] = useState<List[]>([]);
+    const [filteredData2, setFilteredData2] = useState<List[]>([]);
+    const [filteredData3, setFilteredData3] = useState<List[]>([]);
 
+    const getData = async () => {
+        try {
+            const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
+            const data = await res.json();
+            const updatedItems = data.items.map((item: any, index: number) => {
+                if (index < data.items.length) {
+                    return {
+                        ...item,
+                        author: "Phan Kiet",
+                        official: true,
+                        avatar: "/assets/Rectangle 1.webp",
+                        category: "Bóng đá",
+                        thumbnail: changeThumbSize(item.thumbnail, "564-376"),
 
+                    };
+                }
+                return item;
+            });
+            setData(updatedItems);
+            setFilteredData(updatedItems.slice(0, 4));
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    useEffect(() => {
+        getData();
+    }, []);
     const card1 =
     {
         avatar: "/assets/Rectangle 1.webp",
@@ -15,15 +92,58 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
         category: "Pickleball",
         official: true
     }
+    function getItemData(data: List) {
+
+        window.location.href = "/blog/" + extractArticlePath(data.article_url);
+
+
+    }
 
     return (
         <div className="sport-genre">
-            <CardTitle title={sport} arrow={true} />
-            <Card avatar={card1.avatar} name={card1.name} time={card1.time} image={card1.image} title={card1.title} content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-            <SmallCard avatar={card1.avatar} name={card1.name} time={card1.time} image="/assets/hal.webp" title="Trực tiếp vòng Last 64 Hanoi Open Pool 2025 64 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025 Hanoi Open Pool 2025" content={card1.content} category={card1.category} official={card1.official} link="/blog" />
-        </div>
+            <CardTitle title={sport} arrow={true} deco={true} />
+
+            {filteredData.map((item: any, index: number) =>
+                index === 0 ? (
+                    <Card key={item.id} avatar={card1.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={card1.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                ) : (
+                    <div key={item.id} className="card--article">
+                        <div className="card--article__container">
+                            <button onClick={() => getItemData(item)} className="image cursor-pointer">
+                                <img src={item.thumbnail} alt="" className="image" />
+                            </button>
+
+                            <div className="body">
+                                <button onClick={() => getItemData(item)} className="title cursor-pointer">
+                                    {item.title}
+                                </button>
+
+                                <div className="footer">
+                                    <div className="card--article__info">
+                                        <div className="card--article__name">{item.author}</div>
+                                        <div className="card--article__time">{item.time_text}</div>
+                                    </div>
+
+                                    <div className="right">
+                                        <div className="item">
+                                            <img src="/assets/message.webp" alt="" className="icon" />
+                                        </div>
+                                        <div className="item">
+                                            <img src="/assets/export.webp" alt="" className="icon" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                )
+            )}
+            <button className="view-more--btn" onClick={() => { setFilteredData(data.slice(0, filteredData.length + 4)); }}>
+                Xem thêm
+            </button>
+        </div >
     )
 }
 
