@@ -137,7 +137,39 @@ const BlogPage = ({ params }: PageProps) => {
         setUrl(url);
         getData();
         getList();
-    }, []);
+        const adjustHeights = (container: HTMLElement | null) => {
+            if (!container) return;
+            const titles = container.querySelectorAll<HTMLElement>(".title");
+            if (!titles || titles.length === 0) return;
+
+            let maxHeight = 0;
+            // Reset height to auto to recalculate correctly on updates
+            titles.forEach((item) => {
+                item.style.height = 'auto';
+            });
+
+            titles.forEach((item) => {
+                const h = item.offsetHeight;
+                if (h > maxHeight) maxHeight = h;
+            });
+
+            titles.forEach((item) => {
+                item.style.height = `${maxHeight}px`;
+            });
+        };
+
+        const handleResize = () => {
+            adjustHeights(relatedRef.current);
+            adjustHeights(featuredRef.current);
+        }
+
+        if (document.fonts) {
+            document.fonts.ready.then(handleResize);
+        } else {
+            setTimeout(handleResize, 200);
+        }
+
+    }, [list]);
 
     const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
 
@@ -169,7 +201,10 @@ const BlogPage = ({ params }: PageProps) => {
         ]
     const [active, setActive] = useState(0)
     const sidebarRef = useRef<HTMLDivElement>(null);
+    const relatedRef = useRef<HTMLDivElement>(null);
+    const featuredRef = useRef<HTMLDivElement>(null);
     if (!mounted) return null;
+
 
     return (
         <div className='App'>
@@ -289,7 +324,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                     <div className="empty-container">
                                         <CardTitle title="Cùng chủ đề" className="smaller" deco={true} />
-                                        <div className="detail__card">
+                                        <div className="detail__card" ref={relatedRef}>
                                             {list?.slice(0, 3).map(({ article_url, author, time_text, thumbnail, title, summary }) => (
                                                 <Card
                                                     key={article_url}
@@ -310,7 +345,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                     <div className="empty-container">
                                         <CardTitle title="Bài viết nổi bật" className="smaller" deco={true} />
-                                        <div className="detail__card">
+                                        <div className="detail__card" ref={featuredRef}>
                                             {list?.slice(4, 7).map(({ article_url, author, time_text, thumbnail, title, summary }) => (
                                                 <Card
                                                     key={article_url}
