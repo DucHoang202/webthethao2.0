@@ -68,7 +68,7 @@ function Home() {
   const slug3 = "bong-da-viet-nam"
   const slug4 = "mma-boxing"
   const slug5 = "goc-tu-van"
-  const slug6 = "sea-game"
+  const slug6 = "esports"
   const slug7 = "bong-da-quoc-te"
   const slug8 = "bong-ro"
   const titleImage = "assets/logo-sea-game 1.webp"
