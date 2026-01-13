@@ -421,7 +421,7 @@ const BlogPage = ({ params }: PageProps) => {
                 (
                     // 409.67 * 273.11
                     <div className="detail-section">
-                        <div className="home--desktop ">
+                        <div className="home--desktop white ">
                             <div className="detail-layout">
 
                                 <div className="link--detail">
