@@ -53,9 +53,7 @@ interface List {
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     const [data, setData] = useState<CategoryResponse>();
     const [filteredData, setFilteredData] = useState<CategoryResponse>();
-    const [filteredData1, setFilteredData1] = useState<CategoryResponse>();
-    const [filteredData2, setFilteredData2] = useState<CategoryResponse>();
-    const [filteredData3, setFilteredData3] = useState<CategoryResponse>();
+    const [filteredData1, setFilteredData1] = useState<List[]>([]);
 
     const getData = async () => {
         try {
@@ -69,13 +67,14 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
                         official: true,
                         avatar: "/assets/Rectangle 1.webp"
 
+
                     };
                 }
                 return item;
             });
-            setData(updatedItems);
-            console.log("data1", filteredData1)
-            setFilteredData(updatedItems.slice(0, 4));
+            data.data = updatedItems;
+            setData(data);
+            setFilteredData(data);
         } catch (error) {
             console.log(error);
         }
@@ -102,12 +101,12 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     }
 
     return (
-        <div className="sport-genre bg-white">
+        <div className="sport-genre">
             <CardTitle title={translateSlug(sport)} arrow={true} deco={true} />
 
-            {filteredData?.data?.map((item: any, index: number) =>
+            {filteredData?.data?.slice(0, 4).map((item: any, index: number) =>
                 index === 0 ? (
-                    <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} />
+                    <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category.name} official={item.official} link={`/blog/${filteredData.slug}/${item.slug}-${item.id}`} />
                 ) : (
                     <div key={item.id} className="card--article">
                         <div className="card--article__container">

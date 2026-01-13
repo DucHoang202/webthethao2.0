@@ -68,6 +68,9 @@ function Home() {
   const slug3 = "bong-da-viet-nam"
   const slug4 = "mma-boxing"
   const slug5 = "goc-tu-van"
+  const slug6 = "sea-game"
+  const slug7 = "bong-da-quoc-te"
+  const slug8 = "bong-ro"
   const titleImage = "assets/logo-sea-game 1.webp"
   //Get individual data
   const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
@@ -295,6 +298,13 @@ function Home() {
             <SportGenre sport={slug3} />
             <SportGenre sport={slug4} />
             <SportGenre sport={slug5} />
+            <SportGenre sport={slug6} />
+            <SportGenre sport={slug7} />
+            <SportGenre sport={slug8} />
+
+            {/* <SportGenre sport={"sea-game"} />
+            <SportGenre sport={"bong-da-quoc-te"} />
+            <SportGenre sport={"bong-ro"} /> */}
             <div className="advertisement-section" style={{ width: "100%" }}>
               <Advertisement image="" />
               <Advertisement image="" />
@@ -337,6 +347,24 @@ function Home() {
                 <div className="home--desktop__radius">
                   <SportGenre sport={slug2} />
                 </div>
+                <div className="home--desktop__radius">
+                  <SportGenre sport={slug3} />
+                </div>
+                <div className="home--desktop__radius">
+                  <SportGenre sport={slug4} />
+                </div>
+                <div className="home--desktop__radius">
+                  <SportGenre sport={slug5} />
+                </div>
+                <div className="home--desktop__radius">
+                  <SportGenre sport={slug6} />
+                </div>
+                <div className="home--desktop__radius">
+                  <SportGenre sport={slug7} />
+                </div>
+                <div className="home--desktop__radius">
+                  <SportGenre sport={slug8} />
+                </div>
               </div>
 
               {/* Container bên phải */}
@@ -368,7 +396,7 @@ function Home() {
                 <Advertisement image="/assets/adv.webp" />
                 {/* Nhận định */}
                 <div className="card-container">
-                  <CardTitle title={translateSlug(slug2) + " đọc nhiều nhất"} deco={true} />
+                  <CardTitle title={"Đọc nhiều nhất"} deco={true} />
                   <div className="card--header__content">
                     {filteredData2?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
@@ -483,6 +511,15 @@ function Home() {
                   </div>
                   <div className="home--desktop__radius">
                     <SportGenre sport={slug5} />
+                  </div>
+                  <div className="home--desktop__radius">
+                    <SportGenre sport={slug6} />
+                  </div>
+                  <div className="home--desktop__radius">
+                    <SportGenre sport={slug7} />
+                  </div>
+                  <div className="home--desktop__radius">
+                    <SportGenre sport={slug8} />
                   </div>
                 </div>
                 <div className="home--desktop__right">
