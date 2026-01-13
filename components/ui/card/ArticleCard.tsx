@@ -1,29 +1,29 @@
 import React from "react";
 
 interface CardProps {
-    avatar: string;
-    name: string;
-    time: string;
-    image: string;
-    title: string;
-    content: string;
-    category: string;
-    official: boolean;
-    link: string;
-    style?: React.CSSProperties;
-    border?: React.CSSProperties;
+    avatar?: string | null;
+    name?: string | null;
+    time?: string | null;
+    image?: string | null;
+    title?: string | null;
+    content?: string | null;
+    category?: string | null;
+    official?: boolean | null;
+    link?: string | null;
+    style?: React.CSSProperties | null;
+    border?: React.CSSProperties | null;
 }
 
 
 const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link, style }) => {
     return (
         <div className="card--article" >
-            <div className={`card--article__container `} style={style}>
+            <div className={`card--article__container `} style={style || {}}>
 
-                <a href={link} className="image">
-                    <img src={image} alt="" className="image" /></a>
+                <a href={link || "#"} className="image">
+                    <img src={image || "/assets/image.webp"} alt="" className="image" /></a>
                 <div className="body" >
-                    <a href={link} className="title" >
+                    <a href={link || "#"} className="title" >
                         {title}
                     </a>
 

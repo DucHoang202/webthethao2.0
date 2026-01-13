@@ -3,6 +3,9 @@ import CardTitle from "../ui/card/CardHeader";
 import SmallCard from "../ui/card/ArticleCard";
 import { useEffect, useState } from "react";
 import { extractArticlePath, changeThumbSize } from "../../utils/extractArticlePath";
+import { CategoryResponse } from "../../types/Types";
+import { translateSlug } from "../../utils/extractArticlePath";
+import { formatDate } from "../../utils/extractArticlePath";
 interface Data {
     author: string,
     body: string,
@@ -48,7 +51,7 @@ interface List {
 
 
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
-    const [data, setData] = useState<List[]>([]);
+    const [data, setData] = useState<CategoryResponse>();
     const [filteredData, setFilteredData] = useState<List[]>([]);
     const [filteredData1, setFilteredData1] = useState<List[]>([]);
     const [filteredData2, setFilteredData2] = useState<List[]>([]);
@@ -56,23 +59,22 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
     const getData = async () => {
         try {
-            const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
+            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${sport}`);
             const data = await res.json();
-            const updatedItems = data.items.map((item: any, index: number) => {
-                if (index < data.items.length) {
+            const updatedItems = data.data?.map((item: any, index: number) => {
+                if (index < data.data.length) {
                     return {
                         ...item,
                         author: "Phan Kiet",
                         official: true,
-                        avatar: "/assets/Rectangle 1.webp",
-                        category: "Bóng đá",
-                        thumbnail: changeThumbSize(item.thumbnail, "564-376"),
+                        avatar: "/assets/Rectangle 1.webp"
 
                     };
                 }
                 return item;
             });
             setData(updatedItems);
+            console.log("data1", filteredData1)
             setFilteredData(updatedItems.slice(0, 4));
         } catch (error) {
             console.log(error);
@@ -100,12 +102,12 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     }
 
     return (
-        <div className="sport-genre">
-            <CardTitle title={sport} arrow={true} deco={true} />
+        <div className="sport-genre bg-white">
+            <CardTitle title={translateSlug(sport)} arrow={true} deco={true} />
 
-            {filteredData.map((item: any, index: number) =>
+            {filteredData?.map((item: any, index: number) =>
                 index === 0 ? (
-                    <Card key={item.id} avatar={card1.avatar} name={item.author} time={item.time_text} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={card1.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                    <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category.name} official={item.official} link={`/blog/`} />
                 ) : (
                     <div key={item.id} className="card--article">
                         <div className="card--article__container">
@@ -121,7 +123,7 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
                                 <div className="footer">
                                     <div className="card--article__info">
                                         <div className="card--article__name">{item.author}</div>
-                                        <div className="card--article__time">{item.time_text}</div>
+                                        <div className="card--article__time">{formatDate(item.updated_at)}</div>
                                     </div>
 
                                     <div className="right">
@@ -140,7 +142,7 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
 
                 )
             )}
-            <button className="view-more--btn" onClick={() => { setFilteredData(data.slice(0, filteredData.length + 4)); }}>
+            <button className="view-more--btn">
                 Xem thêm
             </button>
         </div >

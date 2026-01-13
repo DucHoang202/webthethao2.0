@@ -1,0 +1,1728 @@
+[
+  {
+    "id": "1",
+    "name": "Bóng đá Quốc tế",
+    "slug": "bong-da-quoc-te",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "11",
+        "name": "Bóng đá Tây Ban Nha",
+        "slug": "tay-ban-nha",
+        "parent_id": "1",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "116",
+        "name": "Bóng đá Anh",
+        "slug": "bong-da-anh",
+        "parent_id": "1",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "9",
+        "name": "Champions League",
+        "slug": "champions-league",
+        "parent_id": "1",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "12",
+        "name": "Đức",
+        "slug": "bong-da-duc",
+        "parent_id": "1",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "38",
+        "name": "Bóng đá Ý",
+        "slug": "bong-da-italia",
+        "parent_id": "1",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "65",
+        "name": "Pháp",
+        "slug": "bong-da-phap",
+        "parent_id": "1",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "422",
+        "name": "Bỉ",
+        "slug": "bong-da-bi",
+        "parent_id": "1",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Bóng đá Việt Nam",
+    "slug": "bong-da-viet-nam",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "64",
+        "name": "Bóng đá phủi",
+        "slug": "bong-da-phui",
+        "parent_id": "2",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "13",
+        "name": "V.League",
+        "slug": "v-league",
+        "parent_id": "2",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "247",
+        "name": "U23 Việt Nam",
+        "slug": "u23-viet-nam",
+        "parent_id": "2",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "303",
+        "name": "Cúp Quốc Gia",
+        "slug": "cup-quoc-gia",
+        "parent_id": "2",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "14",
+        "name": "Đội tuyển Việt Nam",
+        "slug": "cac-doi-tuyen-quoc-gia",
+        "parent_id": "2",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "304",
+        "name": "Hạng Nhất",
+        "slug": "hang-nhat",
+        "parent_id": "2",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Lịch thi đấu bóng đá",
+    "slug": "lich-thi-dau-the-thao",
+    "parent_id": 0,
+    "has_child": true,
+    "children": []
+  },
+  {
+    "id": "29",
+    "name": "Xe thể thao",
+    "slug": "xe-the-thao",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "206",
+        "name": "Moto GP, Formula 1",
+        "slug": "moto-gp-formula-1",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "207",
+        "name": "Các giải đua khác",
+        "slug": "cac-giai-dua-khac",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "208",
+        "name": "Tin tức",
+        "slug": "tin-tuc",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "209",
+        "name": "Văn hóa xe",
+        "slug": "van-hoa-xe",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "239",
+        "name": "Công nghệ",
+        "slug": "cong-nghe",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "240",
+        "name": "Đánh giá xe",
+        "slug": "tu-van-xe",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "241",
+        "name": "Bảng giá xe",
+        "slug": "bang-gia-xe",
+        "parent_id": "29",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Môn thể thao khác",
+    "slug": "cac-mon-the-thao-khac",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "27",
+        "name": "Tennis",
+        "slug": "tennis",
+        "parent_id": "30",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "426",
+        "name": "Đua xe",
+        "slug": "dua-xe",
+        "parent_id": "30",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "427",
+        "name": "Cờ",
+        "slug": "choi-co",
+        "parent_id": "30",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "435",
+        "name": "Môn khác",
+        "slug": "tin-the-thao-khac",
+        "parent_id": "30",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "104",
+        "name": "Cầu lông",
+        "slug": "cau-long",
+        "parent_id": "30",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "P49ylJkVR",
+        "name": "Billiards",
+        "slug": "billiards",
+        "parent_id": "30",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "Sự kiện",
+    "slug": "su-kien",
+    "parent_id": 0,
+    "has_child": true,
+    "children": []
+  },
+  {
+    "id": "46",
+    "name": "Video",
+    "slug": "videos",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "188",
+        "name": "Bóng rổ",
+        "slug": "video-bong-ro",
+        "parent_id": "46",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "360",
+        "name": "Bóng đá",
+        "slug": "video-bong-da",
+        "parent_id": "46",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "379",
+        "name": "Video khác",
+        "slug": "video-khac",
+        "parent_id": "46",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "51",
+        "name": "Bóng chuyền",
+        "slug": "video-bong-chuyen",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "187",
+        "name": "Võ thuật",
+        "slug": "video-mma",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "390",
+        "name": "Tennis",
+        "slug": "video-tennis",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "391",
+        "name": "E-Sports",
+        "slug": "video-e-sports",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "402",
+        "name": "Người đẹp thể thao",
+        "slug": "video-nguoi-dep-the-thao",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "443",
+        "name": "SEA Games",
+        "slug": "video-sea-games",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "364",
+        "name": "Cardio & Fitness",
+        "slug": "video-cardio-fitness",
+        "parent_id": "46",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "name": "EURO",
+    "slug": "euro",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "167",
+        "name": "Lịch EURO 2024",
+        "slug": "lich-thi-dau-euro",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "168",
+        "name": "Thông tin đội tuyển",
+        "slug": "thong-tin-doi-tuyen",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "169",
+        "name": "Tin tức sự kiện",
+        "slug": "tin-tuc-su-kien",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "170",
+        "name": "Kết quả EURO 2024",
+        "slug": "ket-qua-euro",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "171",
+        "name": "Bên lề giải đấu",
+        "slug": "ben-le-giai-dau",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "172",
+        "name": "Hành trình EURO",
+        "slug": "hanh-trinh-euro",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "173",
+        "name": "Góc chuyên gia ",
+        "slug": "goc-chuyen-gia",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "174",
+        "name": "Video Euro",
+        "slug": "video-euro",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "0T8LH2eGg",
+        "name": "Trực tiếp Euro",
+        "slug": "truc-tiep-euro",
+        "parent_id": "71",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "name": "Bóng rổ",
+    "slug": "bong-ro",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "183",
+        "name": "NBA",
+        "slug": "nba",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "256",
+        "name": "ABL",
+        "slug": "abl",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "332",
+        "name": "Nhận định bóng rổ",
+        "slug": "nhan-dinh-bong-ro",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "357",
+        "name": "Bóng Rổ Việt Nam",
+        "slug": "bong-ro-viet-nam",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "429",
+        "name": "Thư viện",
+        "slug": "thu-vien-bong-ro",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "184",
+        "name": "VBA",
+        "slug": "vba",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "CpQe2j2GR",
+        "name": "VSBL",
+        "slug": "vsbl",
+        "parent_id": "76",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "name": "Bóng chuyền",
+    "slug": "bong-chuyen",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "xGoVnFVMR",
+        "name": "Bóng chuyền Việt Nam",
+        "slug": "bong-chuyen-viet-nam",
+        "parent_id": "106",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "vs6OnKVGg",
+        "name": "Bóng chuyền Quốc Tế",
+        "slug": "bong-chuyen-quoc-te",
+        "parent_id": "106",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "zGZOjcVGg",
+        "name": "Hậu Trường",
+        "slug": "hau-truong-bong-chuyen",
+        "parent_id": "106",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "name": "Olympic",
+    "slug": "olympic",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "oH1W78zng",
+        "name": "Lịch thi đấu",
+        "slug": "lich-thi-dau-olympic",
+        "parent_id": "110",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "Vdd07Uz7g",
+        "name": "Tin tức sự kiện",
+        "slug": "tin-tuc-su-kien-olympic",
+        "parent_id": "110",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "wxyP78knR",
+        "name": "Góc chuyên gia",
+        "slug": "goc-chuyen-gia-olympic",
+        "parent_id": "110",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "LlZj78z7g",
+        "name": "Video Olympic",
+        "slug": "video-olympic",
+        "parent_id": "110",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "jeFi4Uk7R",
+        "name": "Trực tiếp Olympic",
+        "slug": "truc-tiep-olympic",
+        "parent_id": "110",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "name": "ASIAD",
+    "slug": "asiad",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "1hF0bkCVg",
+        "name": "Lịch thi đấu",
+        "slug": "lich-thi-dau",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "6xV1bkC4R",
+        "name": "Kết quả - Bảng xếp hạng",
+        "slug": "ket-qua-bang-xep-hang",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "nuCbxkCVR",
+        "name": "Bóng đá",
+        "slug": "bong-da",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "upEabkCVg",
+        "name": "Bóng Chuyền",
+        "slug": "bong-chuyen",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "LtZ6xkjVg",
+        "name": "Điền Kinh",
+        "slug": "dien-kinh-asiad",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "sgP6bzCVg",
+        "name": "Võ Thuật",
+        "slug": "vo-thuat",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "Mb2gakjVg",
+        "name": "Các môn khác",
+        "slug": "cac-mon-khac",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "ojf0LgZIR",
+        "name": "Video Asiad",
+        "slug": "video-asiad",
+        "parent_id": "111",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "name": "SEA Games 33",
+    "slug": "sea-games",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "Lb4pngxng",
+        "name": "Lịch thi đấu SEA Games 2025",
+        "slug": "lich-thi-dau-sea-games-2025",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "F4RZVgb7g",
+        "name": "Địa điểm tổ chức SEA Games",
+        "slug": "dia-diem-to-chuc-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "KlEeOlfng",
+        "name": "Bóng đá SEA Games",
+        "slug": "bong-da-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "6N6LBlBnR",
+        "name": "Bóng chuyền SEA Games",
+        "slug": "bong-chuyen-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "Jx66flf7g",
+        "name": "Bóng rổ SEA Games",
+        "slug": "bong-ro-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "WhrTLlBnR",
+        "name": "Võ thuật SEA Games",
+        "slug": "vo-thuat-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "b5HXLlBnR",
+        "name": "Điền kinh SEA Games",
+        "slug": "dien-kinh-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "ZgUDPlBnR",
+        "name": "Esports SEA Games",
+        "slug": "esports-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "iI9PElf7R",
+        "name": "Các môn khác SEA Games",
+        "slug": "cac-mon-khac-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "zY81slf7R",
+        "name": "Trực tiếp SEA Games",
+        "slug": "truc-tiep-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "xIO5USYng",
+        "name": "Ký ức SEA Games",
+        "slug": "ky-uc-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "8mlDnzX7R",
+        "name": "Kết quả SEA Games",
+        "slug": "ket-qua-sea-games",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "UVNwuoZDg",
+        "name": "Profile VĐV",
+        "slug": "profile-vdv",
+        "parent_id": "112",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "179",
+    "name": "World Cup",
+    "slug": "world-cup",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "260",
+        "name": "Danh sách các đội tuyển và cầu thủ",
+        "slug": "danh-sach-cac-doi-tuyen-va-cau-thu",
+        "parent_id": "179",
+        "has_child": true,
+        "children": [
+          {
+            "id": "263",
+            "name": "Brazil",
+            "slug": "brazil",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "265",
+            "name": "Colombia",
+            "slug": "colombia",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "266",
+            "name": "Peru",
+            "slug": "peru",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "267",
+            "name": "Uruguay",
+            "slug": "Uruguay",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "268",
+            "name": "Nga",
+            "slug": "nga",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "269",
+            "name": "Bồ Đào Nha",
+            "slug": "bo-dao-nha",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "270",
+            "name": "Tây Ban Nha",
+            "slug": "doi-tuyen-tay-ban-nha",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "271",
+            "name": "Pháp",
+            "slug": "phap",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "272",
+            "name": "Đan Mạch",
+            "slug": "dan-mach",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "275",
+            "name": "Thụy Sĩ",
+            "slug": "thuy-si",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "276",
+            "name": "Serbia",
+            "slug": "serbia",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "277",
+            "name": "Đức",
+            "slug": "duc",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "278",
+            "name": "Thụy Điển",
+            "slug": "thuy-dien",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "279",
+            "name": "Anh",
+            "slug": "anh",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "280",
+            "name": "Bỉ",
+            "slug": "bi",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "282",
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "283",
+            "name": "Nhật Bản",
+            "slug": "nhat-ban",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "286",
+            "name": "Úc",
+            "slug": "uc",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "287",
+            "name": "Mexico",
+            "slug": "mexico",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "288",
+            "name": "Morocco",
+            "slug": "Morocco",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "289",
+            "name": "Costa Rica",
+            "slug": "costa-rica",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "290",
+            "name": "Panama",
+            "slug": "panama",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "291",
+            "name": "Ai Cập",
+            "slug": "ai-cap",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "293",
+            "name": "Tunisia",
+            "slug": "tunisia",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "264",
+            "name": "Argentina",
+            "slug": "argentina",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "273",
+            "name": "Iceland",
+            "slug": "iceland",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "274",
+            "name": "Croatia",
+            "slug": "croatia",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "281",
+            "name": "Ba Lan",
+            "slug": "ba-lan",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "284",
+            "name": "Iran",
+            "slug": "iran",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "285",
+            "name": "Hàn Quốc",
+            "slug": "han-quoc",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "292",
+            "name": "Nigeria",
+            "slug": "nigeria",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          },
+          {
+            "id": "294",
+            "name": "Senegal",
+            "slug": "senegal",
+            "parent_id": "260",
+            "has_child": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "259",
+        "name": "Tin tức, Bình luận",
+        "slug": "tin-tuc-binh-luan-world-cup-2018",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "261",
+        "name": "Hồi ký World Cup",
+        "slug": "hoi-ky-world-cup",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "262",
+        "name": "Video World Cup",
+        "slug": "video-world-cup",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "258",
+        "name": "Lịch thi đấu World Cup",
+        "slug": "lich-thi-dau-kq-bxh",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "A2FaanDVR",
+        "name": "Trực tiếp World Cup",
+        "slug": "truc-tiep-world-cup",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "jRrfanvVR",
+        "name": "Kết quả World Cup",
+        "slug": "ket-qua-world-cup",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "l19XlnDVR",
+        "name": "Nhận định World Cup",
+        "slug": "nhan-dinh-world-cup",
+        "parent_id": "179",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "180",
+    "name": "Cúp chiến thắng",
+    "slug": "cup-chien-thang",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "445",
+        "name": "Hạng mục đề cử",
+        "slug": "hang-muc-de-cu",
+        "parent_id": "180",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "442",
+        "name": "Profile VĐV",
+        "slug": "profile-van-dong-vien-sea-games",
+        "parent_id": "180",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "444",
+        "name": "Video Cúp Chiến Thắng",
+        "slug": "video-cup-chien-thang",
+        "parent_id": "180",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "196",
+    "name": "Kết quả bóng đá",
+    "slug": "ket-qua-bong-da",
+    "parent_id": 0,
+    "has_child": true,
+    "children": []
+  },
+  {
+    "id": "236",
+    "name": "Chạy  &  Fitness",
+    "slug": "cardio-fitness",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "45",
+        "name": "Thư viện ảnh",
+        "slug": "anh-dep",
+        "parent_id": "236",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "100",
+        "name": "3 môn phối hợp",
+        "slug": "triathlon",
+        "parent_id": "236",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "102",
+        "name": "Bơi",
+        "slug": "boi-loi",
+        "parent_id": "236",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "103",
+        "name": "Chạy",
+        "slug": "chay",
+        "parent_id": "236",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "430",
+        "name": "Fitness",
+        "slug": "fitness",
+        "parent_id": "236",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "431",
+        "name": "Lịch sự kiện",
+        "slug": "lich-su-kien",
+        "parent_id": "236",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "hzOIkk1Mg",
+        "name": "Điền kinh",
+        "slug": "dien-kinh",
+        "parent_id": "236",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "TdENGPOnR",
+        "name": "Xe đạp",
+        "slug": "xe-dap",
+        "parent_id": "236",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "rgTuVJK4R",
+        "name": "VIHM Herbalife Nutrition",
+        "slug": "vihm-herbalife-nutrition",
+        "parent_id": "236",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "302",
+    "name": "Nhận định bóng đá",
+    "slug": "nhan-dinh-bong-da",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "331",
+        "name": "Bóng đá Anh",
+        "slug": "nhan-dinh-anh",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "346",
+        "name": "Châu Âu",
+        "slug": "nhan-dinh-bong-da-cup-chau-au",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "347",
+        "name": "Bóng đá Việt Nam",
+        "slug": "nhan-dinh-bong-da-viet-nam",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "348",
+        "name": "Thế giới",
+        "slug": "nhan-dinh-bong-da-the-gioi",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "403",
+        "name": "Tây Ban Nha",
+        "slug": "nhan-dinh-bong-da-tay-ban-nha",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "405",
+        "name": "Bóng đá Đức",
+        "slug": "nhan-dinh-bong-da-duc",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "406",
+        "name": "Bóng đá Pháp",
+        "slug": "nhan-dinh-bong-da-phap",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "407",
+        "name": "Cúp C1 Châu Âu",
+        "slug": "nhan-dinh-bong-da-cup-c1-chau-au",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "408",
+        "name": "Cúp C2 Châu Âu",
+        "slug": "nhan-dinh-bong-da-cup-c2-chau-au",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "409",
+        "name": "Hàn Quốc",
+        "slug": "nhan-dinh-bong-da-han-quoc",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "410",
+        "name": "Nhật Bản",
+        "slug": "nhan-dinh-bong-da-nhat-ban",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "411",
+        "name": "Thái Lan",
+        "slug": "nhan-dinh-bong-da-thai-lan",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "412",
+        "name": "Australia",
+        "slug": "nhan-dinh-bong-da-uc",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "413",
+        "name": "Mỹ MLS",
+        "slug": "nhan-dinh-bong-da-my-mls",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "415",
+        "name": "Argentina",
+        "slug": "nhan-dinh-bong-da-argentina",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "416",
+        "name": "Mexico",
+        "slug": "nhan-dinh-bong-da-mexico",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "417",
+        "name": "World Cup",
+        "slug": "nhan-dinh-bong-da-world-cup",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "418",
+        "name": "EURO 2024",
+        "slug": "nhan-dinh-bong-da-euro",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "419",
+        "name": "Olympic",
+        "slug": "nhan-dinh-bong-da-olympic",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "404",
+        "name": "Bóng đá Ý",
+        "slug": "nhan-dinh-bong-da-italia",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "414",
+        "name": "Brazil",
+        "slug": "nhan-dinh-bong-da-brazil",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "hbYXyNt7g",
+        "name": "AFF Cup ",
+        "slug": "nhan-dinh-aff-cup",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "h5hrH1rng",
+        "name": "U23 Châu Á",
+        "slug": "u23-chau-a",
+        "parent_id": "302",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "309",
+    "name": "ESPORTS",
+    "slug": "esports",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "349",
+        "name": "Liên Minh Huyền Thoại",
+        "slug": "lien-minh-huyen-thoai",
+        "parent_id": "309",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "350",
+        "name": "FIFA & PES",
+        "slug": "fifa-online",
+        "parent_id": "309",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "351",
+        "name": "PUBG",
+        "slug": "pubg",
+        "parent_id": "309",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "352",
+        "name": "Cách chơi",
+        "slug": "cach-choi",
+        "parent_id": "309",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "428",
+        "name": "Thư viện",
+        "slug": "thu-vien-esports",
+        "parent_id": "309",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "424",
+        "name": "AOE",
+        "slug": "de-che-aoe",
+        "parent_id": "309",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "318",
+    "name": "EMAGAZINE",
+    "slug": "emagazine",
+    "parent_id": 0,
+    "has_child": true,
+    "children": []
+  },
+  {
+    "id": "325",
+    "name": "Bảng xếp hạng",
+    "slug": "bang-xep-hang",
+    "parent_id": 0,
+    "has_child": true,
+    "children": []
+  },
+  {
+    "id": "425",
+    "name": "Bóng đá châu Á",
+    "slug": "bong-da-chau-a",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "358",
+        "name": "ASIAN Cup",
+        "slug": "asian-cup",
+        "parent_id": "425",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "Võ Thuật",
+    "slug": "mma-boxing",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "124",
+        "name": "MMA",
+        "slug": "mma",
+        "parent_id": "94",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "125",
+        "name": "Boxing",
+        "slug": "boxing",
+        "parent_id": "94",
+        "has_child": true,
+        "children": []
+      },
+      {
+        "id": "99",
+        "name": "UFC",
+        "slug": "ufc",
+        "parent_id": "94",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "308",
+        "name": "Khác",
+        "slug": "vo-thuat-khac",
+        "parent_id": "94",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "355",
+        "name": "ONE Championship",
+        "slug": "one-championship",
+        "parent_id": "94",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "433",
+        "name": "Thư viện",
+        "slug": "thu-vien-vo-thuat",
+        "parent_id": "94",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "181",
+    "name": "Góc tư vấn",
+    "slug": "goc-tu-van",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "212",
+        "name": "Dụng cụ",
+        "slug": "dung-cu",
+        "parent_id": "181",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "213",
+        "name": "Cách tập",
+        "slug": "cach-tap",
+        "parent_id": "181",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "215",
+        "name": "Dinh dưỡng",
+        "slug": "dinh-duong",
+        "parent_id": "181",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "311",
+        "name": "Địa điểm",
+        "slug": "dia-diem",
+        "parent_id": "181",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "312",
+        "name": "Hỏi & đáp",
+        "slug": "hoi-dap",
+        "parent_id": "181",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "Yi9tMzO7R",
+    "name": "AFF Cup 2022",
+    "slug": "aff-cup",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "JV1jMkd7R",
+        "name": "Lịch thi đấu AFF Cup 2022",
+        "slug": "lich-thi-dau-aff-cup",
+        "parent_id": "Yi9tMzO7R",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "SICI7zO7R",
+        "name": "Kết quả AFF Cup 2022",
+        "slug": "ket-qua-aff-cup-",
+        "parent_id": "Yi9tMzO7R",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "W79SVkd7R",
+        "name": "Trực tiếp AFF Cup 2022",
+        "slug": "truc-tiep-aff-cup",
+        "parent_id": "Yi9tMzO7R",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "JnTC1pcVg",
+        "name": "Nhận định AFF Cup 2022",
+        "slug": "nhan-dinh-aff-cup-2022",
+        "parent_id": "Yi9tMzO7R",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "8j83OfqNR",
+    "name": "Pickle Ball",
+    "slug": "pickle-ball",
+    "parent_id": 0,
+    "has_child": true,
+    "children": [
+      {
+        "id": "Y3ggFfqNg",
+        "name": "Giải đấu Pickle Ball",
+        "slug": "giai-dau",
+        "parent_id": "8j83OfqNR",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "aEEzFf3HR",
+        "name": "Trang phục & phụ kiện Pickle Ball",
+        "slug": "trang-phuc-phu-kien-pickle-ball",
+        "parent_id": "8j83OfqNR",
+        "has_child": false,
+        "children": []
+      },
+      {
+        "id": "MAn7KfqHR",
+        "name": "Lịch thi đấu Pickle Ball",
+        "slug": "lich-thi-dau-pickle-ball",
+        "parent_id": "8j83OfqNR",
+        "has_child": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "175",
+    "name": "Chuyển nhượng bóng đá",
+    "slug": "chuyen-nhuong",
+    "parent_id": 0,
+    "has_child": false,
+    "children": []
+  },
+  {
+    "id": "296",
+    "name": "Góc Bạn đọc",
+    "slug": "goc-ban-doc",
+    "parent_id": 0,
+    "has_child": false,
+    "children": []
+  },
+  {
+    "id": "395",
+    "name": "Đồ chơi & Công nghệ",
+    "slug": "do-choi-cong-nghe-the-thao",
+    "parent_id": 0,
+    "has_child": false,
+    "children": []
+  },
+  {
+    "id": "394",
+    "name": "Trực tiếp bóng đá hôm nay",
+    "slug": "xem-bong-da-truc-tuyen",
+    "parent_id": 0,
+    "has_child": false,
+    "children": []
+  },
+  {
+    "id": "LFGL7kd7g",
+    "name": "Video AFF Cup",
+    "slug": "video-aff-cup",
+    "parent_id": 0,
+    "has_child": false,
+    "children": []
+  },
+  {
+    "id": "LafmtnL7g",
+    "name": "Thư Viện Ảnh",
+    "slug": "thu-vien-anh",
+    "parent_id": 0,
+    "has_child": false,
+    "children": []
+  }
+]
