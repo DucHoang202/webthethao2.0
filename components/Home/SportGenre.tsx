@@ -52,10 +52,10 @@ interface List {
 
 const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     const [data, setData] = useState<CategoryResponse>();
-    const [filteredData, setFilteredData] = useState<List[]>([]);
-    const [filteredData1, setFilteredData1] = useState<List[]>([]);
-    const [filteredData2, setFilteredData2] = useState<List[]>([]);
-    const [filteredData3, setFilteredData3] = useState<List[]>([]);
+    const [filteredData, setFilteredData] = useState<CategoryResponse>();
+    const [filteredData1, setFilteredData1] = useState<CategoryResponse>();
+    const [filteredData2, setFilteredData2] = useState<CategoryResponse>();
+    const [filteredData3, setFilteredData3] = useState<CategoryResponse>();
 
     const getData = async () => {
         try {
@@ -105,9 +105,9 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
         <div className="sport-genre bg-white">
             <CardTitle title={translateSlug(sport)} arrow={true} deco={true} />
 
-            {filteredData?.map((item: any, index: number) =>
+            {filteredData?.data?.map((item: any, index: number) =>
                 index === 0 ? (
-                    <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category.name} official={item.official} link={`/blog/`} />
+                    <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} />
                 ) : (
                     <div key={item.id} className="card--article">
                         <div className="card--article__container">
