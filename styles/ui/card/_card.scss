@@ -137,12 +137,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #F0F0EE;
+    // border: 1px solid #F0F0EE;
     padding: 10px 14px;
 
-    // @media (max-width: 768px) {
-    //     border-radius: 0;
-    // }
+    @media (max-width: 768px) {
+        border-radius: 0;
+    }
 
     &.smaller {
         display: flex;

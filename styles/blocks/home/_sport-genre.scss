@@ -1,5 +1,15 @@
+.sport-genre {
+    @media(min-width: 768px) {
+        border-radius: 14px;
+    }
+}
+
 .sport-group {
     background-color: white;
+
+    @media(min-width: 1024px) {
+        border-radius: 14px;
+    }
 
     .sport-group__container {
         position: fixed;

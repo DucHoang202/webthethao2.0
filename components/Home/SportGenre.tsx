@@ -101,7 +101,7 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
     }
 
     return (
-        <div className="sport-genre">
+        <div className="sport-genre bg-white">
             <CardTitle title={translateSlug(sport)} arrow={true} deco={true} />
 
             {filteredData?.data?.slice(0, 4).map((item: any, index: number) =>
@@ -110,14 +110,14 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
                 ) : (
                     <div key={item.id} className="card--article">
                         <div className="card--article__container">
-                            <button onClick={() => getItemData(item)} className="image cursor-pointer">
+                            <a href={`/blog/${filteredData.slug}/${item.slug}-${item.id}`} className="image cursor-pointer">
                                 <img src={item.thumbnail} alt="" className="image" />
-                            </button>
+                            </a>
 
                             <div className="body">
-                                <button onClick={() => getItemData(item)} className="title cursor-pointer">
+                                <a href={`/blog/${filteredData.slug}/${item.slug}-${item.id}`} className="title cursor-pointer">
                                     {item.title}
-                                </button>
+                                </a>
 
                                 <div className="footer">
                                     <div className="card--article__info">
