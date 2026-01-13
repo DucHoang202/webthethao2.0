@@ -337,6 +337,7 @@ const BlogPage = ({ params }: PageProps) => {
                                                     content={summary ?? ""}
                                                     category="Bóng đá"
                                                     official
+                                                    hideText={true}
                                                     link={`blog/${extractArticlePath(article_url)}`}
                                                 />
                                             ))}
@@ -358,6 +359,7 @@ const BlogPage = ({ params }: PageProps) => {
                                                     content={summary ?? ""}
                                                     category="Bóng đá"
                                                     official
+                                                    hideText={true}
                                                     link={`blog / ${extractArticlePath(article_url)}`}
                                                 />
                                             ))}

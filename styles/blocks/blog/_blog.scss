@@ -1,8 +1,9 @@
 .blog {
     &.detail {
         max-width: 749px;
-        width: 100%;
-
+        width: calc(100% - 64px);
+        border-right: 1px solid #D9D9D9;
+        padding-right: 10px;
     }
 
     .blog__container {

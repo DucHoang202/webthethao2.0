@@ -11,10 +11,11 @@ interface CardProps {
     official: boolean;
     link: string;
     className?: string;
+    hideText?: boolean;
 }
 
 
-const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link, className }) => {
+const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, category, official, link, className, hideText }) => {
     return (
         <div className={`card--news ${className}`} >
             <div className={`info ${className}`}>
@@ -48,14 +49,14 @@ const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, 
                     <div className="right">
                         <div className="item">
                             <img src="/assets/message.webp" alt="" className="icon" />
-                            <div className="text">
+                            <div className="text" style={{ display: hideText ? "none" : "block" }}>
                                 Bình luận
                             </div>
                         </div>
 
                         <div className="item">
                             <img src="/assets/export.webp" alt="" className="icon" />
-                            <div className="text">
+                            <div className="text" style={{ display: hideText ? "none" : "block" }}>
                                 Chia sẻ
                             </div>
                         </div>
