@@ -446,7 +446,25 @@ const BlogPage = ({ params }: PageProps) => {
                     </div>
 
                     <div className="detail__card" ref={relatedRef}>
-                        {list?.data?.slice(0, 11).map((item, index) => (
+                        {list?.data?.slice(0, 5).map((item, index) => (
+                            <Card
+                                key={index}
+                                avatar="/assets/Image (3).webp"
+                                name={item.author ?? ""}
+                                time={formatDate(item.updated_at)}
+                                image={item.thumbnail ?? ""}
+                                title={item.title ?? ""}
+                                content={item.description ?? ""}
+                                category={translateSlug(id)}
+                                official
+                                hideText={true}
+                                link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
+                            />
+                        ))}
+
+                    </div>
+                    <div className="detail__card" ref={featuredRef}>
+                        {list?.data?.slice(0, 5).map((item, index) => (
                             <Card
                                 key={index}
                                 avatar="/assets/Image (3).webp"
@@ -563,7 +581,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                     <div className="empty-container">
                                         <CardTitle title="Bài viết nổi bật" className="smaller" deco={true} />
-                                        <div className="detail__card" ref={relatedRef}>
+                                        <div className="detail__card" ref={featuredRef}>
                                             {list?.data?.slice(4, 7).map((item, index) => (
                                                 <Card
                                                     key={index}
@@ -594,7 +612,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <CardTitle logo={titleImage} title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
                                     <div className="card--header__content">
                                         {filteredData?.data?.slice(0, 3).map((item, index) => (
-                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/ blog / ${filteredData?.slug} /${item.slug} - ${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
+                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/ ${filteredData?.slug} /${item.slug} - ${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
                                         <div className="view-more--btn" >
                                             <a href="#">Xem thêm</a>
@@ -606,7 +624,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <CardTitle title={translateSlug(slug1)} deco={true} />
                                     <div className="card--header__content">
                                         {filteredData1?.data?.slice(0, 3).map((item, index) => (
-                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/ blog / ${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
+                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/ ${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
                                         <div className="view-more--btn" >
                                             <a href="#">Xem thêm</a>
@@ -637,8 +655,6 @@ const BlogPage = ({ params }: PageProps) => {
                                                 </div>
                                             </div>
                                         ))}
-
-
                                     </div>
                                 </div>
                                 <div className="card-container">
@@ -649,8 +665,6 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                 </div>
                                 <Advertisement image="/assets/image 22.webp" isCollapsed={false} />
-
-
                             </div>
 
                         </div>
