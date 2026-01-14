@@ -53,6 +53,11 @@ export interface SeoData {
 
 export interface HeadData {
     seo: SeoData;
+    og: {
+        image: string;
+        title: string;
+        description: string;
+    }
 }
 interface PageProps {
     params: Promise<{ id: string, article: string }>;
@@ -72,14 +77,12 @@ interface List {
     author: string;
 }
 const BlogPage = ({ params }: PageProps) => {
-    const [list, setList] = useState<List[]>([]);
+    const [list, setList] = useState<CategoryResponse>();
     const [data, setData] = useState<Data>();
     const { id, article } = use(params);
     const [param, setParam] = useState({ id: "", article: "" });
     const [mounted, setMounted] = useState(false);
-    // useEffect(() => {
-    //     setParam({ id, article });
-    // }, [id, article]);
+
     const getData = async () => {
         try {
             const res = await fetch(
@@ -92,7 +95,30 @@ const BlogPage = ({ params }: PageProps) => {
         }
     }
 
+    async function getIdenticalArticle() {
+        try {
+            const res = await fetch("https://webthethao.wepro.io.vn/api/category-article/load/" + id);
+            const result = await res.json();
+            const updatedItems = result.data.map((item: any, index: number) => {
+                if (index < result.data.length) {
+                    return {
+                        ...item,
+                        author: "Phan Kiet",
+                        official: true,
+                        avatar: "/assets/Rectangle 1.webp",
+                        category: "Bóng đá",
+                        thumbnail: changeThumbSize(item.thumbnail, "409-273"),
+                    };
+                }
+                return item;
+            });
+            result.data = updatedItems;
+            setList(result);
 
+        } catch (error) {
+            console.log(error);
+        }
+    }
     async function copyUrl() {
         try {
             await navigator.clipboard.writeText(window.location.href);
@@ -134,45 +160,74 @@ const BlogPage = ({ params }: PageProps) => {
         }
     }
     const [url, setUrl] = useState("");
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
     useEffect(() => {
-        setMounted(true);
-        const url = encodeURIComponent(window.location.href);
-        setUrl(url);
-        getData();
-        getList();
-        const adjustHeights = (container: HTMLElement | null) => {
-            if (!container) return;
-            const titles = container.querySelectorAll<HTMLElement>(".title");
-            if (!titles || titles.length === 0) return;
+        const fetchAllData = async () => {
+            setMounted(true);
 
-            let maxHeight = 0;
-            // Reset height to auto to recalculate correctly on updates
-            titles.forEach((item) => {
-                item.style.height = 'auto';
-            });
+            // Call APIs with delays
+            await getData();
+            await delay(300); // 300ms delay
 
-            titles.forEach((item) => {
-                const h = item.offsetHeight;
-                if (h > maxHeight) maxHeight = h;
-            });
+            await getList();
+            await delay(300);
 
-            titles.forEach((item) => {
-                item.style.height = `${maxHeight}px`;
-            });
+            await setSlug(slug);
+            await delay(300);
+
+            await setSlug1(slug1);
+            await delay(300);
+
+            await setSlug2(slug2);
+            await delay(300);
+
+            await setSlug3(slug3);
+            await delay(300);
+
+            await setSlug4(slug4);
+            await delay(300);
+
+            await setSlug5(slug5);
+            await delay(300);
+
+            await getIdenticalArticle();
+            await delay(300);
+            const adjustHeights = (container: HTMLElement | null) => {
+                if (!container) return;
+                const titles = container.querySelectorAll<HTMLElement>(".title");
+                if (!titles || titles.length === 0) return;
+
+                let maxHeight = 0;
+                // Reset height to auto to recalculate correctly on updates
+                titles.forEach((item) => {
+                    item.style.height = 'auto';
+                });
+
+                titles.forEach((item) => {
+                    const h = item.offsetHeight;
+                    if (h > maxHeight) maxHeight = h;
+                });
+
+                titles.forEach((item) => {
+                    item.style.height = `${maxHeight}px`;
+                });
+            };
+
+            const handleResize = () => {
+                adjustHeights(relatedRef.current);
+                adjustHeights(featuredRef.current);
+            }
+
+            if (document.fonts) {
+                document.fonts.ready.then(handleResize);
+            } else {
+                setTimeout(handleResize, 200);
+            }
         };
 
-        const handleResize = () => {
-            adjustHeights(relatedRef.current);
-            adjustHeights(featuredRef.current);
-        }
-
-        if (document.fonts) {
-            document.fonts.ready.then(handleResize);
-        } else {
-            setTimeout(handleResize, 200);
-        }
-
-    }, [list]);
+        fetchAllData();
+    }, []); // Empty dependency array
 
     const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
 
@@ -180,28 +235,7 @@ const BlogPage = ({ params }: PageProps) => {
     const changeNav = useMediaQuery({ query: "(max-width: 768px)" })
     const swiperRef = useRef<any>(null);
     const [isSticky, setIsSticky] = useState(false);
-    const card1 =
-        [{
-            avatar: "/assets/Rectangle 1.webp",
-            name: "Kiet Phan",
-            time: "2 giờ trước",
-            image: "/assets/image.webp",
-            title: "Adidas trở lại mạnh mẽ trên thị trường Pickleball với dòng vợt AdiPower",
-            content: "Adidas đang định hình lại vị thế của mình trong làng Pickleball thông qua dòng vợt AdiPower mới - sự kết hợp giữa chất lượng cao và giá cả hợp lý.",
-            category: "Pickleball",
-            official: true
-        },
-        {
-            avatar: "/assets/Rectangle 1.webp",
-            name: "Kiet Phan",
-            time: "2 giờ trước",
-            image: "/assets/image.webp",
-            title: "Adidas trở lại mạnh mẽ trên thị trường Pickleball với dòng vợt AdiPower",
-            content: "Adidas đang định hình lại vị thế của mình trong làng Pickleball thông qua dòng vợt AdiPower mới - sự kết hợp giữa chất lượng cao và giá cả hợp lý.",
-            category: "Bóng đá",
-            official: true
-        }
-        ]
+
     const [active, setActive] = useState(0)
     const sidebarRef = useRef<HTMLDivElement>(null);
     const relatedRef = useRef<HTMLDivElement>(null);
@@ -363,14 +397,6 @@ const BlogPage = ({ params }: PageProps) => {
             console.log("error");
         }
     }
-    useEffect(() => {
-        setSlug(slug);
-        setSlug1(slug1);
-        setSlug2(slug2);
-        setSlug3(slug3);
-        setSlug4(slug4);
-        setSlug5(slug5);
-    }, []);
     if (!mounted) return null;
 
 
@@ -383,22 +409,25 @@ const BlogPage = ({ params }: PageProps) => {
                     <div className="no-gap">
                         <div className="blog">
                             <div className="blog__container">
-                                <div className="blog__seo">{data?.head.seo.title}</div>
-                                {/* <img src="/assets/image.webp" alt="" className="blog__image w-full" /> */}
+                                <div className="blog__seo">{changeThumbSize(data?.head.seo.title, "768-432")}</div>
+                                <img src={data?.head?.og?.image} alt={data?.head?.og?.title} className="blog__image w-full mt-[-13px]" />
                                 <div className="blog__user">
 
                                     <div className="blog__user--inner">
                                         <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={data?.created_at} official={true} />
 
                                         <div className="blog__cat">
-                                            {id}
+                                            {translateSlug(id)}
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
                             <div className="blog__body">
-                                <h1><b>{data?.title}</b></h1>
+                                <div className="blog-title">{data?.title}</div>
+                                <div className="blog__sapo">
+                                    {data?.head?.og?.description}
+                                </div>
                                 <div dangerouslySetInnerHTML={{ __html: data?.body || "" }}></div>
                                 {/* <blockquote><p>Mua các sản phẩm mới nhất tại <a href="">webthethao.vn</a></p><cite>-Webthethao</cite></blockquote> */}
 
@@ -412,10 +441,28 @@ const BlogPage = ({ params }: PageProps) => {
                                 <CommentInput />
                                 <Comments avatar="/assets/Image (3).webp" name="Huong Nguyen" content="Anna hướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time="10 phút trước" />
                             </div>
+
                         </div>
                     </div>
-                    <Card avatar={card1[0].avatar} name={card1[0].name} time={card1[0].time} image={card1[0].image} title={card1[0].title} content={card1[0].content} category={card1[0].category} official={card1[0].official} link="/blog" />
-                    <Card avatar={card1[1].avatar} name={card1[1].name} time={card1[1].time} image={card1[1].image} title={card1[1].title} content={card1[1].content} category={card1[1].category} official={card1[1].official} link="/blog" />
+
+                    <div className="detail__card" ref={relatedRef}>
+                        {list?.data?.slice(0, 11).map((item, index) => (
+                            <Card
+                                key={index}
+                                avatar="/assets/Image (3).webp"
+                                name={item.author ?? ""}
+                                time={formatDate(item.updated_at)}
+                                image={item.thumbnail ?? ""}
+                                title={item.title ?? ""}
+                                content={item.description ?? ""}
+                                category={translateSlug(id)}
+                                official
+                                hideText={true}
+                                link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
+                            />
+                        ))}
+
+                    </div>
                 </div>
             </main>) :
                 (
@@ -461,27 +508,30 @@ const BlogPage = ({ params }: PageProps) => {
 
                                         </div>
                                     </div>
-                                    <div className="blog__body">
+                                    <div className="blog__title">
                                         <BlogTitle title={data?.title ?? ""} />
                                         <div className="blog__user--inner boder">
-                                            <SmallInfoHorizontal avatar={data?.avatar ?? ""} name={data?.author ?? ""} time={data?.updated_at ?? ""} official={true} />
+                                            <SmallInfoHorizontal avatar={data?.avatar ?? ""} name={data?.author ?? ""} time={formatDate(data?.updated_at)} official={true} />
                                             <div className="blog__cat">
-                                                Pickleball
+                                                {translateSlug(id)}
                                             </div>
                                         </div>
-
+                                        <div className="blog__sapo">
+                                            {data?.head?.seo?.description}
+                                        </div>
+                                        <div className="blog__thumbnail">
+                                            <img src={changeThumbSize(data?.head?.og?.image, "749-421")} alt="" />
+                                        </div>
                                     </div>
                                     <div className="blog__body" dangerouslySetInnerHTML={{ __html: data?.body ?? "" }}></div>
-                                    <div className="blog__body">
 
-                                        <div className="blog__btn-container">
-                                            <BlogButton number={2} text="Bình luận" />
-                                            <BlogButton number={10} text="Chia sẻ" />
-                                        </div>
+                                    <div className="blog__btn-container">
+                                        <BlogButton number={2} text="Bình luận" />
+                                        <BlogButton number={10} text="Chia sẻ" />
                                     </div>
                                     <div className="blog__comment" >
                                         <CommentInput />
-                                        <Comments avatar={data?.avatar ?? ""} name={data?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={data?.updated_at ?? ""} />
+                                        <Comments avatar={data?.avatar ?? ""} name={data?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={formatDate(data?.updated_at)} />
                                     </div>
                                     <div className="adv">
                                         <div className="w-full">
@@ -492,20 +542,20 @@ const BlogPage = ({ params }: PageProps) => {
                                     <div className="empty-container">
                                         <CardTitle title="Cùng chủ đề" className="smaller" deco={true} />
                                         <div className="detail__card" ref={relatedRef}>
-                                            {list?.slice(0, 3).map(({ article_url, author, time_text, thumbnail, title, summary }) => (
+                                            {list?.data?.slice(0, 3).map((item, index) => (
                                                 <Card
-                                                    key={article_url}
+                                                    key={index}
                                                     className="smaller"
                                                     avatar="/assets/Image (3).webp"
-                                                    name={author ?? ""}
-                                                    time={time_text ?? ""}
-                                                    image={thumbnail ?? ""}
-                                                    title={title ?? ""}
-                                                    content={summary ?? ""}
+                                                    name={item.author ?? ""}
+                                                    time={formatDate(item.updated_at)}
+                                                    image={item.thumbnail ?? ""}
+                                                    title={item.title ?? ""}
+                                                    content={item.description ?? ""}
                                                     category={translateSlug(id)}
                                                     official
                                                     hideText={true}
-                                                    link={`blog/${extractArticlePath(article_url)}`}
+                                                    link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
                                                 />
                                             ))}
 
@@ -513,27 +563,26 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                     <div className="empty-container">
                                         <CardTitle title="Bài viết nổi bật" className="smaller" deco={true} />
-                                        <div className="detail__card" ref={featuredRef}>
-                                            {list?.slice(4, 7).map(({ article_url, author, time_text, thumbnail, title, summary }) => (
+                                        <div className="detail__card" ref={relatedRef}>
+                                            {list?.data?.slice(4, 7).map((item, index) => (
                                                 <Card
-                                                    key={article_url}
+                                                    key={index}
                                                     className="smaller"
                                                     avatar="/assets/Image (3).webp"
-                                                    name={author ?? ""}
-                                                    time={time_text ?? ""}
-                                                    image={thumbnail ?? ""}
-                                                    title={title ?? ""}
-                                                    content={summary ?? ""}
-                                                    category={translateSlug("bong-da-viet-nam")}
+                                                    name={item.author ?? ""}
+                                                    time={formatDate(item.updated_at)}
+                                                    image={item.thumbnail ?? ""}
+                                                    title={item.title ?? ""}
+                                                    content={item.description ?? ""}
+                                                    category={translateSlug(id)}
                                                     official
                                                     hideText={true}
-                                                    link={`blog / ${extractArticlePath(article_url)}`}
+                                                    link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
                                                 />
                                             ))}
+
                                         </div>
                                     </div>
-
-
                                 </div>
 
                             </div>
@@ -545,7 +594,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <CardTitle logo={titleImage} title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
                                     <div className="card--header__content">
                                         {filteredData?.data?.slice(0, 3).map((item, index) => (
-                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
+                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/ blog / ${filteredData?.slug} /${item.slug} - ${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
                                         <div className="view-more--btn" >
                                             <a href="#">Xem thêm</a>
@@ -557,7 +606,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <CardTitle title={translateSlug(slug1)} deco={true} />
                                     <div className="card--header__content">
                                         {filteredData1?.data?.slice(0, 3).map((item, index) => (
-                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
+                                            <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/ blog / ${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
                                         <div className="view-more--btn" >
                                             <a href="#">Xem thêm</a>
@@ -567,7 +616,7 @@ const BlogPage = ({ params }: PageProps) => {
                                 <Advertisement image="/assets/adv.webp" />
                                 {/* Nhận định */}
                                 <div className="card-container">
-                                    <CardTitle title={translateSlug(slug2) + " đọc nhiều nhất"} deco={true} />
+                                    <CardTitle title={"Đọc nhiều nhất"} deco={true} />
                                     <div className="card--header__content">
                                         {filteredData2?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />

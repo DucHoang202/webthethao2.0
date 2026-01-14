@@ -10,7 +10,8 @@ export function extractArticlePath(url: string): string {
 }
 
 
-export function changeThumbSize(url: string, size: string): string {
+export function changeThumbSize(url: string | undefined, size: string): string {
+    if (!url) return "";
     return url.replace(/\/thumb\/\d+-\d+\//, `/thumb/${size}/`);
 }
 export function matchCategoryName(slug: string): string {
@@ -57,12 +58,48 @@ export function authorPlaceholder() {
     });
     return updatedItems;
 }
-export function formatDate(date?: string): string {
-    if (!date) return "";
-    const dateObj = new Date(date);
-    return dateObj.toLocaleDateString("vi-VN", {
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-    });
+export function formatDate(isoTime?: string | Date): string {
+    if (!isoTime) return "";
+    const now = new Date().getTime();
+    const past = new Date(isoTime).getTime();
+
+    const diffMs = now - past;
+    const diffSeconds = Math.floor(diffMs / 1000);
+    const diffMinutes = Math.floor(diffSeconds / 60);
+    const diffHours = Math.floor(diffMinutes / 60);
+    const diffDays = Math.floor(diffHours / 24);
+    const diffYears = Math.floor(diffDays / 365);
+
+    // ⏱️ Dưới 1 phút
+    if (diffSeconds < 60) {
+        return "vừa xong";
+    }
+
+    // ⏱️ Dưới 1 giờ
+    if (diffMinutes < 60) {
+        return `${diffMinutes} phút trước`;
+    }
+
+    // ⏱️ Dưới 24 giờ
+    if (diffHours < 24) {
+        return `${diffHours} giờ trước`;
+    }
+
+    // 📅 Dưới 7 ngày
+    if (diffDays < 7) {
+        return `${diffDays} ngày trước`;
+    }
+
+    const date = new Date(past);
+    const day = String(date.getDate()).padStart(2, "0");
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const year = date.getFullYear();
+
+    // 📆 Trên 1 năm
+    if (diffYears >= 1) {
+        return `${day}/${month}/${year}`;
+    }
+
+    // 📆 Trên 7 ngày
+    return `${day}/${month}`;
 }

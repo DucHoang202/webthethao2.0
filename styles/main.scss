@@ -212,12 +212,16 @@ img {
 
 .App main {
     padding-top: calc(65px + 36px);
-    width: var(--app-width);
+    width: 100%;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     // gap: 10px;
     background: #F3F3F3;
+
+    @media(max-width: 768px) {
+        padding-top: calc(65px + 31px);
+    }
 }
 
 :root {
@@ -232,17 +236,17 @@ img {
 //     margin: 0 auto;
 // }
 
-// .layout {
-//     width: 100%;
-//     // overflow-x: hidden;
-//     display: flex;
-//     flex-direction: column;
+.layout {
+    width: 100%;
+    // overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 
-//     @media(max-width: 768px) {
-//         gap: 14px;
-//     }
+    @media(max-width: 768px) {
+        gap: 14px;
+    }
 
-// }
+}
 
 // /* NotFound page renders Header (fixed) + main + Footer inside its own wrapper
 //    so apply the same layout helper for that page as well. */
