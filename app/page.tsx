@@ -503,7 +503,7 @@ function Home() {
                 </div>
                 <Advertisement image="/assets/adv.webp" />
                 <div className="card-container">
-                  <CardTitle title={translateSlug(slug2) + " đọc nhiều nhất"} deco={true} />
+                  <CardTitle title={"Đọc nhiều nhất"} deco={true} />
                   <div className="card--header__content">
                     {filteredData2?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
