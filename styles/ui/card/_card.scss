@@ -41,7 +41,6 @@
         }
     }
 
-
     .body {
         display: flex;
         padding: 14px;
@@ -50,6 +49,8 @@
         align-self: stretch;
         justify-content: space-between;
         flex: 1 0 0;
+
+        border-bottom: 1px solid #f0f0ee;
 
         .title {
             color: #121212;
@@ -137,7 +138,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // border: 1px solid #F0F0EE;
+    border: 1px solid #F0F0EE;
     padding: 10px 14px;
 
     @media (max-width: 768px) {
@@ -281,6 +282,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: var(--line-height-15, 15px);
+            white-space: nowrap;
             /* 150% */
             /* 136.364% */
         }
@@ -496,6 +498,7 @@
     padding: 0 14px;
     background-color: white;
     width: 100%;
+    border-bottom: 1px solid #f0f0ee;
 
     &__info {
         display: flex;
@@ -566,8 +569,7 @@
         background: white;
         display: flex;
         gap: 10px;
-        border-top: 1px solid #F0F0EE;
-        // border-bottom: 1px solid #F0F0EE;
+        //border-top: 1px solid #F0F0EE;
         align-self: stretch;
 
         &.padding {
@@ -723,4 +725,187 @@
         }
     }
 
+}
+
+.card--category {
+    padding: 0 14px;
+    background-color: white;
+    width: 100%;
+
+
+    &__info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 7px;
+
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            background: lightgray;
+            aspect-ratio: 1/1;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            justify-content: center;
+            gap: 3px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            width: 100%;
+        }
+
+        .card--category__name {
+            color: #666;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: var(--line-height-15, 15px);
+            /* 125% */
+        }
+
+        .official {
+            display: flex;
+            width: 12px;
+            height: 12px;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+
+        }
+
+        .card--category__time {
+            margin-top: 2px;
+            color: #52524F;
+            font-family: var(--font-family-Font-1, "Inter Display");
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--line-height-15, 15px);
+            /* 136.364% */
+        }
+    }
+
+    &__container {
+        padding: 14px 0;
+        background: white;
+        display: flex;
+        gap: 10px;
+        border-top: 1px solid #F0F0EE;
+        border-bottom: 1px solid #F0F0EE;
+        align-self: stretch;
+
+        &.padding {
+            padding: 10px 0;
+        }
+
+
+        .image {
+            width: 240px;
+            height: 177px;
+            aspect-ratio: 80/59;
+            object-fit: cover;
+        }
+
+        .body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            justify-content: space-between;
+            gap: 8px;
+
+            .title {
+                color: #121212;
+                font-family: var(--font-family-Font-1, "Inter Display");
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 145%;
+                /* 26.1px */
+                letter-spacing: -0.18px;
+
+
+                .content {
+                    margin-top: 10px;
+                    color: var(--www-nytimes-com-fuscous-gray, var(--color-grey-32, #52524F));
+                    font-family: "Inter Display";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 145%;
+                    /* 23.2px */
+                }
+            }
+
+
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+
+            .category {
+                color: #B72424;
+                font-family: var(--font-family-Font-1, "Inter Display");
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: var(--line-height-15, 15px);
+                /* 107.143% */
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                width: auto;
+                justify-content: flex-end;
+
+                .item {
+                    width: max-content;
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                    cursor: pointer;
+
+                    .icon {
+
+                        display: flex;
+                        width: 14px !important;
+                        height: 14px;
+                        justify-content: center;
+                        align-items: center;
+                        aspect-ratio: 1/1;
+                    }
+
+                    .text {
+                        color: #52524F;
+                        font-family: var(--font-family-Font-1, "Inter Display");
+                        font-size: var(--line-height-12, 12px);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: var(--line-height-15, 15px);
+                        /* 125% */
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
 }

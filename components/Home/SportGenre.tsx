@@ -50,7 +50,7 @@ interface List {
 }
 
 
-const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
+const SportGenre: React.FC<{ sport: string, delayMs: number }> = ({ sport, delayMs }) => {
     const [data, setData] = useState<CategoryResponse>();
     const [filteredData, setFilteredData] = useState<CategoryResponse>();
     const [filteredData1, setFilteredData1] = useState<List[]>([]);
@@ -80,8 +80,13 @@ const SportGenre: React.FC<{ sport: string }> = ({ sport }) => {
         }
     }
     useEffect(() => {
-        getData();
-    }, []);
+        const timer = setTimeout(() => {
+            getData();
+        }, delayMs);
+
+        return () => clearTimeout(timer);
+    }, [sport]);
+
     const card1 =
     {
         avatar: "/assets/Rectangle 1.webp",

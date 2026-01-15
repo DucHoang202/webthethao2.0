@@ -47,14 +47,14 @@ const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, 
                         {category}
                     </div>
                     <div className="right">
-                        <div className="item">
+                        <div className="item" onClick={() => window.location.href = link || "#"}>
                             <img src="/assets/message.webp" alt="" className="icon" />
                             <div className="text" style={{ display: hideText ? 'none' : 'block' }}>
                                 Bình luận
                             </div>
                         </div>
 
-                        <div className="item">
+                        <div className="item" >
                             <img src="/assets/export.webp" alt="" className="icon" />
                             <div className="text" style={{ display: hideText ? 'none' : 'block' }}>
                                 Chia sẻ

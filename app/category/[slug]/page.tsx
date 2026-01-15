@@ -1,33 +1,33 @@
 'use client'
 import { use, useRef } from "react";
-import "../../styles/main.scss"
+import "../../../styles/main.scss"
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import Header from "../../pages/Header";
-import HeaderDesktop from "../../pages/HeaderDesktop";
-import Search from "../../components/Home/Search";
-import SmallInfoHorizontal from "../../components/Home/SmallInfo-horizontal"
-import BlogTitle from "./BlogTitle"
-import BlogSapo from "./BlogSapo"
-import BlogHeading from "./BlogHeading"
-import BlogContent from "./BlogContent"
-import BlogQuote from "./BlogQuote"
-import BlogButton from "./BlogButton";
-import CommentInput from "./CommentInput";
-import Comments from "./Comments";
-import Card from "../ui/card/NewsCard";
-import Nav from "../../components/Home/Nav";
-import Explore from "../Schedule/SwiperDetail";
-import CardTitle from "../ui/card/CardHeader";
-import SmallCard from "../ui/card/ArticleCard";
-import Advertisement from "../Home/Advertisement";
-import HotTopic from "../ui/card/HotTopicCard";
-import "../../styles/blocks/detail/_detail.scss";
-import { extractArticlePath, changeThumbSize } from "../../utils/extractArticlePath";
-import { formatDate } from "../../utils/extractArticlePath";
-import { translateSlug } from "../../utils/extractArticlePath";
-import { CategoryResponse } from "../../types/Types";
-import { delay } from "../../utils/extractArticlePath";
+import Header from "../../../pages/Header";
+import HeaderDesktop from "../../../pages/HeaderDesktop";
+import Search from "../../../components/Home/Search";
+import SmallInfoHorizontal from "../../../components/Home/SmallInfo-horizontal"
+import BlogTitle from "../../../components/Blog/BlogTitle"
+import BlogSapo from "../../../components/Blog/BlogSapo"
+import BlogHeading from "../../../components/Blog/BlogHeading"
+import BlogContent from "../../../components/Blog/BlogContent"
+import BlogQuote from "../../../components/Blog/BlogQuote"
+import BlogButton from "../../../components/Blog/BlogButton";
+import CommentInput from "../../../components/Blog/CommentInput";
+import Comments from "../../../components/Blog/Comments";
+import Card from "../../../components/ui/card/NewsCard";
+import Nav from "../../../components/Home/Nav";
+import Explore from "../../../components/Schedule/SwiperDetail";
+import CardTitle from "../../../components/ui/card/CardHeader";
+import SmallCard from "../../../components/ui/card/ArticleCard";
+import Advertisement from "../../../components/Home/Advertisement";
+import HotTopic from "../../../components/ui/card/HotTopicCard";
+import "../../../styles/blocks/detail/_detail.scss";
+import { extractArticlePath, changeThumbSize } from "../../../utils/extractArticlePath";
+import { formatDate } from "../../../utils/extractArticlePath";
+import { translateSlug } from "../../../utils/extractArticlePath";
+import { CategoryResponse } from "../../../types/Types";
+import CategoryCard from "../../../components/ui/card/CategoryCard";
 interface Data {
     author: string,
     body: string,
@@ -60,9 +60,7 @@ export interface HeadData {
         description: string;
     }
 }
-interface PageProps {
-    params: Promise<{ id: string, article: string }>;
-}
+
 interface List {
     id: number;
     title: string;
@@ -77,28 +75,20 @@ interface List {
     time_text: string;
     author: string;
 }
-const BlogPage = ({ params }: PageProps) => {
+
+interface PageProps {
+    params: Promise<{ slug: string }>
+}
+const CategoryPage = ({ params }: PageProps) => {
     const [list, setList] = useState<CategoryResponse>();
     const [data, setData] = useState<Data>();
-    const { id, article } = use(params);
+    const { slug } = use(params);
     const [param, setParam] = useState({ id: "", article: "" });
     const [mounted, setMounted] = useState(false);
 
-    const getData = async () => {
-        try {
-            const res = await fetch(
-                `https://webthethao.wepro.io.vn/api/article/${id}/${article}.htm`
-            );
-            const result = await res.json();
-            setData(result);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
     async function getIdenticalArticle() {
         try {
-            const res = await fetch("https://webthethao.wepro.io.vn/api/category-article/load/" + id);
+            const res = await fetch("https://webthethao.wepro.io.vn/api/category-article/load/" + slug);
             const result = await res.json();
             const updatedItems = result.data.map((item: any, index: number) => {
                 if (index < result.data.length) {
@@ -136,45 +126,17 @@ const BlogPage = ({ params }: PageProps) => {
             "width=600,height=400"
         );
     };
-    const getList = async () => {
-        try {
-            const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
-            const result = await res.json();
-            const updatedItems = result.items.map((item: any, index: number) => {
-                if (index < result.items.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp",
-                        category: "Bóng đá",
-                        thumbnail: changeThumbSize(item.thumbnail, "409-273"),
-                    };
-                }
-                return item;
-            });
 
-            setList(updatedItems);
-
-        } catch (error) {
-            console.log(error);
-        }
-    }
     const [url, setUrl] = useState("");
-
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
     useEffect(() => {
         const fetchAllData = async () => {
             setMounted(true);
 
-            // Call APIs with delays
-            await getData();
-            await delay(300); // 300ms delay
+            // Call APIs with delay
 
-            // await getList();
-            // await delay(300);
-
-            await setSlug(slug);
+            await setSlug(slug0);
             await delay(300);
 
             await setSlug1(slug1);
@@ -250,7 +212,7 @@ const BlogPage = ({ params }: PageProps) => {
     const [opinionTitle, setOpinionTitle] = useState<string>("")
     // const [hotTopic, setHotTopic] = useState<List[]>([]);
     const [comment, setComment] = useState<CategoryResponse>();
-    const slug = "sea-games"
+    const slug0 = "sea-games"
     const slug1 = "nhan-dinh-bong-da"
     const slug2 = "pickle-ball" //Đọc nhiều
     const slug3 = "bong-da-viet-nam"
@@ -301,6 +263,8 @@ const BlogPage = ({ params }: PageProps) => {
                 return item;
             });
             result.data = updatedItems;
+            console.log(result);
+
             setFilteredData1(result);
         }
         catch {
@@ -418,7 +382,7 @@ const BlogPage = ({ params }: PageProps) => {
                                         <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={data?.created_at} official={true} />
 
                                         <div className="blog__cat">
-                                            {translateSlug(id)}
+                                            {translateSlug(slug)}
                                         </div>
                                     </div>
 
@@ -456,7 +420,7 @@ const BlogPage = ({ params }: PageProps) => {
                                 image={item.thumbnail ?? ""}
                                 title={item.title ?? ""}
                                 content={item.description ?? ""}
-                                category={translateSlug(id)}
+                                category={translateSlug(slug)}
                                 official
                                 hideText={true}
                                 link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
@@ -474,7 +438,7 @@ const BlogPage = ({ params }: PageProps) => {
                                 image={item.thumbnail ?? ""}
                                 title={item.title ?? ""}
                                 content={item.description ?? ""}
-                                category={translateSlug(id)}
+                                category={translateSlug(slug)}
                                 official
                                 hideText={true}
                                 link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
@@ -486,123 +450,39 @@ const BlogPage = ({ params }: PageProps) => {
             </main>) :
                 (
                     // 409.67 * 273.11
-                    <div className="detail-section">
-                        <div className="detail--desktop white ">
-                            <div className="detail-layout">
+                    <div className="category-section">
+                        <div className="detail--desktop  ">
+                            <div className="category-layout">
 
-                                <div className="link--detail">
-                                    <a className="link" onClick={ShareFb}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                            <path d="M12 2.49219C10.625 2.49219 9.32812 2.75781 8.10938 3.28906C6.89062 3.80469 5.82812 4.51562 4.92188 5.42188C4.01562 6.32812 3.30469 7.39062 2.78906 8.60938C2.25781 9.82812 1.99219 11.125 1.99219 12.5C1.99219 13.75 2.21094 14.9297 2.64844 16.0391C3.08594 17.1641 3.67969 18.1641 4.42969 19.0391C5.17969 19.9141 6.07031 20.6406 7.10156 21.2188C8.13281 21.7969 9.24219 22.1797 10.4297 22.3672V15.3828H7.89844V12.5H10.4297V10.2969C10.4297 9.04688 10.7734 8.08594 11.4609 7.41406C12.1484 6.74219 13.0703 6.40625 14.2266 6.40625C14.7734 6.40625 15.2812 6.4375 15.75 6.5C16.2188 6.5625 16.4531 6.59375 16.4531 6.59375V9.05469H15.1875C14.5625 9.05469 14.1367 9.21875 13.9102 9.54688C13.6836 9.875 13.5703 10.2344 13.5703 10.625V12.5H16.3359L15.8906 15.3828H13.5703V22.3672C14.7578 22.1797 15.8672 21.7969 16.8984 21.2188C17.9297 20.6406 18.8242 19.9141 19.582 19.0391C20.3398 18.1641 20.9297 17.1641 21.3516 16.0391C21.7891 14.9297 22.0078 13.75 22.0078 12.5C22.0078 11.125 21.7422 9.82812 21.2109 8.60938C20.6953 7.39062 19.9844 6.32812 19.0781 5.42188C18.1719 4.51562 17.1094 3.80469 15.8906 3.28906C14.6719 2.75781 13.375 2.49219 12 2.49219Z" fill="black" />
+                                <div className="home--desktop__radius">
+                                    <div className="home--desktop__share">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="32" height="32" rx="16" fill="#F3F2F2" />
+                                            <path d="M16.0003 16C17.8413 16 19.3337 14.5076 19.3337 12.6667C19.3337 10.8257 17.8413 9.33334 16.0003 9.33334C14.1594 9.33334 12.667 10.8257 12.667 12.6667C12.667 14.5076 14.1594 16 16.0003 16Z" fill="white" />
+                                            <path d="M16.0004 17.6667C12.6604 17.6667 9.94043 19.9067 9.94043 22.6667C9.94043 22.8533 10.0871 23 10.2738 23H21.7271C21.9138 23 22.0604 22.8533 22.0604 22.6667C22.0604 19.9067 19.3404 17.6667 16.0004 17.6667Z" fill="white" />
                                         </svg>
-                                    </a>
-                                    <a className="link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                            <path d="M8.60156 4.50781H3L9.60938 13.3203L3.35156 20.4922H5.48438L10.5938 14.6094L15 20.4922H20.6016L13.7109 11.3281L19.6406 4.50781H17.5312L12.7266 10.0156L8.60156 4.50781ZM15.7969 18.8984L6.21094 6.10156H7.80469L17.3906 18.8984H15.7969Z" fill="black" />
+
+                                        <input className="text" placeholder="Chia sẻ chủ đề mới với chúng tôi..." />
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="32" height="32" rx="16" fill="#F3F2F2" />
+                                            <path d="M11.6933 21.0133C11.2867 21.0133 10.9067 20.8733 10.6333 20.6133C10.2867 20.2867 10.12 19.7933 10.18 19.26L10.4267 17.1C10.4733 16.6933 10.72 16.1533 11.0067 15.86L16.48 10.0667C17.8467 8.61999 19.2733 8.57999 20.72 9.94666C22.1667 11.3133 22.2067 12.74 20.84 14.1867L15.3667 19.98C15.0867 20.28 14.5667 20.56 14.16 20.6267L12.0133 20.9933C11.9 21 11.8 21.0133 11.6933 21.0133ZM18.62 9.93999C18.1067 9.93999 17.66 10.26 17.2067 10.74L11.7333 16.54C11.6 16.68 11.4467 17.0133 11.42 17.2067L11.1733 19.3667C11.1467 19.5867 11.2 19.7667 11.32 19.88C11.44 19.9933 11.62 20.0333 11.84 20L13.9867 19.6333C14.18 19.6 14.5 19.4267 14.6333 19.2867L20.1067 13.4933C20.9333 12.6133 21.2333 11.8 20.0267 10.6667C19.4933 10.1533 19.0333 9.93999 18.62 9.93999Z" fill="#52524F" />
+                                            <path d="M19.56 15.3C19.5466 15.3 19.5266 15.3 19.5133 15.3C17.4333 15.0933 15.76 13.5133 15.44 11.4467C15.4 11.1733 15.5866 10.92 15.86 10.8733C16.1333 10.8333 16.3866 11.02 16.4333 11.2933C16.6866 12.9067 17.9933 14.1467 19.62 14.3067C19.8933 14.3333 20.0933 14.58 20.0666 14.8533C20.0333 15.1067 19.8133 15.3 19.56 15.3Z" fill="#52524F" />
+                                            <path d="M22 23.1667H10C9.72667 23.1667 9.5 22.94 9.5 22.6667C9.5 22.3933 9.72667 22.1667 10 22.1667H22C22.2733 22.1667 22.5 22.3933 22.5 22.6667C22.5 22.94 22.2733 23.1667 22 23.1667Z" fill="#52524F" />
                                         </svg>
-                                    </a>
-                                    <a className="link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                            <path d="M12 22.5078C10.625 22.5078 9.32812 22.2422 8.10938 21.7109C6.89062 21.1953 5.82812 20.4844 4.92188 19.5781C4.01562 18.6719 3.30469 17.6094 2.78906 16.3906C2.25781 15.1719 1.99219 13.875 1.99219 12.5C1.99219 11.125 2.25781 9.82812 2.78906 8.60938C3.30469 7.39062 4.01562 6.32812 4.92188 5.42188C5.82812 4.51562 6.89062 3.80469 8.10938 3.28906C9.32812 2.75781 10.625 2.49219 12 2.49219C13.375 2.49219 14.6719 2.75781 15.8906 3.28906C17.1094 3.80469 18.1719 4.51562 19.0781 5.42188C19.9844 6.32812 20.6953 7.39062 21.2109 8.60938C21.7422 9.82812 22.0078 11.125 22.0078 12.5C22.0078 13.875 21.7422 15.1719 21.2109 16.3906C20.6953 17.6094 19.9844 18.6719 19.0781 19.5781C18.1719 20.4844 17.1094 21.1953 15.8906 21.7109C14.6719 22.2422 13.375 22.5078 12 22.5078ZM8.88281 13.6719H8.90625C9.1875 14.625 9.40234 15.3398 9.55078 15.8164C9.69922 16.293 9.77344 16.5312 9.77344 16.5312C9.83594 16.6875 9.90234 16.7852 9.97266 16.8242C10.043 16.8633 10.125 16.8828 10.2188 16.8828C10.3125 16.8672 10.3906 16.8359 10.4531 16.7891C10.5156 16.7422 10.5781 16.6875 10.6406 16.625C10.6406 16.625 10.7383 16.5312 10.9336 16.3438C11.1289 16.1562 11.4297 15.8672 11.8359 15.4766L14.3672 17.375C14.6016 17.5 14.8008 17.5273 14.9648 17.457C15.1289 17.3867 15.2344 17.2109 15.2812 16.9297L16.9453 9.125C17.0391 8.75 17.0156 8.49609 16.875 8.36328C16.7344 8.23047 16.5234 8.21875 16.2422 8.32812L6.51562 12.0781C6.1875 12.2188 6.01562 12.3672 6 12.5234C5.98438 12.6797 6.11719 12.8047 6.39844 12.8984L8.88281 13.6719Z" fill="black" />
-                                        </svg>
-                                    </a>
-                                    <button className="link" onClick={copyUrl}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                            <path d="M13.0547 8.60938L14.4844 10.0156C15.1562 10.7031 15.6641 11.4766 16.0078 12.3359C16.3516 13.1953 16.5234 14.0742 16.5234 14.9727C16.5234 15.8711 16.3516 16.75 16.0078 17.6094C15.6641 18.4688 15.1562 19.2422 14.4844 19.9297L14.1328 20.2812C13.4453 20.9688 12.6719 21.4766 11.8125 21.8047C10.9531 22.1484 10.0742 22.3203 9.17578 22.3203C8.27734 22.3203 7.39844 22.1484 6.53906 21.8047C5.67969 21.4766 4.90625 20.9688 4.21875 20.2812C3.53125 19.5938 3.02344 18.8203 2.69531 17.9609C2.35156 17.1016 2.17969 16.2227 2.17969 15.3242C2.17969 14.4258 2.35156 13.5469 2.69531 12.6875C3.02344 11.8281 3.53125 11.0547 4.21875 10.3672L5.625 11.7969C5.14062 12.2812 4.78125 12.8281 4.54688 13.4375C4.29688 14.0625 4.17188 14.6953 4.17188 15.3359C4.17188 15.9766 4.29688 16.6016 4.54688 17.2109C4.78125 17.8203 5.14062 18.375 5.625 18.875C6.125 19.3594 6.67969 19.7188 7.28906 19.9531C7.89844 20.2031 8.52344 20.3281 9.16406 20.3281C9.80469 20.3281 10.4375 20.2031 11.0625 19.9531C11.6719 19.7188 12.2188 19.3594 12.7031 18.875L13.0547 18.5C13.5391 18.0156 13.9062 17.4688 14.1562 16.8594C14.4062 16.25 14.5312 15.625 14.5312 14.9844C14.5312 14.3438 14.4062 13.7109 14.1562 13.0859C13.9062 12.4766 13.5391 11.9297 13.0547 11.4453L11.6484 10.0156L13.0547 8.60938ZM19.7812 14.6328L18.375 13.2031C18.8594 12.7188 19.2188 12.1719 19.4531 11.5625C19.7031 10.9375 19.8281 10.3047 19.8281 9.66406C19.8281 9.02344 19.7031 8.39844 19.4531 7.78906C19.2188 7.17969 18.8594 6.625 18.375 6.125C17.875 5.64062 17.3203 5.28125 16.7109 5.04688C16.1016 4.79688 15.4766 4.67188 14.8359 4.67188C14.1953 4.67188 13.5625 4.79688 12.9375 5.04688C12.3281 5.28125 11.7812 5.64062 11.2969 6.125L10.9453 6.5C10.4453 6.98438 10.0781 7.53125 9.84375 8.14062C9.59375 8.75 9.46875 9.375 9.46875 10.0156C9.46875 10.6562 9.59375 11.2891 9.84375 11.9141C10.0781 12.5234 10.4453 13.0703 10.9453 13.5547L12.3516 14.9844L10.9453 16.3906L9.51562 14.9844C8.84375 14.2969 8.33594 13.5234 7.99219 12.6641C7.64844 11.8047 7.47656 10.9258 7.47656 10.0273C7.47656 9.12891 7.64844 8.25 7.99219 7.39062C8.33594 6.53125 8.84375 5.75781 9.51562 5.07031L9.86719 4.71875C10.5547 4.03125 11.3281 3.52344 12.1875 3.19531C13.0469 2.85156 13.9258 2.67969 14.8242 2.67969C15.7227 2.67969 16.6016 2.85156 17.4609 3.19531C18.3203 3.52344 19.0938 4.03125 19.7812 4.71875C20.4688 5.40625 20.9766 6.17969 21.3047 7.03906C21.6484 7.89844 21.8203 8.77734 21.8203 9.67578C21.8203 10.5742 21.6484 11.4531 21.3047 12.3125C20.9766 13.1719 20.4688 13.9453 19.7812 14.6328Z" fill="black" />
-                                        </svg>
-                                    </button>
-                                    <a className="link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
+
+                                    </div>
+                                </div>
+                                <div className="card-container">
+                                    <CardTitle title={translateSlug(slug)} deco={true} />
+                                    <div className="card--header__content">
+                                        {list?.data?.map((item, index) => (
+                                            <CategoryCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${list?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
+                                        ))}
+
+                                    </div>
                                 </div>
 
 
-                                <div className="blog detail">
-
-                                    <div className="blog__container">
-
-                                        <div className="blog__user">
-
-                                        </div>
-                                    </div>
-                                    <div className="blog__title">
-                                        <BlogTitle title={data?.title ?? ""} />
-                                        <div className="blog__user--inner boder">
-                                            <SmallInfoHorizontal avatar={data?.avatar ?? ""} name={data?.author ?? ""} time={formatDate(data?.updated_at)} official={true} />
-                                            <div className="blog__cat">
-                                                {translateSlug(id)}
-                                            </div>
-                                        </div>
-                                        <div className="blog__sapo">
-                                            {data?.head?.seo?.description}
-                                        </div>
-                                        <div className="blog__thumbnail">
-                                            <img src={changeThumbSize(data?.head?.og?.image, "749-421")} alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="blog__body" dangerouslySetInnerHTML={{ __html: data?.body ?? "" }}></div>
-
-                                    <div className="blog__btn-container">
-                                        <BlogButton number={2} text="Bình luận" />
-                                        <BlogButton number={10} text="Chia sẻ" />
-                                    </div>
-                                    <div className="blog__comment" >
-                                        <CommentInput />
-                                        <Comments avatar={data?.avatar ?? ""} name={data?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={formatDate(data?.updated_at)} />
-                                    </div>
-                                    <div className="adv">
-                                        <div className="w-full">
-                                            <div className="adv__text padding-12">Advertisement</div>
-                                            <img src="/assets/Advertisement.webp" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="empty-container">
-                                        <CardTitle title="Cùng chủ đề" className="smaller" deco={true} />
-                                        <div className="detail__card" ref={relatedRef}>
-                                            {list?.data?.slice(0, 3).map((item, index) => (
-                                                <Card
-                                                    key={index}
-                                                    className="smaller"
-                                                    avatar="/assets/Image (3).webp"
-                                                    name={item.author ?? ""}
-                                                    time={formatDate(item.updated_at)}
-                                                    image={item.thumbnail ?? ""}
-                                                    title={item.title ?? ""}
-                                                    content={item.description ?? ""}
-                                                    category={translateSlug(id)}
-                                                    official
-                                                    hideText={true}
-                                                    link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
-                                                />
-                                            ))}
-
-                                        </div>
-                                    </div>
-                                    <div className="empty-container">
-                                        <CardTitle title="Bài viết nổi bật" className="smaller" deco={true} />
-                                        <div className="detail__card" ref={featuredRef}>
-                                            {list?.data?.slice(4, 7).map((item, index) => (
-                                                <Card
-                                                    key={index}
-                                                    className="smaller"
-                                                    avatar="/assets/Image (3).webp"
-                                                    name={item.author ?? ""}
-                                                    time={formatDate(item.updated_at)}
-                                                    image={item.thumbnail ?? ""}
-                                                    title={item.title ?? ""}
-                                                    content={item.description ?? ""}
-                                                    category={translateSlug(id)}
-                                                    official
-                                                    hideText={true}
-                                                    link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
-                                                />
-                                            ))}
-
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -617,9 +497,7 @@ const BlogPage = ({ params }: PageProps) => {
                                         {filteredData?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
-                                        <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData?.slug}`)}>
-                                            Xem thêm
-                                        </div>
+                                        <div className="view-more--btn" onClick={() => window.location.href = `/category/${filteredData?.slug}`}>Xem thêm</div>
                                     </div>
                                 </div>
                                 {/* Chủ đề nóng */}
@@ -631,9 +509,7 @@ const BlogPage = ({ params }: PageProps) => {
                                         {filteredData1?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
-                                        <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData1?.slug}`)}>
-                                            Xem thêm
-                                        </div>
+                                        <div className="view-more--btn" onClick={() => window.location.href = `/category/${filteredData1?.slug}`}>Xem thêm</div>
                                     </div>
                                 </div>
                                 <Advertisement image="/assets/adv.webp" />
@@ -646,9 +522,7 @@ const BlogPage = ({ params }: PageProps) => {
                                         {filteredData2?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
-                                        <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData2?.slug}`)}>
-                                            Xem thêm
-                                        </div>
+                                        <div className="view-more--btn" onClick={() => window.location.href = `/category/${filteredData2?.slug}`}>Xem thêm</div>
                                     </div>
                                 </div>
                                 <div className="empty-container">
@@ -694,4 +568,4 @@ const BlogPage = ({ params }: PageProps) => {
 
     )
 }
-export default BlogPage
+export default CategoryPage

@@ -1,5 +1,5 @@
 'use client'
-import { translateSlug } from "../utils/extractArticlePath";
+import { delay, translateSlug } from "../utils/extractArticlePath";
 import useMediaQuery from "react-responsive";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -73,7 +73,6 @@ function Home() {
   const slug7 = "bong-da-quoc-te"
   const slug8 = "bong-ro"
   const allCategory = categoryArticle.map((item) => item.slug)
-  console.log("allCat", allCategory)
   const titleImage = "assets/logo-sea-game 1.webp"
   //Get individual data
   const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
@@ -294,8 +293,8 @@ function Home() {
             ))}
             <Video />
             <HotTopic isTitled={false} hotTopic={filteredData2} />
-            {allCategory.map((item) => {
-              return <SportGenre sport={item} />
+            {allCategory.map((item, index) => {
+              return <SportGenre sport={item} delayMs={index * 400} />
             })}
             <div className="advertisement-section" style={{ width: "100%" }}>
               <Advertisement image="" />
@@ -334,8 +333,8 @@ function Home() {
                 </div>
                 <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
 
-                {allCategory.map((item) => {
-                  return <SportGenre sport={item} />
+                {allCategory.map((item, index) => {
+                  return <SportGenre sport={item} delayMs={index * 400} />
                 })}
               </div>
 
@@ -343,38 +342,44 @@ function Home() {
               <div className="home--desktop__right">
                 {/* Bài sea game */}
                 <div className="card-container">
-                  <CardTitle logo={titleImage} title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
+                  <a href={`/category/${filteredData?.slug}`}>
+                    <CardTitle logo={titleImage} title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
+                  </a>
                   <div className="card--header__content">
                     {filteredData?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.updated_at} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" >
-                      <a href="#">Xem thêm</a>
+                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData?.slug}`)} >
+                      Xem thêm
                     </div>
                   </div>
                 </div>
                 {/* Chủ đề nóng */}
                 <div className="card-container">
-                  <CardTitle title={translateSlug(slug1)} deco={true} />
+                  <a href={`/category/${filteredData1?.slug}`}>
+                    <CardTitle title={translateSlug(slug1)} deco={true} />
+                  </a>
                   <div className="card--header__content">
                     {filteredData1?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" >
-                      <a href="#">Xem thêm</a>
+                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData1?.slug}`)}>
+                      Xem thêm
                     </div>
                   </div>
                 </div>
                 <Advertisement image="/assets/adv.webp" />
                 {/* Nhận định */}
                 <div className="card-container">
-                  <CardTitle title={"Đọc nhiều nhất"} deco={true} />
+                  <a href={`/category/${filteredData2?.slug}`}>
+                    <CardTitle title={"Đọc nhiều nhất"} deco={true} />
+                  </a>
                   <div className="card--header__content">
                     {filteredData2?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn">
-                      <a href="#">Xem thêm</a>
+                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData2?.slug}`)}>
+                      Xem thêm
                     </div>
                   </div>
                 </div>
@@ -474,42 +479,48 @@ function Home() {
                   </div>
                 </div>
                 <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
-                {allCategory.map((item) => {
-                  return <SportGenre sport={item} />
+                {allCategory.map((item, index) => {
+                  return <SportGenre sport={item} delayMs={index * 400} />
                 })}
               </div>
               <div className="home--desktop__right">
                 <div className="card-container">
-                  <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
+                  <a href={`/category/${filteredData?.slug}`}>
+                    <CardTitle logo="assets/logo-sea-game 1.webp" title="" deco={false} style={{ background: "#0056FF", color: "#fff", paddingLeft: "-14px" }} />
+                  </a>
                   <div className="card--header__content">
                     {filteredData?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" >
-                      <a href="#">Xem thêm</a>
+                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData?.slug}`)}>
+                      Xem thêm
                     </div>
                   </div>
                 </div>
                 <div className="card-container">
-                  <CardTitle title={translateSlug(slug1)} deco={true} />
+                  <a href={`/category/${filteredData1?.slug}`}>
+                    <CardTitle title={translateSlug(slug1)} deco={true} />
+                  </a>
                   <div className="card--header__content">
                     {filteredData1?.data?.slice(0, 3).map((item, index) => (
-                      <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/`} style={{ padding: '10px 0', borderTop: 'none' }} />
+                      <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" >
-                      <a href="#">Xem thêm</a>
+                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData1?.slug}`)}>
+                      Xem thêm
                     </div>
                   </div>
                 </div>
                 <Advertisement image="/assets/adv.webp" />
                 <div className="card-container">
-                  <CardTitle title={"Đọc nhiều nhất"} deco={true} />
+                  <a href={`/category/${filteredData2?.slug}`}>
+                    <CardTitle title={"Đọc nhiều nhất"} deco={true} />
+                  </a>
                   <div className="card--header__content">
                     {filteredData2?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn">
-                      <a href="#">Xem thêm</a>
+                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData2?.slug}`)}>
+                      Xem thêm
                     </div>
                   </div>
                 </div>

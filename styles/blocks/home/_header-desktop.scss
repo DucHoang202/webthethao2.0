@@ -16,6 +16,12 @@
         aspect-ratio: 153.00/40.52;
     }
 
+    &__openModal {
+        width: 100px;
+        display: flex;
+        justify-content: flex-start !important;
+    }
+
     &__menu {
         display: flex;
         flex-direction: row;

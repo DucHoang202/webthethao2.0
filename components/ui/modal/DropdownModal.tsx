@@ -128,7 +128,7 @@ const DropdownModal = ({ open, onClose }: any) => {
                                             <a
                                                 className="modal--dropdown__content__item__sub__item"
                                                 key={subIdx}
-                                                href={sub.href}
+                                                href={`/category/${sub.href}`}
                                             >
                                                 {sub.name}
                                             </a>

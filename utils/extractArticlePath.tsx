@@ -103,3 +103,6 @@ export function formatDate(isoTime?: string | Date): string {
     // 📆 Trên 7 ngày
     return `${day}/${month}`;
 }
+export function delay(ms: number) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
