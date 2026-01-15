@@ -1,0 +1,15 @@
+.category-section {
+    margin-top: 100px;
+    background: #F3F2F2;
+}
+
+.category-layout {
+    gap: 14px;
+    width: calc(100% - 380px);
+    max-width: 564px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+}
