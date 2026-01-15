@@ -50,7 +50,7 @@ interface List {
 }
 
 
-const SportGenre: React.FC<{ sport: string, delayMs: number }> = ({ sport, delayMs }) => {
+const SportGenre: React.FC<{ sport: string, delayMs?: number }> = ({ sport, delayMs }) => {
     const [data, setData] = useState<CategoryResponse>();
     const [filteredData, setFilteredData] = useState<CategoryResponse>();
     const [filteredData1, setFilteredData1] = useState<List[]>([]);
