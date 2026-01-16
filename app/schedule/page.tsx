@@ -1,3 +1,4 @@
+'use client'
 import Header from "../../pages/Header";
 import Nav from "../../components/Home/Nav";
 import Search from "../../components/Home/Search";

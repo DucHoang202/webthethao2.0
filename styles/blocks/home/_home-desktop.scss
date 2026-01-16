@@ -1,12 +1,13 @@
 .home--desktop {
     display: flex;
     padding: 23px 14px;
-    max-width: 1440px;
+
     width: 100%;
     justify-content: space-between;
     background: #F3F2F2;
     margin-left: auto;
     margin-right: auto;
+    background: #FFF;
 
     &.white {
         background-color: white;
