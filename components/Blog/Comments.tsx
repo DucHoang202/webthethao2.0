@@ -11,6 +11,8 @@ const Comments = ({ avatar, name, content, time }: { avatar: string, name: strin
                 onError={(e) => {
                     e.currentTarget.src = "/assets/fallback.webp";
                 }}
+                width={24}
+                height={24}
             />
             <div className="right">
                 <div className="comment-container">

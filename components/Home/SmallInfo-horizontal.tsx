@@ -1,7 +1,16 @@
+import Image from "next/image"
 const SmallInfo = ({ avatar, name, official, time }: any) => {
     return (
         <div className="info-horizontal">
-            <img src={avatar} alt="" className="avatar" />
+            <Image className="avatar"
+                src={avatar}
+                alt="thumb"
+                onError={(e) => {
+                    e.currentTarget.src = "/assets/fallback.webp";
+                }}
+                width={24}
+                height={24}
+            />
             <div className="col">
                 <div className="row">
                     <div className="name">

@@ -440,7 +440,7 @@ const BlogPage = ({ params }: PageProps) => {
                             </div>
                             <div className="blog__comment">
                                 <CommentInput />
-                                <Comments avatar="/assets/Image (3).webp" name="Huong Nguyen" content="Anna hướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time="10 phút trước" />
+                                <Comments avatar="/assets/Rectangle 1.webp" name="Huong Nguyen" content="Anna hướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time="10 phút trước" />
                             </div>
 
                         </div>
@@ -530,7 +530,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <div className="blog__title">
                                         <BlogTitle title={data?.title ?? ""} />
                                         <div className="blog__user--inner boder">
-                                            <SmallInfoHorizontal avatar={data?.avatar ?? ""} name={data?.author ?? ""} time={formatDate(data?.updated_at)} official={true} />
+                                            <SmallInfoHorizontal avatar={"/assets/Rectangle 1.webp"} name={data?.author ?? ""} time={formatDate(data?.updated_at)} official={true} />
                                             <div className="blog__cat">
                                                 {translateSlug(id)}
                                             </div>
@@ -550,7 +550,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                     <div className="blog__comment" >
                                         <CommentInput />
-                                        <Comments avatar={data?.avatar ?? ""} name={data?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={formatDate(data?.updated_at)} />
+                                        <Comments avatar={"/assets/Rectaangle 1.webp"} name={data?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={formatDate(data?.updated_at)} />
                                     </div>
                                     <div className="adv">
                                         <div className="w-full">

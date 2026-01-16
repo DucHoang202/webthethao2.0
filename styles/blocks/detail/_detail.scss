@@ -3,16 +3,15 @@
 }
 
 .detail--desktop {
-    background: white;
-    //justify-content: space-between;
     width: 100%;
-    max-width: 1440px;
-
+    background: #F3F2F2;
     padding: 23px 14px;
     display: flex;
-    // align-items: center;
     justify-content: center;
 
+    &.white {
+        background-color: white;
+    }
 }
 
 .detail-right {
