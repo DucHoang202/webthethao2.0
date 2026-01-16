@@ -4,15 +4,15 @@
 
     width: 100%;
     justify-content: space-between;
-    background: #fff;
+    background: #F3F2F2;
     margin-left: auto;
     margin-right: auto;
     background: #FFF;
 
-    @media (max-width: 1250px) {
-        // justify-content: center;
-        padding-left: 0;
+    &.white {
+        background-color: white;
     }
+
 
     &__left {
         display: flex;

@@ -13,6 +13,10 @@
 
     &.hide {
         transform: translateY(-100%);
+
+        @media (min-width: 768px) {
+            transform: translateY(0);
+        }
     }
 }
 

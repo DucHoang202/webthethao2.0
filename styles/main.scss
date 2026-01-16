@@ -8,7 +8,7 @@
 @use "./blocks/home/nav";
 @use "./blocks/blog/blog";
 @use "./blocks/home/small-info";
-@use "./blocks/home/sport-group";
+@use "./blocks/home/sport-genre";
 @use "./blocks/schedule/schedule-page";
 @use "./blocks/schedule/league";
 @use "./blocks/prediction/prediction";
@@ -213,12 +213,16 @@ img {
 
 .App main {
     padding-top: calc(65px + 36px);
-    width: var(--app-width);
+    width: 100%;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     // gap: 10px;
     background: #F3F3F3;
+
+    @media(max-width: 768px) {
+        padding-top: calc(65px + 31px);
+    }
 }
 
 :root {
@@ -683,17 +687,17 @@ body {
 //     margin: 0 auto;
 // }
 
-// .layout {
-//     width: 100%;
-//     // overflow-x: hidden;
-//     display: flex;
-//     flex-direction: column;
+.layout {
+    width: 100%;
+    // overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 
-//     @media(max-width: 768px) {
-//         gap: 14px;
-//     }
+    @media(max-width: 768px) {
+        gap: 14px;
+    }
 
-// }
+}
 
 // /* NotFound page renders Header (fixed) + main + Footer inside its own wrapper
 //    so apply the same layout helper for that page as well. */

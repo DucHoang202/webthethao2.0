@@ -41,7 +41,6 @@
         }
     }
 
-
     .body {
         display: flex;
         padding: 14px;
@@ -50,6 +49,8 @@
         align-self: stretch;
         justify-content: space-between;
         flex: 1 0 0;
+
+        border-bottom: 1px solid #f0f0ee;
 
         .title {
             color: #121212;
@@ -140,6 +141,9 @@
     border: 1px solid #F0F0EE;
     padding: 10px 14px;
 
+    @media (max-width: 768px) {
+        border-radius: 0;
+    }
 
     &.smaller {
         display: flex;
@@ -278,6 +282,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: var(--line-height-15, 15px);
+            white-space: nowrap;
             /* 150% */
             /* 136.364% */
         }
@@ -493,6 +498,7 @@
     padding: 0 14px;
     background-color: white;
     width: 100%;
+    border-bottom: 1px solid #f0f0ee;
 
     &__info {
         display: flex;
@@ -563,8 +569,7 @@
         background: white;
         display: flex;
         gap: 10px;
-        border-top: 1px solid #F0F0EE;
-        // border-bottom: 1px solid #F0F0EE;
+        //border-top: 1px solid #F0F0EE;
         align-self: stretch;
 
         &.padding {
@@ -808,9 +813,9 @@
 
         .image {
             width: 240px;
-            object-fit: cover;
             height: 177px;
-            display: block;
+            aspect-ratio: 80/59;
+            object-fit: cover;
         }
 
         .body {
@@ -834,6 +839,7 @@
 
 
                 .content {
+                    margin-top: 10px;
                     color: var(--www-nytimes-com-fuscous-gray, var(--color-grey-32, #52524F));
                     font-family: "Inter Display";
                     font-size: 16px;
