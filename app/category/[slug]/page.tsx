@@ -497,7 +497,7 @@ const CategoryPage = ({ params }: PageProps) => {
                                         {filteredData?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
-                                        <div className="view-more--btn" onClick={() => window.location.href = `/category/${filteredData?.slug}`}>Xem thêm</div>
+                                        <a className="view-more--btn" href={`/category/${filteredData?.slug}`}>Xem thêm</a>
                                     </div>
                                 </div>
                                 {/* Chủ đề nóng */}
@@ -509,7 +509,7 @@ const CategoryPage = ({ params }: PageProps) => {
                                         {filteredData1?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
-                                        <div className="view-more--btn" onClick={() => window.location.href = `/category/${filteredData1?.slug}`}>Xem thêm</div>
+                                        <a className="view-more--btn" href={`/category/${filteredData1?.slug}`}>Xem thêm</a>
                                     </div>
                                 </div>
                                 <Advertisement image="/assets/adv.webp" />
@@ -522,7 +522,7 @@ const CategoryPage = ({ params }: PageProps) => {
                                         {filteredData2?.data?.slice(0, 3).map((item, index) => (
                                             <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                                         ))}
-                                        <div className="view-more--btn" onClick={() => window.location.href = `/category/${filteredData2?.slug}`}>Xem thêm</div>
+                                        <a className="view-more--btn" href={`/category/${filteredData2?.slug}`}>Xem thêm</a>
                                     </div>
                                 </div>
                                 <div className="empty-container">

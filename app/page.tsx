@@ -352,9 +352,9 @@ function Home() {
                     {filteredData?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={item.updated_at} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData?.slug}`)} >
+                    <a className="view-more--btn" href={`/category/${filteredData?.slug}`}>
                       Xem thêm
-                    </div>
+                    </a>
                   </div>
                 </div>
                 {/* Chủ đề nóng */}
@@ -366,9 +366,9 @@ function Home() {
                     {filteredData1?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData1?.slug}`)}>
+                    <a className="view-more--btn" href={`/category/${filteredData1?.slug}`}>
                       Xem thêm
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <Advertisement image="/assets/adv.webp" />
@@ -381,9 +381,9 @@ function Home() {
                     {filteredData2?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData2?.slug}`)}>
+                    <a className="view-more--btn" href={`/category/${filteredData2?.slug}`}>
                       Xem thêm
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div className="empty-container">
@@ -495,9 +495,9 @@ function Home() {
                     {filteredData?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData?.slug}`)}>
+                    <a className="view-more--btn" href={`/category/${filteredData?.slug}`}>
                       Xem thêm
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div className="card-container">
@@ -508,9 +508,9 @@ function Home() {
                     {filteredData1?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData1?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData1?.slug}`)}>
+                    <a className="view-more--btn" href={`/category/${filteredData1?.slug}`}>
                       Xem thêm
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <Advertisement image="/assets/adv.webp" />
@@ -522,9 +522,9 @@ function Home() {
                     {filteredData2?.data?.slice(0, 3).map((item, index) => (
                       <SmallCard key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData2?.slug}/${item.slug}-${item.id}`} style={{ padding: '10px 0', borderTop: 'none' }} />
                     ))}
-                    <div className="view-more--btn" onClick={(() => window.location.href = `/category/${filteredData2?.slug}`)}>
+                    <a className="view-more--btn" href={`/category/${filteredData2?.slug}`}>
                       Xem thêm
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
