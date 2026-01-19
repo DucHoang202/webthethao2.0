@@ -76,6 +76,28 @@ function Home() {
   const titleImage = "assets/logo-sea-game 1.webp"
   //Get individual data
   const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
+  // const getData = async (slug: string) => {
+  //   try {
+  //     const res = await fetch(`https://webthethao.wepro.io.vn/api/newfeed?page=1`);
+  //     const result = await res.json();
+  //     const updatedItems = result.data?.map((item: any, index: number) => {
+  //       if (index < result.data.length) {
+  //         return {
+  //           ...item,
+  //           author: "Phan Kiet",
+  //           official: true,
+  //           avatar: "/assets/Rectangle 1.webp"
+  //         };
+  //       }
+  //       return item;
+  //     });
+  //     result.data = updatedItems;
+  //     setFilteredData(result);
+  //   }
+  //   catch {
+  //     console.log("error");
+  //   }
+  // }
   const setSlug = async (slug: string) => {
     try {
       const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
@@ -223,7 +245,6 @@ function Home() {
     try {
       const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
       const result = await res.json();
-      console.log("home", result.items);
       const updatedItems22 = result.items.map((item: any, index: number) => {
         if (index < result.items.length) {
           return {
@@ -238,26 +259,8 @@ function Home() {
         }
         return item;
       });
-      const updatedItems = categoryArticle.map((item: any, index: number) => {
-        if (index < categoryArticle.length) {
-          return {
-            ...item,
-            author: "Phan Kiet",
-            official: true,
-            avatar: "/assets/Rectangle 1.webp",
-
-          };
-        }
-        return item;
-      });
-      // setFilteredData(updatedItems.slice(0, 3));
-
-      setData(updatedItems);
-      console.log("updatedItems", updatedItems);
-
-      // setHotTopic(updatedItems.slice(0, 3));
-
-
+      console.log("home", updatedItems22);
+      setData(updatedItems22);
     } catch (error) {
       console.log(error);
     }
@@ -272,7 +275,7 @@ function Home() {
     setSlug5(slug5)
 
     console.log("filteredData4", filteredData4)
-    // getData();
+    getData();
 
   }, []);
   const [active, setActive] = useState(0);
@@ -288,8 +291,8 @@ function Home() {
       {isMobile ? (
         <main>
           <div className="home--mobile">
-            {filteredData4?.data?.slice(0, 3).map((item, index) => (
-              <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData4?.slug}/${item.slug}-${item.id}`} />
+            {data.slice(0, 3).map((item, index) => (
+              <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
             ))}
             <Video />
             <HotTopic isTitled={false} hotTopic={filteredData2} />
@@ -318,9 +321,9 @@ function Home() {
                   <img src="/assets/image-16.webp" alt="" />
                 </div>
                 {/* 3 bài viết của 3 chủ đề khác nhau */}
-                {filteredData4?.data?.slice(0, 3).map((item, index) => (
+                {data.slice(0, 3).map((item, index) => (
                   <div className="home--desktop__radius">
-                    < Card key={index} avatar={item.avatar} name={item.author} time={item.updated_at} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData4?.slug}/${item.slug}-${item.id}`} />
+                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
                   </div>
                 ))}
                 <Video />
@@ -464,9 +467,9 @@ function Home() {
                 <div className="home--desktop__radius">
                   <img src="/assets/image-16.webp" alt="" />
                 </div>
-                {filteredData4?.data?.slice(0, 3).map((item, index) => (
+                {data.slice(0, 3).map((item, index) => (
                   <div className="home--desktop__radius" key={index}>
-                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.updated_at)} image={item.thumbnail} title={item.title} content={item.description} category={item.category?.name} official={item.official} link={`/blog/${filteredData4?.slug}/${item.slug}-${item.id}`} />
+                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
                   </div>
                 ))}
                 <Video />

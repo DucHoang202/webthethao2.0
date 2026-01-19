@@ -60,7 +60,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .zalo {
+                width: 20px;
+                height: 20px;
+                filter: grayscale(100%);
+            }
         }
+
     }
 }
 

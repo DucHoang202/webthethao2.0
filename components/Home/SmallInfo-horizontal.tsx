@@ -1,16 +1,9 @@
 import Image from "next/image"
+import Avatar from "../Blog/Avatar"
 const SmallInfo = ({ avatar, name, official, time }: any) => {
     return (
         <div className="info-horizontal">
-            <Image className="avatar"
-                src={avatar}
-                alt="thumb"
-                onError={(e) => {
-                    e.currentTarget.src = "/assets/fallback.webp";
-                }}
-                width={24}
-                height={24}
-            />
+            <Avatar avatar={avatar} />
             <div className="col">
                 <div className="row">
                     <div className="name">

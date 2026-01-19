@@ -72,7 +72,7 @@ export function formatDate(isoTime?: string | Date): string {
 
     // ⏱️ Dưới 1 phút
     if (diffSeconds < 60) {
-        return "vừa xong";
+        return "Vừa xong";
     }
 
     // ⏱️ Dưới 1 giờ

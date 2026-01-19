@@ -83,7 +83,7 @@ const BlogPage = ({ params }: PageProps) => {
     const { id, article } = use(params);
     const [param, setParam] = useState({ id: "", article: "" });
     const [mounted, setMounted] = useState(false);
-
+    const [isLiked, setIsLiked] = useState(false);
     const getData = async () => {
         try {
             const res = await fetch(
@@ -129,13 +129,33 @@ const BlogPage = ({ params }: PageProps) => {
         }
     };
 
-    function ShareFb() {
+    function ShareFb(url: string, quote?: string) {
+        const shareUrl = new URL("https://www.facebook.com/sharer/sharer.php");
+
+        shareUrl.searchParams.set("u", url);
+
+        if (quote) {
+            shareUrl.searchParams.set("quote", quote);
+        }
+
         window.open(
-            `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+            shareUrl.toString(),
             "_blank",
             "width=600,height=400"
         );
-    };
+    }
+    function shareZalo(url: string) {
+        const start = Date.now();
+        window.location.href = `zalo://share?url=${encodeURIComponent(url)}`;
+
+        setTimeout(() => {
+            if (Date.now() - start < 1500) {
+                window.open(`https://zalo.me/share?url=${encodeURIComponent(url)}`, "_blank");
+            }
+        }, 1000);
+    }
+
+
     const getList = async () => {
         try {
             const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
@@ -166,7 +186,7 @@ const BlogPage = ({ params }: PageProps) => {
     useEffect(() => {
         const fetchAllData = async () => {
             setMounted(true);
-
+            console.log(window.location.href)
             // Call APIs with delays
             await getData();
             await delay(300); // 300ms delay
@@ -415,7 +435,7 @@ const BlogPage = ({ params }: PageProps) => {
                                 <div className="blog__user">
 
                                     <div className="blog__user--inner">
-                                        <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={data?.created_at} official={true} />
+                                        <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={formatDate(data?.created_at)} official={true} />
 
                                         <div className="blog__cat">
                                             {translateSlug(id)}
@@ -491,10 +511,15 @@ const BlogPage = ({ params }: PageProps) => {
                             <div className="detail-layout">
 
                                 <div className="link--detail">
-                                    <a className="link" onClick={ShareFb}>
+                                    <a className="link" onClick={() => ShareFb(window.location.href, data?.head.seo.title)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                             <path d="M12 2.49219C10.625 2.49219 9.32812 2.75781 8.10938 3.28906C6.89062 3.80469 5.82812 4.51562 4.92188 5.42188C4.01562 6.32812 3.30469 7.39062 2.78906 8.60938C2.25781 9.82812 1.99219 11.125 1.99219 12.5C1.99219 13.75 2.21094 14.9297 2.64844 16.0391C3.08594 17.1641 3.67969 18.1641 4.42969 19.0391C5.17969 19.9141 6.07031 20.6406 7.10156 21.2188C8.13281 21.7969 9.24219 22.1797 10.4297 22.3672V15.3828H7.89844V12.5H10.4297V10.2969C10.4297 9.04688 10.7734 8.08594 11.4609 7.41406C12.1484 6.74219 13.0703 6.40625 14.2266 6.40625C14.7734 6.40625 15.2812 6.4375 15.75 6.5C16.2188 6.5625 16.4531 6.59375 16.4531 6.59375V9.05469H15.1875C14.5625 9.05469 14.1367 9.21875 13.9102 9.54688C13.6836 9.875 13.5703 10.2344 13.5703 10.625V12.5H16.3359L15.8906 15.3828H13.5703V22.3672C14.7578 22.1797 15.8672 21.7969 16.8984 21.2188C17.9297 20.6406 18.8242 19.9141 19.582 19.0391C20.3398 18.1641 20.9297 17.1641 21.3516 16.0391C21.7891 14.9297 22.0078 13.75 22.0078 12.5C22.0078 11.125 21.7422 9.82812 21.2109 8.60938C20.6953 7.39062 19.9844 6.32812 19.0781 5.42188C18.1719 4.51562 17.1094 3.80469 15.8906 3.28906C14.6719 2.75781 13.375 2.49219 12 2.49219Z" fill="black" />
                                         </svg>
+                                    </a>
+                                    <a className="link">
+                                        <div className="zalo">
+                                            <img src={"/assets/Zalo.webp"} alt="" onClick={() => shareZalo(window.location.href)} />
+                                        </div>
                                     </a>
                                     <a className="link">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -512,9 +537,14 @@ const BlogPage = ({ params }: PageProps) => {
                                         </svg>
                                     </button>
                                     <a className="link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                        {!isLiked ? (
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" onClick={() => setIsLiked(true)}>
+                                                <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>) : (
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red" onClick={() => setIsLiked(false)}>
+                                                <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.69001C2 5.60001 4.49 3.10001 7.56 3.10001C9.38 3.10001 10.99 3.98001 12 5.34001C13.01 3.98001 14.63 3.10001 16.44 3.10001C19.51 3.10001 22 5.60001 22 8.69001C22 15.69 15.52 19.82 12.62 20.81Z" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        )}
                                     </a>
                                 </div>
 
@@ -666,7 +696,6 @@ const BlogPage = ({ params }: PageProps) => {
 
                                     </div>
                                 </div>
-                                <Advertisement image="/assets/adv.webp" />
                                 <div className="card-container">
                                     <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
                                     <div className="card--header__content">
