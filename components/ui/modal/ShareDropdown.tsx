@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ShareTooltip from "./ShareTooltip";
-import "../../../styles/blocks/detail/_detail.scss"
+import "../../../styles/blocks/detail/_detail.scss";
+
 export default function ShareDropdown() {
     const dropdownRef = useRef<HTMLDivElement>(null);
     const [open, setOpen] = useState(true);
@@ -24,10 +25,23 @@ export default function ShareDropdown() {
     if (!open) return null;
 
     return (
-        <div className="share--dropdown" ref={dropdownRef}>
-            <div className="share--dropdown__container">
-                <ShareTooltip title="" flex={true} />
+        <>
+            {/* Overlay làm mờ */}
+            <div
+                className="share-overlay"
+                onClick={() => setOpen(false)}
+            />
+
+            {/* Dropdown / Modal */}
+            <div className="share--dropdown">
+                <div
+                    className="share--dropdown__container"
+                    ref={dropdownRef}
+                >
+                    Chia sẻ
+                    <ShareTooltip title="" flex={true} />
+                </div>
             </div>
-        </div>
+        </>
     );
 }
