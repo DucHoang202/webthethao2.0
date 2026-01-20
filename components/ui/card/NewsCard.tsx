@@ -54,12 +54,12 @@ const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, 
                             </div>
                         </div>
 
-                        <div className="item" >
+                        <a className="item" href={link || "#"}>
                             <img src="/assets/export.webp" alt="" className="icon" />
                             <div className="text" style={{ display: hideText ? 'none' : 'block' }}>
                                 Chia sẻ
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
