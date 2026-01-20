@@ -1,6 +1,13 @@
 import Image from "next/image"
 import Avatar from "../Blog/Avatar"
-const SmallInfo = ({ avatar, name, official, time }: any) => {
+interface SmallInfoProps {
+    avatar: any;
+    name: any;
+    official: any;
+    time: any;
+}
+
+const SmallInfo = ({ avatar, name, official, time }: SmallInfoProps) => {
     return (
         <div className="info-horizontal">
             <Avatar avatar={avatar} />

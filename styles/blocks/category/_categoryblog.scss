@@ -11,4 +11,14 @@
     max-width: 750px;
     margin-right: 32px;
     width: 100%;
+
+    @media (max-width: 1024px) {
+        margin-right: 0;
+    }
+}
+
+.category-right {
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }

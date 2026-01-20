@@ -5,18 +5,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const SportGroup = ({ open, onClose }: any) => {
     const sportGroups = [
-        { name: "Pickleball", image: "/assets/pickleball.webp" },
-        { name: "Bóng chuyền", image: "/assets/image 14.webp" },
-        { name: "Bóng bàn", image: "/assets/image 13.webp" },
-        { name: "Billiards", image: "/assets/image 3.webp" },
-        { name: "Cầu lông", image: "/assets/image 4.webp" },
-        { name: "Bóng đá", image: "/assets/image 5.webp" },
-        { name: "Bóng rổ", image: "/assets/image 6.webp" },
-        { name: "Võ thuật", image: "/assets/image 7.webp" },
-        { name: "Điền kinh", image: "/assets/image 8.webp" },
-        { name: "Bơi lội", image: "/assets/image 9.webp" },
-        { name: "e-Sports", image: "/assets/image 10.webp" },
-        { name: "Tennis", image: "/assets/image 11.webp" },
+        { name: "Pickleball", image: "/assets/pickleball.webp", link: "/category/pickle-ball" },
+        { name: "Bóng chuyền", image: "/assets/image 14.webp", link: "/category/bong-chuyen" },
+        { name: "Bóng bàn", image: "/assets/image 13.webp", link: "/category/bong-ban" },
+        { name: "Billiards", image: "/assets/image 3.webp", link: "/category/billiards" },
+        { name: "Cầu lông", image: "/assets/image 4.webp", link: "/category/cau-long" },
+        { name: "Bóng đá", image: "/assets/image 5.webp", link: "/category/bong-da" },
+        { name: "Bóng rổ", image: "/assets/image 6.webp", link: "/category/bong-ro" },
+        { name: "Võ thuật", image: "/assets/image 7.webp", link: "/category/mma-boxing" },
+        { name: "Điền kinh", image: "/assets/image 8.webp", link: "/category/dien-kinh" },
+        { name: "Bơi lội", image: "/assets/image 9.webp", link: "/category/boi-loi" },
+        { name: "e-Sports", image: "/assets/image 10.webp", link: "/category/esports" },
+        { name: "Tennis", image: "/assets/image 11.webp", link: "/category/tennis" },
     ];
 
     const divideSportGroup = (list: any) =>
@@ -75,11 +75,12 @@ const SportGroup = ({ open, onClose }: any) => {
                                 <path d="M7.22706 16.773C6.93715 16.483 6.93715 16.0022 7.22706 15.7123L15.7123 7.22702C16.0023 6.9371 16.4831 6.9371 16.773 7.22702C17.0629 7.51693 17.0629 7.99776 16.773 8.28768L8.28772 16.773C7.99781 17.0629 7.51698 17.0629 7.22706 16.773Z" fill="#121212" />
                             </svg>
 
-                        </div> </div> <div className="sport-group__body"> {divideSportGroup(sportGroups).map((item: any, index: number) => (<div className="sport-group__row"> <div className="sport-group__item"> <img src={item[0].image} alt="" className="image" /> {item[0].name} </div> <div className="sport-group__item"> <img src={item[1].image} alt="" className="image" /> {item[1].name} </div> </div>))} </div> </div> </div>
+                        </div> </div> <div className="sport-group__body"> {divideSportGroup(sportGroups).map((item: any, index: number) => (<div className="sport-group__row" key={index} > <a className="sport-group__item" href={item[0].link}> <img src={item[0].image} alt="" className="image" /> {item[0].name} </a> <a className="sport-group__item" href={item[1].link}> <img src={item[1].image} alt="" className="image" /> {item[1].name} </a> </div>))} </div> </div> </div>
                     </motion.div>
                 </>
-            )}
-        </AnimatePresence>
+            )
+            }
+        </AnimatePresence >
     );
 };
 
