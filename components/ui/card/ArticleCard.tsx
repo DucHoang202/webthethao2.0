@@ -40,7 +40,7 @@ const SmallCard: React.FC<CardProps> = ({ avatar, name, time, image, title, cont
                             </div>
 
                             <div className="item">
-                                <img src="/assets/export.webp" alt="" className="icon" />
+                                <img src="/assets/export.webp" alt="" className="icon" onClick={() => window.location.href = link || "#"} />
 
                             </div>
                         </div>
