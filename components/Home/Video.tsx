@@ -1,12 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, FreeMode } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { CategoryResponse } from "@/types/Types";
 
 const Video: React.FC = () => {
+    const [video, setVideo] = useState<CategoryResponse>();
+    const getVideo = async () => {
+        try {
+            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/videos`);
+            const result = await res.json();
+            const updatedItems = result.data?.map((item: any, index: number) => {
+                if (index < result.data.length) {
+                    return {
+                        ...item,
+                        author: "Phan Kiet",
+                        official: true,
+                        avatar: "/assets/Rectangle 1.webp"
+
+
+                    };
+                }
+                return item;
+            });
+            result.data = updatedItems;
+            setVideo(result);
+        }
+        catch {
+            console.log("error");
+        }
+    }
+    useEffect(() => {
+        getVideo();
+    }, []);
     const blogPosts = [
         {
             title: "Blog Post 1",
@@ -56,18 +85,18 @@ const Video: React.FC = () => {
                     // navigation
                     className="swiper"
                 >
-                    {blogPosts.map((post, index) => (
+                    {video?.data?.map((post, index) => (
                         <SwiperSlide
                             key={index}
                             style={{
                                 width: "184px"
 
                             }}
-                            className={`video-slide ${index === blogPosts.length - 1 ? 'last' : ''}`}
-                            onClick={() => window.location.href = post.link}
+                            className={`video-slide cursor-pointer ${index === blogPosts.length - 1 ? 'last' : ''}`}
+                            onClick={() => window.location.href = `/blog/${post.slug}/${post.slug}-${post.id}`}
                         >
-                            <div className="video-thumb">
-                                <img src={post.thumb} alt="" className="video__image" />
+                            <div className="video-thumb cursor-pointer">
+                                <img src={post.thumbnail} alt="" className="video__image" />
 
                                 <div
                                     className="play-button"
@@ -88,16 +117,16 @@ const Video: React.FC = () => {
                             </div>
 
                             <div className="content">
-                                {post.excerpt}
+                                {post.title}
                             </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
-            <div className="view-more--btn black">
-                <a href="#">Xem thêm</a>
+            <div className="view-more--btn black cursor-pointer">
+                <a href="/category/videos">Xem thêm</a>
             </div>
-        </div>
+        </div >
     );
 };
 
