@@ -323,7 +323,7 @@ function Home() {
                 {/* 3 bài viết của 3 chủ đề khác nhau */}
                 {data.slice(0, 3).map((item, index) => (
                   <div className="home--desktop__radius">
-                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
+                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                   </div>
                 ))}
                 <Video />
@@ -469,7 +469,7 @@ function Home() {
                 </div>
                 {data.slice(0, 3).map((item, index) => (
                   <div className="home--desktop__radius" key={index}>
-                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
+                    < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                   </div>
                 ))}
                 <Video />

@@ -2,11 +2,10 @@ import { CategoryResponse } from "@/types/Types";
 import categoriesTree from "../types/categories_tree.json";
 
 export function extractArticlePath(url: string): string {
-    // const pathname = new URL(url).pathname;
-    // return pathname
-    //     .replace(/^\/api\/article/, "") // bỏ /api/article
-    //     .replace(/\.htm$/, "");         // bỏ .htm
-    return url
+    const pathname = new URL(url).pathname;
+    return pathname
+        .replace(/^\/api\/article/, "") // bỏ /api/article
+        .replace(/\.htm$/, "");         // bỏ .htm
 }
 
 
