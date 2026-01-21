@@ -1,8 +1,8 @@
 'use client'
-import { useIsCustomView } from "@/hooks/useIsCustomView";
 import { useEffect, useState, JSX } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
+import useMediaQuery from "react-responsive";
 interface SwiperRowProps {
     items: any[];
     active?: number;
@@ -12,7 +12,7 @@ interface SwiperRowProps {
 
 const SwiperRow = ({ items, active = 0, gap = 12, style = {} }: SwiperRowProps) => {
     const [activeIndex, setActiveIndex] = useState(active);
-    const isMobile = useIsCustomView(767);
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     useEffect(() => {
         setActiveIndex(active);

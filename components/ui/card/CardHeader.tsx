@@ -1,7 +1,8 @@
-import { useIsMobile } from "@/hooks/useIsMobile"
+'use client'
+import useMediaQuery from "react-responsive"
 
 const CardTitle: React.FC<{ title: string, logo?: any, style?: React.CSSProperties, deco?: boolean, arrow?: boolean, className?: string }> = ({ title, logo, style, deco, arrow, className }) => {
-    const isMobile = useIsMobile()
+    const isMobile = useMediaQuery({ maxWidth: 767 })
     return (
         <div className={`card--header ${className}`} style={style}>
             <div className="card--header__title ">
