@@ -8,35 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { CategoryResponse } from "@/types/Types";
 
-const Video: React.FC = () => {
-    const [video, setVideo] = useState<CategoryResponse>();
-    const getVideo = async () => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/videos`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
+const Video: React.FC<{ video: CategoryResponse }> = ({ video }) => {
 
-
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setVideo(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
-    useEffect(() => {
-        getVideo();
-    }, []);
     const blogPosts = [
         {
             title: "Blog Post 1",
@@ -99,12 +72,9 @@ const Video: React.FC = () => {
                             <div className="video-thumb cursor-pointer">
                                 <img src={post.thumbnail} alt="" className="video__image" />
 
-                                <div
-                                    className="play-button"
-                                    onClick={(e) => {
-                                        e.stopPropagation(); // tránh redirect khi click nút play
-                                        alert("Video is playing");
-                                    }}
+                                <a
+                                    className="play-button" href={`/category/videos`}
+
                                 >
                                     <div className="play-button--inner">
                                         <div className="play">
@@ -114,7 +84,7 @@ const Video: React.FC = () => {
                                             </svg>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                             <div className="content">
@@ -124,9 +94,9 @@ const Video: React.FC = () => {
                     ))}
                 </Swiper>
             </div>
-            <div className="view-more--btn black cursor-pointer">
-                <a href="/category/videos">Xem thêm</a>
-            </div>
+            <a className="view-more--btn black cursor-pointer" href="/category/videos">
+                <div >Xem thêm</div>
+            </a>
         </div >
     );
 };

@@ -1,5 +1,5 @@
 'use client'
-import { delay, translateSlug } from "../../utils/extractArticlePath";
+import { delay, getSlugFromLink, translateSlug } from "../../utils/extractArticlePath";
 import useIsScreenSize from "../../hooks/useIsScreenSize";
 import NotFound from "../../pages/NotFound";
 import Header from "../../pages/Header";
@@ -13,7 +13,6 @@ import Advertisement from "../../components/Home/Advertisement";
 import SportGenre from "../../components/Home/SportGenre";
 import Nav from "../../components/Home/Nav";
 import HomeMobile from "../../pages/HomeMobile";
-
 import HomeTablet from "@/pages/HomeTablet";
 import HeaderDesktop from "@/pages/HeaderDesktop";
 import CardTitle from "@/components/ui/card/CardHeader";
@@ -58,7 +57,7 @@ export default function HomePage({
     filteredData5,
     data,
 }: {
-    allCategory: string[];
+    allCategory: CategoryResponse[];
     titleImage: string;
     hotTopic: { link: string; title: string }[];
     card2: { img: string; name: string }[];
@@ -68,13 +67,15 @@ export default function HomePage({
     filteredData3: CategoryResponse;
     filteredData4: CategoryResponse;
     filteredData5: CategoryResponse;
-    data: Article[];
+    data: List[];
 }) {
     const isMobile = useMediaQuery({ maxWidth: 768 })
     const isTablet = useMediaQuery({ maxWidth: 1024 })
     const isDesktop = useMediaQuery({ minWidth: 1024 })
     const changeNav = useMediaQuery({ maxWidth: 768 })
     const changeHeader = useMediaQuery({ maxWidth: 768 })
+    const validCategories = allCategory.filter((category) => category.data?.length > 0);
+
     return (
         <div className='App'>
             {changeNav ? <Header /> : <HeaderDesktop />}
@@ -86,11 +87,16 @@ export default function HomePage({
                         {data.slice(0, 3).map((item: any, index: any) => (
                             <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
                         ))}
-                        <Video />
+                        <Video video={filteredData5} />
                         <HotTopic isTitled={false} hotTopic={filteredData2} />
-                        {allCategory.map((item: any, index: any) => {
-                            return <SportGenre sport={item} delayMs={index * 400} />
-                        })}
+                        {validCategories.map((item, index) => (
+                            <SportGenre
+                                key={item.slug ?? index}
+                                sport={item}
+                                delayMs={index * 400}
+                            />
+                        ))}
+
                         <div className="advertisement-section" style={{ width: "100%" }}>
                             <Advertisement image="" />
                             <Advertisement image="" />
@@ -115,12 +121,12 @@ export default function HomePage({
                                 {/* 3 bài viết của 3 chủ đề khác nhau */}
                                 {data.slice(0, 3).map((item: any, index: any) => (
                                     <div className="home--desktop__radius">
-                                        < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                                        < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.slug} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                                     </div>
                                 ))}
-                                <Video />
+                                <Video video={filteredData5} />
 
-                                <div className="card-container">
+                                <div className="home--desktop__radius">
                                     <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
                                     <div className="card--header__content">
                                         <HotTopic isTitled={false} hotTopic={filteredData2} />
@@ -128,9 +134,14 @@ export default function HomePage({
                                 </div>
                                 <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
 
-                                {allCategory.map((item, index) => {
-                                    return <SportGenre sport={item} delayMs={index * 400} />
-                                })}
+                                {validCategories.map((item, index) => (
+                                    <SportGenre
+                                        key={item.slug ?? index}
+                                        sport={item}
+                                        delayMs={index * 400}
+                                    />
+                                ))}
+
                             </div>
 
                             {/* Container bên phải */}
@@ -227,7 +238,7 @@ export default function HomePage({
                                     </div>
                                 </div>
                                 <Advertisement image="/assets/adv.webp" />
-                                <div className="card-container">
+                                <div className="home--desktop__radius">
                                     <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
                                     <div className="card--header__content">
                                         <HotTopic isTitled={false} hotTopic={filteredData2} />
@@ -261,10 +272,10 @@ export default function HomePage({
                                 </div>
                                 {data.slice(0, 3).map((item: any, index: any) => (
                                     <div className="home--desktop__radius" key={index}>
-                                        < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                                        < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={getSlugFromLink(item.article_url)} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                                     </div>
                                 ))}
-                                <Video />
+                                <Video video={filteredData5} />
 
                                 <div className="card-container">
                                     <CardTitle title="Chủ đề nóng" style={{ borderBottom: 'none' }} deco={true} />
@@ -274,9 +285,14 @@ export default function HomePage({
                                     </div>
                                 </div>
                                 <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
-                                {allCategory.map((item, index) => {
-                                    return <SportGenre sport={item} delayMs={index * 400} />
-                                })}
+                                {validCategories.map((item, index) => (
+                                    <SportGenre
+                                        key={item.slug ?? index}
+                                        sport={item}
+                                        delayMs={index * 400}
+                                    />
+                                ))}
+
                             </div>
                             <div className="home--desktop__right">
                                 <div className="card-container">
