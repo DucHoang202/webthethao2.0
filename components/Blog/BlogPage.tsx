@@ -544,7 +544,7 @@ const BlogPage = ({ params }: PageProps) => {
                                 <div className="blog__sapo">
                                     {data?.head?.og?.description}
                                 </div>
-                                <div dangerouslySetInnerHTML={{ __html: data?.body || "" }}></div>
+                                <div dangerouslySetInnerHTML={{ __html: data?.body || "" }} className="flex flex-col gap-[16px]"></div>
                                 {/* <blockquote><p>Mua các sản phẩm mới nhất tại <a href="">webthethao.vn</a></p><cite>-Webthethao</cite></blockquote> */}
 
 

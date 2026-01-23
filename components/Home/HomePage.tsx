@@ -12,8 +12,6 @@ import HotTopic from "../../components/ui/card/HotTopicCard";
 import Advertisement from "../../components/Home/Advertisement";
 import SportGenre from "../../components/Home/SportGenre";
 import Nav from "../../components/Home/Nav";
-import HomeMobile from "../../pages/HomeMobile";
-import HomeTablet from "@/pages/HomeTablet";
 import HeaderDesktop from "@/pages/HeaderDesktop";
 import CardTitle from "@/components/ui/card/CardHeader";
 import SmallCard from "@/components/ui/card/ArticleCard";
@@ -85,7 +83,7 @@ export default function HomePage({
                 <main>
                     <div className="home--mobile">
                         {data.slice(0, 3).map((item: any, index: any) => (
-                            <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.category} official={item.official} link={`#`} />
+                            <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.slug} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                         ))}
                         <Video video={filteredData5} />
                         <HotTopic isTitled={false} hotTopic={filteredData2} />
