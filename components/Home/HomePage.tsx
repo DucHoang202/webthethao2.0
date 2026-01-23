@@ -83,7 +83,7 @@ export default function HomePage({
                 <main>
                     <div className="home--mobile">
                         {data.slice(0, 3).map((item: any, index: any) => (
-                            <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.slug} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                            <Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={getSlugFromLink(item.article_url)} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                         ))}
                         <Video video={filteredData5} />
                         <HotTopic isTitled={false} hotTopic={filteredData2} />
@@ -118,8 +118,8 @@ export default function HomePage({
                                 </div>
                                 {/* 3 bài viết của 3 chủ đề khác nhau */}
                                 {data.slice(0, 3).map((item: any, index: any) => (
-                                    <div className="home--desktop__radius">
-                                        < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={item.slug} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
+                                    <div className="home--desktop__radius" key={index}>
+                                        < Card key={index} avatar={item.avatar} name={item.author} time={formatDate(item.time_text)} image={item.thumbnail} title={item.title} content={item.summary} category={getSlugFromLink(item.article_url)} official={item.official} link={`/blog/${extractArticlePath(item.article_url)}`} />
                                     </div>
                                 ))}
                                 <Video video={filteredData5} />
