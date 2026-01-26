@@ -2,7 +2,7 @@ import HomePage from "@/components/Home/HomePage";
 import { changeThumbSize, getSlugFromLink, translateSlug } from "@/utils/extractArticlePath";
 import categoryArticle from "../types/categories_tree.json";
 
-export const revalidate = 30; // ISR 30s
+export const revalidate = 1200; // ISR 30s
 
 async function fetchCategory(slug: string) {
   const res = await fetch(
