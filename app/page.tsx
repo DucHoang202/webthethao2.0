@@ -45,11 +45,11 @@ async function Home() {
   const slug3 = "bong-da-viet-nam"
   const slug4 = "mma-boxing"
   const slug5 = "videos"
-  const allSlug = categoryArticle.flatMap(item => [
-    item.slug,
-    ...(item.children?.map(child => child.slug) || [])
-  ]);
-  //const allSlug = categoryArticle.map((item) => item.slug);
+  // const allSlug = categoryArticle.flatMap(item => [
+  //   item.slug,
+  //   ...(item.children?.map(child => child.slug) || [])
+  // ]);
+  const allSlug = categoryArticle.map((item) => item.slug);
   const categoryRequests = allSlug.map(slug => fetchCategory(slug));
 
 
