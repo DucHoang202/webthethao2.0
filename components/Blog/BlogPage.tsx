@@ -26,128 +26,49 @@ import "../../styles/blocks/detail/_detail.scss";
 import { extractArticlePath, changeThumbSize } from "../../utils/extractArticlePath";
 import { formatDate } from "../../utils/extractArticlePath";
 import { translateSlug } from "../../utils/extractArticlePath";
-import { CategoryResponse } from "../../types/Types";
+import { CategoryResponse, List } from "../../types/Types";
 import { delay } from "../../utils/extractArticlePath";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import { toast } from "react-toastify";
 import { zaloRequest } from "@/utils/shareZalo";
 import ShareTooltip from "../ui/modal/ShareTooltip";
 import ShareDropdown from "../ui/modal/ShareDropdown";
-
-interface Data {
-    author: string,
-    body: string,
-    created_at: string,
-    head: HeadData,
-    id: number,
-    path: string,
-    published_text: string,
-    source_url: string,
-    title: string,
-    updated_at: string,
-    avatar: string,
-
-
-}
-export interface SeoData {
-    title: string;
-    description: string;
-    keywords: string;
-    canonical: string;
-    robots: string;
-    language: string;
-}
-
-export interface HeadData {
-    seo: SeoData;
-    og: {
-        image: string;
-        title: string;
-        description: string;
-    }
-}
-interface PageProps {
-    params: Promise<{ id: string, article: string }>;
-}
-interface List {
-    id: number;
-    title: string;
-    summary: string;
-    thumbnail: string;
-    article_url: string;
-    category: string;
-    official: boolean;
-    time: string;
-    name: string;
-    avatar: string;
-    time_text: string;
-    author: string;
-}
-const BlogPage = ({ params }: PageProps) => {
-    const [list, setList] = useState<CategoryResponse>();
-    const [data, setData] = useState<Data>();
-    const { id, article } = use(params);
+import { Data, HeadData } from "../../types/Types";
+const BlogPage = ({ params, allCategory,
+    titleImage,
+    hotTopic,
+    card2,
+    filteredData,
+    filteredData1,
+    filteredData2,
+    filteredData3,
+    filteredData4,
+    filteredData5,
+    homeFeed,
+    getData,
+    getList
+}: {
+    params: { id: string, article: string };
+    allCategory: CategoryResponse[];
+    titleImage: string;
+    hotTopic: { link: string; title: string }[];
+    card2: { img: string; name: string }[];
+    filteredData: CategoryResponse;
+    filteredData1: CategoryResponse;
+    filteredData2: CategoryResponse;
+    filteredData3: CategoryResponse;
+    filteredData4: CategoryResponse;
+    filteredData5: CategoryResponse;
+    homeFeed: List[];
+    getData: Data | null;
+    getList: CategoryResponse | null;
+}) => {
+    const { id, article } = params;
     const [param, setParam] = useState({ id: "", article: "" });
     const [mounted, setMounted] = useState(false);
     const [isLiked, setIsLiked] = useState(false);
     const [shareDropdown, setShareDropdown] = useState(false);
-    const getData = async (retry = 0) => {
-        if (!id || !article) return;
 
-        const maxRetry = 5;        // số lần thử lại
-        const delay = 2000;        // thời gian chờ (ms)
-
-        try {
-            const url = `https://webthethao.wepro.io.vn/api/article/${id}/${article}.htm`;
-
-            const res = await fetch(url);
-
-            if (!res.ok) {
-                if (res.status === 500 && retry < maxRetry) {
-                    console.log(`Server 500, retry lần ${retry + 1}...`);
-
-                    await new Promise(r => setTimeout(r, delay));
-
-                    return getData(retry + 1); // gọi lại
-                }
-
-                const text = await res.text();
-                throw new Error(`API failed ${res.status}: ${text}`);
-            }
-
-            const result = await res.json();
-            setData(result);
-
-        } catch (error) {
-            console.log("Fetch error:", error);
-        }
-    };
-
-
-    async function getIdenticalArticle() {
-        try {
-            const res = await fetch("https://webthethao.wepro.io.vn/api/category-article/load/" + id);
-            const result = await res.json();
-            const updatedItems = result.data.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp",
-                        category: "Bóng đá",
-                        thumbnail: changeThumbSize(item.thumbnail, "409-273"),
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setList(result);
-
-        } catch (error) {
-            console.log(error);
-        }
-    }
     async function copyUrl() {
         const text = window.location.href;
 
@@ -218,73 +139,36 @@ const BlogPage = ({ params }: PageProps) => {
         console.log(zaloData);
     }
 
-    const getList = async () => {
-        try {
-            const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
-            const result = await res.json();
-            const updatedItems = result.items.map((item: any, index: number) => {
-                if (index < result.items.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp",
-                        category: "Bóng đá",
-                        thumbnail: changeThumbSize(item.thumbnail, "409-273"),
-                    };
-                }
-                return item;
-            });
+    // const getList = async () => {
+    //     try {
+    //         const res = await fetch("https://webthethao.wepro.io.vn/api/newfeed?page=1");
+    //         const result = await res.json();
+    //         const updatedItems = result.items.map((item: any, index: number) => {
+    //             if (index < result.items.length) {
+    //                 return {
+    //                     ...item,
+    //                     author: "Phan Kiet",
+    //                     official: true,
+    //                     avatar: "/assets/Rectangle 1.webp",
+    //                     category: "Bóng đá",
+    //                     thumbnail: changeThumbSize(item.thumbnail, "409-273"),
+    //                 };
+    //             }
+    //             return item;
+    //         });
 
-            setList(updatedItems);
+    //         setList(updatedItems);
 
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
     const [url, setUrl] = useState("");
 
 
     useEffect(() => {
         const fetchAllData = async () => {
             setMounted(true);
-            console.log(window.location.href)
-            // Call APIs with delays
-            const accessToken = "your_access_token";
-
-            const zaloData = await zaloRequest({
-                url: "https://openapi.zalo.me/v2.0/oa/getprofile",
-                method: "GET",
-                accessToken,
-            });
-
-            console.log("zaloData", zaloData);
-
-            // await getList();
-            // await delay(300);
-
-            await setSlug(slug);
-            await delay(300);
-
-
-
-            await setSlug1(slug1);
-            await delay(300);
-
-            await setSlug2(slug2);
-            await delay(300);
-
-            await setSlug3(slug3);
-            await delay(300);
-
-            await setSlug4(slug4);
-            await delay(300);
-
-            await setSlug5(slug5);
-            await delay(300);
-
-            await getIdenticalArticle();
-            await delay(300);
             const adjustHeights = (container: HTMLElement | null) => {
                 if (!container) return;
                 const titles = container.querySelectorAll<HTMLElement>(".title");
@@ -317,8 +201,6 @@ const BlogPage = ({ params }: PageProps) => {
                 setTimeout(handleResize, 200);
             }
         };
-        getData();
-        delay(300); // 300ms delay
         fetchAllData();
     }, []); // Empty dependency array
     function webShare() {
@@ -333,8 +215,6 @@ const BlogPage = ({ params }: PageProps) => {
         }
     }
 
-    const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
-
     const changeHeader = useMediaQuery({ query: "(max-width: 1024px)" })
     const changeNav = useMediaQuery({ query: "(max-width: 768px)" })
     const swiperRef = useRef<any>(null);
@@ -344,12 +224,7 @@ const BlogPage = ({ params }: PageProps) => {
     const sidebarRef = useRef<HTMLDivElement>(null);
     const relatedRef = useRef<HTMLDivElement>(null);
     const featuredRef = useRef<HTMLDivElement>(null);
-    const [filteredData, setFilteredData] = useState<CategoryResponse>();
-    const [filteredData1, setFilteredData1] = useState<CategoryResponse>();
-    const [filteredData2, setFilteredData2] = useState<CategoryResponse>();
-    const [filteredData3, setFilteredData3] = useState<CategoryResponse>();
-    const [filteredData4, setFilteredData4] = useState<CategoryResponse>();
-    const [filteredData5, setFilteredData5] = useState<CategoryResponse>();
+
     const [opinionTitle, setOpinionTitle] = useState<string>("")
     // const [hotTopic, setHotTopic] = useState<List[]>([]);
     const [comment, setComment] = useState<CategoryResponse>();
@@ -359,148 +234,7 @@ const BlogPage = ({ params }: PageProps) => {
     const slug3 = "bong-da-viet-nam"
     const slug4 = "mma-boxing"
     const slug5 = "goc-tu-van"
-    const titleImage = "/assets/logo-sea-game 1.webp"
-    //Get individual data
-    const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
-    const setSlug = async (slug: string) => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
 
-
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setFilteredData(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
-    const setSlug1 = async (slug: string) => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
-
-
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setFilteredData1(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
-    const setSlug2 = async (slug: string) => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setFilteredData2(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
-
-    const setSlug3 = async (slug: string) => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setFilteredData3(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
-
-    const setSlug4 = async (slug: string) => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setFilteredData4(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
-
-    const setSlug5 = async (slug: string) => {
-        try {
-            const res = await fetch(`https://webthethao.wepro.io.vn/api/category-article/load/${slug}`);
-            const result = await res.json();
-            const updatedItems = result.data?.map((item: any, index: number) => {
-                if (index < result.data.length) {
-                    return {
-                        ...item,
-                        author: "Phan Kiet",
-                        official: true,
-                        avatar: "/assets/Rectangle 1.webp"
-                    };
-                }
-                return item;
-            });
-            result.data = updatedItems;
-            setFilteredData5(result);
-        }
-        catch {
-            console.log("error");
-        }
-    }
     if (!mounted) return null;
 
 
@@ -508,25 +242,24 @@ const BlogPage = ({ params }: PageProps) => {
         <div className='App'>
             {changeHeader ? <Header /> : <HeaderDesktop />}
             <Search />
-            <Nav />
             {changeNav ? (<main >
+                <Nav />
                 <div className="layout">
                     <div className="no-gap">
                         <div className="blog">
                             <div className="blog__container">
-                                <div className="blog__seo">{changeThumbSize(data?.head.seo.title, "768-432")}</div>
-                                <img src={data?.head?.og?.image} alt={data?.head?.og?.title} className="blog__image w-full mt-[-13px]" />
+                                <div className="blog__seo">{changeThumbSize(getData?.head.seo.title, "768-432")}</div>
+                                <img src={getData?.head?.og?.image} alt={getData?.head?.og?.title} className="blog__image w-full mt-[-13px]" />
                                 <div className="blog__user">
 
                                     <div className="blog__user--inner">
                                         <div className="flex w-full">
-                                            <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={data?.author} time={formatDate(data?.created_at)} official={true} />
-
+                                            <SmallInfoHorizontal avatar="/assets/Rectangle 1.webp" name={getData?.author} time={formatDate(getData?.created_at)} official={true} />
                                         </div>
 
-                                        <div className="blog__cat">
-                                            {translateSlug(id)}
-                                        </div>
+                                        <a className="blog__cat cursor-pointer" href={`/category/${(params.id)}`}>
+                                            {translateSlug(params.id)}
+                                        </a>
                                         <div className="cursor-pointer" onClick={() => { setShareDropdown(!shareDropdown) }}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                 <path d="M7.58398 6.41663L12.3673 1.6333" stroke="#52524F" stroke-linecap="round" stroke-linejoin="round" />
@@ -540,13 +273,11 @@ const BlogPage = ({ params }: PageProps) => {
                                 </div>
                             </div>
                             <div className="blog__body">
-                                <div className="blog-title">{data?.title}</div>
+                                <div className="blog-title">{getData?.title}</div>
                                 <div className="blog__sapo">
-                                    {data?.head?.og?.description}
+                                    {getData?.head?.og?.description}
                                 </div>
-                                <div dangerouslySetInnerHTML={{ __html: data?.body || "" }} className="flex flex-col gap-[16px]"></div>
-                                {/* <blockquote><p>Mua các sản phẩm mới nhất tại <a href="">webthethao.vn</a></p><cite>-Webthethao</cite></blockquote> */}
-
+                                <div dangerouslySetInnerHTML={{ __html: getData?.body || "" }} className="flex flex-col gap-[16px]"></div>
 
                                 <div className="blog__btn-container">
                                     <BlogButton number={2} text="Bình luận" />
@@ -565,7 +296,7 @@ const BlogPage = ({ params }: PageProps) => {
                     </div>
 
                     <div className="detail__card" ref={relatedRef}>
-                        {list?.data?.slice(0, 5).map((item, index) => (
+                        {getList?.data?.slice(0, 5).map((item, index) => (
                             <Card
                                 key={index}
                                 avatar="/assets/Image (3).webp"
@@ -577,13 +308,13 @@ const BlogPage = ({ params }: PageProps) => {
                                 category={translateSlug(id)}
                                 official
                                 hideText={true}
-                                link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
+                                link={`/blog/${getList?.slug}/${item.slug}-${item.id}`}
                             />
                         ))}
 
                     </div>
                     <div className="detail__card" ref={featuredRef}>
-                        {list?.data?.slice(0, 5).map((item, index) => (
+                        {getList?.data?.slice(0, 5).map((item, index) => (
                             <Card
                                 key={index}
                                 avatar="/assets/Image (3).webp"
@@ -595,7 +326,7 @@ const BlogPage = ({ params }: PageProps) => {
                                 category={translateSlug(id)}
                                 official
                                 hideText={true}
-                                link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
+                                link={`/blog/${getList?.slug}/${item.slug}-${item.id}`}
                             />
                         ))}
 
@@ -704,21 +435,21 @@ const BlogPage = ({ params }: PageProps) => {
                                         </div>
                                     </div>
                                     <div className="blog__title">
-                                        <BlogTitle title={data?.title ?? ""} />
+                                        <BlogTitle title={getData?.title ?? ""} />
                                         <div className="blog__user--inner boder">
-                                            <SmallInfoHorizontal avatar={"/assets/Rectangle 1.webp"} name={data?.author ?? ""} time={formatDate(data?.updated_at)} official={true} />
-                                            <div className="blog__cat">
-                                                {translateSlug(id)}
-                                            </div>
+                                            <SmallInfoHorizontal avatar={"/assets/Rectangle 1.webp"} name={getData?.author ?? ""} time={formatDate(getData?.updated_at)} official={true} />
+                                            <a className="blog__cat cursor-pointer" href={`/category/${(params.id)}`}>
+                                                {translateSlug(params.id)}
+                                            </a>
                                         </div>
                                         <div className="blog__sapo">
-                                            {data?.head?.seo?.description}
+                                            {getData?.head?.seo?.description}
                                         </div>
                                         <div className="blog__thumbnail">
-                                            <img src={changeThumbSize(data?.head?.og?.image, "749-421")} alt="" />
+                                            <img src={changeThumbSize(getData?.head?.og?.image, "749-421")} alt="" />
                                         </div>
                                     </div>
-                                    <div className="blog__body" dangerouslySetInnerHTML={{ __html: data?.body ?? "" }}></div>
+                                    <div className="blog__body" dangerouslySetInnerHTML={{ __html: getData?.body ?? "" }}></div>
 
                                     <div className="blog__btn-container">
                                         <BlogButton number={2} text="Bình luận" />
@@ -730,7 +461,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     </div>
                                     <div className="blog__comment" >
                                         <CommentInput />
-                                        <Comments avatar={"/assets/Rectaangle 1.webp"} name={data?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={formatDate(data?.updated_at)} />
+                                        <Comments avatar={"/assets/Rectangle 1.webp"} name={getData?.author ?? ""} content="Anna ướng dẫn chi tiết, sửa tư thế nhẹ nhàng, giúp tôi thấy cơ thể dẻo dai hơn chỉ sau 2 tháng." time={formatDate(getData?.updated_at)} />
                                     </div>
                                     <div className="adv">
                                         <div className="w-full">
@@ -741,7 +472,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <div className="empty-container">
                                         <CardTitle title="Cùng chủ đề" className="smaller" deco={true} />
                                         <div className="detail__card" ref={relatedRef}>
-                                            {list?.data?.slice(0, 3).map((item, index) => (
+                                            {getList?.data?.slice(0, 3).map((item, index) => (
                                                 <Card
                                                     key={index}
                                                     className="smaller"
@@ -751,10 +482,10 @@ const BlogPage = ({ params }: PageProps) => {
                                                     image={item.thumbnail ?? ""}
                                                     title={item.title ?? ""}
                                                     content={item.description ?? ""}
-                                                    category={translateSlug(id)}
+                                                    category={translateSlug(getList?.slug ?? "")}
                                                     official
                                                     hideText={true}
-                                                    link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
+                                                    link={`/blog/${getList?.slug}/${item.slug}-${item.id}`}
                                                 />
                                             ))}
 
@@ -763,7 +494,7 @@ const BlogPage = ({ params }: PageProps) => {
                                     <div className="empty-container">
                                         <CardTitle title="Bài viết nổi bật" className="smaller" deco={true} />
                                         <div className="detail__card" ref={featuredRef}>
-                                            {list?.data?.slice(4, 7).map((item, index) => (
+                                            {getList?.data?.slice(4, 7).map((item, index) => (
                                                 <Card
                                                     key={index}
                                                     className="smaller"
@@ -773,10 +504,10 @@ const BlogPage = ({ params }: PageProps) => {
                                                     image={item.thumbnail ?? ""}
                                                     title={item.title ?? ""}
                                                     content={item.description ?? ""}
-                                                    category={translateSlug(id)}
+                                                    category={translateSlug(getList?.slug ?? "")}
                                                     official
                                                     hideText={true}
-                                                    link={`/blog/${list?.slug}/${item.slug}-${item.id}`}
+                                                    link={`/blog/${getList?.slug}/${item.slug}-${item.id}`}
                                                 />
                                             ))}
 

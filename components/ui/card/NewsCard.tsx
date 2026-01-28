@@ -8,7 +8,7 @@ interface CardProps {
     image?: string | null;
     title?: string | null;
     content?: string | null;
-    category: string;
+    category?: string;
     official?: boolean | null;
     link?: string | null;
     className?: string | null;
@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({ avatar, name, time, image, title, content, 
                 </div>
                 <div className="footer">
                     <a className="category cursor-pointer" href={`/category/${category}`}>
-                        {translateSlug(category)}
+                        {translateSlug(category || "")}
                     </a>
                     <div className="right">
                         <div className="item" onClick={() => window.location.href = link || "#"}>

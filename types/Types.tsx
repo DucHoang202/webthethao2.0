@@ -114,3 +114,52 @@ export interface CategoryResponse {
     slug: string;
     data: Article[];
 }
+
+export interface Data {
+    author: string,
+    body: string,
+    created_at: string,
+    head: HeadData,
+    id: number,
+    path: string,
+    published_text: string,
+    source_url: string,
+    title: string,
+    updated_at: string,
+
+}
+export interface SeoData {
+    title: string;
+    description: string;
+    keywords: string;
+    canonical: string;
+    robots: string;
+    language: string;
+    image: string;
+}
+
+export interface HeadData {
+    seo: SeoData;
+    og: {
+        image: string;
+        title: string;
+        description: string;
+    }
+}
+
+export interface PageProps {
+    params: Promise<{ id: string, article: string }>;
+}
+
+export interface List {
+    id: number;
+    title: string;
+    summary: string;
+    thumbnail: string;
+    article_url: string;
+    category: string;
+    official: boolean;
+    time: string;
+    name: string;
+    avatar: string;
+}

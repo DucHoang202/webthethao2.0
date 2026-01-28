@@ -2,6 +2,12 @@
     margin-top: 100px;
 }
 
+.detail-section__content {
+    display: flex;
+    flex-direction: column;
+    background: #f3f2f2;
+}
+
 .detail--desktop {
     width: 100%;
     background: #F3F2F2;
@@ -11,6 +17,10 @@
 
     &.white {
         background-color: white;
+    }
+
+    @media(max-width: 768px) {
+        padding: 23px 0;
     }
 }
 

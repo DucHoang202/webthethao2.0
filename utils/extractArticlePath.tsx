@@ -126,3 +126,47 @@ export function formatDate(isoTime?: string | Date): string {
 export function delay(ms: number) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+// export const allSlug = categoryArticle.flatMap(item => [
+//     item.slug,
+//     ...(item.children?.map(child => child.slug) || [])
+// ]);
+
+export const allSlug = categoryArticle.map(item => item.slug);
+
+export async function fetchCategory(slug: string) {
+    const res = await fetch(
+        `https://webthethao.wepro.io.vn/api/category-article/load/${slug}`,
+        { cache: "force-cache" }
+    )
+
+    const result = await res.json()
+
+    result.data = result.data?.map((item: any) => ({
+        ...item,
+        author: "Phan Kiet",
+        official: true,
+        avatar: "/assets/Rectangle 1.webp",
+    }))
+
+    return result
+}
+
+export async function fetchHomeFeed() {
+    const res = await fetch(
+        "https://webthethao.wepro.io.vn/api/newfeed?page=1",
+        { cache: "force-cache" }
+    )
+
+    const result = await res.json()
+
+    return result.items.map((item: any) => ({
+        ...item,
+        author: "Phan Kiet",
+        official: true,
+        avatar: "/assets/Rectangle 1.webp",
+        thumbnail: changeThumbSize(item.thumbnail, "564-376"),
+    }))
+}
+export const categoryRequests = allSlug.map(slug => fetchCategory(slug));
+

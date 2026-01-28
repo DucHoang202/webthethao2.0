@@ -2,7 +2,7 @@ import HomePage from "@/components/Home/HomePage";
 import { changeThumbSize, getSlugFromLink, translateSlug } from "@/utils/extractArticlePath";
 import categoryArticle from "../types/categories_tree.json";
 
-export const revalidate = 30; // ISR 30s
+export const revalidate = 1200; // ISR 30s
 
 async function fetchCategory(slug: string) {
   const res = await fetch(
@@ -45,11 +45,11 @@ async function Home() {
   const slug3 = "bong-da-viet-nam"
   const slug4 = "mma-boxing"
   const slug5 = "videos"
-  const allSlug = categoryArticle.flatMap(item => [
-    item.slug,
-    ...(item.children?.map(child => child.slug) || [])
-  ]);
-  //const allSlug = categoryArticle.map((item) => item.slug);
+  // const allSlug = categoryArticle.flatMap(item => [
+  //   item.slug,
+  //   ...(item.children?.map(child => child.slug) || [])
+  // ]);
+  const allSlug = categoryArticle.map((item) => item.slug);
   const categoryRequests = allSlug.map(slug => fetchCategory(slug));
 
 
