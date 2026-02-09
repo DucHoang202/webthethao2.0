@@ -45,21 +45,11 @@ async function fetchHomeFeed() {
 }
 
 async function CategoryPage({ params }: PageProps) {
+    const { slug: currentSlug } = await params;
 
     const slug = "sea-games"
     const slug1 = "nhan-dinh-bong-da"
     const slug2 = "pickle-ball" //Đọc nhiều 
-    const slug3 = "bong-da-viet-nam"
-    const slug4 = "mma-boxing"
-    const slug5 = "videos"
-    // const allSlug = categoryArticle.flatMap(item => [
-    //   item.slug,
-    //   ...(item.children?.map(child => child.slug) || [])
-    // ]);
-    const allSlug = categoryArticle.map((item) => item.slug);
-    const categoryRequests = allSlug.map(slug => fetchCategory(slug));
-
-
 
     async function getIdenticalArticle(slug: string): Promise<CategoryResponse> {
         try {
@@ -85,47 +75,36 @@ async function CategoryPage({ params }: PageProps) {
             return { status: "", slug: "", data: [] };
         }
     }
+
     const [
         filteredData,
         filteredData1,
         filteredData2,
-        filteredData3,
-        filteredData4,
-        filteredData5,
         allData,
-        ...categoryData
+        fetchList
     ] = await Promise.all([
         fetchCategory(slug),
         fetchCategory(slug1),
         fetchCategory(slug2),
-        fetchCategory(slug3),
-        fetchCategory(slug4),
-        fetchCategory(slug5),
         fetchHomeFeed(),
-        ...categoryRequests
+        getIdenticalArticle(currentSlug)
     ])
+
     const titleImage = "/assets/logo-sea-game 1.webp"
-    //Get individual data
     const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
-
     const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
-    const uniqueSlug = await params
 
-    const fetchList = await getIdenticalArticle(uniqueSlug.slug)
     return (
         <Category
-            allCategory={categoryData}
+            allCategory={[]}
             titleImage={titleImage}
             hotTopic={hotTopic}
             card2={card2}
             filteredData={filteredData}
             filteredData1={filteredData1}
             filteredData2={filteredData2}
-            filteredData3={filteredData3}
-            filteredData4={filteredData4}
-            filteredData5={filteredData5}
             homeFeed={allData}
-            params={uniqueSlug}
+            params={{ slug: currentSlug }}
             list={fetchList}
         />
     )

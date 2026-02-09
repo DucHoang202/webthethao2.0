@@ -34,31 +34,24 @@ import { zaloRequest } from "@/utils/shareZalo";
 import ShareTooltip from "../ui/modal/ShareTooltip";
 import ShareDropdown from "../ui/modal/ShareDropdown";
 import { Data, HeadData } from "../../types/Types";
-const BlogPage = ({ params, allCategory,
+const BlogPage = ({ params,
     titleImage,
     hotTopic,
     card2,
     filteredData,
     filteredData1,
     filteredData2,
-    filteredData3,
-    filteredData4,
-    filteredData5,
     homeFeed,
     getData,
     getList
 }: {
     params: { id: string, article: string };
-    allCategory: CategoryResponse[];
     titleImage: string;
     hotTopic: { link: string; title: string }[];
     card2: { img: string; name: string }[];
     filteredData: CategoryResponse;
     filteredData1: CategoryResponse;
     filteredData2: CategoryResponse;
-    filteredData3: CategoryResponse;
-    filteredData4: CategoryResponse;
-    filteredData5: CategoryResponse;
     homeFeed: List[];
     getData: Data | null;
     getList: CategoryResponse | null;

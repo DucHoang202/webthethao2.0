@@ -14,6 +14,7 @@
 @use "./blocks/prediction/prediction";
 @use "./blocks/match/match2";
 @use "./ui/card/card";
+@use "./ui/skeleton";
 @use "./blocks/home/home-desktop";
 @use "./blocks/home/header-desktop";
 @use "./ui/button/view-more";
@@ -131,9 +132,7 @@ body {
     //  overflow-x: hidden;
 }
 
-html {
-    //  overflow-x: hidden;
-}
+
 
 /* Ensure we can size the app to the viewport for full-height layouts */
 html,

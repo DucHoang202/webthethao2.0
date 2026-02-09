@@ -1,0 +1,328 @@
+// Base Skeleton Styles
+@keyframes skeleton-loading {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    height: 1em;
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+    &--image {
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+}
+
+// Layout Skeleton Containers
+.skeleton-header {
+    height: 65px;
+}
+
+.skeleton-main {
+    padding: 23px 14px;
+}
+
+// Home & Category Specific Layout Skeletons
+.skeleton-layout {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+
+    &__left {
+        width: 301px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    &__middle {
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__right {
+        width: 350px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    &__category-main {
+        width: 100%;
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+}
+
+// UI Component Skeletons
+.card--news-skeleton {
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 14px;
+
+    .info {
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+    }
+
+    .body {
+        padding: 14px;
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 14px;
+
+            .right {
+                display: flex;
+                gap: 14px;
+            }
+        }
+    }
+}
+
+.card--article-skeleton {
+    padding: 0 14px;
+
+    &__container {
+        padding: 14px 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    .body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+
+            .right {
+                display: flex;
+                gap: 7px;
+            }
+        }
+    }
+}
+
+.card--category-skeleton {
+    padding: 0 14px;
+
+    &__container {
+        padding: 14px 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    .body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .right {
+                display: flex;
+                gap: 7px;
+            }
+        }
+    }
+}
+
+.sport-genre-skeleton {
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 14px;
+
+    .card--header {
+        padding: 10px 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .view-more-wrapper {
+        padding: 14px;
+    }
+}
+
+.video-skeleton {
+    padding: 14px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 12px;
+        overflow: hidden;
+        padding-bottom: 14px;
+
+        .video-item {
+            width: 184px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.card--trending-skeleton {
+    padding: 14px;
+    border-radius: 14px;
+
+    .item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+// Blog Detail Specific Skeletons
+.blog-content-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .author-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0ee;
+        border-top: 1px solid #f0f0ee;
+
+        .col {
+            flex: 1;
+        }
+    }
+
+    .text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 14px;
+        margin: 20px 0;
+    }
+
+    .comment-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .comment-item {
+            display: flex;
+            gap: 12px;
+
+            .col {
+                flex: 1;
+            }
+        }
+    }
+}
+
+// Utility classes for skeletons in loading.tsx
+.skeleton-card-container {
+    padding: 10px 14px;
+    border-radius: 16px;
+}
+
+.skeleton-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.skeleton-share-bar {
+    padding: 10px 14px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.skeleton-right-sidebar-item {
+    border-radius: 16px;
+    overflow: hidden;
+
+    .header-box {
+        padding: 10px 14px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-box {
+        padding: 14px;
+    }
+}
+
+.skeleton-share-vertical {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+}
