@@ -40,9 +40,6 @@ export default function Category({ params, allCategory,
     filteredData,
     filteredData1,
     filteredData2,
-    filteredData3,
-    filteredData4,
-    filteredData5,
     homeFeed,
     list
 }: {
@@ -54,9 +51,6 @@ export default function Category({ params, allCategory,
     filteredData: CategoryResponse;
     filteredData1: CategoryResponse;
     filteredData2: CategoryResponse;
-    filteredData3: CategoryResponse;
-    filteredData4: CategoryResponse;
-    filteredData5: CategoryResponse;
     homeFeed: List[];
     list: CategoryResponse | null;
 }) {
