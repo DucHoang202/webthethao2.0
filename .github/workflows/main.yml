@@ -1,46 +1,56 @@
-name: Next.js CI
+name: Next.js CI/CD
 
 on:
   push:
-    branches: [main]
+    branches:
+      - dev
+      - staging
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - dev
+      - staging
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build project
+      - name: Build Next.js
         run: npm run build 2>&1 | tee build.log
+
+      - name: Detect branch
+        id: branch
+        run: echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
 
       - name: Notify Mattermost Success
         if: success()
         run: |
           curl -X POST -H 'Content-Type: application/json' \
           -d "{
-          \"text\": \"✅ CI Success\nRepo: ${{ github.repository }}\nBranch: ${{ github.ref_name }}\nCommit: ${{ github.sha }}\"
+          \"text\": \"✅ CI SUCCESS\nRepo: ${{ github.repository }}\nBranch: $BRANCH\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\"
           }" \
           ${{ secrets.MATTERMOST_WEBHOOK }}
 
-      - name: Notify Mattermost Fail
+      - name: Notify Mattermost Failure
         if: failure()
         run: |
-          LOG=$(tail -n 20 build.log | sed 's/"/\\"/g')
+          LOG=$(tail -n 25 build.log | sed 's/"/\\"/g')
           curl -X POST -H 'Content-Type: application/json' \
           -d "{
-          \"text\": \"❌ CI Failed\nRepo: ${{ github.repository }}\nBranch: ${{ github.ref_name }}\n\n\`\`\`\n$LOG\n\`\`\`\"
+          \"text\": \"❌ CI FAILED\nRepo: ${{ github.repository }}\nBranch: $BRANCH\n\n\`\`\`\n$LOG\n\`\`\`\"
           }" \
           ${{ secrets.MATTERMOST_WEBHOOK }}
