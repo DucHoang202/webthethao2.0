@@ -1,26 +1,46 @@
-name: CI
+name: Next.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: 20
+          cache: 'npm'
 
-      - run: npm install
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Notify Mattermost
-        if: always()
+      - name: Build project
+        run: npm run build 2>&1 | tee build.log
+
+      - name: Notify Mattermost Success
+        if: success()
         run: |
           curl -X POST -H 'Content-Type: application/json' \
-          -d '{"text":"🚀 CI finished for commit ${{ github.sha }}"}' \
+          -d "{
+          \"text\": \"✅ CI Success\nRepo: ${{ github.repository }}\nBranch: ${{ github.ref_name }}\nCommit: ${{ github.sha }}\"
+          }" \
+          ${{ secrets.MATTERMOST_WEBHOOK }}
+
+      - name: Notify Mattermost Fail
+        if: failure()
+        run: |
+          LOG=$(tail -n 20 build.log | sed 's/"/\\"/g')
+          curl -X POST -H 'Content-Type: application/json' \
+          -d "{
+          \"text\": \"❌ CI Failed\nRepo: ${{ github.repository }}\nBranch: ${{ github.ref_name }}\n\n\`\`\`\n$LOG\n\`\`\`\"
+          }" \
           ${{ secrets.MATTERMOST_WEBHOOK }}
