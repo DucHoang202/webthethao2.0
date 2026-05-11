@@ -1,7 +1,6 @@
 'use client'
 import { use, useRef } from "react";
 import "../../styles/main.scss"
-import "./blog_format.scss"
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Header from "../../pages/Header";
@@ -35,10 +34,6 @@ import { zaloRequest } from "@/utils/shareZalo";
 import ShareTooltip from "../ui/modal/ShareTooltip";
 import ShareDropdown from "../ui/modal/ShareDropdown";
 import { Data, HeadData } from "../../types/Types";
-
-
-
-
 const BlogPage = ({ params,
     titleImage,
     hotTopic,
@@ -66,9 +61,7 @@ const BlogPage = ({ params,
     const [mounted, setMounted] = useState(false);
     const [isLiked, setIsLiked] = useState(false);
     const [shareDropdown, setShareDropdown] = useState(false);
-    const [thumbnail1, setThumbnail1] = useState(1)
-    const [thumbnail2, setThumbnail2] = useState(true);
-    const [open, setOpen] = useState(false)
+
     async function copyUrl() {
         const text = window.location.href;
 
@@ -89,9 +82,6 @@ const BlogPage = ({ params,
     }
 
 
-    function handleThumbnail2() {
-        setThumbnail2(!thumbnail2)
-    }
     function handleOpenX(url: string) {
         const appUrl = `twitter://open?url=${encodeURIComponent(url)}`;
         const webUrl = `https://x.com/intent/tweet?url=${encodeURIComponent(url)}`;
@@ -103,8 +93,6 @@ const BlogPage = ({ params,
             window.open(webUrl, "_blank");
         }, 800);
     };
-
-
     function ShareFb(url: string, quote?: string) {
         const shareUrl = new URL("https://www.facebook.com/sharer/sharer.php");
 
@@ -221,7 +209,7 @@ const BlogPage = ({ params,
     }
 
     const changeHeader = useMediaQuery({ query: "(max-width: 1024px)" })
-    const changeNav = useMediaQuery({ query: "(max-width: 992px)" })
+    const changeNav = useMediaQuery({ query: "(max-width: 768px)" })
     const swiperRef = useRef<any>(null);
     const [isSticky, setIsSticky] = useState(false);
 
@@ -240,162 +228,6 @@ const BlogPage = ({ params,
     const slug4 = "mma-boxing"
     const slug5 = "goc-tu-van"
 
-    //Tab change
-
-    const tabs = [
-        {
-            label: "1",
-            title: "Nút số 1",
-            desc: "Đây là nội dung của tab đầu tiên. Nhấn vào nút khác để xem hiệu ứng chuyển động.",
-            color: "#AFA9EC",
-        },
-        {
-            label: "Hai",
-            title: "Nút thứ hai",
-            desc: "Nội dung tab thứ hai hiện ra với animation trượt nhẹ từ dưới lên.",
-            color: "#5DCAA5",
-        },
-        {
-            label: "3",
-            title: "Nút số 3",
-            desc: "Tab cuối cùng! Thanh trượt di chuyển mượt mà giữa các nút nhờ cubic-bezier.",
-            color: "#F0997B",
-        },
-    ];
-
-    function TabSwitcher() {
-        const [active, setActive] = useState(0);
-        const [indicatorStyle, setIndicatorStyle] = useState<React.CSSProperties>({}); const btnRefs = useRef<(HTMLButtonElement | null)[]>([]);
-        useEffect(() => {
-            const btn = btnRefs.current[active];
-            if (btn) {
-                setIndicatorStyle({
-                    width: btn.offsetWidth,
-                    transform: `translateX(${btn.offsetLeft}px)`,
-                });
-            }
-        }, [active]);
-
-        return (
-            <div style={{
-                padding: "2rem 1.5rem",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "2rem",
-                fontFamily: "var(--font-sans, system-ui, sans-serif)",
-            }}>
-                {/* Tab bar */}
-                <div style={{
-                    position: "relative",
-                    display: "flex",
-                    background: "var(--color-background-secondary, #f4f4f2)",
-                    border: "0.5px solid var(--color-border-tertiary, rgba(0,0,0,0.12))",
-                    borderRadius: 12,
-                    padding: 5,
-                    gap: 4,
-                }}>
-                    {/* Sliding indicator */}
-                    <div style={{
-                        position: "absolute",
-                        top: 5,
-                        left: 5,
-                        height: "calc(100% - 10px)",
-                        background: "var(--color-background-primary, #fff)",
-                        border: "0.5px solid var(--color-border-secondary, rgba(0,0,0,0.2))",
-                        borderRadius: 9,
-                        zIndex: 1,
-                        transition: "transform 0.32s cubic-bezier(0.34, 1.28, 0.64, 1), width 0.28s ease",
-                        ...indicatorStyle,
-                    }} />
-
-                    {tabs.map((tab, i) => (
-                        <button
-                            key={i}
-                            ref={(el) => {
-                                btnRefs.current[i] = el;
-                            }} onClick={() => setActive(i)}
-                            style={{
-                                position: "relative",
-                                zIndex: 2,
-                                border: "none",
-                                background: "transparent",
-                                padding: "10px 32px",
-                                fontSize: 15,
-                                fontWeight: 500,
-                                fontFamily: "inherit",
-                                color: active === i
-                                    ? "var(--color-text-primary, #111)"
-                                    : "var(--color-text-secondary, #666)",
-                                borderRadius: 9,
-                                cursor: "pointer",
-                                transition: "color 0.28s ease",
-                                whiteSpace: "nowrap",
-                                letterSpacing: "0.01em",
-                            }}
-                        >
-                            {tab.label}
-                        </button>
-                    ))}
-                </div>
-
-                {/* Content panels */}
-                <div style={{
-                    width: "100%",
-                    maxWidth: 420,
-                    minHeight: 140,
-                    position: "relative",
-                    borderRadius: 12,
-                    border: "0.5px solid var(--color-border-tertiary, rgba(0,0,0,0.12))",
-                    background: "var(--color-background-primary, #fff)",
-                    overflow: "hidden",
-                }}>
-                    {tabs.map((tab, i) => (
-                        <div
-                            key={i}
-                            style={{
-                                position: "absolute",
-                                inset: 0,
-                                padding: "1.5rem",
-                                opacity: active === i ? 1 : 0,
-                                transform: active === i ? "translateY(0)" : "translateY(10px)",
-                                transition: "opacity 0.3s ease, transform 0.3s ease",
-                                pointerEvents: active === i ? "auto" : "none",
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: 8,
-                            }}
-                        >
-                            <div style={{
-                                width: 32,
-                                height: 32,
-                                borderRadius: "50%",
-                                background: tab.color,
-                                marginBottom: 4,
-                            }} />
-                            <p style={{
-                                fontSize: 16,
-                                fontWeight: 500,
-                                color: "var(--color-text-primary, #111)",
-                                margin: 0,
-                            }}>
-                                {tab.title}
-                            </p>
-                            <p style={{
-                                fontSize: 14,
-                                color: "var(--color-text-secondary, #666)",
-                                margin: 0,
-                                lineHeight: 1.6,
-                            }}>
-                                {tab.desc}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        );
-    }
-
     if (!mounted) return null;
 
 
@@ -406,7 +238,6 @@ const BlogPage = ({ params,
             {changeNav ? (<main >
                 <Nav />
                 <div className="layout">
-
                     <div className="no-gap">
                         <div className="blog">
                             <div className="blog__container">
@@ -439,7 +270,6 @@ const BlogPage = ({ params,
                                 <div className="blog__sapo">
                                     {getData?.head?.og?.description}
                                 </div>
-
                                 <div dangerouslySetInnerHTML={{ __html: getData?.body || "" }} className="flex flex-col gap-[16px]"></div>
 
                                 <div className="blog__btn-container">
@@ -499,131 +329,6 @@ const BlogPage = ({ params,
                 (
                     // 409.67 * 273.11
                     <div className="detail-section">
-                        <div className="blog__container">
-
-                            <div className="blog__user">
-
-                            </div>
-
-                        </div>
-                        <div className="blog__title format_1">
-                            {/* <BlogTitle title={getData?.title ?? ""} />
-                            <div className="blog__user--inner boder">
-                                <SmallInfoHorizontal avatar={"/assets/Rectangle 1.webp"} name={getData?.author ?? ""} time={formatDate(getData?.updated_at)} official={true} />
-                                <a className="blog__cat cursor-pointer" href={`/category/${(params.id)}`}>
-                                    {translateSlug(params.id)}
-                                </a>
-                            </div>
-                            <div className="blog__sapo">
-                                {getData?.head?.seo?.description}
-                            </div>
-                            <div className="blog__thumbnail">
-                                <img src={changeThumbSize(getData?.head?.og?.image, "749-421")} alt="" />
-                            
-                        </div> */}
-
-                            {thumbnail1 === 1 && (
-                                <div className="blog__thumbnail" >
-                                    <img src={getData?.head?.og?.image} alt="" />
-                                    <div className="content">
-                                        <div className="blog__title">{getData?.title}</div>
-                                        <div className="blog__sapo">
-                                            {getData?.head?.og?.description}
-                                        </div>
-
-
-                                        <div className="flex gap-1">
-                                            <a
-                                                href={`/category/${params.id}`}
-                                                className="
-  inline-flex items-center
-  !text-[11px] !text-black
-  px-1
-  bg-white border border-gray-200
-  rounded-md
-  transition-all duration-300 ease-in-out
-  hover:bg-black hover:!text-white
-  hover:scale-105
-  active:scale-95
-  cursor-pointer
-px-3 py-1
-h-[22.4px]
-mt-[13px]"
-                                                style={{ padding: "0 4px", marginTop: "18px" }}                       >
-                                                {translateSlug(params.id)}
-                                            </a>
-                                            <div className="group flex items-center gap-1 !text-[11px] text-white transition-all duration-300 group-hover:text-gray-300">
-
-                                                <span className="text-gray-400 transition-colors duration-300 group-hover:text-gray-600 cursor-pointer">
-                                                    by
-                                                </span>
-                                                <SmallInfoHorizontal
-                                                    className="!text-white transition-all duration-300 hover:text-gray-300 hover:tracking-wide"
-                                                    avatar={"/assets/Rectangle 1.webp"}
-                                                    name={getData?.author ?? ""}
-                                                    time={formatDate(getData?.updated_at)}
-                                                    official={true}
-                                                />
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            )
-                            }
-                            {thumbnail1 === 3 && (
-                                <div className="blog__thumbnail3" >
-
-                                    <div className="content">
-                                        <div className="blog__title">{getData?.title}</div>
-                                        <div className="blog__sapo">
-                                            {getData?.head?.og?.description}
-                                        </div>
-
-
-                                        <div className="flex gap-1">
-                                            <a
-                                                href={`/category/${params.id}`}
-                                                className="
-  inline-flex items-center
-  !text-[11px] !text-black
-  px-1
-  bg-gray-200 border border-gray-200
-  rounded-md
-  transition-all duration-300 ease-in-out
-  hover:bg-black hover:!text-white
-  hover:scale-105
-  active:scale-95
-  cursor-pointer
-px-3 py-1
-h-[22.4px]
-mt-[15px]"
-                                                style={{ padding: "0 4px", marginTop: "18px" }}                       >
-                                                {translateSlug(params.id)}
-                                            </a>
-                                            <div className="group flex items-center gap-1 !text-[11px] text-black transition-all duration-300 group-hover:text-gray-300">
-
-                                                <span className="text-gray-400 transition-colors duration-300 group-hover:text-gray-600 cursor-pointer">
-                                                    by
-                                                </span>
-                                                <SmallInfoHorizontal
-                                                    className="!text-black transition-all duration-300 hover:text-gray-300 hover:tracking-wide"
-                                                    avatar={"/assets/Rectangle 1.webp"}
-                                                    name={getData?.author ?? ""}
-                                                    time={formatDate(getData?.updated_at)}
-                                                    official={true}
-                                                />
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div className="thumbnail3__img">
-                                        <img src={getData?.head?.og?.image} alt="" />
-                                    </div>
-                                </div>
-                            )}
-                        </div>
                         <div className="detail--desktop white ">
                             <div className="detail-layout">
                                 <div className="link--detail" >
@@ -671,8 +376,11 @@ mt-[15px]"
                                             </Tooltip.Root>
                                         </Tooltip.Provider>
                                     </a>
-
-
+                                    {/* <a className="link">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                  <path d="M12 22.5078C10.625 22.5078 9.32812 22.2422 8.10938 21.7109C6.89062 21.1953 5.82812 20.4844 4.92188 19.5781C4.01562 18.6719 3.30469 17.6094 2.78906 16.3906C2.25781 15.1719 1.99219 13.875 1.99219 12.5C1.99219 11.125 2.25781 9.82812 2.78906 8.60938C3.30469 7.39062 4.01562 6.32812 4.92188 5.42188C5.82812 4.51562 6.89062 3.80469 8.10938 3.28906C9.32812 2.75781 10.625 2.49219 12 2.49219C13.375 2.49219 14.6719 2.75781 15.8906 3.28906C17.1094 3.80469 18.1719 4.51562 19.0781 5.42188C19.9844 6.32812 20.6953 7.39062 21.2109 8.60938C21.7422 9.82812 22.0078 11.125 22.0078 12.5C22.0078 13.875 21.7422 15.1719 21.2109 16.3906C20.6953 17.6094 19.9844 18.6719 19.0781 19.5781C18.1719 20.4844 17.1094 21.1953 15.8906 21.7109C14.6719 22.2422 13.375 22.5078 12 22.5078ZM8.88281 13.6719H8.90625C9.1875 14.625 9.40234 15.3398 9.55078 15.8164C9.69922 16.293 9.77344 16.5312 9.77344 16.5312C9.83594 16.6875 9.90234 16.7852 9.97266 16.8242C10.043 16.8633 10.125 16.8828 10.2188 16.8828C10.3125 16.8672 10.3906 16.8359 10.4531 16.7891C10.5156 16.7422 10.5781 16.6875 10.6406 16.625C10.6406 16.625 10.7383 16.5312 10.9336 16.3438C11.1289 16.1562 11.4297 15.8672 11.8359 15.4766L14.3672 17.375C14.6016 17.5 14.8008 17.5273 14.9648 17.457C15.1289 17.3867 15.2344 17.2109 15.2812 16.9297L16.9453 9.125C17.0391 8.75 17.0156 8.49609 16.875 8.36328C16.7344 8.23047 16.5234 8.21875 16.2422 8.32812L6.51562 12.0781C6.1875 12.2188 6.01562 12.3672 6 12.5234C5.98438 12.6797 6.11719 12.8047 6.39844 12.8984L8.88281 13.6719Z" fill="black" />
+                                              </svg>
+                                          </a> */}
                                     <button className="link cursor-pointer" onClick={copyUrl}>
                                         <Tooltip.Provider>
                                             <Tooltip.Root>
@@ -708,67 +416,32 @@ mt-[15px]"
                                             </Tooltip.Root>
                                         </Tooltip.Provider>
                                     </a>
-                                    <div className="link cursor-pointer">
-
-                                        {/* BUTTON + TOOLTIP */}
-                                        <Tooltip.Provider>
-                                            <Tooltip.Root>
-                                                <Tooltip.Trigger asChild>
-                                                    <button
-                                                        type="button"
-                                                        onClick={() => setOpen(prev => !prev)}
-                                                        className="link"
-                                                    >
-                                                        <div style={{ width: "24px", height: "24px" }}>
-                                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 3L21 3.75V20.25L20.25 21H3.75L3 20.25V3.75L3.75 3H20.25ZM19.5 4.5L4.5 4.5L4.5 19.5H8.25L8.25 9.75H4.5V8.25H8.25H9.75H19.5V4.5ZM19.5 9.75H9.75L9.75 19.5H19.5V9.75Z" fill="#080341"></path> </g></svg>
-                                                        </div>
-                                                    </button>
-                                                </Tooltip.Trigger>
-
-                                                <Tooltip.Content side="top" className="tooltipContent">
-                                                    Đổi giao diện
-                                                </Tooltip.Content>
-                                            </Tooltip.Root>
-                                        </Tooltip.Provider>
-
-                                        {/* DROPDOWN 1-2-3 */}
-                                        {open && (
-                                            <div className="absolute top-full mt-2 left-0 bg-white shadow-lg rounded-md p-2 flex gap-2 z-50">
-                                                <button onClick={() => setThumbnail1(1)} className="px-3 py-1 hover:bg-gray-200 rounded">1</button>
-                                                <button onClick={() => setThumbnail1(2)} className="px-3 py-1 hover:bg-gray-200 rounded">2</button>
-                                                <button onClick={() => setThumbnail1(3)} className="px-3 py-1 hover:bg-gray-200 rounded">3</button>
-                                            </div>
-                                        )}
-
-                                    </div>
                                 </div>
 
 
                                 <div className="blog detail">
-                                    {thumbnail1 === 2 && (
-                                        <>
-                                            <div className="blog__container">
 
-                                                <div className="blog__user">
+                                    <div className="blog__container">
 
-                                                </div>
-                                            </div>
-                                            <div className="blog__title">
-                                                <BlogTitle title={getData?.title ?? ""} />
-                                                <div className="blog__user--inner boder">
-                                                    <SmallInfoHorizontal avatar={"/assets/Rectangle 1.webp"} name={getData?.author ?? ""} time={formatDate(getData?.updated_at)} official={true} />
-                                                    <a className="blog__cat cursor-pointer" href={`/category/${(params.id)}`}>
-                                                        {translateSlug(params.id)}
-                                                    </a>
-                                                </div>
-                                                <div className="blog__sapo">
-                                                    {getData?.head?.seo?.description}
-                                                </div>
-                                                <div className="blog__thumbnail">
-                                                    <img src={changeThumbSize(getData?.head?.og?.image, "749-421")} alt="" />
-                                                </div>
-                                            </div> </>
-                                    )}
+                                        <div className="blog__user">
+
+                                        </div>
+                                    </div>
+                                    <div className="blog__title">
+                                        <BlogTitle title={getData?.title ?? ""} />
+                                        <div className="blog__user--inner boder">
+                                            <SmallInfoHorizontal avatar={"/assets/Rectangle 1.webp"} name={getData?.author ?? ""} time={formatDate(getData?.updated_at)} official={true} />
+                                            <a className="blog__cat cursor-pointer" href={`/category/${(params.id)}`}>
+                                                {translateSlug(params.id)}
+                                            </a>
+                                        </div>
+                                        <div className="blog__sapo">
+                                            {getData?.head?.seo?.description}
+                                        </div>
+                                        <div className="blog__thumbnail">
+                                            <img src={changeThumbSize(getData?.head?.og?.image, "749-421")} alt="" />
+                                        </div>
+                                    </div>
                                     <div className="blog__body" dangerouslySetInnerHTML={{ __html: getData?.body ?? "" }}></div>
 
                                     <div className="blog__btn-container">
@@ -917,87 +590,6 @@ mt-[15px]"
                                 </div>
                             </div>
                             <Explore />
-                        </div>
-                        <div className="w-full flex justify-center" style={{ marginBottom: '20px' }}>
-                            <footer className=" bg-3C3C3C text-C8C8C8 font-bold text-sm" >
-                                <div className="container mx-auto grid grid-cols-12 py-7 px-3 lg:px-0">
-                                    <div className="col-span-8 order-1 lg:col-span-5 space-y-2">
-                                        <p className="text-base">
-                                            {" "}
-                                            Cơ quan chủ quản của mạng xã hội webthethao.com.vn: CÔNG TY CỔ PHẦN NỘI
-                                            DUNG THỂ THAO VIỆT
-                                        </p>
-                                        <p> 79 Hàng Trống, Q. Hoàn Kiếm, TP. Hà Nội.</p>
-                                        <p>
-                                            Địa chỉ văn phòng Hà Nội: số 25 BT2 Đạm Phương, bán đảo Linh Đàm, Hoàng
-                                            Liệt, Hoàng Mai, Hà Nội.
-                                        </p>
-                                        <p>Điện thoại: 024.32669666</p>
-                                        <p>Hotline: 091 2075444</p>
-                                        <p>Email: info@vietcontent.com.vn</p>
-                                        <p>
-                                            VPĐD tại TP. Hồ Chí Minh Số 16A, đường Lê Hồng Phong, P.12, Q.10, TP.HCM
-                                        </p>
-                                        <p>Điện thoại: 028 6651 2019</p>
-                                    </div>
-                                    <div className="col-span-12 order-3 lg:order-2 lg:col-span-5 space-y-2">
-                                        <p className="text-base">
-                                            GP số: 162/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 20/06/2024.
-                                        </p>
-                                        <p>Người chịu trách nhiệm nội dung: Bà Bùi Thu Hường</p>
-                                        <p>
-                                            <a
-                                                className="text-white hover:text-C8C8C8"
-                                                href="/thoa-thuan-su-dung.htm"
-                                            >
-                                                Thỏa thuận chia sẻ nội dung.{" "}
-                                            </a>{" "}
-                                            <a
-                                                className="text-white hover:text-C8C8C8"
-                                                href="/chinh-sach-bao-mat.htm"
-                                            >
-                                                {" "}
-                                                Chính sách bảo mật
-                                            </a>
-                                        </p>
-                                        <p>
-                                            Báo giá quảng cáo:
-                                            <a
-                                                className="text-white hover:text-C8C8C8"
-                                                href="https://media.webthethao.vn/uploads/audio/webthethao-bao-gia-quang-cao-11_2021.pdf"
-                                            >
-                                                {" "}
-                                                tải tại đây
-                                            </a>
-                                        </p>
-                                        <p> Liên hệ quảng cáo, truyền thông, hợp tác kinh doanh: 0912 075 444</p>
-                                        <p>Email: kinhdoanh@sport24h.com.vn</p>
-                                        <p>25 BT2 Đạm Phương, bán đảo Linh Đàm, Hoàng Liệt, Hoàng Mai, Hà Nội.</p>
-                                        <div className="mt-2">
-                                            <a
-                                                target="_blank"
-                                                href="https://www.dmca.com/Protection/Status.aspx?ID=0804a92a-9f3b-44e6-85df-307c98113260&refurl=https://webthethao.vn/bong-da-viet-nam/link-xem-truc-tiep-bong-da-u17-nu-viet-nam-vs-u17-uc-ngay-115-6LuYapRRg.htm"
-                                                title="DMCA.com Protection Status"
-                                                className="dmca-badge"
-                                            >
-                                                {" "}
-                                                <img
-                                                    loading="lazy"
-                                                    src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=0804a92a-9f3b-44e6-85df-307c98113260"
-                                                    alt="DMCA.com Protection Status"
-                                                />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-4 order-2 lg:order-3 lg:col-span-2">
-                                        <img
-                                            loading="lazy"
-                                            src="/assets/Asset-2-min.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </footer>
                         </div>
                     </div >
                 )
