@@ -1,4 +1,6 @@
 'use client'
+import { useState, useEffect, useRef } from 'react';
+import { SportGenreSkeleton } from '@/components/ui/Skeleton';
 import { delay, getSlugFromLink, translateSlug } from "../../utils/extractArticlePath";
 import useIsScreenSize from "../../hooks/useIsScreenSize";
 import NotFound from "../../pages/NotFound";
@@ -10,7 +12,8 @@ import Card from "../../components/ui/card/NewsCard";
 import Video from "../../components/Home/Video";
 import HotTopic from "../../components/ui/card/HotTopicCard";
 import Advertisement from "../../components/Home/Advertisement";
-import SportGenre from "../../components/Home/SportGenre";
+import dynamic from "next/dynamic";
+const SportGenre = dynamic(() => import("../../components/Home/SportGenre"));
 import Nav from "../../components/Home/Nav";
 import HeaderDesktop from "@/pages/HeaderDesktop";
 import CardTitle from "@/components/ui/card/CardHeader";
@@ -42,8 +45,24 @@ const share = (<div className="home--desktop__radius">
 
     </div>
 </div>)
+
+async function fetchCategoryClient(slug: string): Promise<CategoryResponse> {
+    const res = await fetch(
+        `https://webthethao.wepro.io.vn/api/category-article/load/${slug}`
+    );
+    const result = await res.json();
+    result.data = result.data?.map((item: any) => ({
+        ...item,
+        author: "Phan Kiet",
+        official: true,
+        avatar: "/assets/Rectangle 1.webp",
+    }));
+    return result;
+}
+
 export default function HomePage({
     allCategory,
+    remainingSlugs,
     titleImage,
     hotTopic,
     card2,
@@ -56,6 +75,7 @@ export default function HomePage({
     data,
 }: {
     allCategory: CategoryResponse[];
+    remainingSlugs?: string[];
     titleImage: string;
     hotTopic: { link: string; title: string }[];
     card2: { img: string; name: string }[];
@@ -73,6 +93,36 @@ export default function HomePage({
     const changeNav = useMediaQuery({ maxWidth: 768 })
     const changeHeader = useMediaQuery({ maxWidth: 768 })
     const validCategories = allCategory.filter((category) => category.data?.length > 0);
+
+    // Progressive loading: fetch remaining categories on the client
+    const [loadedRemaining, setLoadedRemaining] = useState<CategoryResponse[]>([]);
+    const [isLoadingMore, setIsLoadingMore] = useState(!!remainingSlugs?.length);
+    const hasFetched = useRef(false);
+
+    useEffect(() => {
+        if (!remainingSlugs?.length || hasFetched.current) return;
+        hasFetched.current = true;
+
+        let cancelled = false;
+
+        async function loadProgressively() {
+            for (const slug of remainingSlugs!) {
+                if (cancelled) break;
+                try {
+                    const result = await fetchCategoryClient(slug);
+                    if (!cancelled && result?.data?.length > 0) {
+                        setLoadedRemaining(prev => [...prev, result]);
+                    }
+                } catch (err) {
+                    console.error(`Failed to fetch category: ${slug}`, err);
+                }
+            }
+            if (!cancelled) setIsLoadingMore(false);
+        }
+
+        loadProgressively();
+        return () => { cancelled = true; };
+    }, [remainingSlugs]);
 
     return (
         <div className='App'>
@@ -94,6 +144,14 @@ export default function HomePage({
                                 delayMs={index * 400}
                             />
                         ))}
+                        {loadedRemaining.map((item, index) => (
+                            <SportGenre
+                                key={item.slug ?? `remaining-${index}`}
+                                sport={item}
+                                delayMs={0}
+                            />
+                        ))}
+                        {isLoadingMore && <SportGenreSkeleton />}
 
                         <div className="advertisement-section" style={{ width: "100%" }}>
                             <Advertisement image="" />
@@ -139,6 +197,14 @@ export default function HomePage({
                                         delayMs={index * 400}
                                     />
                                 ))}
+                                {loadedRemaining.map((item, index) => (
+                                    <SportGenre
+                                        key={item.slug ?? `remaining-${index}`}
+                                        sport={item}
+                                        delayMs={0}
+                                    />
+                                ))}
+                                {isLoadingMore && <SportGenreSkeleton />}
 
                             </div>
 
@@ -290,6 +356,14 @@ export default function HomePage({
                                         delayMs={index * 400}
                                     />
                                 ))}
+                                {loadedRemaining.map((item, index) => (
+                                    <SportGenre
+                                        key={item.slug ?? `remaining-${index}`}
+                                        sport={item}
+                                        delayMs={0}
+                                    />
+                                ))}
+                                {isLoadingMore && <SportGenreSkeleton />}
 
                             </div>
                             <div className="home--desktop__right">

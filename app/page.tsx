@@ -2,12 +2,12 @@ import HomePage from "@/components/Home/HomePage";
 import { changeThumbSize, getSlugFromLink, translateSlug } from "@/utils/extractArticlePath";
 import categoryArticle from "../types/categories_tree.json";
 
-export const revalidate = 1200; // ISR 30s
+export const dynamic = "force-dynamic";
 
 async function fetchCategory(slug: string) {
   const res = await fetch(
     `https://webthethao.wepro.io.vn/api/category-article/load/${slug}`,
-    { cache: "force-cache" }
+    { cache: "no-store" }
   )
 
   const result = await res.json()
@@ -25,7 +25,7 @@ async function fetchCategory(slug: string) {
 async function fetchHomeFeed() {
   const res = await fetch(
     "https://webthethao.wepro.io.vn/api/newfeed?page=1",
-    { cache: "force-cache" }
+    { cache: "no-store" }
   )
 
   const result = await res.json()
@@ -45,14 +45,12 @@ async function Home() {
   const slug3 = "bong-da-viet-nam"
   const slug4 = "mma-boxing"
   const slug5 = "videos"
-  // const allSlug = categoryArticle.flatMap(item => [
-  //   item.slug,
-  //   ...(item.children?.map(child => child.slug) || [])
-  // ]);
+
   const allSlug = categoryArticle.map((item) => item.slug);
-  const categoryRequests = allSlug.map(slug => fetchCategory(slug));
+  const initialSlugs = allSlug.slice(0, 2);
+  const remainingSlugs = allSlug.slice(2);
 
-
+  const initialCategoryRequests = initialSlugs.map(slug => fetchCategory(slug));
 
   const [
     filteredData,
@@ -71,16 +69,16 @@ async function Home() {
     fetchCategory(slug4),
     fetchCategory(slug5),
     fetchHomeFeed(),
-    ...categoryRequests
+    ...initialCategoryRequests
   ])
   const titleImage = "assets/logo-sea-game 1.webp"
-  //Get individual data
   const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
 
   const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
   return (
     <HomePage
       allCategory={categoryData}
+      remainingSlugs={remainingSlugs}
       titleImage={titleImage}
       hotTopic={hotTopic}
       card2={card2}
@@ -98,3 +96,4 @@ async function Home() {
 
 
 export default Home;
+
