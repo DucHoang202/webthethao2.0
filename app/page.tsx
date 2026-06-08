@@ -42,53 +42,39 @@ async function Home() {
   const slug = "sea-games"
   const slug1 = "nhan-dinh-bong-da"
   const slug2 = "pickle-ball" //Đọc nhiều 
-  const slug3 = "bong-da-viet-nam"
-  const slug4 = "mma-boxing"
   const slug5 = "videos"
-  // const allSlug = categoryArticle.flatMap(item => [
-  //   item.slug,
-  //   ...(item.children?.map(child => child.slug) || [])
-  // ]);
-  const allSlug = categoryArticle.map((item) => item.slug);
-  const categoryRequests = allSlug.map(slug => fetchCategory(slug));
 
-
-
+  // Only fetch essential data for above-the-fold content
   const [
     filteredData,
     filteredData1,
     filteredData2,
-    filteredData3,
-    filteredData4,
     filteredData5,
-    data,
-    ...categoryData
+    data
   ] = await Promise.all([
     fetchCategory(slug),
     fetchCategory(slug1),
     fetchCategory(slug2),
-    fetchCategory(slug3),
-    fetchCategory(slug4),
     fetchCategory(slug5),
-    fetchHomeFeed(),
-    ...categoryRequests
+    fetchHomeFeed()
   ])
-  const titleImage = "assets/logo-sea-game 1.webp"
-  //Get individual data
-  const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
 
+  // Pass slugs instead of data - components will lazy load their own data
+  const categorySlugs = categoryArticle.map((item) => item.slug);
+
+  const titleImage = "assets/logo-sea-game 1.webp"
+  const hotTopic = [{ link: "#", title: "Chủ đề nóng 1" }, { link: "#", title: "Chủ đề nóng 2" }, { link: "#", title: "Chủ đề nóng 3" }]
   const card2 = [{ img: "/assets/image 20-10.webp", name: "SEA Games 33" }, { img: "/assets/image 20.webp", name: "V-League" }, { img: "/assets/image 20-1.webp", name: "League 1" }, { img: "/assets/image 20-2.webp", name: "Seria A" }, { img: "/assets/image 20-3.webp", name: "Bundesliga" }, { img: "/assets/image 20-4.webp", name: "Premier League" }, { img: "/assets/image 20-5.webp", name: "Laliga" }, { img: "/assets/image 20-6.webp", name: "UEFA Europa League" }, { img: "/assets/image 20-7.webp", name: "UEFA Champions League" }]
+
   return (
     <HomePage
-      allCategory={categoryData}
+      categorySlugs={categorySlugs}
       titleImage={titleImage}
       hotTopic={hotTopic}
       card2={card2}
       filteredData={filteredData}
       filteredData1={filteredData1}
       filteredData2={filteredData2}
-      filteredData3={filteredData3}
-      filteredData4={filteredData4}
       filteredData5={filteredData5}
       data={data}
     />

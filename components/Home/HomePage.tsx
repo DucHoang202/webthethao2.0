@@ -43,27 +43,23 @@ const share = (<div className="home--desktop__radius">
     </div>
 </div>)
 export default function HomePage({
-    allCategory,
+    categorySlugs,
     titleImage,
     hotTopic,
     card2,
     filteredData,
     filteredData1,
     filteredData2,
-    filteredData3,
-    filteredData4,
     filteredData5,
     data,
 }: {
-    allCategory: CategoryResponse[];
+    categorySlugs: string[];
     titleImage: string;
     hotTopic: { link: string; title: string }[];
     card2: { img: string; name: string }[];
     filteredData: CategoryResponse;
     filteredData1: CategoryResponse;
     filteredData2: CategoryResponse;
-    filteredData3: CategoryResponse;
-    filteredData4: CategoryResponse;
     filteredData5: CategoryResponse;
     data: List[];
 }) {
@@ -72,7 +68,9 @@ export default function HomePage({
     const isDesktop = useMediaQuery({ minWidth: 1024 })
     const changeNav = useMediaQuery({ maxWidth: 768 })
     const changeHeader = useMediaQuery({ maxWidth: 768 })
-    const validCategories = allCategory.filter((category) => category.data?.length > 0);
+    // Filter out slugs that are already displayed in featured sections
+    const featuredSlugs = [filteredData.slug, filteredData1.slug, filteredData2.slug, filteredData5.slug];
+    const remainingSlugs = categorySlugs.filter(slug => !featuredSlugs.includes(slug));
 
     return (
         <div className='App'>
@@ -87,11 +85,10 @@ export default function HomePage({
                         ))}
                         <Video video={filteredData5} />
                         <HotTopic isTitled={false} hotTopic={filteredData2} />
-                        {validCategories.map((item, index) => (
+                        {remainingSlugs.map((slug, index) => (
                             <SportGenre
-                                key={item.slug ?? index}
-                                sport={item}
-                                delayMs={index * 400}
+                                key={slug}
+                                slug={slug}
                             />
                         ))}
 
@@ -132,11 +129,10 @@ export default function HomePage({
                                 </div>
                                 <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
 
-                                {validCategories.map((item, index) => (
+                                {remainingSlugs.map((slug) => (
                                     <SportGenre
-                                        key={item.slug ?? index}
-                                        sport={item}
-                                        delayMs={index * 400}
+                                        key={slug}
+                                        slug={slug}
                                     />
                                 ))}
 
@@ -283,11 +279,10 @@ export default function HomePage({
                                     </div>
                                 </div>
                                 <Advertisement image="/assets/image 19.webp" isCollapsed={true} />
-                                {validCategories.map((item, index) => (
+                                {remainingSlugs.map((slug) => (
                                     <SportGenre
-                                        key={item.slug ?? index}
-                                        sport={item}
-                                        delayMs={index * 400}
+                                        key={slug}
+                                        slug={slug}
                                     />
                                 ))}
 
