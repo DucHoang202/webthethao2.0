@@ -25,9 +25,9 @@ const CategoryCard: React.FC<CardProps> = ({ avatar, name, time, image, title, c
                 <div className="body" >
                     <a href={link || "#"} className="title" >
                         {title}
-                        <div className="content">{content}</div>
-                    </a>
 
+                    </a>
+                        <div className="content">{content}</div>
                     <div className="footer">
                         <div className="card--category__info">
                             <div className="card--category__name">{name}</div>
